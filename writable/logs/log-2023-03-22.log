@@ -101,3 +101,39 @@ in SYSTEMPATH\Database\BaseConnection.php on line 645.
  4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 11:31:40 --> Undefined variable $look_type_name
+in APPPATH\Models\LookTypeModel.php on line 40.
+ 1 APPPATH\Models\LookTypeModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_type_name', 'APPPATH\\Models\\LookTypeModel.php', 40)
+ 2 APPPATH\Controllers\Home.php(23): App\Models\LookTypeModel->edit(1, 'PropertyType1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 11:32:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `look_type_id` = 1' at line 9 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_loo...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_loo...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_loo...')
+#3 C:\xampp\htdocs\prism\app\Models\LookTypeModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_loo...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(23): App\Models\LookTypeModel->edit(1, 'PropertyType1')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-22 11:32:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `look_type_id` = 1' at line 9
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\LookTypeModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_look_type`
+                        SET
+                       
+                        `auth_id` = \'1\',
+                        `action_type` = \'update\',
+                        `action_date` = now(),
+                        `look_type_id` = 1,
+                        `look_type_name` = \'PropertyType1\',
+                        WHERE `look_type_id` = 1')
+ 2 APPPATH\Controllers\Home.php(23): App\Models\LookTypeModel->edit(1, 'PropertyType1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -29,7 +29,7 @@
             return  $this->db->affectedRows();
         }
 
-        public function edit($look_type_id,$look_type_iname) {
+        public function edit($look_type_id,$look_type_name) {
             $sqlText = "UPDATE `tbl_look_type`
                         SET
                        
@@ -37,7 +37,7 @@
                         `action_type` = 'update',
                         `action_date` = now(),
                         `look_type_id` = ".$look_type_id.",
-                        `look_type_name` = ".$look_type_name.",
+                        `look_type_name` = '".$look_type_name."'
                         WHERE `look_type_id` = ".$look_type_id."";
             $query =  $this->db->query($sqlText);
 

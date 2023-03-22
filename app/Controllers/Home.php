@@ -19,8 +19,9 @@ class Home extends BaseController
 {
     public function index()
     {
-        // $model = new LookTypeModel();
-        // echo 'affected rows: '.$model->add('Purpose');
+        $model = new LookTypeModel();
+        // echo 'affected rows: '.$model->add(1,'PropertyType');
+        echo 'affected rows: '.$model->edit(1,'PropertyType');
         // $model = new UserInfoModel();
         // echo 'affected rows: '.$model->add('shovon','123456789','01893258696','shovon@gmail.com');
         // $model = new LookUpModel();
