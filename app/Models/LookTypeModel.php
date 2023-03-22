@@ -29,16 +29,16 @@
             return  $this->db->affectedRows();
         }
 
-        public function edit() {
+        public function edit($look_type_id,$look_type_iname) {
             $sqlText = "UPDATE `tbl_look_type`
                         SET
                        
-                        `auth_id` = <{auth_id: }>,
+                        `auth_id` = '1',
                         `action_type` = 'update',
-                        `action_date` = <{action_date: }>,
-                        `look_type_id` = <{look_type_id: }>,
-                        `look_type_name` = <{look_type_name: }>
-                        WHERE `look_type_id` = <{expr}>";
+                        `action_date` = now(),
+                        `look_type_id` = ".$look_type_id.",
+                        `look_type_name` = ".$look_type_name.",
+                        WHERE `look_type_id` = ".$look_type_id."";
             $query =  $this->db->query($sqlText);
 
             return  $this->db->affectedRows();
