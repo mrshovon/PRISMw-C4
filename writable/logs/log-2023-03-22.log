@@ -1,0 +1,103 @@
+CRITICAL - 2023-03-22 03:58:04 --> syntax error, unexpected token "&"
+in APPPATH\Models\CompanyProfileModel.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\CompanyProfileModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CompanyProfileModel')
+ 3 APPPATH\Controllers\Home.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CompanyProfileModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 04:40:14 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Models\InqueryModel.php on line 23.
+ 1 APPPATH\Controllers\Home.php(24): App\Models\InqueryModel->add('shuvo@gmail.com', 'Shuvo', '01723568944', 'address......text', Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 04:46:47 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Models\InqueryModel.php on line 23.
+ 1 APPPATH\Controllers\Home.php(24): App\Models\InqueryModel->add('shuvo@gmail.com', 'Shuvo', '01723568944', 'address......text', Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 04:51:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_inquery`, CONSTRAINT `tbl_inquery_userinfo_fk` FOREIGN KEY (`maker_id`) REFERENCES `tbl_user_info` (`email`)) in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\InqueryModel.php(23): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(24): App\Models\InqueryModel->add('shuvo@gmail.com', 'Shuvo', '01723568944', 'address......te...', 'query.....text')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-22 04:51:10 --> Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_inquery`, CONSTRAINT `tbl_inquery_userinfo_fk` FOREIGN KEY (`maker_id`) REFERENCES `tbl_user_info` (`email`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\InqueryModel.php(23): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_inquery`(`maker_id`,`auth_id`,`action_type`,`action_date`,`customer_name`,`phone`,`address`,`query`)
+                            VALUES(\'shuvo@gmail.com\',null,\'insert\',now(),\'Shuvo\',\'01723568944\',\'address......text\',\'query.....text\')')
+ 2 APPPATH\Controllers\Home.php(24): App\Models\InqueryModel->add('shuvo@gmail.com', 'Shuvo', '01723568944', 'address......text', 'query.....text')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 07:31:08 --> Class "App\Models\PropertyInfoModel" not found
+in APPPATH\Controllers\Home.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 07:32:24 --> Too few arguments to function App\Models\PropertyInfoModel::add(), 0 passed in C:\xampp\htdocs\prism\app\Controllers\Home.php on line 33 and exactly 14 expected
+in APPPATH\Models\PropertyInfoModel.php on line 13.
+ 1 APPPATH\Controllers\Home.php(33): App\Models\PropertyInfoModel->add()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 07:35:03 --> Too few arguments to function App\Models\PropertyInfoModel::add(), 0 passed in C:\xampp\htdocs\prism\app\Controllers\Home.php on line 33 and exactly 14 expected
+in APPPATH\Models\PropertyInfoModel.php on line 13.
+ 1 APPPATH\Controllers\Home.php(33): App\Models\PropertyInfoModel->add()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 07:49:14 --> syntax error, unexpected variable "$sqlText", expecting ";" or "{"
+in APPPATH\Models\HomeLoanModel.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\HomeLoanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\HomeLoanModel')
+ 3 APPPATH\Controllers\Home.php(38): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\HomeLoanModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 07:55:47 --> syntax error, unexpected variable "$sqlText", expecting ";" or "{"
+in APPPATH\Models\HomeLoanModel.php on line 17.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\HomeLoanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\HomeLoanModel')
+ 3 APPPATH\Controllers\Home.php(38): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\HomeLoanModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 08:07:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\BookVisitModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(41): App\Models\BookVisitModel->add('2023/04/23', '14:00', '16:00', 'remarks.....tex...')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-22 08:07:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\BookVisitModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_book_visit`(`auth_id`,`action_type`,`action_date`,`date`,`start_time`,`end_time`,`remarks`,`email`,`property_id`)
+                            VALUES(\'null\',\'insert\',now(),\'2023/04/23\',\'14:00\',\'16:00\',\'remarks.....text\',\'shovon@gmail.com\',\'1\';')
+ 2 APPPATH\Controllers\Home.php(41): App\Models\BookVisitModel->add('2023/04/23', '14:00', '16:00', 'remarks.....text')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
