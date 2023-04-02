@@ -19,13 +19,18 @@ class Home extends BaseController
 {
     public function index()
     {
-        $model = new LookTypeModel();
+        // $model = new LookTypeModel();
         // echo 'affected rows: '.$model->add(1,'PropertyType');
-        echo 'affected rows: '.$model->edit(1,'PropertyType');
+        // echo 'affected rows: '.$model->edit(1,'PropertyType');
+        
         // $model = new UserInfoModel();
         // echo 'affected rows: '.$model->add('shovon','123456789','01893258696','shovon@gmail.com');
+        // echo 'affected rows: '.$model->edit(2,'Amenities','Amn');
+        
         // $model = new LookUpModel();
         // echo 'affected rows: '.$model->add('Documentation','doc','2','5');
+        // echo 'affected rows: '.$model->edit(2,'Amenities','Amn');
+
         // $model = new CompanyProfileModel();
         // echo 'affected rows: '.$model->add('PRISM','vision....text','address....text','email@company.com','privacy policy....file link','terms and condition....file');
         // $model = new InqueryModel();

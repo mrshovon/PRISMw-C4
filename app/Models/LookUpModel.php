@@ -23,14 +23,32 @@
                 return  $this->db->affectedRows();
 
             }
-            public function erase() {
-         
+            public function erase($look_up_id) {
+                $sqlText = "DELETE FROM `tbl_look_up` WHERE `look_up_id`= ".$look_up_id."";
+                $query =  $this->db->query($sqlText);
+
+                return  $this->db->affectedRows();
 
             }
-            public function edit() {
-         
+            public function edit($look_up_id,$look_up_name,$short_name) {
+              $sqlText = " UPDATE `tbl_look_up`
+                            SET
+                            `maker_id` = '1730020@iub.edu.bd',
+                            `auth_id` = 'NULL',
+                            `action_type` = 'update',
+                            `action_date` = now(),
+                            `look_up_id` = ".$look_up_id.",
+                            `look_up_name` = '".$look_up_name."',
+                            `short_name` = '".$short_name."',
+                            `sort_order` = 2,
+                            `look_type_id` = 3
+                            WHERE `look_up_id` = ".$look_up_id."";
+                
+                $query =  $this->db->query($sqlText);
 
+                return  $this->db->affectedRows();
             }
+           
             public function search() {
          
 
