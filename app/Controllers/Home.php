@@ -25,30 +25,60 @@ class Home extends BaseController
         
         // $model = new UserInfoModel();
         // echo 'affected rows: '.$model->add('shovon','123456789','01893258696','shovon@gmail.com');
-        // echo 'affected rows: '.$model->edit(2,'Amenities','Amn');
-        
+        // echo 'affected rows: '.$model->edit('shovon@gmail.com','Shovon Rahman','rahman12345','01312457896');
+
         // $model = new LookUpModel();
         // echo 'affected rows: '.$model->add('Documentation','doc','2','5');
         // echo 'affected rows: '.$model->edit(2,'Amenities','Amn');
 
         // $model = new CompanyProfileModel();
         // echo 'affected rows: '.$model->add('PRISM','vision....text','address....text','email@company.com','privacy policy....file link','terms and condition....file');
+        // echo 'affected rows: '.$model->edit(1);
+
+        // $model = new SliderModel();
+        // echo 'affected rows: '.$model->edit(1,'img....path2',2);
+       
+       
         // $model = new InqueryModel();
         // echo 'affected rows: '.$model->add('Shuvo','01723568944','address......text','query.....text');
+        // echo 'affected rows: '.$model->edit(1,'Shamiul');
+        
         // $model = new CareersModel();
         // echo 'affected rows: '.$model->add('JOB1','Description......text','01789562344','shuvo@gmail.com');
+        // echo 'affected rows: '.$model->edit(1,'title...changed','Job_description.............changed');
+        
         // $model = new LegalServicesModel();
         // echo 'affected rows: '.$model->add();
+        // echo 'affected rows: '.$model->erase('shovon@gmail.com',2);
+        // echo 'affected rows: '.$model->edit('shovon@gmail.com',2,'shovon rahman','02345678999');
+
+
         // $model = new PropertyInfoModel();
         // echo 'affected rows: '.$model->add('shovon','description.....text','Dhaka','mirpur','1200.00','2','1','12000','0','plan.....file','01723568944','address....text','2','shovon@gmail.com');
+        // echo 'affected rows: '.$model->edit(1,'Gulmohor','description.......changed','Pabna','Dhanmondi',1350.00,3,3,5500000.00);
+        
+        
+        
         // $model = new HomeLoanModel();
         // echo 'affected rows: '.$model->add('1');
+        // echo 'affected rows: '.$model->edit(1,'shovon@gmail.com','Shovon Rahman','01546137982');
+
+
+
         // $model = new BookVisitModel();
         // echo 'affected rows: '.$model->add('2023-04-23','14:00','16:00','remarks.....text');
+        // echo 'affected rows: '.$model->edit(1,'2023-04-23','14:00','16:00','remarks.....text changed');
+        
+        
         // $model = new RenovationModel();
         // echo 'affected rows: '.$model->add('1');
+        // echo 'affected rows: '.$model->edit(1,'shovon@gmail.com',1,500.00);
+
+
+
         // $model = new FavouritesModel();
         // echo 'affected rows: '.$model->add();
+        // echo 'affected rows: '.$model->edit('shovon@gmail.com',1);
 
 
 

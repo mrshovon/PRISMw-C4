@@ -22,12 +22,42 @@
                
                 return  $this->db->affectedRows();
             }
-            public function erase() {
-         
-
+            public function erase($property_id) {
+                $sqlText = "DELETE FROM `tbl_property_info` WHERE `property_id` = ".$property_id."";
+                $query =  $this->db->query($sqlText);
+               
+                return  $this->db->affectedRows();
             }
-            public function edit() {
-         
+            public function edit($property_id,$name,$description,$city,$property_area,$property_size,$beds,$baths,$price,$is_occupied,$floor_plan,$phone,$address,$level,$email) {
+                $sqlText = "UPDATE `tbl_property_info`
+                            SET
+                            `auth_id` = 'null',
+                            `action_type` = 'update',
+                            `action_date` = now(),
+                            `property_id` = ".$property_id.",
+                            `property_name` = '".$name."',
+                            `description` = '".$description."',
+                            `city` = '".$city."',
+                            `property_area` = '".$property_area."',
+                            `property_status` = ".$property_size.",
+                            `beds` = ".$beds.",
+                            `baths` = ".$baths.",
+                            `price` = ".$price.",
+                            `is_occupied` = '".$is_occupied."',
+                            `floor_plan` = '".$floor_plan."',
+                            `phone_number` = '".$phone."',
+                            `property_address` = '".$adrdress."',
+                            `level` = ".$level.",
+                            `email` = '".$email."',
+                            `purpose_code` = 1,
+                            `property_type_code` = 1,
+                            `descriptive_status_code` = 1,
+                            `amenities_code` = 1,
+                            `property_status_code` = 1
+                            WHERE `property_id` = <{expr}>";
+                $query =  $this->db->query($sqlText);
+               
+                return  $this->db->affectedRows();
 
             }
             public function search() {

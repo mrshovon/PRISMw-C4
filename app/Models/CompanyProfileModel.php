@@ -26,12 +26,25 @@
                 return  $this->db->affectedRows();
 
             }
-            public function erase() {
-         
-
+            public function erase($company_id) {
+                $sqlText = " DELETE FROM `tbl_company_profile` WHERE `company_id` =  '".$company_id."'";
+                $query = $this ->db->query($sqlText);
+                return $this->db->affectedRows();
             }
-            public function edit() {
-         
+            public function edit($company_id) {
+                $sqlText = "UPDATE `tbl_company_profile`
+                SET
+                `maker_id` = '1730020@iub.edu.bd',
+                `auth_id` = '',
+                `action_type` = 'update',
+                `action_date` = now(),
+                `company_name` = 'PRISM',
+                `company_email` = 'email@company.com',
+                `company_id` = ".$company_id."
+                WHERE `company_id` = ".$company_id."";
+                
+                $query = $this ->db->query($sqlText);
+                return $this->db->affectedRows();
 
             }
             public function search() {

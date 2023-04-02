@@ -19,12 +19,24 @@
                
                 return  $this->db->affectedRows();
             }
-            public function erase() {
-         
+            public function erase($email,$property_id) {
+                $sqlText = "DELETE FROM `tbl_favourites` WHERE `email` = '".$email."' AND `property_id` = ".$property_id.""; 
+                $query =  $this->db->query($sqlText);
+   
+                return  $this->db->affectedRows();
 
             }
-            public function edit() {
-         
+            public function edit($email,$property_id) {
+                $sqlText = "UPDATE `prism`.`tbl_favourites`
+                            SET
+                            `auth_id` = 'null',
+                            `action_type` = 'update',
+                            `action_date` = now(),
+                            `creation_date` = now()
+                            WHERE `email` = '".$email."' AND `property_id` = ".$property_id.""; 
+                $query =  $this->db->query($sqlText);
+   
+                return  $this->db->affectedRows();
 
             }
             public function search() {

@@ -21,12 +21,25 @@
                
                 return  $this->db->affectedRows();
             }
-            public function erase() {
-         
+            public function erase($property_id, $email) {
+                $sqlText = "DELETE FROM `prism`.`tbl_homeloan` WHERE `property_id` = ".$property_id." AND `email` = '".$email."'"; 
+                $query =  $this->db->query($sqlText);
+               
+                return  $this->db->affectedRows();
 
             }
-            public function edit() {
-         
+            public function edit($property_id,$email,$name,$phone) {
+                $sqlText = "UPDATE `prism`.`tbl_homeloan`
+                            SET
+                            `auth_id` = 'null',
+                            `action_type` = 'update',
+                            `action_date` = now(),
+                            `name` = '".$name."',
+                            `phone_number` = '".$phone."'
+                            WHERE `email` = '".$email."' AND `property_id` = ".$property_id.""; 
+                $query =  $this->db->query($sqlText);
+               
+                return  $this->db->affectedRows();
 
             }
             public function search() {

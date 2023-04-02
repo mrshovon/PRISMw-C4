@@ -47,3 +47,644 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 04:02:26 --> Undefined variable $model
+in APPPATH\Controllers\Home.php on line 28.
+ 1 APPPATH\Controllers\Home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\Home.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 04:06:28 --> Undefined variable $model
+in APPPATH\Controllers\Home.php on line 28.
+ 1 APPPATH\Controllers\Home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\Home.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 04:21:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                `company_id` = 1
+                WHERE `company_id` = 1' at line 8 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `prism`....', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `prism`....')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prism`....')
+#3 C:\xampp\htdocs\prism\app\Models\CompanyProfileModel.php(45): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`....')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(36): App\Models\CompanyProfileModel->edit(1)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 04:21:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                `company_id` = 1
+                WHERE `company_id` = 1' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\CompanyProfileModel.php(45): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`.`tbl_company_profile`
+                SET
+                `maker_id` = \'1730020@iub.edu.bd\',
+                `auth_id` = \'\',
+                `action_type` = \'update\',
+                `action_date` = now(),
+                `company_name` = \'PRISM\',
+                `company_email` = ,
+                `company_id` = 1
+                WHERE `company_id` = 1')
+ 2 APPPATH\Controllers\Home.php(36): App\Models\CompanyProfileModel->edit(1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 04:24:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                `company_id` = 1
+                WHERE `company_id` = 1' at line 8 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_com...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_com...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_com...')
+#3 C:\xampp\htdocs\prism\app\Models\CompanyProfileModel.php(45): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_com...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(36): App\Models\CompanyProfileModel->edit(1)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 04:24:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                `company_id` = 1
+                WHERE `company_id` = 1' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\CompanyProfileModel.php(45): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_company_profile`
+                SET
+                `maker_id` = \'1730020@iub.edu.bd\',
+                `auth_id` = \'\',
+                `action_type` = \'update\',
+                `action_date` = now(),
+                `company_name` = \'PRISM\',
+                `company_email` = ,
+                `company_id` = 1
+                WHERE `company_id` = 1')
+ 2 APPPATH\Controllers\Home.php(36): App\Models\CompanyProfileModel->edit(1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 04:26:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                `company_id` = 1
+                WHERE `company_id` = 1' at line 8 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_com...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_com...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_com...')
+#3 C:\xampp\htdocs\prism\app\Models\CompanyProfileModel.php(46): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_com...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(36): App\Models\CompanyProfileModel->edit(1)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 04:26:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                `company_id` = 1
+                WHERE `company_id` = 1' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\CompanyProfileModel.php(46): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_company_profile`
+                SET
+                `maker_id` = \'1730020@iub.edu.bd\',
+                `auth_id` = \'\',
+                `action_type` = \'update\',
+                `action_date` = now(),
+                `company_name` = \'PRISM\',
+                `company_email` = ,
+                `company_id` = 1
+                WHERE `company_id` = 1')
+ 2 APPPATH\Controllers\Home.php(36): App\Models\CompanyProfileModel->edit(1)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 04:47:40 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Models\SliderModel.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\SliderModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SliderModel')
+ 3 APPPATH\Controllers\Home.php(38): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SliderModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 05:05:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `inquery_id` = 1' at line 9 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_inq...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_inq...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_inq...')
+#3 C:\xampp\htdocs\prism\app\Models\InqueryModel.php(40): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_inq...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(44): App\Models\InqueryModel->edit(1, 'Shamiul')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 05:05:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `inquery_id` = 1' at line 9
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\InqueryModel.php(40): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_inquery`
+                            SET
+                            `maker_id` = \'shovon@gmail.com\',
+                            `auth_id` = \'NULL\',
+                            `action_type` = \'Update\',
+                            `action_date` = now(),
+                            `inquery_id` = 1,
+                            `customer_name` = \'Shamiul\',
+                            WHERE `inquery_id` = 1')
+ 2 APPPATH\Controllers\Home.php(44): App\Models\InqueryModel->edit(1, 'Shamiul')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 05:48:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `email` = 'shovon@gmail.com' AND `service_code` = 2' at line 8 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_leg...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_leg...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_leg...')
+#3 C:\xampp\htdocs\prism\app\Models\LegalServicesModel.php(37): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_leg...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(52): App\Models\LegalServicesModel->edit('shovon@gmail.co...', 2, 'shovon rahman', '02345678999')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 05:48:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `email` = 'shovon@gmail.com' AND `service_code` = 2' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\LegalServicesModel.php(37): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_legal_services`
+                            SET
+                            `auth_id` = \'NULL\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            `name` = \'shovon rahman\',
+                            `phone_number` = \'02345678999\',
+                            WHERE `email` = \'shovon@gmail.com\' AND `service_code` = 2')
+ 2 APPPATH\Controllers\Home.php(52): App\Models\LegalServicesModel->edit('shovon@gmail.com', 2, 'shovon rahman', '02345678999')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 06:24:33 --> Undefined variable $size
+in APPPATH\Models\PropertyInfoModel.php on line 41.
+ 1 APPPATH\Models\PropertyInfoModel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $size', 'APPPATH\\Models\\PropertyInfoModel.php', 41)
+ 2 APPPATH\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......changed', 'Pabna')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 06:32:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '<{auth_id: }>,
+                            `action_type` = 'update',
+      ...' at line 3 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(54): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......', 'Pabna')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 06:32:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '<{auth_id: }>,
+                            `action_type` = 'update',
+      ...' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(54): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_property_info`
+                            SET
+                            `auth_id` = <{auth_id: }>,
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            -- `property_id` = <{property_id: }>,
+                            `property_name` = \'Gulmohor\',
+                            `description` = \'description.......changed\',
+                            `city` = \'Pabna\',
+                            `property_area` = Dhanmondi,
+                            `property_status` = 1300,
+                            `beds` = 3,
+                            `baths` = 3,
+                            `price` = 55,00,000,
+                            `is_occupied` = 0,
+                            `floor_plan` = \'floor...changed\',
+                            `purpose_code` = 1,
+                            `property_type_code` = 1,
+                            `descriptive_status_code` = 1,
+                            `amenities_code` = 1,
+                            `property_status_code` = 1
+                            WHERE `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......changed', 'Pabna')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 06:32:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                            `is_occupied` = 0,
+                    ...' at line 14 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(54): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......', 'Pabna')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 06:32:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                            `is_occupied` = 0,
+                    ...' at line 14
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(54): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_property_info`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            -- `property_id` = <{property_id: }>,
+                            `property_name` = \'Gulmohor\',
+                            `description` = \'description.......changed\',
+                            `city` = \'Pabna\',
+                            `property_area` = Dhanmondi,
+                            `property_status` = 1300,
+                            `beds` = 3,
+                            `baths` = 3,
+                            `price` = 55,00,000,
+                            `is_occupied` = 0,
+                            `floor_plan` = \'floor...changed\',
+                            `purpose_code` = 1,
+                            `property_type_code` = 1,
+                            `descriptive_status_code` = 1,
+                            `amenities_code` = 1,
+                            `property_status_code` = 1
+                            WHERE `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......changed', 'Pabna')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 06:32:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                            `floor_plan` = 'floor...changed',
+     ...' at line 14 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(53): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......', 'Pabna')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 06:32:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                            `floor_plan` = 'floor...changed',
+     ...' at line 14
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(53): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_property_info`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            -- `property_id` = <{property_id: }>,
+                            `property_name` = \'Gulmohor\',
+                            `description` = \'description.......changed\',
+                            `city` = \'Pabna\',
+                            `property_area` = Dhanmondi,
+                            `property_status` = 1300,
+                            `beds` = 3,
+                            `baths` = 3,
+                            `price` = 55,00,000,
+                            `floor_plan` = \'floor...changed\',
+                            `purpose_code` = 1,
+                            `property_type_code` = 1,
+                            `descriptive_status_code` = 1,
+                            `amenities_code` = 1,
+                            `property_status_code` = 1
+                            WHERE `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......changed', 'Pabna')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 06:34:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                            `purpose_code` = 1,
+                   ...' at line 14 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(52): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......', 'Pabna')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 06:34:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                            `purpose_code` = 1,
+                   ...' at line 14
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(52): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_property_info`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            -- `property_id` = <{property_id: }>,
+                            `property_name` = \'Gulmohor\',
+                            `description` = \'description.......changed\',
+                            `city` = \'Pabna\',
+                            `property_area` = Dhanmondi,
+                            `property_status` = 1300,
+                            `beds` = 3,
+                            `baths` = 3,
+                            `price` = 55,00,000,
+                            `purpose_code` = 1,
+                            `property_type_code` = 1,
+                            `descriptive_status_code` = 1,
+                            `amenities_code` = 1,
+                            `property_status_code` = 1
+                            WHERE `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......changed', 'Pabna')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 06:39:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                    
+                            `property_type_cod...' at line 14 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(52): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......', 'Pabna')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 06:39:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                    
+                            `property_type_cod...' at line 14
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(52): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_property_info`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            -- `property_id` = <{property_id: }>,
+                            `property_name` = \'Gulmohor\',
+                            `description` = \'description.......changed\', 
+                            `city` = \'Pabna\',
+                            `property_area` = Dhanmondi,
+                            `property_status` = 1300,
+                            `beds` = 3,
+                            `baths` = 3,
+                            `price` = 55,00,000,
+                    
+                            `property_type_code` = 1,
+                            `descriptive_status_code` = 1,
+                            `amenities_code` = 1,
+                            `property_status_code` = 1
+                            WHERE `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......changed', 'Pabna')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 06:39:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                    
+                        
+                    ...' at line 14 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(49): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......', 'Pabna')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 06:39:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                    
+                        
+                    ...' at line 14
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(49): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_property_info`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            -- `property_id` = <{property_id: }>,
+                            `property_name` = \'Gulmohor\',
+                            `description` = \'description.......changed\', 
+                            `city` = \'Pabna\',
+                            `property_area` = Dhanmondi,
+                            `property_status` = 1300,
+                            `beds` = 3,
+                            `baths` = 3,
+                            `price` = 55,00,000,
+                    
+                        
+                            WHERE `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......changed', 'Pabna')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 06:39:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                    
+                        
+                    ...' at line 14 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(49): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......', 'Pabna')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 06:39:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00,000,
+                    
+                        
+                    ...' at line 14
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(49): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_property_info`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            -- `property_id` = <{property_id: }>,
+                            `property_name` = \'Gulmohor\',
+                            `description` = \'description.......changed\', 
+                            `city` = \'Pabna\',
+                            `property_area` = Dhanmondi,
+                            `property_status` = 1300,
+                            `beds` = 3,
+                            `baths` = 3,
+                            `price` = 55,00,000,
+                    
+                        
+                            WHERE `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(58): App\Models\PropertyInfoModel->edit(1, 'Gulmohor', 'description.......changed', 'Pabna')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 06:55:06 --> syntax error, unexpected variable "$property_size"
+in APPPATH\Models\PropertyInfoModel.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\PropertyInfoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PropertyInfoModel')
+ 3 APPPATH\Controllers\Home.php(56): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PropertyInfoModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 06:55:54 --> syntax error, unexpected variable "$property_size"
+in APPPATH\Models\PropertyInfoModel.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\PropertyInfoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PropertyInfoModel')
+ 3 APPPATH\Controllers\Home.php(56): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PropertyInfoModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 06:56:45 --> syntax error, unexpected variable "$property_size"
+in APPPATH\Models\PropertyInfoModel.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\PropertyInfoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PropertyInfoModel')
+ 3 APPPATH\Controllers\Home.php(56): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PropertyInfoModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 06:57:04 --> syntax error, unexpected variable "$price"
+in APPPATH\Models\PropertyInfoModel.php on line 45.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\PropertyInfoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PropertyInfoModel')
+ 3 APPPATH\Controllers\Home.php(56): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PropertyInfoModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 07:15:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `email` = 'shovon@gmail.com' AND `property_id` = 1' at line 8 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `prism`....', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `prism`....')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prism`....')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(40): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`....')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(64): App\Models\HomeLoanModel->edit(1, 'shovon@gmail.co...', 'Shovon Rahman', '01546137982')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 07:15:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `email` = 'shovon@gmail.com' AND `property_id` = 1' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\HomeLoanModel.php(40): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`.`tbl_homeloan`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            `name` = \'Shovon Rahman\',
+                            `phone_number` = \'01546137982\',
+                            WHERE `email` = \'shovon@gmail.com\' AND `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(64): App\Models\HomeLoanModel->edit(1, 'shovon@gmail.com', 'Shovon Rahman', '01546137982')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 07:27:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `date` = '2023-04-23' AND `property_id` = 1' at line 11 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `prism`....', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `prism`....')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prism`....')
+#3 C:\xampp\htdocs\prism\app\Models\BookVisitModel.php(43): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`....')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(70): App\Models\BookVisitModel->edit(1, '2023-04-23', '14:00', '16:00', 'remarks.....tex...', 'rahman@gmail.co...')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 07:27:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `date` = '2023-04-23' AND `property_id` = 1' at line 11
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\BookVisitModel.php(43): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`.`tbl_book_visit`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            `date` = \'2023-04-23\',
+                            `start_time` = \'16:00\',
+                            `end_time` = \'remarks.....text changed\',
+                            `remarks` = \'rahman@gmail.com\',
+                            `email` = \'14:00\',
+                            WHERE `date` = \'2023-04-23\' AND `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(70): App\Models\BookVisitModel->edit(1, '2023-04-23', '14:00', '16:00', 'remarks.....text changed', 'rahman@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 07:27:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_book_visit`, CONSTRAINT `tbl_bookvisit_userinfo_fk` FOREIGN KEY (`email`) REFERENCES `tbl_user_info` (`email`)) in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `prism`....', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `prism`....')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prism`....')
+#3 C:\xampp\htdocs\prism\app\Models\BookVisitModel.php(43): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`....')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(70): App\Models\BookVisitModel->edit(1, '2023-04-23', '14:00', '16:00', 'remarks.....tex...', 'rahman@gmail.co...')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 07:27:42 --> Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_book_visit`, CONSTRAINT `tbl_bookvisit_userinfo_fk` FOREIGN KEY (`email`) REFERENCES `tbl_user_info` (`email`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\BookVisitModel.php(43): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`.`tbl_book_visit`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            `date` = \'2023-04-23\',
+                            `start_time` = \'16:00\',
+                            `end_time` = \'remarks.....text changed\',
+                            `remarks` = \'rahman@gmail.com\',
+                            `email` = \'14:00\'
+                            WHERE `date` = \'2023-04-23\' AND `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(70): App\Models\BookVisitModel->edit(1, '2023-04-23', '14:00', '16:00', 'remarks.....text changed', 'rahman@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-02 07:28:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `date` = '2023-04-23' AND `property_id` = 1' at line 10 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `prism`....', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `prism`....')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prism`....')
+#3 C:\xampp\htdocs\prism\app\Models\BookVisitModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`....')
+#4 C:\xampp\htdocs\prism\app\Controllers\Home.php(70): App\Models\BookVisitModel->edit(1, '2023-04-23', '14:00', '16:00', 'remarks.....tex...', 'rahman@gmail.co...')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-02 07:28:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `date` = '2023-04-23' AND `property_id` = 1' at line 10
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\BookVisitModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `prism`.`tbl_book_visit`
+                            SET
+                            `auth_id` = \'null\',
+                            `action_type` = \'update\',
+                            `action_date` = now(),
+                            `date` = \'2023-04-23\',
+                            `start_time` = \'14:00\',
+                            `end_time` = \'16:00\',
+                            `remarks` = \'remarks.....text changed\',
+                            WHERE `date` = \'2023-04-23\' AND `property_id` = 1')
+ 2 APPPATH\Controllers\Home.php(70): App\Models\BookVisitModel->edit(1, '2023-04-23', '14:00', '16:00', 'remarks.....text changed', 'rahman@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

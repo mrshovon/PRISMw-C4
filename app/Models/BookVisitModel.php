@@ -21,12 +21,27 @@
                
                 return  $this->db->affectedRows();
             }
-            public function erase() {
-         
+            public function erase($property_id,$date) {
+                $sqlText = "DELETE FROM `tbl_book_visit` WHERE `property_id` = ".$property_id." AND `date` = '".$date."'"; 
+                $query =  $this->db->query($sqlText);
+               
+                return  $this->db->affectedRows();
 
             }
-            public function edit() {
-         
+            public function edit($property_id,$date,$Stime,$Etime,$remarks) {
+                $sqlText = "UPDATE `prism`.`tbl_book_visit`
+                            SET
+                            `auth_id` = 'null',
+                            `action_type` = 'update',
+                            `action_date` = now(),
+                            `date` = '".$date."',
+                            `start_time` = '".$Stime."',
+                            `end_time` = '".$Etime."',
+                            `remarks` = '".$remarks."'
+                            WHERE `date` = '".$date."' AND `property_id` = ".$property_id.""; 
+                $query =  $this->db->query($sqlText);
+               
+                return  $this->db->affectedRows();
 
             }
             public function search() {

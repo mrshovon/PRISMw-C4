@@ -20,13 +20,26 @@
                
                 return  $this->db->affectedRows();
             }
-            public function erase() {
-         
-
+            public function erase($inquery_id) {
+                $sqlText = "DELETE FROM `prism`.`tbl_inquery` WHERE `inquery_id`= ".$inquery_id."";
+                $query =  $this->db->query($sqlText);
+               
+                return  $this->db->affectedRows();
             }
-            public function edit() {
-         
+            public function edit($inquery_id,$name) {
+                $sqlText = "UPDATE `tbl_inquery`
+                            SET
+                            `maker_id` = 'shovon@gmail.com',
+                            `auth_id` = 'NULL',
+                            `action_type` = 'Update',
+                            `action_date` = now(),
+                            `inquery_id` = ".$inquery_id.",
+                            `customer_name` = '".$name."'
+                            WHERE `inquery_id` = ".$inquery_id."";
 
+                $query =  $this->db->query($sqlText);
+                            
+                return  $this->db->affectedRows();
             }
             public function search() {
          

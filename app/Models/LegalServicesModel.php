@@ -18,12 +18,25 @@
                
                 return  $this->db->affectedRows();
             }
-            public function erase() {
-         
+            public function erase($email,$service_code) {
+                $sqlText = "DELETE FROM `tbl_legal_services` WHERE `email`= '".$email."' AND `service_code` = '".$service_code."'"; 
+                $query =  $this->db->query($sqlText);
+            
+                return  $this->db->affectedRows();
 
             }
-            public function edit() {
-         
+            public function edit($email,$service_code,$name,$phone) {
+                $sqlText = "UPDATE `tbl_legal_services`
+                            SET
+                            `auth_id` = 'NULL',
+                            `action_type` = 'update',
+                            `action_date` = now(),
+                            `name` = '".$name."',
+                            `phone_number` = '".$phone."'
+                            WHERE `email` = '".$email."' AND `service_code` = ".$service_code.""; 
+                $query =  $this->db->query($sqlText);
+            
+                return  $this->db->affectedRows();
 
             }
             public function search() {

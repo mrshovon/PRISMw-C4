@@ -22,12 +22,28 @@
 
                 return  $this->db->affectedRows();
             }
-            public function erase() {
-         
+            public function erase($email) {
+                $sqlText = "DELETE FROM `tbl_user_info` WHERE `email` = '".$email."'";
+                $query =  $this->db->query($sqlText);
+
+                return  $this->db->affectedRows();
 
             }
-            public function edit() {
-         
+            public function edit($email,$name,$password,$phone) {
+                $sqlText = "UPDATE `tbl_user_info`
+                            SET
+                            `maker_id` = '".$email."',
+                            `auth_id` = NULL,
+                            `action_type` = 'update',
+                            `action_date` = now(),
+                            `name` = '".$name."',
+                            `password` = '".$password."',
+                            `phone` = '".$phone."',
+                            `email` = '".$email."'
+                            WHERE `email` = '".$email."'";
+                $query =  $this->db->query($sqlText);
+
+                return  $this->db->affectedRows();
 
             }
             public function search() {

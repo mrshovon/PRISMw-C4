@@ -27,13 +27,28 @@
                 return  $this->db->affectedRows();
 
             }
-            public function erase() {
-         
+            public function erase($slider_id) {
+                $sqlText = " DELETE FROM `tbl_slider` WHERE `slider_id = ".$slider_id."`";
+                $query = $this ->db->query($sqlText);
+                return $this->db->affectedRows();
 
             }
-            public function edit() {
-         
-
+            public function edit($slider_id,$img_path,$priority) {
+                $sqlText ="UPDATE `prism`.`tbl_slider`
+                SET
+                `auth_id` = 'NULL',
+                `action_type` = 'update',
+                `action_date` = now(),
+                `slider_id` = ".$slider_id.",
+                `img_path` = '".$img_path."',
+                `title` = 'title',
+                `sub_title` = 'sub title',
+                `priority` = '".$priority."',
+                `company_id` = 1
+                WHERE `slider_id` = '".$slider_id."'";
+                $query = $this ->db->query($sqlText);
+                
+                return $this->db->affectedRows();
             }
             public function search() {
          

@@ -18,12 +18,27 @@
                
                 return  $this->db->affectedRows();
             }
-            public function erase() {
-         
-
+            public function erase($career_id) {
+                $sqlText ="DELETE FROM `tbl_careers` WHERE `career_id` = ".$career_id."";
+                $query =  $this->db->query($sqlText);
+               
+                return  $this->db->affectedRows();
             }
-            public function edit() {
-         
+            public function edit($career_id,$job_title,$job_description) {
+                $sqlText =" UPDATE `prism`.`tbl_careers`
+                            SET
+                            `maker_id` = '1',
+                            `auth_id` = 'NULL',
+                            `action_type` = 'Update',
+                            `action_date` = now(),
+                            `job_title` = '".$job_title."',
+                            `job_description` = '".$job_description."',
+                            `phone` = 'company_phone',
+                            `email` = 'company@email.com'
+                            WHERE `career_id` = ".$career_id."";
+                $query =  $this->db->query($sqlText);
+               
+                return  $this->db->affectedRows();
 
             }
             public function search() {
