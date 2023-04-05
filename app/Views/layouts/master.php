@@ -45,13 +45,13 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link active" href="<?=base_url('public/home')?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="<?=base_url('public/home/aboutus')?>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="<?=base_url('public/home/contactus')?>">Contact Us</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -59,16 +59,16 @@
               Services
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="home-loan.html">Home-Loan</a>
-              <a class="dropdown-item" href="renovation.html">Renovation</a>
-              <a class="dropdown-item" href="Legal-services.html">Documentation Service</a>
+              <a class="dropdown-item" href="<?=base_url('public/home/homeloan')?>">Home-Loan</a>
+              <a class="dropdown-item" href="<?=base_url('public/home/renovation')?>">Renovation</a>
+              <a class="dropdown-item" href="<?=base_url('public/home/legalservices')?>">Documentation Service</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Sign Up.html">Sign up</a>
+            <a class="nav-link" href="<?=base_url('public/home/signup')?>">Sign up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Log in.html">Log in</a>
+            <a class="nav-link" href="<?=base_url('public/login')?>">Log in</a>
           </li>
         </ul>
       </div>
@@ -113,7 +113,7 @@
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="careers.html">Careers</a>
+                    <i class="fa fa-angle-right"></i> <a href="<?=base_url('public/home/careers')?>">Careers</a>
                   </li>
                   <li class="item-list-a">
                     <i class="fa fa-angle-right"></i> <a href="#">Privacy Policy</a>

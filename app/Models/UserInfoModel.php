@@ -10,11 +10,11 @@
                 $this->db = db_connect();
             }
             
-            public function add($name,$password,$phone,$email) {
+            public function add($data) {
                 
                 $sqlText = "INSERT INTO `tbl_user_info`(`maker_id`,`auth_id`,`action_type`,`action_date`,`name`,`password`,`phone`,`email`,`user_type`,
                 `title`)
-                VALUES('".$email."',null,'insert',NOW(),'".$name."','".$password."','".$phone."','".$email."','customer','Mr.')";
+                VALUES('".$data['email']."',null,'insert',NOW(),'".$data['name']."','".$data['password']."','".$data['phone']."','".$data['email']."','customer','Mr.')";
 
                 $query =  $this->db->query($sqlText);
                 // $query1 = $this->db->getLastQuery();
@@ -46,6 +46,18 @@
                 return  $this->db->affectedRows();
 
             }
+
+            public function IsExist($email){
+                $sqlText = "SELECT * FROM tbl_user_info where `email` = '".$email."'";
+                $query =  $this->db->query($sqlText);
+                $row = $query->getRowArray(); 
+                // if (isset($row) && $row->emailcount >= 1) {
+                //     return true; 
+                // }
+                // return  false;
+                return $row;
+            }
+
             public function search() {
          
 

@@ -1,6 +1,6 @@
 <?= $this->extend('layouts/masterAL') ?>
     <?= $this->section('content') ?>
-    <main style="height: 100vh;">
+    <main style="height: 110vh;margin-top:10%">
       <div class="container contact-form">
         <!-- <div class="contact-image">
             <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>

@@ -86,10 +86,7 @@ class Home extends BaseController
         return view('prism/home');
     }
 
-    public function login()
-    {
-        return view('prism/login');
-    }
+   
 
     public function signup()
     {

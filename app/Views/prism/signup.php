@@ -1,43 +1,82 @@
 
     <!-- main -->
-    <?= $this->extend('layouts/master') ?>
-    <?= $this->section('content') ?>
-    <section style="height: 600px;"class="main">
-        <form method="post">
-           <h3>Sign Up</h3>
-           <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group frm">
-                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="<?=base_url('public/fonts/material-icon/css/material-design-iconic-font.min.css')?>">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="<?=base_url('public/css/style-ls.css')?>">
+    <link href="<?=base_url('public/lib/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <a href="<?=base_url('public/home')?>">Back</a>
+                        <h2 class="form-title">Sign up</h2>
+                        <?php if(session()->getFlashdata('msg')):?>
+                        <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+                        <?php endif;?>
+                        <?php if(isset($validation)):?>
+                        <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+                        <?php endif;?>
+                        <form action="<?=base_url('public/signup/create')?>" method="post" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone"><i class="zmdi zmdi-phone"></i></label>
+                                <input type="text" name="phone" id="email" placeholder="Your Phone"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="confpassword"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="confpassword" id="re_pass" placeholder="Repeat your password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <button type="submit" id="signup" class="form-submit" style="border: none;">Sign Up</button> 
+                            </div>
+                            
+                        </form>
                     </div>
-                    <div class="form-group frm">
-                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-                    </div>
-                    <div class="form-group frm">
-                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-                    </div>
-                    <div class="form-group frm">
-                        <input type="password" name="pass" class="form-control" placeholder="Your password*" value="" />
-                    </div>
-                    <div class="form-group frm">
-                        <input type="password" name="rpass" class="form-control" placeholder="Retype your password *" value="" />
-                    </div>
-                    <div class="form-group frm">
-                        <input  type="submit" name="btnSubmit" class="btn btn-success" value="Sign up" />
-                    </div>
-                    <div>
-                      <br><h5><a style="text-decoration:none;" href="login.html">Login, if already registered.</a></h5>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <img  class="hide" style="margin-left: 100px;" src="<?=base_url('public/images/sign-up.jpg')?>" alt="">
+                    <div class="signup-image">
+                        <figure><img src="<?=base_url('public/img/signup-image.jpg')?>" alt="sing up image"></figure>
+                        <a href="<?=base_url('public/home/login')?>" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
             </div>
-        </form>
-    </section>  
-    <?= $this->endSection() ?>
+        </section>
+     
+    </div>
+
+    <!-- JS -->
+    <script src="<?=base_url('public/js/main-ls.js')?>"></script>
+</body>
+</html>
  
       
     <!-- main -->

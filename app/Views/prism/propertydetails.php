@@ -1,7 +1,7 @@
 
     <?= $this->extend('layouts/masterAL') ?>
     <?= $this->section('content') ?>
-    <main style="height: fit-content; margin-left: 10px;">
+    <main style="height: fit-content; margin-left: 10px; margin-top:10%">
      <section class="pdtls1">
         <div style="margin-top: 10px;">
           <img src="<?=base_url('public/images/images.jpg')?>" alt=""> <br><br>
