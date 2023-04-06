@@ -42,6 +42,12 @@ $routes->group("admin", ["namespace" => "App\Controllers\Admin"], function ($rou
         $routes->get('add', 'careers::add', ['filter' => 'auth']);
         
     });
+
+    $routes->group('user-grp',  function ($routes) {
+        $routes->get('view', 'user::index', ['filter' => 'auth']);
+        $routes->get('add', 'user::add', ['filter' => 'auth']);
+        
+    });
 });
 /*
  * --------------------------------------------------------------------

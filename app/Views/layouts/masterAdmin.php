@@ -69,6 +69,7 @@
         .main-body.col a{
             margin-top: 2%;
             margin-bottom: 2%;
+           
         }
         .menu li{
             margin: 10px;
@@ -80,6 +81,10 @@
         }
         .main{
             height: fit-content;
+        }
+        a{
+            text-decoration: none;
+            color:black;
         }
     </style>
 </head>
@@ -96,9 +101,9 @@
             <li href="Looktype.html" class="btn btn-outline-light">Look Type</li>
             <li href="Lookup.html" class="btn btn-outline-light">Look up</li>
             <li href="Property.html" class="btn btn-outline-light">Property</li>
-            <li href="User.html" class="btn btn-outline-light">User</li>
+            <li class="btn btn-outline-light"> <a href="<?= base_url('public/admin/user')?>">User</a></li>
             <li href="companyprofile.html" class="btn btn-outline-light">Company Profile</li>
-            <li href="careers.html" class="btn btn-outline-light">Careers</li>
+            <li class="btn btn-outline-light"><a href="<?= base_url('public/admin/careers')?>">Careers</a></li>
             <li href="legalservice.html" class="btn btn-outline-light">Legal Service</li>
             <li href="renovation.html" class="btn btn-outline-light">Renovation</li>
             <li href="homeloan.html" class="btn btn-outline-light">Home Loan</li>

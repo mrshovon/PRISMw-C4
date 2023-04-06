@@ -83,7 +83,7 @@ class Home extends BaseController
 
 
         
-        return view('prism/home');
+        return view('admin/userAdd');
     }
 
    

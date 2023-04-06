@@ -2,7 +2,8 @@
     <?= $this->section('content') ?>
     
     <div class="main-body col">
-             <a href="<?= base_url('public/admin/careers/add')?>" class="btn btn-success">ADD</a>
+            <h1>Career</h1> <br>
+            <a href="<?= base_url('public/admin/careers/add')?>" class="btn btn-success">ADD</a>
             <table class="table">
                 <thead>
                   <tr>
