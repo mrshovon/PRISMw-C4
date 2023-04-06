@@ -30,8 +30,19 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
+// $routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 
+$routes->group("admin", ["namespace" => "App\Controllers\Admin"], function ($routes) {
+    // $routes->get('blocked', 'Dashboard::Blocked');
+    // $routes->get('/', 'Dashboard::index');
+    // $routes->get('dashboard', 'Dashboard::index');
+
+    $routes->group('career-grp',  function ($routes) {
+        $routes->get('view', 'careers::index', ['filter' => 'auth']);
+        $routes->get('add', 'careers::add', ['filter' => 'auth']);
+        
+    });
+});
 /*
  * --------------------------------------------------------------------
  * Additional Routing
