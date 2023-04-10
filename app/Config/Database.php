@@ -28,7 +28,7 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'root',
-        'password' => 'lbsl@123',
+        'password' => 'lbsl@1234',
         'database' => 'prism',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',

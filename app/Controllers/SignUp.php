@@ -35,7 +35,7 @@ class SignUp extends BaseController
             $result=$model->add($data);
             if($result<=0){
                 $session->setFlashdata('msg', 'User Creation failed. Please try again later!');
-                return view('prism/signup', $data);
+                return view('public/prism/signup', $data);
             }
             else{
                 $session->setFlashdata('msg', 'User Created Successfully. Thank you!');
@@ -44,7 +44,7 @@ class SignUp extends BaseController
         }
         else{
             $data['validation'] = $this->validator;
-            return view('prism/signup', $data); 
+            return view('public/prism/signup', $data); 
         }
     }
 }

@@ -61,7 +61,7 @@
         .main-body.col{
             padding-left: 0;
             height: 100vh;
-            width: 100%;
+            width: 80%;
             box-sizing: border-box;
             margin-left: 1%;
             /* background-color:  rgb(33, 22, 22); */
@@ -98,11 +98,11 @@
        <div class="menu col-2">
         <h6>Menu</h6>
         <ul>
-            <li href="Looktype.html" class="btn btn-outline-light">Look Type</li>
-            <li href="Lookup.html" class="btn btn-outline-light">Look up</li>
-            <li href="Property.html" class="btn btn-outline-light">Property</li>
+            <li class="btn btn-outline-light"><a href="<?= base_url('public/admin/looktype')?>">Look Type</a></li>
+            <li class="btn btn-outline-light"><a href="<?= base_url('public/admin/lookup')?>">Look Up</a></li>
+            <li class="btn btn-outline-light"><a href="<?= base_url('public/admin/property')?>">Property</a></li>
             <li class="btn btn-outline-light"> <a href="<?= base_url('public/admin/user')?>">User</a></li>
-            <li href="companyprofile.html" class="btn btn-outline-light">Company Profile</li>
+            <li class="btn btn-outline-light"><a href="<?= base_url('public/admin/companyprofile')?>">Company Profile</a></li>
             <li class="btn btn-outline-light"><a href="<?= base_url('public/admin/careers')?>">Careers</a></li>
             <li href="legalservice.html" class="btn btn-outline-light">Legal Service</li>
             <li href="renovation.html" class="btn btn-outline-light">Renovation</li>

@@ -29,18 +29,16 @@
                 return  $this->db->affectedRows();
 
             }
-            public function edit($email,$name,$password,$phone) {
+            public function edit($data) {
                 $sqlText = "UPDATE `tbl_user_info`
                             SET
-                            `maker_id` = '".$email."',
-                            `auth_id` = NULL,
+                            `auth_id` = '".$data['email']."',
                             `action_type` = 'update',
                             `action_date` = now(),
-                            `name` = '".$name."',
-                            `password` = '".$password."',
-                            `phone` = '".$phone."',
-                            `email` = '".$email."'
-                            WHERE `email` = '".$email."'";
+                            `name` = '".$data['name']."',
+                            `password` = '".$data['password']."',
+                            `phone` = '".$data['phone']."'                            
+                            WHERE `email` = '".$data['email']."'";
                 $query =  $this->db->query($sqlText);
 
                 return  $this->db->affectedRows();
@@ -58,13 +56,15 @@
                 return $row;
             }
 
-            public function search() {
-         
-
+            public function get() {
+                $sqlText = "SELECT * FROM tbl_user_info" ;
+                $query =  $this->db->query($sqlText);
+                return $query->getResult();
             }
-            public function searchByCriteria() {
-         
-
+            public function getByCriteria($email) {
+                $sqlText = "SELECT * FROM tbl_user_info WHERE `email` = '".$email."'";
+                $query =  $this->db->query($sqlText);
+                return $query->getRow();
             }
 
         }

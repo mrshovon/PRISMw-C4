@@ -47,8 +47,10 @@
                 return $this->db->affectedRows();
 
             }
-            public function search() {
-         
+            public function get() {
+                $sqlText = "SELECT * FROM tbl_company_profile" ;
+                $query =  $this->db->query($sqlText);
+                return $query->getResult();
 
             }
             public function searchByCriteria() {

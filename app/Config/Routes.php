@@ -48,6 +48,30 @@ $routes->group("admin", ["namespace" => "App\Controllers\Admin"], function ($rou
         $routes->get('add', 'user::add', ['filter' => 'auth']);
         
     });
+
+    $routes->group('lookup-grp',  function ($routes) {
+        $routes->get('view', 'lookup::index', ['filter' => 'auth']);
+        $routes->get('add', 'lookup::add', ['filter' => 'auth']);
+        
+    });
+
+    $routes->group('looktype-grp',  function ($routes) {
+        $routes->get('view', 'looktype::index', ['filter' => 'auth']);
+        $routes->get('add', 'looktype::add', ['filter' => 'auth']);
+        
+    });
+
+    $routes->group('property-grp',  function ($routes) {
+        $routes->get('view', 'property::index', ['filter' => 'auth']);
+        $routes->get('add', 'property::add', ['filter' => 'auth']);
+        
+    });
+
+    $routes->group('companyprofile-grp',  function ($routes) {
+        $routes->get('view', 'companyprofile::index', ['filter' => 'auth']);
+        $routes->get('add', 'companyprofile::add', ['filter' => 'auth']);
+        
+    });
 });
 /*
  * --------------------------------------------------------------------

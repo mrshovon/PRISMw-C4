@@ -49,8 +49,10 @@
                 return  $this->db->affectedRows();
             }
            
-            public function search() {
-         
+            public function get() {
+                $sqlText = "SELECT * FROM tbl_look_up" ;
+                $query =  $this->db->query($sqlText);
+                return $query->getResult();
 
             }
             public function searchByCriteria() {
