@@ -46,7 +46,6 @@ class Property extends BaseController
             'purposecode'  => 'required',
             'propertytypecode'  => 'required',
             'descriptivestatuscode'  => 'required',
-            'amenitiescode'  => 'required',
             'propertystatuscode'  => 'required'
         ];
 
