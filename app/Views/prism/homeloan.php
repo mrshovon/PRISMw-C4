@@ -2,7 +2,7 @@
     <!-- main -->
     <?= $this->extend('layouts/master') ?>
     <?= $this->section('content') ?>
-    <section style="height: 1100px; display: flex;" class="main">
+    <section style="height: 1100px; display: flex; margin-top:5%;" class="main">
           <div class="">
             <div>
                 <img style="margin-left: 100px; margin-top: auto;" src="<?=base_url('public/images/hlimg.png')?>" alt="">

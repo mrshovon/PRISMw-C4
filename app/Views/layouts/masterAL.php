@@ -86,10 +86,10 @@
             <a class="nav-link active" href="user-dash.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about copy.html">About</a>
+            <a class="nav-link" href="<?=base_url('public/homeAL/aboutus')?>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact copy.html">Contact Us</a>
+            <a class="nav-link" href="<?=base_url('public/homeAL/contactus')?>">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?=base_url('public/home/addproperty')?>">ADD Property</a>
@@ -100,9 +100,9 @@
               Service
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="home-loan copy.html">home-loan</a>
-              <a class="dropdown-item" href="renovation copy.html">Renovation</a>
-              <a class="dropdown-item" href="Legal-services copy.html">Documentation</a>
+              <a class="dropdown-item" href="<?=base_url('public/homeAL/homeloan')?>">home-loan</a>
+              <a class="dropdown-item" href="<?=base_url('public/homeAL/renovation')?>">Renovation</a>
+              <a class="dropdown-item" href="<?=base_url('public/homeAL/legalservices')?>">Documentation</a>
             </div>
           </li>
           <li class="nav-item">
@@ -154,10 +154,13 @@
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="<?=base_url('public/home/careers')?>">Careers</a>
+                    <i class="fa fa-angle-right"></i> <a href="<?=base_url('public/homeAL/careers')?>">Careers</a>
                   </li>
                   <li class="item-list-a">
                     <i class="fa fa-angle-right"></i> <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Terms and Conditions</a>
                   </li>
                 </ul>
               </div>

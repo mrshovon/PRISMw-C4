@@ -2,7 +2,7 @@
     <!-- main -->
     <?= $this->extend('layouts/master') ?>
     <?= $this->section('content') ?>
-    <section style="height: 700px; display: flex;" class="main">
+    <section style="height: 700px; display: flex; margin-top:5%;" class="main">
       <div class="">
         <div>
             <img style="margin-left: 100px; margin-top: 35px; width: 600px;" src="<?=base_url('public/images/hrs.jpg')?>" alt="">

@@ -25,6 +25,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="<?=base_url('public/css/style.css')?>" rel="stylesheet">
+  <link href="<?=base_url('public/css/style-sr.css')?>" rel="stylesheet">
 
 
 </head>
@@ -117,6 +118,9 @@
                   </li>
                   <li class="item-list-a">
                     <i class="fa fa-angle-right"></i> <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Terms and Conditions</a>
                   </li>
                 </ul>
               </div>

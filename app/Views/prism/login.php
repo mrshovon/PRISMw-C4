@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="signin-form">
-                        <a href="<?=base_url('public/home')?>">Back</a>
+                        <a href="<?=base_url('public/home')?>" class="btn btn-info">Back</a><br><br>
                         <h2 class="form-title">Log In</h2>
                         <?php if(session()->getFlashdata('msg')):?>
                         <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>

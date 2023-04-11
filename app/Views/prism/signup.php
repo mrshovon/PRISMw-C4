@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <a href="<?=base_url('public/home')?>">Back</a>
+                        <a href="<?=base_url('public/home')?>" class="btn btn-info">Back</a> <br><br>
                         <h2 class="form-title">Sign up</h2>
                         <?php if(session()->getFlashdata('msg')):?>
                         <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
@@ -65,7 +65,7 @@
                     </div>
                     <div class="signup-image">
                         <figure><img src="<?=base_url('public/img/signup-image.jpg')?>" alt="sing up image"></figure>
-                        <a href="<?=base_url('public/home/login')?>" class="signup-image-link">I am already member</a>
+                        <a href="<?=base_url('public/login')?>" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
             </div>

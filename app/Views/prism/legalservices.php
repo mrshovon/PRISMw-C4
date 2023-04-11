@@ -1,7 +1,7 @@
 
 <?= $this->extend('layouts/master') ?>
 <?= $this->section('content') ?>
-<section style="height: 600px; display: flex;" class="main">
+<section style="height: 600px; display: flex; margin-top:5%;" class="main">
       <div class="">
         <div>
             <img style="margin-left: 70px; margin-top: 35px; width: 400px;" src="<?=base_url('public/images/dls.png')?>" alt="">
