@@ -2,33 +2,31 @@
     <?= $this->section('content') ?>
     
     <div class="main-body col">
-             
-             <form>
+            <form action="<?=base_url('public/admin/careers/create')?>" method="post">
+            <input type="hidden" name="actiontype" value="<?= isset($item) ? 'update' : 'insert' ?>"/>
             <fieldset>
-              <legend>Add Job</legend>
-        
-        <p>
-                <label>Job Title: <input name="jobtitle" /></label>
-              </p>
-        <p>
-                <label>Phone: <input type="text" name="phone" /></label>
-              </p> 
-        
-                <label>Email:<input type="email" name="email" /></label>
-              </p>
-          
-        <p><label>
-                  Job description :
-                  <br />
-                  <textarea name="jobdescription" cols="30" rows="3"></textarea>
-                </label>
-              </p>
-        <p>
-                <button class="btn btn-success" type="submit">Add</button>
-              </p>
-         
-         
+              <legend><?= isset($item) ? 'Edit' : 'Add' ?> Job</legend>
+              <div class="form-group">
+                  <label for="job_title"><i class="zmdi zmdi-account material-icons-name"></i>Job Title: </label>
+                  <input type="text" name="job_title" id="job_title" placeholder="Job Title" class="form-control" value="<?= isset($item) ? $item->name : '' ?>" />
+              </div>
+              <div class="form-group">
+                  <label for="phone"><i class="zmdi zmdi-account material-icons-name"></i>Phone: </label>
+                  <input type="text" name="phone" id="phone" placeholder="Phone" class="form-control" value="<?= isset($item) ? $item->phone : '' ?>" />
+              </div>
+              <div class="form-group">
+                  <label for="email"><i class="zmdi zmdi-account material-icons-name"></i>Email: </label>
+                  <input type="text" name="email" id="email" placeholder="email" class="form-control" value="<?= isset($item) ? $item->email : '' ?>" />
+              </div>
+              <div class="form-group">
+                  <label for="job_description"><i class="zmdi zmdi-account material-icons-name"></i>Job Description: </label>
+                  <textarea name="job_description" cols="30" rows="3" class="form-control" value="" ></textarea>
+                  <!-- <input type="text" name="password" id="password" placeholder="password" class="form-control" value="" /> -->
+              </div>
+              <div class="form-group form-button">
+                  <button type="submit" id="signup" class="btn btn-success" style="margin-top:2%;">Save</button> 
+              </div>
              </fieldset>
-          </form>
+          </form>      
        </div>
-    <?= $this->endSection() ?>
+    <?= $this->endSection() ?><textarea name="jobdescription" cols="30" rows="3"></textarea>

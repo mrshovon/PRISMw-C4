@@ -10,10 +10,10 @@
                 $this->db = db_connect();
             }
             
-            public function add($job_title,$job_description,$phone,$email) {
+            public function add($data) {
  
                 $sqlText = "INSERT INTO `tbl_careers`(`maker_id`,`auth_id`,`action_type`,`action_date`,`job_title`,`job_description`,`phone`,`email`)
-                VALUES('1',null,'insert',now(),'".$job_title."','".$job_description."','".$phone."','".$email."')"; 
+                VALUES('1',null,'insert',now(),'".$this->db->escapeString($data['job_title'])."','".$this->db->escapeString($data['job_description'])."','".$data['phone']."','".$data['email']."')"; 
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();
@@ -24,18 +24,17 @@
                
                 return  $this->db->affectedRows();
             }
-            public function edit($career_id,$job_title,$job_description) {
-                $sqlText =" UPDATE `prism`.`tbl_careers`
+            public function edit($data) {
+                $sqlText =" UPDATE `tbl_careers`
                             SET
-                            `maker_id` = '1',
-                            `auth_id` = 'NULL',
+                            `auth_id` = '1',
                             `action_type` = 'Update',
                             `action_date` = now(),
-                            `job_title` = '".$job_title."',
-                            `job_description` = '".$job_description."',
-                            `phone` = 'company_phone',
-                            `email` = 'company@email.com'
-                            WHERE `career_id` = ".$career_id."";
+                            `job_title` = '".$data['job_title']."',
+                            `job_description` = '".$data['job_description']."',
+                            `phone` = '".$data['company_phone']."',
+                            `email` = '".$data['company@email.com']."'
+                            WHERE `career_id` = ".$data['career_id']."";
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();
@@ -48,7 +47,9 @@
 
             }
             public function searchByCriteria() {
-         
+                $sqlText = "SELECT * FROM tbl_careers WHERE `career_id` = '".$email."'";
+                $query =  $this->db->query($sqlText);
+                return $query->getRow();
 
             }
 

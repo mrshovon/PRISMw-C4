@@ -31,8 +31,8 @@
                     <td><?php echo $row->action_date;?></td>
 
                     <td>
-                        <a href="" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                        <a href="" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
+                        <a href="<?= base_url('public/admin/careers/edit/'.$row->career_id)?>" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                        <a href="<?= base_url('public/admin/careers/delete/'.$row->email)?>" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
                     </td>
                   </tr>
                   <?php } ?>

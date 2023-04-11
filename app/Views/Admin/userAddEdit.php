@@ -2,7 +2,7 @@
     <?= $this->section('content') ?>
     
     <div class="main-body col">
-      <?php if(session()->getFlashdata('msg')):?>
+        <?php if(session()->getFlashdata('msg')):?>
         <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
         <?php endif;?>
         <?php if(isset($validation)):?>
@@ -12,8 +12,6 @@
             <input type="hidden" name="actiontype" value="<?= isset($item) ? 'update' : 'insert' ?>"/>
             <fieldset>
               <legend><?= isset($item) ? 'Edit' : 'Add' ?> User</legend>
-              
-              
               <div class="form-group">
                   <label for="name"><i class="zmdi zmdi-account material-icons-name"></i>Name: </label>
                   <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" value="<?= isset($item) ? $item->name : '' ?>" />

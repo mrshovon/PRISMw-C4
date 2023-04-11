@@ -55,15 +55,16 @@
         }
         .menu.col-2{
             padding-left: 0;
-            height: fit-content;
+            height: 100;
             background-color:  rgb(214, 214, 214);
         }
         .main-body.col{
             padding-left: 0;
-            height: 100vh;
+            height: fit-content;
             width: 80%;
             box-sizing: border-box;
             margin-left: 1%;
+            overflow:auto;
             /* background-color:  rgb(33, 22, 22); */
         }
         .main-body.col a{
