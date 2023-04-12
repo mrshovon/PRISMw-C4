@@ -32,8 +32,8 @@
                             `action_date` = now(),
                             `job_title` = '".$data['job_title']."',
                             `job_description` = '".$data['job_description']."',
-                            `phone` = '".$data['company_phone']."',
-                            `email` = '".$data['company@email.com']."'
+                            `phone` = '".$data['phone']."',
+                            `email` = '".$data['email']."'
                             WHERE `career_id` = ".$data['career_id']."";
                 $query =  $this->db->query($sqlText);
                
@@ -46,8 +46,8 @@
                 return $query->getResult();
 
             }
-            public function searchByCriteria() {
-                $sqlText = "SELECT * FROM tbl_careers WHERE `career_id` = '".$email."'";
+            public function getByCriteria($career_id) {
+                $sqlText = "SELECT * FROM tbl_careers WHERE `career_id` = '".$career_id."'";
                 $query =  $this->db->query($sqlText);
                 return $query->getRow();
 

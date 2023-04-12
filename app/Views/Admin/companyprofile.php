@@ -33,7 +33,7 @@
                     <td><?php echo $row->maker_id?></td>
                     <td><?php echo $row->action_date?></td>
                     <td>
-                        <a href="" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                        <a href="<?= base_url('public/admin/companyprofile/edit/'.$row->company_id)?>" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
                         <a href="" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
                     </td>
                   </tr>

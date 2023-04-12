@@ -19,6 +19,10 @@ class Home extends BaseController
 {
     public function index()
     {
+        
+        // echo $segments = $this->request->uri->getSegments(1);
+        // print_r($segments); 
+        // echo $num_segments = $this->uri->total_segments();
         // $model = new LookTypeModel();
         // echo 'affected rows: '.$model->add(1,'PropertyType');
         // echo 'affected rows: '.$model->edit(1,'PropertyType');

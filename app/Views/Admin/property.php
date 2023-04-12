@@ -56,7 +56,7 @@
                     <td><?php echo $row->amenities_name?></td>
                     <td><?php echo $row->property_status_name?></td>
                     <td>
-                        <a href="" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                        <a href="<?= base_url('public/admin/property/edit/'.$row->property_id)?>" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
                         <a href="" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
                     </td>
                   </tr>

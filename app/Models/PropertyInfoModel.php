@@ -83,6 +83,10 @@
                 $query =  $this->db->query($sqlText);
                 return $query->getResult();
             }
-
+            public function getByCriteriaa($property_id) {
+                $sqlText = "SELECT * FROM tbl_property_info WHERE `property_id` = ".$property_id.""; 
+                $query =  $this->db->query($sqlText);
+                return $query->getRow();
+            }
         }
  ?>

@@ -29,16 +29,15 @@
             return  $this->db->affectedRows();
         }
 
-        public function edit($look_type_id,$look_type_name) {
+        public function edit($data) {
             $sqlText = "UPDATE `tbl_look_type`
                         SET
                        
                         `auth_id` = '1',
                         `action_type` = 'update',
                         `action_date` = now(),
-                        `look_type_id` = ".$look_type_id.",
-                        `look_type_name` = '".$look_type_name."'
-                        WHERE `look_type_id` = ".$look_type_id."";
+                        `look_type_name` = '".$data['look_type_name']."'
+                        WHERE `look_type_id` = ".$data['look_type_id']."";
             $query =  $this->db->query($sqlText);
 
             return  $this->db->affectedRows();
@@ -48,11 +47,12 @@
             $sqlText = "SELECT * FROM tbl_look_type";
             $query =  $this->db->query($sqlText);
             return $query->getResult();
-
         }
-        public function searchByCriteria() {
-    
 
+        public function getByCriteria($look_type_id) {
+            $sqlText = "SELECT * FROM tbl_look_type WHERE `look_type_id` = '".$look_type_id."'";
+            $query =  $this->db->query($sqlText);
+            return $query->getRow();
         }
 
     }

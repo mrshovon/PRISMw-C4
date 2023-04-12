@@ -30,19 +30,17 @@
                 return  $this->db->affectedRows();
 
             }
-            public function edit($look_up_id,$look_up_name,$short_name) {
+            public function edit($data) {
               $sqlText = " UPDATE `tbl_look_up`
                             SET
-                            `maker_id` = '1730020@iub.edu.bd',
-                            `auth_id` = 'NULL',
+                            `auth_id` = '1730020@iub.edu.bd',
                             `action_type` = 'update',
                             `action_date` = now(),
-                            `look_up_id` = ".$look_up_id.",
-                            `look_up_name` = '".$look_up_name."',
-                            `short_name` = '".$short_name."',
-                            `sort_order` = 2,
-                            `look_type_id` = 3
-                            WHERE `look_up_id` = ".$look_up_id."";
+                            `look_up_name` = '".$data['look_up_name']."',
+                            `short_name` = '".$data['short_name']."',
+                            `sort_order` = '".$data['sort_order']."',
+                            `look_type_id` = '".$data['look_type_id']."'
+                            WHERE `look_up_id` = ".$data['look_up_id']."";
                 
                 $query =  $this->db->query($sqlText);
 
@@ -55,9 +53,10 @@
                 return $query->getResult();
 
             }
-            public function searchByCriteria() {
-         
-
+            public function getByCriteria($look_up_id) {
+                $sqlText = "SELECT * FROM tbl_look_up WHERE `look_up_id` = '".$look_up_id."'";
+                $query =  $this->db->query($sqlText);
+                return $query->getRow();
             }
 
         }

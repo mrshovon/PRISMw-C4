@@ -2,41 +2,48 @@
     <?= $this->section('content') ?>
     
     <div class="main-body col">
-    <form action="<?=base_url('public/admin/property/create')?>" method="post">
+    <?php if(session()->getFlashdata('msg')):?>
+        <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+        <?php endif;?>
+        <?php if(isset($validation)):?>
+        <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+      <?php endif;?>
+    <form action="<?=base_url('public/admin/property/create')?>" method="post" enctype="multipart/form-data">
             <input type="hidden" name="actiontype" value="<?= isset($item) ? 'update' : 'insert' ?>"/>
+            <!-- <input type="hidden" name="propertyid" value="<?= isset($item) ? $item->property_id : '' ?>"/> -->
             <fieldset>
               <legend><?= isset($item) ? 'Edit' : 'Add' ?> Property</legend>
               <div class="form-group">
                   <label for="name"><i class="zmdi zmdi-account material-icons-name"></i>Name: </label>
-                  <input type="text" name="name" id="name" placeholder="name" class="form-control" value="<?= isset($item) ? $item->name : '' ?>" />
+                  <input type="text" name="name" id="name" placeholder="name" class="form-control" value="<?= isset($item) ? $item->property_name : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="description"><i class="zmdi zmdi-account material-icons-name"></i>Description: </label>
-                  <textarea name="description" cols="30" rows="3" class="form-control" value="" ></textarea>
-                  <!-- <input type="text" name="shortname" id="shortname" placeholder="short name" class="form-control" value="<?= isset($item) ? $item->phone : '' ?>" /> -->
+                  <textarea name="description" cols="30" rows="3" class="form-control" value="" ><?= isset($item) ? $item->description : '' ?></textarea>
+                  <!-- <input type="text" name="shortname" id="shortname" placeholder="short name" class="form-control" value="" /> -->
               </div>
               <div class="form-group">
                   <label for="city"><i class="zmdi zmdi-account material-icons-name"></i>City: </label>
-                  <input type="text" name="city" id="city" placeholder="city" class="form-control" value="" />
+                  <input type="text" name="city" id="city" placeholder="city" class="form-control" value="<?= isset($item) ? $item->city : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="area"><i class="zmdi zmdi-account material-icons-name"></i>Area: </label>
-                  <input type="text" name="area" id="area" placeholder="area" class="form-control" value="" />
+                  <input type="text" name="area" id="area" placeholder="area" class="form-control" value="<?= isset($item) ? $item->property_area : '' ?>" />
               </div>              <div class="form-group">
                   <label for="propertysize"><i class="zmdi zmdi-account material-icons-name"></i>Property Size: </label>
-                  <input type="text" name="propertysize" id="propertysize" placeholder="propertysize" class="form-control" value="<?= isset($item) ? $item->name : '' ?>" />
+                  <input type="text" name="propertysize" id="propertysize" placeholder="propertysize" class="form-control" value="<?= isset($item) ? $item->property_size : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="beds"><i class="zmdi zmdi-account material-icons-name"></i>Beds: </label>
-                  <input type="text" name="beds" id="beds" placeholder="beds" class="form-control" value="<?= isset($item) ? $item->phone : '' ?>" />
+                  <input type="text" name="beds" id="beds" placeholder="beds" class="form-control" value="<?= isset($item) ? $item->beds : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="baths"><i class="zmdi zmdi-account material-icons-name"></i>Baths: </label>
-                  <input type="text" name="baths" id="baths" placeholder="baths" class="form-control" value="" />
+                  <input type="text" name="baths" id="baths" placeholder="baths" class="form-control" value="<?= isset($item) ? $item->baths : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="price"><i class="zmdi zmdi-account material-icons-name"></i>Price: </label>
-                  <input type="text" name="price" id="price" placeholder="price" class="form-control" value="" />
+                  <input type="text" name="price" id="price" placeholder="price" class="form-control" value="<?= isset($item) ? $item->price : '' ?>" />
               </div>              <div class="form-group">
                   <label for="occupied"><i class="zmdi zmdi-account material-icons-name"></i>Occupied: </label>
                   <SELECT name="occupied" id="occupied" class="form-control">
@@ -47,23 +54,23 @@
               </div>
               <div class="form-group">
                   <label for="floorplan"><i class="zmdi zmdi-account material-icons-name"></i>Floor Plan: </label>
-                  <input type="file" name="floorplan" id="floorplan" placeholder="floor plan" class="form-control" value="<?= isset($item) ? $item->phone : '' ?>" />
+                  <input type="file" name="floorplan" id="floorplan" placeholder="floor plan" class="form-control" value="" />
               </div>
               <div class="form-group">
                   <label for="phone"><i class="zmdi zmdi-account material-icons-name"></i>Phone: </label>
-                  <input type="text" name="phone" id="phone" placeholder="phone" class="form-control" value="" />
+                  <input type="text" name="phone" id="phone" placeholder="phone" class="form-control" value="<?= isset($item) ? $item->phone_number : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="address"><i class="zmdi zmdi-account material-icons-name"></i>Address: </label>
-                  <input type="text" name="address" id="address" placeholder="address" class="form-control" value="" />
+                  <input type="text" name="address" id="address" placeholder="address" class="form-control" value="<?= isset($item) ? $item->property_address : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="level"><i class="zmdi zmdi-account material-icons-name"></i>Level: </label>
-                  <input type="text" name="level" id="level" placeholder="Level" class="form-control" value="<?= isset($item) ? $item->phone : '' ?>" />
+                  <input type="text" name="level" id="level" placeholder="Level" class="form-control" value="<?= isset($item) ? $item->level : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="email"><i class="zmdi zmdi-account material-icons-name"></i>Email: </label>
-                  <input type="text" name="email" id="email" placeholder="email" class="form-control" value="" />
+                  <input type="text" name="email" id="email" placeholder="email" class="form-control" value="<?= isset($item) ? $item->email : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="purposecode"><i class="zmdi zmdi-account material-icons-name"></i>Purpose Code: </label>

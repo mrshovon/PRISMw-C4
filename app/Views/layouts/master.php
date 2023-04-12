@@ -31,7 +31,7 @@
 </head>
 
 <body>
-
+  <?php echo $arr = get_cookie('active_menu');?>
   <!--/ Nav Star /-->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
@@ -46,16 +46,16 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="<?=base_url('public/home')?>">Home</a>
+            <a class="nav-link <?= get_cookie('active_menu') == 'home' ? 'active' : '' ?>" href="<?=base_url('public/home')?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/home/aboutus')?>">About</a>
+            <a class="nav-link <?= get_cookie('active_menu') == 'aboutus' ? 'active' : '' ?>" href="<?=base_url('public/home/aboutus')?>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/home/contactus')?>">Contact Us</a>
+            <a class="nav-link <?= get_cookie('active_menu') == 'contactus' ? 'active' : '' ?>" href="<?=base_url('public/home/contactus')?>">Contact Us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link <?= get_cookie('active_menu') == 'homeloan' || get_cookie('active_menu') == 'renovation' || get_cookie('active_menu') == 'legalservices' ? 'active' : '' ?> dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Services
             </a>
@@ -66,10 +66,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/home/signup')?>">Sign up</a>
+            <a class="nav-link a5" href="<?=base_url('public/home/signup')?>">Sign up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/login')?>">Log in</a>
+            <a class="nav-link a6" href="<?=base_url('public/login')?>">Log in</a>
           </li>
         </ul>
       </div>

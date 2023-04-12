@@ -74,6 +74,7 @@ class preload
     public function __construct()
     {
         $this->loadAutoloader();
+ 
     }
 
     private function loadAutoloader()

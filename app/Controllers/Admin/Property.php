@@ -24,8 +24,17 @@ class Property extends BaseController
         return view('admin/propertyAdd', $data);
    }
 
+   public function edit($property_id)
+   { 
+       $model = new PropertyInfoModel();
+       $data['item'] = $model->getByCriteriaa($property_id);
+    //    echo '<pre>'; print_r($data); echo '</pre>'; exit; 
+       return view('admin/propertyAdd',$data);
+   }
+
    public function create()
     {
+
         $session = session();
         $model = new PropertyInfoModel();
         $data = [];
@@ -46,12 +55,18 @@ class Property extends BaseController
             'purposecode'  => 'required',
             'propertytypecode'  => 'required',
             'descriptivestatuscode'  => 'required',
-            'propertystatuscode'  => 'required'
+            'propertystatuscode'  => 'required',
+            'floorplan' => [
+                'uploaded[floorplan]',
+                'mime_in[floorplan,image/jpg,image/jpeg,image/png]',
+                'max_size[floorplan,1024]',
+            ]
         ];
-
         if($this->validate($rules)) {
+            $img = $this->request->getFile('floorplan');
+            $newName = $this->request->getVar('name').'_'.date('Ymd_His').'.'.$img->guessExtension();
             $data = [
-                'name'     => $this->request->getVar('lookupname'),
+                'name'     => $this->request->getVar('name'),
                 'description'    => $this->request->getVar('description'),
                 'city'    => $this->request->getVar('city'),
                 'area' => $this->request->getVar('area'),
@@ -60,7 +75,7 @@ class Property extends BaseController
                 'baths' => $this->request->getVar('baths'),
                 'price' => $this->request->getVar('price'),
                 'is_occupied' => $this->request->getVar('occupied'),
-                'floor_plan' => $this->request->getVar('floorplan'),
+                'floor_plan' => WRITEPATH.'uploads/'.$newName,
                 'phone' => $this->request->getVar('phone'),
                 'address' => $this->request->getVar('address'),
                 'level' => $this->request->getVar('level'),
@@ -69,13 +84,35 @@ class Property extends BaseController
                 'property_type_code' => $this->request->getVar('propertytypecode'),
                 'descriptive_status_code' => $this->request->getVar('descriptivestatuscode'),
                 'amenities_code' => $this->request->getVar('amenitiescode'),
-                'property_status_code' => $this->request->getVar('propertystatuscode')
+                'property_status_code' => $this->request->getVar('propertystatuscode'),
+                'property_id' => $this->request->getVar('propertyid')
             ];
-            $result = $model->add($data);
-            return redirect()->to('public/admin/property');
-        }
-        else {
-            return view('admin/propertyAdd'); 
+            $actiontype = $this->request->getVar('actiontype');
+            if($actiontype == 'update' ){
+                $result = $model->edit($data);
             }
+            else {
+                $result = $model->add($data);
+                $img->move(WRITEPATH . 'uploads',$newName);
+            }
+            if($result <= 0) {
+                $session->setFlashdata('msg', 'look up name saved failed. Please try again later!');
+                return view('public/admin/propertyAdd', $data);
+            }
+            else {
+                $session->setFlashdata('msg', 'Look type name save Successful. Thank you!');
+                return redirect()->to('public/admin/property');
+            }  
+        } 
+        else {
+            $data['propertytypelist'] = $model->getByCriteria(1);
+            $data['amenitylist'] = $model->getByCriteria(3);
+            $data['renovationlist'] = $model->getByCriteria(4);
+            $data['propertystslist'] = $model->getByCriteria(7);
+            $data['descriptivelist'] = $model->getByCriteria(8);
+            $data['purposelist'] = $model->getByCriteria(9);
+            $data['validation'] = $this->validator;
+            echo view('admin/propertyAdd', $data); 
         }
+    }
 }

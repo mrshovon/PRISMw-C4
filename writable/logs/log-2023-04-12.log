@@ -1,0 +1,1201 @@
+INFO - 2023-04-12 03:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 03:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 03:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 03:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 03:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 03:28:28 --> Undefined variable $data
+in APPPATH\Controllers\Admin\LookType.php on line 25.
+ 1 APPPATH\Controllers\Admin\LookType.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Admin\\LookType.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 03:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 03:47:15 --> Undefined property: App\Controllers\Home::$uri
+in APPPATH\Controllers\BaseController.php on line 57.
+ 1 APPPATH\Controllers\BaseController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$uri', 'APPPATH\\Controllers\\BaseController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 03:50:32 --> Call to undefined function App\Controllers\get_cookie()
+in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 03:50:33 --> Call to undefined function App\Controllers\get_cookie()
+in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 03:50:36 --> Call to undefined function App\Controllers\get_cookie()
+in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 03:50:50 --> Undefined property: App\Controllers\Home::$uri
+in APPPATH\Controllers\Home.php on line 22.
+ 1 APPPATH\Controllers\Home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$uri', 'APPPATH\\Controllers\\Home.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 03:53:19 --> Array to string conversion
+in APPPATH\Controllers\Home.php on line 22.
+ 1 APPPATH\Controllers\Home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Home.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 03:54:40 --> Array to string conversion
+in APPPATH\Controllers\Home.php on line 22.
+ 1 APPPATH\Controllers\Home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Home.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 04:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 04:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 04:10:31 --> Call to undefined function App\Controllers\split()
+in APPPATH\Controllers\BaseController.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:12:22 --> Call to undefined function App\Controllers\length()
+in APPPATH\Controllers\BaseController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:12:33 --> Call to undefined function App\Controllers\len()
+in APPPATH\Controllers\BaseController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 04:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 04:23:43 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+in APPPATH\Controllers\BaseController.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:24:52 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+in APPPATH\Controllers\BaseController.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:25:11 --> Undefined property: CodeIgniter\View\View::$response
+in APPPATH\Views\layouts\master.php on line 34.
+ 1 APPPATH\Views\layouts\master.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$response', 'APPPATH\\Views\\layouts\\master.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prism/home', [], true)
+ 6 APPPATH\Controllers\Home.php(90): view('prism/home')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:27:19 --> Undefined property: CodeIgniter\View\View::$response
+in APPPATH\Views\layouts\master.php on line 34.
+ 1 APPPATH\Views\layouts\master.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$response', 'APPPATH\\Views\\layouts\\master.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prism/home', [], true)
+ 6 APPPATH\Controllers\Home.php(90): view('prism/home')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:27:49 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\layouts\master.php on line 34.
+ 1 APPPATH\Views\layouts\master.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'APPPATH\\Views\\layouts\\master.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prism/home', [], true)
+ 6 APPPATH\Controllers\Home.php(90): view('prism/home')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:33:19 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:40:40 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:43:30 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:43:54 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:44:41 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:49:01 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:49:04 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:50:23 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:53:14 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 04:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 04:53:35 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:53:39 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:53:44 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:56:24 --> Undefined variable $data
+in APPPATH\Controllers\Admin\LookType.php on line 25.
+ 1 APPPATH\Controllers\Admin\LookType.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Admin\\LookType.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 04:56:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:01:56 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:02:08 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\LookType.php(23): CodeIgniter\Model->__call('getByCriteria', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:08:08 --> Undefined variable $DATA
+in APPPATH\Controllers\Admin\LookType.php on line 25.
+ 1 APPPATH\Controllers\Admin\LookType.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DATA', 'APPPATH\\Controllers\\Admin\\LookType.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 05:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 05:08:57 --> Too few arguments to function App\Models\LookTypeModel::edit(), 1 passed in C:\xampp\htdocs\prism\app\Controllers\Admin\LookType.php on line 44 and exactly 2 expected
+in APPPATH\Models\LookTypeModel.php on line 32.
+ 1 APPPATH\Controllers\Admin\LookType.php(44): App\Models\LookTypeModel->edit([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 05:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 05:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 05:14:27 --> Undefined variable $look_type_id
+in APPPATH\Controllers\Admin\LookType.php on line 44.
+ 1 APPPATH\Controllers\Admin\LookType.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_type_id', 'APPPATH\\Controllers\\Admin\\LookType.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 05:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 05:16:50 --> Undefined variable $look_type_id
+in APPPATH\Controllers\Admin\LookType.php on line 44.
+ 1 APPPATH\Controllers\Admin\LookType.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_type_id', 'APPPATH\\Controllers\\Admin\\LookType.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 05:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 05:20:34 --> Undefined variable $look_type_id
+in APPPATH\Controllers\Admin\LookType.php on line 44.
+ 1 APPPATH\Controllers\Admin\LookType.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_type_id', 'APPPATH\\Controllers\\Admin\\LookType.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 05:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 05:23:59 --> Undefined variable $look_type_id
+in APPPATH\Controllers\Admin\LookType.php on line 44.
+ 1 APPPATH\Controllers\Admin\LookType.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_type_id', 'APPPATH\\Controllers\\Admin\\LookType.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 05:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 05:24:33 --> Undefined variable $look_type_id
+in APPPATH\Controllers\Admin\LookType.php on line 44.
+ 1 APPPATH\Controllers\Admin\LookType.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_type_id', 'APPPATH\\Controllers\\Admin\\LookType.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 05:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 05:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 05:25:16 --> Undefined variable $item
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 APPPATH\Views\Admin\looktypeAdd.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\Admin\\looktypeAdd.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\looktypeAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 5 APPPATH\Controllers\Admin\LookType.php(17): view('admin/looktypeAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:26:59 --> syntax error, unexpected token "isset", expecting ")"
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 3 APPPATH\Controllers\Admin\LookType.php(17): view('admin/looktypeAdd')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->add()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:27:15 --> syntax error, unexpected token ")"
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 3 APPPATH\Controllers\Admin\LookType.php(17): view('admin/looktypeAdd')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->add()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:27:47 --> syntax error, unexpected token ")"
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 3 APPPATH\Controllers\Admin\LookType.php(17): view('admin/looktypeAdd')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->add()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:28:48 --> Too few arguments to function App\Controllers\Admin\Looktype::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\LookType.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:36:03 --> Undefined variable $item
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 APPPATH\Views\Admin\looktypeAdd.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\Admin\\looktypeAdd.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\looktypeAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 5 APPPATH\Controllers\Admin\LookType.php(17): view('admin/looktypeAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:39:21 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Admin\looktypeAdd.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 4 APPPATH\Controllers\Admin\LookType.php(25): view('admin/looktypeAdd', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:40:16 --> Undefined variable $item
+in APPPATH\Views\Admin\looktypeAdd.php on line 7.
+ 1 APPPATH\Views\Admin\looktypeAdd.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\Admin\\looktypeAdd.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\looktypeAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 5 APPPATH\Controllers\Admin\LookType.php(17): view('admin/looktypeAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 05:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 05:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 05:53:52 --> Class "App\Controllers\Admin\LookTypeModel" not found
+in APPPATH\Controllers\Admin\Lookup.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Lookup->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 05:54:06 --> Undefined property: stdClass::$look_type_name
+in APPPATH\Views\Admin\looktypeAdd.php on line 12.
+ 1 APPPATH\Views\Admin\looktypeAdd.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_type_name', 'APPPATH\\Views\\Admin\\looktypeAdd.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\looktypeAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Lookup.php(25): view('admin/looktypeAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Lookup->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:00:37 --> syntax error, unexpected double-quoted string " method=", expecting "," or ";"
+in APPPATH\Views\Admin\lookupAdd.php on line 5.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/lookupAdd', [], true)
+ 3 APPPATH\Controllers\Admin\Lookup.php(17): view('admin/lookupAdd')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Lookup->add()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 06:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 06:01:18 --> Undefined variable $look_type_id
+in APPPATH\Controllers\Admin\Lookup.php on line 49.
+ 1 APPPATH\Controllers\Admin\Lookup.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_type_id', 'APPPATH\\Controllers\\Admin\\Lookup.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Lookup->create('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 06:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 06:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 06:02:33 --> Too few arguments to function App\Controllers\Admin\Lookup::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\Lookup.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Lookup->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:03:37 --> Too few arguments to function App\Controllers\Admin\Looktype::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\LookType.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:04:40 --> Too few arguments to function App\Controllers\Admin\Looktype::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\LookType.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:05:17 --> Too few arguments to function App\Controllers\Admin\Lookup::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\Lookup.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Lookup->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:09:37 --> Undefined variable $look_up_id
+in APPPATH\Controllers\Admin\Lookup.php on line 29.
+ 1 APPPATH\Controllers\Admin\Lookup.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_up_id', 'APPPATH\\Controllers\\Admin\\Lookup.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Lookup->create('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 06:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 06:09:52 --> Undefined variable $look_up_id
+in APPPATH\Controllers\Admin\Lookup.php on line 50.
+ 1 APPPATH\Controllers\Admin\Lookup.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_up_id', 'APPPATH\\Controllers\\Admin\\Lookup.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Lookup->create('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 06:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 06:15:37 --> Too few arguments to function App\Controllers\Admin\Looktype::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\LookType.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 06:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 06:16:15 --> Too few arguments to function App\Controllers\Admin\Looktype::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\LookType.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:16:48 --> Too few arguments to function App\Controllers\Admin\Looktype::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\LookType.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:16:51 --> Too few arguments to function App\Controllers\Admin\Looktype::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\LookType.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:23:34 --> Too few arguments to function App\Controllers\Admin\Looktype::create(), 0 passed in C:\xampp\htdocs\prism\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin\LookType.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 06:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 06:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 06:24:46 --> Cannot redeclare App\Controllers\Admin\Looktype::create()
+in APPPATH\Controllers\Admin\LookType.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-12 06:30:45 --> Cannot redeclare App\Controllers\Admin\Looktype::create()
+in APPPATH\Controllers\Admin\LookType.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-12 06:30:46 --> Cannot redeclare App\Controllers\Admin\Looktype::create()
+in APPPATH\Controllers\Admin\LookType.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-12 06:30:52 --> Cannot redeclare App\Controllers\Admin\Looktype::create()
+in APPPATH\Controllers\Admin\LookType.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-04-12 06:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 06:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 06:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 06:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-12 06:32:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_look_up`, CONSTRAINT `tbl_lookup_looktype_fk` FOREIGN KEY (`look_type_id`) REFERENCES `tbl_look_type` (`look_type_id`)) in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\LookUpModel.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\Lookup.php(52): App\Models\LookUpModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\Lookup->create()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 06:32:05 --> Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_look_up`, CONSTRAINT `tbl_lookup_looktype_fk` FOREIGN KEY (`look_type_id`) REFERENCES `tbl_look_type` (`look_type_id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\LookUpModel.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_look_up`(`maker_id`,`auth_id`,`action_type`,`action_date`,`look_up_id`,`look_up_name`,`short_name`,`sort_order`,`look_type_id`)
+                            VALUES(\'1730020@iub.edu.bd\',\'NULL\',\'INSERT\',NOW(),16,\'test\',\'test\',\'0\',\'0\')')
+ 2 APPPATH\Controllers\Admin\Lookup.php(52): App\Models\LookUpModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Lookup->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Lookup))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 06:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 06:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 06:42:36 --> Undefined property: stdClass::$look_type_id
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 APPPATH\Views\Admin\looktypeAdd.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_type_id', 'APPPATH\\Views\\Admin\\looktypeAdd.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\looktypeAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Careers.php(25): view('admin/looktypeAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Careers->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Careers))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:43:43 --> Undefined property: stdClass::$look_type_id
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 APPPATH\Views\Admin\looktypeAdd.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_type_id', 'APPPATH\\Views\\Admin\\looktypeAdd.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\looktypeAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Careers.php(25): view('admin/looktypeAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Careers->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Careers))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:44:08 --> Undefined property: stdClass::$look_type_id
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 APPPATH\Views\Admin\looktypeAdd.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_type_id', 'APPPATH\\Views\\Admin\\looktypeAdd.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\looktypeAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Careers.php(25): view('admin/looktypeAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Careers->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Careers))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:44:15 --> Undefined property: stdClass::$look_type_id
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 APPPATH\Views\Admin\looktypeAdd.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_type_id', 'APPPATH\\Views\\Admin\\looktypeAdd.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\looktypeAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Careers.php(25): view('admin/looktypeAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Careers->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Careers))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 06:44:25 --> Undefined property: stdClass::$look_type_id
+in APPPATH\Views\Admin\looktypeAdd.php on line 5.
+ 1 APPPATH\Views\Admin\looktypeAdd.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_type_id', 'APPPATH\\Views\\Admin\\looktypeAdd.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\looktypeAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/looktypeAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Careers.php(25): view('admin/looktypeAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Careers->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Careers))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 06:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 06:46:31 --> Undefined array key "company_phone"
+in APPPATH\Models\CareersModel.php on line 35.
+ 1 APPPATH\Models\CareersModel.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "company_phone"', 'APPPATH\\Models\\CareersModel.php', 35)
+ 2 APPPATH\Controllers\Admin\Careers.php(50): App\Models\CareersModel->edit([...], '1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Careers->create('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Careers))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 06:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 06:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 06:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 07:00:43 --> Undefined variable $look_type_id
+in APPPATH\Models\LookTypeModel.php on line 39.
+ 1 APPPATH\Models\LookTypeModel.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $look_type_id', 'APPPATH\\Models\\LookTypeModel.php', 39)
+ 2 APPPATH\Controllers\Admin\LookType.php(45): App\Models\LookTypeModel->edit([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Looktype->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Looktype))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 07:13:00 --> Undefined variable $career_id
+in APPPATH\Controllers\Admin\Careers.php on line 51.
+ 1 APPPATH\Controllers\Admin\Careers.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $career_id', 'APPPATH\\Controllers\\Admin\\Careers.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Careers->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Careers))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 07:26:10 --> Undefined variable $career_id
+in APPPATH\Controllers\Admin\CompanyProfile.php on line 23.
+ 1 APPPATH\Controllers\Admin\CompanyProfile.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $career_id', 'APPPATH\\Controllers\\Admin\\CompanyProfile.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CompanyProfile->edit('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CompanyProfile))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-12 07:26:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `company_id` = 3' at line 8 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_com...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_com...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_com...')
+#3 C:\xampp\htdocs\prism\app\Models\CompanyProfileModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_com...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\CompanyProfile.php(50): App\Models\CompanyProfileModel->edit(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\CompanyProfile->create()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CompanyProfile))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 07:26:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `company_id` = 3' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\CompanyProfileModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_company_profile`
+        SET
+        `auth_id` = \'\',
+        `action_type` = \'update\',
+        `action_date` = now(),
+        `company_name` = \'exportbd\',
+        `company_email` = \'inquery@prism.com\',
+        WHERE `company_id` = 3')
+ 2 APPPATH\Controllers\Admin\CompanyProfile.php(50): App\Models\CompanyProfileModel->edit([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CompanyProfile->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CompanyProfile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-12 07:29:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `company_id` = 3' at line 8 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_com...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_com...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_com...')
+#3 C:\xampp\htdocs\prism\app\Models\CompanyProfileModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_com...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\CompanyProfile.php(50): App\Models\CompanyProfileModel->edit(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\CompanyProfile->create()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CompanyProfile))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 07:29:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `company_id` = 3' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\CompanyProfileModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_company_profile`
+        SET
+        `auth_id` = \'\',
+        `action_type` = \'update\',
+        `action_date` = now(),
+        `company_name` = \'exportbd\',
+        `company_email` = \'inquery@prism.com\',
+        WHERE `company_id` = 3')
+ 2 APPPATH\Controllers\Admin\CompanyProfile.php(50): App\Models\CompanyProfileModel->edit([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CompanyProfile->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CompanyProfile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-12 07:29:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `company_id` = 3' at line 8 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_com...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_com...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_com...')
+#3 C:\xampp\htdocs\prism\app\Models\CompanyProfileModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_com...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\CompanyProfile.php(50): App\Models\CompanyProfileModel->edit(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\CompanyProfile->create()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CompanyProfile))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 07:29:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `company_id` = 3' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\CompanyProfileModel.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_company_profile`
+        SET
+        `auth_id` = \'\',
+        `action_type` = \'update\',
+        `action_date` = now(),
+        `company_name` = \'exportbd\',
+        `company_email` = \'inquery@prism.com\',
+        WHERE `company_id` = 3')
+ 2 APPPATH\Controllers\Admin\CompanyProfile.php(50): App\Models\CompanyProfileModel->edit([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CompanyProfile->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CompanyProfile))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 07:52:33 --> Undefined variable $purposelist
+in APPPATH\Views\Admin\propertyAdd.php on line 71.
+ 1 APPPATH\Views\Admin\propertyAdd.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $purposelist', 'APPPATH\\Views\\Admin\\propertyAdd.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(84): view('admin/propertyAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 07:55:15 --> Undefined variable $purposelist
+in APPPATH\Views\Admin\propertyAdd.php on line 71.
+ 1 APPPATH\Views\Admin\propertyAdd.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $purposelist', 'APPPATH\\Views\\Admin\\propertyAdd.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(85): view('admin/propertyAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 07:55:41 --> Undefined variable $purposelist
+in APPPATH\Views\Admin\propertyAdd.php on line 71.
+ 1 APPPATH\Views\Admin\propertyAdd.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $purposelist', 'APPPATH\\Views\\Admin\\propertyAdd.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(85): view('admin/propertyAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 07:56:59 --> Undefined variable $purposelist
+in APPPATH\Views\Admin\propertyAdd.php on line 77.
+ 1 APPPATH\Views\Admin\propertyAdd.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $purposelist', 'APPPATH\\Views\\Admin\\propertyAdd.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(85): view('admin/propertyAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 07:57:38 --> Undefined variable $purposelist
+in APPPATH\Views\Admin\propertyAdd.php on line 77.
+ 1 APPPATH\Views\Admin\propertyAdd.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $purposelist', 'APPPATH\\Views\\Admin\\propertyAdd.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(91): view('admin/propertyAdd')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 07:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 07:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-12 08:15:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_property_info`, CONSTRAINT `tbl_propertyinfo_lookup_fk` FOREIGN KEY (`email`) REFERENCES `tbl_user_info` (`email`)) in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\Property.php(80): App\Models\PropertyInfoModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 08:15:17 --> Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_property_info`, CONSTRAINT `tbl_propertyinfo_lookup_fk` FOREIGN KEY (`email`) REFERENCES `tbl_user_info` (`email`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_property_info`(`auth_id`,`action_type`,`action_date`,`property_id`,`property_name`,`description`,`city`,`property_area`,`property_size`,`beds`,`baths`,`price`,`is_occupied`,`floor_plan`,`phone_number`,`property_address`,`level`,`email`,`purpose_code`,`property_type_code`,`descriptive_status_code`,`amenities_code`,`property_status_code`)
+                            VALUES(null,\'insert\',now(),\'3\',\'\',\'sdfdsdghfdsfghfdgh\',\'dhaka\',\'mirpur\',\'1200 sqt\',\'3\',\'3\',5000000,1,\'C:\\xampp\\htdocs\\prism\\writable\\uploads/87897.png\',\'01245678933\',\'1296, east monipur mirpur dhaka 1216\',\'4\',\'prism-hr@prism.com\',\'6\',\'16\',\'13\',\'\',\'8\')')
+ 2 APPPATH\Controllers\Admin\Property.php(80): App\Models\PropertyInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 08:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-12 08:16:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_property_info`, CONSTRAINT `tbl_propertyinfo_lookup_fk` FOREIGN KEY (`email`) REFERENCES `tbl_user_info` (`email`)) in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\Property.php(80): App\Models\PropertyInfoModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 08:16:15 --> Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_property_info`, CONSTRAINT `tbl_propertyinfo_lookup_fk` FOREIGN KEY (`email`) REFERENCES `tbl_user_info` (`email`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_property_info`(`auth_id`,`action_type`,`action_date`,`property_id`,`property_name`,`description`,`city`,`property_area`,`property_size`,`beds`,`baths`,`price`,`is_occupied`,`floor_plan`,`phone_number`,`property_address`,`level`,`email`,`purpose_code`,`property_type_code`,`descriptive_status_code`,`amenities_code`,`property_status_code`)
+                            VALUES(null,\'insert\',now(),\'3\',\'\',\'sdadadsadad\',\'dhaka\',\'mirpur\',\'1200 sqt\',\'3\',\'3\',5000000,1,\'C:\\xampp\\htdocs\\prism\\writable\\uploads/87897.png\',\'asdasdas\',\'1296, east monipur mirpur dhaka 1216\',\'4\',\'prism-hr@prism.com\',\'6\',\'16\',\'13\',\'\',\'8\')')
+ 2 APPPATH\Controllers\Admin\Property.php(80): App\Models\PropertyInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 08:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-12 08:17:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_property_info`, CONSTRAINT `tbl_propertyinfo_lookup_amenitiescode_fk` FOREIGN KEY (`amenities_code`) REFERENCES `tbl_look_up` (`look_up_id`)) in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\Property.php(80): App\Models\PropertyInfoModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 08:17:34 --> Cannot add or update a child row: a foreign key constraint fails (`prism`.`tbl_property_info`, CONSTRAINT `tbl_propertyinfo_lookup_amenitiescode_fk` FOREIGN KEY (`amenities_code`) REFERENCES `tbl_look_up` (`look_up_id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_property_info`(`auth_id`,`action_type`,`action_date`,`property_id`,`property_name`,`description`,`city`,`property_area`,`property_size`,`beds`,`baths`,`price`,`is_occupied`,`floor_plan`,`phone_number`,`property_address`,`level`,`email`,`purpose_code`,`property_type_code`,`descriptive_status_code`,`amenities_code`,`property_status_code`)
+                            VALUES(null,\'insert\',now(),\'3\',\'\',\'sdadadsadad\',\'dhaka\',\'mirpur\',\'1200 sqt\',\'3\',\'3\',5000000,1,\'C:\\xampp\\htdocs\\prism\\writable\\uploads/87897.png\',\'asdasdas\',\'1296, east monipur mirpur dhaka 1216\',\'4\',\'shovon@gmail.com\',\'6\',\'16\',\'13\',\'\',\'8\')')
+ 2 APPPATH\Controllers\Admin\Property.php(80): App\Models\PropertyInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 08:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 08:36:47 --> Could not move file "php1ED7.tmp" to "C:\xampp\htdocs\prism\writable\uploads/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php1ED7.tmp', 'ROOTPATH\\writable\\uploads', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin\Property.php(82): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads', 'Shovon _20230412_083647image/png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 08:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 08:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 08:42:37 --> Array to string conversion
+in APPPATH\Controllers\Admin\Property.php on line 59.
+ 1 APPPATH\Controllers\Admin\Property.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Admin\\Property.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 08:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 10:59:52 --> date_default_timezone_set(): Timezone ID 'UTC+6' is invalid
+in SYSTEMPATH\CodeIgniter.php on line 197.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'UTC+6\' is invalid', 'SYSTEMPATH\\CodeIgniter.php', 197)
+ 2 SYSTEMPATH\CodeIgniter.php(197): date_default_timezone_set('UTC+6')
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-04-12 11:00:31 --> date_default_timezone_set(): Timezone ID 'UTC+06:00' is invalid
+in SYSTEMPATH\CodeIgniter.php on line 197.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'UTC+06:00\' is invalid', 'SYSTEMPATH\\CodeIgniter.php', 197)
+ 2 SYSTEMPATH\CodeIgniter.php(197): date_default_timezone_set('UTC+06:00')
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+INFO - 2023-04-12 15:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 15:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:24:24 --> Class "App\Controllers\Admin\LookUpModel" not found
+in APPPATH\Controllers\Admin\Property.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:24:41 --> Attempt to read property "name" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 17.
+ 1 APPPATH\Views\Admin\propertyAdd.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(19): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-12 15:29:24 --> mysqli_sql_exception: Unknown column 'sort_order' in 'order clause' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\Property.php(29): App\Models\PropertyInfoModel->getByCriteria('1')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 15:29:24 --> Unknown column 'sort_order' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_property_info WHERE `property_id` = 1 ORDER BY sort_order')
+ 2 APPPATH\Controllers\Admin\Property.php(29): App\Models\PropertyInfoModel->getByCriteria('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:50:25 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(31): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:51:10 --> Undefined property: stdClass::$look_up_id
+in APPPATH\Views\Admin\propertyAdd.php on line 79.
+ 1 APPPATH\Views\Admin\propertyAdd.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_up_id', 'APPPATH\\Views\\Admin\\propertyAdd.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(24): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:52:22 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(31): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:55:57 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(31): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:56:11 --> Undefined property: stdClass::$look_up_id
+in APPPATH\Views\Admin\propertyAdd.php on line 79.
+ 1 APPPATH\Views\Admin\propertyAdd.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_up_id', 'APPPATH\\Views\\Admin\\propertyAdd.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(24): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:56:47 --> Undefined property: stdClass::$look_up_id
+in APPPATH\Views\Admin\propertyAdd.php on line 79.
+ 1 APPPATH\Views\Admin\propertyAdd.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_up_id', 'APPPATH\\Views\\Admin\\propertyAdd.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(24): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 15:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 15:56:50 --> Undefined property: stdClass::$look_up_id
+in APPPATH\Views\Admin\propertyAdd.php on line 79.
+ 1 APPPATH\Views\Admin\propertyAdd.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$look_up_id', 'APPPATH\\Views\\Admin\\propertyAdd.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(24): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-12 16:08:59 --> mysqli_sql_exception: Unknown column 'look_type_id' in 'where clause' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\Property.php(30): App\Models\PropertyInfoModel->getByCriteriaa('1')
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-12 16:08:59 --> Unknown column 'look_type_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_property_info WHERE `look_type_id` = 1')
+ 2 APPPATH\Controllers\Admin\Property.php(30): App\Models\PropertyInfoModel->getByCriteriaa('1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:09:27 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:11:52 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-12 16:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:13:53 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:15:01 --> Undefined variable $property_id
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $property_id', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:15:11 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:20:13 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:20:45 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:21:08 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:21:18 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:24:55 --> Attempt to read property "property_id" on array
+in APPPATH\Views\Admin\propertyAdd.php on line 13.
+ 1 APPPATH\Views\Admin\propertyAdd.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "property_id" on array', 'APPPATH\\Views\\Admin\\propertyAdd.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-12 16:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-12 16:26:42 --> Undefined variable $purposelist
+in APPPATH\Views\Admin\propertyAdd.php on line 78.
+ 1 APPPATH\Views\Admin\propertyAdd.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $purposelist', 'APPPATH\\Views\\Admin\\propertyAdd.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\propertyAdd.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/propertyAdd', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(32): view('admin/propertyAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->edit('9')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -17,6 +17,13 @@ class CompanyProfile extends BaseController
         return view('admin/companyprofileAdd');
    }
 
+   public function edit($company_id)
+   { 
+       $model = new CompanyProfileModel();
+       $data['item'] = $model->getByCriteria($company_id);
+    //    echo '<pre>'; print_r($data); echo '</pre>'; exit; 
+       return view('admin/companyprofileAdd',$data);
+   }
    public function create()
     {
         $session = session();
@@ -34,15 +41,30 @@ class CompanyProfile extends BaseController
                 'company_name' => $this->request->getVar('company_name'),
                 'company_vision' => $this->request->getVar('company_vision'),
                 'company_address' => $this->request->getVar('company_address'),
-                'company_email' => $this->request->getVar('company_email')
+                'company_email' => $this->request->getVar('company_email'),
+                'company_id' => $this->request->getVar('companyid')
             ];
-            $result = $model->add($data);
-            return redirect()->to('public/admin/companyprofile');
+            $actiontype = $this->request->getVar('actiontype');
+            
+            if($actiontype == 'update' ){
+                $result = $model->edit($data);
+            }
+            else {
+                $result = $model->add($data);
+            }
+            if($result <= 0) {
+                $session->setFlashdata('msg', 'saved failed. Please try again later!');
+                return view('public/admin/companyprofileAdd', $data);
+            }
+            else {
+                $session->setFlashdata('msg', 'save Successful. Thank you!');
+                return redirect()->to('public/admin/companyprofile');
+            }  
         }
         else {
-             $data['validation'] = $this->validator;
-            // $data['item'] = $model->getByCriteria($this->request->getVar('email'));
-            echo view('admin/companyprofileAdd',$data); 
+            $data['validation'] = $this->validator;
+            $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            return view('admin/companyprofileAdd', $data); 
         }
     }
 }

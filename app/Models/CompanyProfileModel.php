@@ -29,17 +29,17 @@ class CompanyProfileModel extends Model
         $query = $this ->db->query($sqlText);
         return $this->db->affectedRows();
     }
-    public function edit($company_id) {
+    public function edit($data) {
         $sqlText = "UPDATE `tbl_company_profile`
         SET
-        `maker_id` = '1730020@iub.edu.bd',
         `auth_id` = '',
         `action_type` = 'update',
         `action_date` = now(),
-        `company_name` = 'PRISM',
-        `company_email` = 'email@company.com',
-        `company_id` = ".$company_id."
-        WHERE `company_id` = ".$company_id."";
+        `company_name` = '".$data['company_name']."',
+        `company_address` = '".$this->db->escapeString($data['company_address'])."',
+        `company_vision` = '".$this->db->escapeString($data['company_vision'])."',
+        `company_email` = '".$data['company_email']."'
+        WHERE `company_id` = ".$data['company_id']."";
         
         $query = $this ->db->query($sqlText);
         return $this->db->affectedRows();
@@ -51,8 +51,10 @@ class CompanyProfileModel extends Model
         return $query->getResult();
 
     }
-    public function searchByCriteria() {
-    
+    public function getByCriteria($company_id) {
+        $sqlText = "SELECT * FROM tbl_company_profile WHERE `company_id` = '".$company_id."'";
+        $query =  $this->db->query($sqlText);
+        return $query->getRow();
 
     }
 }

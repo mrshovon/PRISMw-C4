@@ -4,11 +4,12 @@
     <div class="main-body col">
             <form action="<?=base_url('public/admin/careers/create')?>" method="post">
             <input type="hidden" name="actiontype" value="<?= isset($item) ? 'update' : 'insert' ?>"/>
+            <input type="hidden" name="careerid" value="<?= isset($item) ? $item->career_id : '' ?>"/>
             <fieldset>
               <legend><?= isset($item) ? 'Edit' : 'Add' ?> Job</legend>
               <div class="form-group">
                   <label for="job_title"><i class="zmdi zmdi-account material-icons-name"></i>Job Title: </label>
-                  <input type="text" name="job_title" id="job_title" placeholder="Job Title" class="form-control" value="<?= isset($item) ? $item->name : '' ?>" />
+                  <input type="text" name="job_title" id="job_title" placeholder="Job Title" class="form-control" value="<?= isset($item) ? $item->job_title : '' ?>" />
               </div>
               <div class="form-group">
                   <label for="phone"><i class="zmdi zmdi-account material-icons-name"></i>Phone: </label>
@@ -20,7 +21,7 @@
               </div>
               <div class="form-group">
                   <label for="job_description"><i class="zmdi zmdi-account material-icons-name"></i>Job Description: </label>
-                  <textarea name="job_description" cols="30" rows="3" class="form-control" value="" ></textarea>
+                  <textarea name="job_description" cols="30" rows="3" class="form-control" value="" ><?= isset($item) ? $item->job_description : '' ?></textarea>
                   <!-- <input type="text" name="password" id="password" placeholder="password" class="form-control" value="" /> -->
               </div>
               <div class="form-group form-button">

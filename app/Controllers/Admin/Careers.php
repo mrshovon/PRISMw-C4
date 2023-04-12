@@ -17,6 +17,14 @@ class Careers extends BaseController
         return view('admin/careersAdd');
    }
 
+   public function edit($career_id)
+   { 
+       $model = new CareersModel();
+       $data['item'] = $model->getByCriteria($career_id);
+    //    echo '<pre>'; print_r($data); echo '</pre>'; exit; 
+       return view('admin/careersAdd',$data);
+   }
+
    public function create()
     {
         $session = session();
@@ -34,14 +42,31 @@ class Careers extends BaseController
                 'job_title'     => $this->request->getVar('job_title'),
                 'email'    => $this->request->getVar('email'),
                 'phone'    => $this->request->getVar('phone'),
-                'job_description' => $this->request->getVar('job_description')
+                'job_description' => $this->request->getVar('job_description'),
+                'career_id' => $this->request->getVar('careerid')
             ];
-            $result = $model->add($data);
-            return redirect()->to('public/admin/careers');
+            $actiontype = $this->request->getVar('actiontype');
+            
+            if($actiontype == 'update' ){
+                $result = $model->edit($data);
+            }
+            else {
+                $result = $model->add($data);
+            }
+            if($result <= 0) {
+                $session->setFlashdata('msg', 'Job saved failed. Please try again later!');
+                return view('public/admin/careersAdd', $data);
+            }
+            else {
+                $session->setFlashdata('msg', 'Job save Successful. Thank you!');
+                return redirect()->to('public/admin/careers');
+            }  
         }
         else {
-            return view('admin/careers'); 
-            }
+            $data['validation'] = $this->validator;
+            $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            return view('admin/careersAdd', $data); 
         }
     }
+}
 
