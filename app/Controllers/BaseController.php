@@ -59,9 +59,9 @@ abstract class BaseController extends Controller
         //     set_cookie('active_css','');
 
         // }
-        $nurl = current_url();
-        $surl = explode("/",$nurl);
-        $visitedpage =  $surl[count($surl)-1]; 
-         set_cookie('active_menu', trim($visitedpage)); 
+        // $nurl = current_url();
+        // $surl = explode("/",$nurl);
+        // $visitedpage =  $surl[count($surl)-1]; 
+        //  set_cookie('active_menu', trim($visitedpage)); 
     }
 }

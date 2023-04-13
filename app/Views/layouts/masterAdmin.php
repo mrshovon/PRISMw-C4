@@ -1,3 +1,8 @@
+<?php 
+   $path = $_SERVER['REQUEST_URI'];
+   $path = explode('/',$path);
+   $path = end($path);  
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,12 +104,12 @@
        <div class="menu col-2">
         <h6>Menu</h6>
         <ul>
-            <li class="btn btn-outline-light <?= get_cookie('active_menu') == 'looktype' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/looktype')?>">Look Type</a></li>
-            <li class="btn btn-outline-light <?= get_cookie('active_menu') == 'lookup' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/lookup')?>">Look Up</a></li>
-            <li class="btn btn-outline-light <?= get_cookie('active_menu') == 'property' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/property')?>">Property</a></li>
-            <li class="btn btn-outline-light <?= get_cookie('active_menu') == 'user' ? 'active' : '' ?>"> <a href="<?= base_url('public/admin/user')?>">User</a></li>
-            <li class="btn btn-outline-light <?= get_cookie('active_menu') == 'companyprofile' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/companyprofile')?>">Company Profile</a></li>
-            <li class="btn btn-outline-light <?= get_cookie('active_menu') == 'careers' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/careers')?>">Careers</a></li>
+            <li class="btn btn-outline-light <?= $path == 'looktype' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/looktype')?>">Look Type</a></li>
+            <li class="btn btn-outline-light <?= $path == 'lookup' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/lookup')?>">Look Up</a></li>
+            <li class="btn btn-outline-light <?= $path == 'property' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/property')?>">Property</a></li>
+            <li class="btn btn-outline-light <?= $path == 'user' ? 'active' : '' ?>"> <a href="<?= base_url('public/admin/user')?>">User</a></li>
+            <li class="btn btn-outline-light <?= $path == 'companyprofile' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/companyprofile')?>">Company Profile</a></li>
+            <li class="btn btn-outline-light <?= $path == 'careers' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/careers')?>">Careers</a></li>
             <li href="legalservice.html" class="btn btn-outline-light">Legal Service</li>
             <li href="renovation.html" class="btn btn-outline-light">Renovation</li>
             <li href="homeloan.html" class="btn btn-outline-light">Home Loan</li>
