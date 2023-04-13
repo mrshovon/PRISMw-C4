@@ -24,11 +24,17 @@
 
             }
             public function erase($look_up_id) {
-                $sqlText = "DELETE FROM `tbl_look_up` WHERE `look_up_id`= ".$look_up_id."";
-                $query =  $this->db->query($sqlText);
-
-                return  $this->db->affectedRows();
-
+                $sqlText = "DELETE FROM `tbl_look_up` WHERE `look_up_id` = ".$look_up_id."";
+                try {
+                    $query =  $this->db->query($sqlText);
+                    // return  $this->db->affectedRows();
+                    return  null;
+                } 
+                catch (\Throwable  $e) {
+                    // exit($e->getMessage());
+                    // $e->getMessage(); exit;
+                    return  $e->getMessage(); 
+                }
             }
             public function edit($data) {
               $sqlText = " UPDATE `tbl_look_up`

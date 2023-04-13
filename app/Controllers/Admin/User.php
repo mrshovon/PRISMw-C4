@@ -18,9 +18,19 @@ class User extends BaseController
     }
 
     public function delete($email)
-    { 
-        return view('admin/userAddEdit');
-    }
+   { 
+        $session = session();    
+        $model = new UserInfoModel();
+        $result = $model->erase($email);
+        if($result == null) {
+            return redirect()->to('public/admin/user');
+        }
+        else {
+            $session->setFlashdata('msg', $result);
+            $data['userlist'] = $model->get(null);
+            return view('admin/user', $data);
+        }
+   }
 
     public function edit($email)
     { 

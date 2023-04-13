@@ -23,10 +23,17 @@
         }
 
         public function erase($look_type_id) {
-            $sqlText = "DELETE FROM `tbl_look_type` WHERE `look_type_id`= ".$look_type_id."";
-            $query =  $this->db->query($sqlText);
-
-            return  $this->db->affectedRows();
+            $sqlText = "DELETE FROM `tbl_look_type` WHERE `look_type_id` = ".$look_type_id."";
+            try {
+                $query =  $this->db->query($sqlText);
+                // return  $this->db->affectedRows();
+                return  null;
+            } 
+            catch (\Throwable  $e) {
+                // exit($e->getMessage());
+                // $e->getMessage(); exit;
+                return  $e->getMessage(); 
+            }
         }
 
         public function edit($data) {

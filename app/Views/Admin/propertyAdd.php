@@ -10,7 +10,7 @@
       <?php endif;?>
     <form action="<?=base_url('public/admin/property/create')?>" method="post" enctype="multipart/form-data">
             <input type="hidden" name="actiontype" value="<?= isset($item) ? 'update' : 'insert' ?>"/>
-            <!-- <input type="hidden" name="propertyid" value="<?= isset($item) ? $item->property_id : '' ?>"/> -->
+            <input type="hidden" name="propertyid" value="<?= isset($item) ? $item->property_id : '' ?>"/>
             <fieldset>
               <legend><?= isset($item) ? 'Edit' : 'Add' ?> Property</legend>
               <div class="form-group">

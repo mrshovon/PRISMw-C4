@@ -24,10 +24,18 @@
             }
             public function erase($email) {
                 $sqlText = "DELETE FROM `tbl_user_info` WHERE `email` = '".$email."'";
-                $query =  $this->db->query($sqlText);
-
-                return  $this->db->affectedRows();
-
+                try {
+                    $query =  $this->db->query($sqlText);
+                    // return  $this->db->affectedRows();
+                    return  null;
+                } 
+                catch (\Throwable  $e) {
+                    // exit($e->getMessage());
+                    // $e->getMessage(); exit;
+                    return  $e->getMessage(); 
+                }
+               
+                
             }
             public function edit($data) {
                 $sqlText = "UPDATE `tbl_user_info`

@@ -2,9 +2,13 @@
     <?= $this->section('content') ?>
     <!-- <?php echo '<pre>'; print_r($lookuplist); echo '<pre>'; ?> -->
     <div class="main-body col">
+      <?php if(session()->getFlashdata('msg')):?>
+        <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+        <?php endif;?>
               <h1>Look Up</h1> <br>
              <a href="<?= base_url('public/admin/lookup/add')?>" class="btn btn-success">ADD</a>
-            <table class="table">
+            <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">SL #</th>
@@ -30,11 +34,12 @@
                     <td><?php echo $row->action_date?></td>
                   <td>
                         <a href="<?= base_url('public/admin/lookup/edit/'.$row->look_up_id)?>" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                        <a href="" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
+                        <a href="<?= base_url('public/admin/lookup/delete/'.$row->look_up_id)?>" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
                     </td>
                   </tr>
                   <?php } ?>
                 </tbody>
               </table>      
+            </div>
        </div>
     <?= $this->endSection() ?>

@@ -19,10 +19,17 @@
                 return  $this->db->affectedRows();
             }
             public function erase($career_id) {
-                $sqlText ="DELETE FROM `tbl_careers` WHERE `career_id` = ".$career_id."";
-                $query =  $this->db->query($sqlText);
-               
-                return  $this->db->affectedRows();
+                $sqlText = "DELETE FROM `tbl_careers` WHERE `career_id` = ".$career_id."";
+                try {
+                    $query =  $this->db->query($sqlText);
+                    // return  $this->db->affectedRows();
+                    return  null;
+                } 
+                catch (\Throwable  $e) {
+                    // exit($e->getMessage());
+                    // $e->getMessage(); exit;
+                    return  $e->getMessage(); 
+                }
             }
             public function edit($data) {
                 $sqlText =" UPDATE `tbl_careers`

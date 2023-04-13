@@ -16,6 +16,20 @@ class Lookup extends BaseController
    { 
         return view('admin/lookupAdd');
    }
+   public function delete($look_up_id)
+   { 
+        $session = session();    
+        $model = new LookUpModel();
+        $result = $model->erase($look_up_id);
+        if($result == null) {
+            return redirect()->to('public/admin/lookup');
+        }
+        else {
+            $session->setFlashdata('msg', $result);
+            $data['lookuplist'] = $model->get(null);
+            return view('admin/lookup', $data);
+        }
+   }
 
    public function edit($look_up_id)
    { 

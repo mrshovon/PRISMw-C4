@@ -16,7 +16,20 @@ class Careers extends BaseController
    { 
         return view('admin/careersAdd');
    }
-
+   public function delete($career_id)
+   { 
+        $session = session();    
+        $model = new CareersModel();
+        $result = $model->erase($career_id);
+        if($result == null) {
+            return redirect()->to('public/admin/careers');
+        }
+        else {
+            $session->setFlashdata('msg', $result);
+            $data['joblist'] = $model->get(null);
+            return view('admin/careers', $data);
+        }
+   }
    public function edit($career_id)
    { 
        $model = new CareersModel();

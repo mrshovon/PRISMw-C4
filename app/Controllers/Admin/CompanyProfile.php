@@ -16,7 +16,20 @@ class CompanyProfile extends BaseController
    { 
         return view('admin/companyprofileAdd');
    }
-
+   public function delete($company_id)
+   { 
+        $session = session();    
+        $model = new CompanyProfileModel();
+        $result = $model->erase($company_id);
+        if($result == null) {
+            return redirect()->to('public/admin/companyprofile');
+        }
+        else {
+            $session->setFlashdata('msg', $result);
+            $data['userlist'] = $model->get(null);
+            return view('admin/companyprofile', $data);
+        }
+   }
    public function edit($company_id)
    { 
        $model = new CompanyProfileModel();

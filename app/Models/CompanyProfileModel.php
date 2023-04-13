@@ -25,9 +25,17 @@ class CompanyProfileModel extends Model
 
     }
     public function erase($company_id) {
-        $sqlText = " DELETE FROM `tbl_company_profile` WHERE `company_id` =  '".$company_id."'";
-        $query = $this ->db->query($sqlText);
-        return $this->db->affectedRows();
+        $sqlText = "DELETE FROM `tbl_company_profile` WHERE `company_id` = ".$company_id."";
+                try {
+                    $query =  $this->db->query($sqlText);
+                    // return  $this->db->affectedRows();
+                    return  null;
+                } 
+                catch (\Throwable  $e) {
+                    // exit($e->getMessage());
+                    // $e->getMessage(); exit;
+                    return  $e->getMessage(); 
+                }
     }
     public function edit($data) {
         $sqlText = "UPDATE `tbl_company_profile`

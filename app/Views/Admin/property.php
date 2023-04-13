@@ -2,9 +2,13 @@
     <?= $this->section('content') ?>
     <!-- <?php /*echo '<pre>'; print_r($propertylist); echo '</pre>'; */?>  -->
     <div class="main-body col">
+    <?php if(session()->getFlashdata('msg')):?>
+        <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+        <?php endif;?>
               <h1>Property</h1> <br>
              <a href="<?= base_url('public/admin/property/add')?>" class="btn btn-success">ADD</a>
-            <table class="table"  style="overflow=auto;">
+             <div class="table-responsive">
+             <table class="table table-sm table-striped table-hover table-bordered"  style="overflow=auto;">
                 <thead>
                   <tr>
                     <th scope="col">SL #</th>
@@ -45,7 +49,7 @@
                     <td><?php echo $row->baths?></td>
                     <td><?php echo $row->price?></td>
                     <td><?php echo ($row->is_occupied == true ? 'Yes' : 'No');?></td>
-                    <td><?php echo $row->floor_plan?></td>
+                    <td><img src="<?= base_url().$row->floor_plan?>" alt="" style="width:100px; height:100px;"></td>
                     <td><?php echo $row->phone_number?></td>
                     <td><?php echo $row->property_address?></td>
                     <td><?php echo $row->level?></td>
@@ -57,11 +61,13 @@
                     <td><?php echo $row->property_status_name?></td>
                     <td>
                         <a href="<?= base_url('public/admin/property/edit/'.$row->property_id)?>" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                        <a href="" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
+                        <a href="<?= base_url('public/admin/property/delete/'.$row->property_id)?>" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
                     </td>
                   </tr>
                   <?php } ?>
                 </tbody>
               </table>      
+             </div>
+           
        </div>
     <?= $this->endSection() ?>

@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1681367970;_ci_previous_url|s:46:"http://localhost/prism/admin/property/delete/1";msg|s:214:"Cannot delete or update a parent row: a foreign key constraint fails (`prism`.`tbl_book_visit`, CONSTRAINT `tbl_bookvisit_propertyinfo_fk` FOREIGN KEY (`property_id`) REFERENCES `tbl_property_info` (`property_id`))";__ci_vars|a:1:{s:3:"msg";s:3:"new";}

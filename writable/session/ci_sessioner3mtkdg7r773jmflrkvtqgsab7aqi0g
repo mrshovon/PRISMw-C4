@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1681372286;_ci_previous_url|s:57:"http://localhost/prism/admin/user/delete/shovon@gmail.com";msg|s:194:"Cannot delete or update a parent row: a foreign key constraint fails (`prism`.`tbl_book_visit`, CONSTRAINT `tbl_bookvisit_userinfo_fk` FOREIGN KEY (`email`) REFERENCES `tbl_user_info` (`email`))";__ci_vars|a:1:{s:3:"msg";s:3:"new";}

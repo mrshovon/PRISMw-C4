@@ -16,7 +16,20 @@ class Looktype extends BaseController
    { 
         return view('admin/looktypeAdd');
    }
-
+   public function delete($look_type_id)
+   { 
+        $session = session();    
+        $model = new LookTypeModel();
+        $result = $model->erase($look_type_id);
+        if($result == null) {
+            return redirect()->to('public/admin/looktype');
+        }
+        else {
+            $session->setFlashdata('msg', $result);
+            $data['looktypelist'] = $model->get(null);
+            return view('admin/looktype', $data);
+        }
+   }
    public function edit($look_type_id)
    { 
        $model = new LookTypeModel();
