@@ -1,3 +1,8 @@
+<?php 
+   $path = $_SERVER['REQUEST_URI'];
+   $path = explode('/',$path);
+   $path = end($path);  
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,19 +88,19 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="user-dash.html">Home</a>
+            <a class="nav-link <?= $path == 'userdash' ? 'active' : '' ?>" href="<?=base_url('public/homeAL/userdash')?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/homeAL/aboutus')?>">About</a>
+            <a class="nav-link <?= $path == 'aboutus' ? 'active' : '' ?>" href="<?=base_url('public/homeAL/aboutus')?>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/homeAL/contactus')?>">Contact Us</a>
+            <a class="nav-link <?= $path == 'contactus' ? 'active' : '' ?>" href="<?=base_url('public/homeAL/contactus')?>">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/home/addproperty')?>">ADD Property</a>
+            <a class="nav-link <?= $path == 'addproperty' ? 'active' : '' ?>" href="<?=base_url('public/home/addproperty')?>">ADD Property</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle <?= $path == 'homeloan' || $path == 'renovation' || $path == 'legalservices' ? 'active' : '' ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Service
             </a>
