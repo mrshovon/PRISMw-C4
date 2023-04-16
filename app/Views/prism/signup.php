@@ -34,6 +34,13 @@
                         <?php endif;?>
                         <form action="<?=base_url('public/signup/create')?>" method="post" class="register-form" id="register-form">
                             <div class="form-group">
+                                <SELECT name="title" id="title" class="form-control">
+                                    <option value="MR.">Mr.</option>
+                                    <option value="MRs.">Mrs.</option>
+                                </SELECT>
+                            </div>
+                            <br>
+                            <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>
                             </div>

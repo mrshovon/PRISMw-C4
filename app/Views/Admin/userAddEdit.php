@@ -13,6 +13,13 @@
             <fieldset>
               <legend><?= isset($item) ? 'Edit' : 'Add' ?> User</legend>
               <div class="form-group">
+                <label for="title">Title</label>
+                <SELECT name="title" id="title" class="form-control">
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                </SELECT>
+              </div>
+              <div class="form-group">
                   <label for="name"><i class="zmdi zmdi-account material-icons-name"></i>Name: </label>
                   <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" value="<?= isset($item) ? $item->name : '' ?>" />
               </div>
@@ -31,6 +38,13 @@
               <div class="form-group">
                   <label for="confpassword"><i class="zmdi zmdi-account material-icons-name"></i>Confirm Password: </label>
                   <input type="text" name="confpassword" id="confpassword" placeholder="confirm password" class="form-control" value="" />
+              </div>
+              <div class="form-group">
+                <label for="user_type">User Type:</label>
+                <SELECT name="user_type" id="title" class="form-control">
+                    <option value="Customer">Customer</option>
+                    <option value="Administrator">Administrator</option>
+                </SELECT>
               </div>
               <div class="form-group form-button">
                   <button type="submit" id="signup" class="btn btn-success" style="margin-top:2%;">Save</button> 

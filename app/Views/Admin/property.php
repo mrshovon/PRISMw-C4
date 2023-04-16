@@ -35,13 +35,13 @@
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody >
                   <?php foreach($propertylist as $index => $row) { ?> 
                   <tr>
                     <td><?php echo $index+1?></td>
                     <td><?php echo $row->property_id?></td>
                     <td><?php echo $row->property_name?></td>
-                    <td><?php echo $row->description?></td>
+                    <td  class="text-wrap"><?php echo $row->description?></td>
                     <td><?php echo $row->city?></td>
                     <td><?php echo $row->property_area?></td>
                     <td><?php echo $row->property_size?></td>

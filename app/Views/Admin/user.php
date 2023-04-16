@@ -27,7 +27,7 @@
                       <td><?php echo $row->title.' '.$row->name; ?></td>
                       <td><?php echo $row->email; ?></td>
                       <td><?php echo $row->phone; ?></td>
-                      <td><?php echo $row->user_type; ?></td>
+                      <td><?php echo ($row->user_type == 'customer' ? 'customer':'administrator'); ?></td>
                       <td><?php echo $row->maker_id; ?></td>
                       <td><?php echo $row->action_date; ?></td>
                       <td>

@@ -72,6 +72,13 @@ $routes->group("admin", ["namespace" => "App\Controllers\Admin"], function ($rou
         $routes->get('add', 'companyprofile::add', ['filter' => 'auth']);
         
     });
+    // $routes->group('homeAL-grp',  function ($routes) {
+    //     $routes->get('signout', 'homeAL::signout', ['filter' => 'auth']);
+    //     $routes->get('propertydetails', 'homeAL::propertydetails', ['filter' => 'auth']);
+    //     $routes->get('userdash', 'homeAL::userdash', ['filter' => 'auth']);
+    //     $routes->get('search', 'homeAL::search', ['filter' => 'auth']);
+        
+    // });
 });
 /*
  * --------------------------------------------------------------------

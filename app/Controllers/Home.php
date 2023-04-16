@@ -110,8 +110,12 @@ class Home extends BaseController
 
     public function careers()
     {
-        return view('prism/careers');
+        $model = new CareersModel();
+        $data['joblist'] = $model->get();
+        // echo '<pre>';print_r($data);echo '</pre>'; exit;
+        return view('prism/careers', $data);
     }
+
 
     public function privacypolicy()
     {

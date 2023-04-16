@@ -22,7 +22,7 @@ class Login extends BaseController
         $data = $model->IsExist($email);
 
         if($data){
-            $password;
+             $password;
              $pass = $data['password'];
              $verify_pass = password_verify($password, $pass);
             
@@ -31,10 +31,13 @@ class Login extends BaseController
                     // 'id'       => $data['id'],
                     'name'     => $data['name'],
                     'email'    => $data['email'],
+                    'title'    => $data['title'],
+                    'user_type'    => $data['user_type'],
                     'logged_in'     => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/public/home/userdash');
+                // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
+                return redirect()->to('/public/homeAL/userdash');
             }else{
                 $session->setFlashdata('msg', 'Wrong Password');
                 return redirect()->to('/public/login');
@@ -44,5 +47,18 @@ class Login extends BaseController
             return redirect()->to('/public/login');
         }
 
+    }
+    public function signout()
+    { 
+        $session = session();
+        echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
+        $session->destroy();  
+        return redirect()->to('/public/home');
+    }
+    public function logout()
+    {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/login');
     }
 }

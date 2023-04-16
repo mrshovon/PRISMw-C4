@@ -30,6 +30,8 @@ class SignUp extends BaseController
                 'name'     => $this->request->getVar('name'),
                 'email'    => $this->request->getVar('email'),
                 'phone'    => $this->request->getVar('phone'),
+                'user_type'    => 'Customer',
+                'title'    => $this->request->getVar('title'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
             $result=$model->add($data);

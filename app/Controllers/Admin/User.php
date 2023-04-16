@@ -57,10 +57,12 @@ class User extends BaseController
                 'name'     => $this->request->getVar('name'),
                 'email'    => $this->request->getVar('email'),
                 'phone'    => $this->request->getVar('phone'),
+                'user_type'    => $this->request->getVar('user_type'),
+                'title'    => $this->request->getVar('title'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
             $actiontype = $this->request->getVar('actiontype');
-            
+            // echo '<pre>'; print_r($data); echo '</pre>'; exit;
             if($actiontype == 'update' ){
                 $result = $model->edit($data);
             }

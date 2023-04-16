@@ -14,7 +14,7 @@
                 
                 $sqlText = "INSERT INTO `tbl_user_info`(`maker_id`,`auth_id`,`action_type`,`action_date`,`name`,`password`,`phone`,`email`,`user_type`,
                 `title`)
-                VALUES('".$data['email']."',null,'insert',NOW(),'".$data['name']."','".$data['password']."','".$data['phone']."','".$data['email']."','customer','Mr.')";
+                VALUES('".$data['email']."',null,'insert',NOW(),'".$data['name']."','".$data['password']."','".$data['phone']."','".$data['email']."','".$data['user_type']."','".$data['title']."')";
 
                 $query =  $this->db->query($sqlText);
                 // $query1 = $this->db->getLastQuery();
@@ -45,6 +45,8 @@
                             `action_date` = now(),
                             `name` = '".$data['name']."',
                             `password` = '".$data['password']."',
+                            `user_type` = '".$data['user_type']."',
+                            `title` = '".$data['title']."',
                             `phone` = '".$data['phone']."'                            
                             WHERE `email` = '".$data['email']."'";
                 $query =  $this->db->query($sqlText);

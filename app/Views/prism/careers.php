@@ -10,14 +10,16 @@
         <div class="career">
           <h3>Available Jobs Offers</h3>
         </div>
+        <?php foreach($joblist as $index => $row) { ?>
         <div class="job-list">
           <div>
-            <h2>Job title</h2>
-            <p> <span> <b>Description: </b></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus obcaecati doloribus dolor sint voluptate modi, pariatur odit dolorem perferendis, id suscipit veritatis dolores nihil voluptatem unde. Nulla consequuntur alias quos?
+            <h2><?php echo $row->job_title;?></h2>
+            <p> <span> <b>Description: </b></span><?php echo $row->job_description;?>
             </p>
             <input class="btn btn-info btnn-right" type="button" value="Apply">
           </div>
         </div>
+      <?php } ?>
     </main>
     <?= $this->endSection() ?>
     <!-- main -->

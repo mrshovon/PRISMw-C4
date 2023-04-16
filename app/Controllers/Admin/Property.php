@@ -7,7 +7,7 @@ class Property extends BaseController
     public function index()
     {
         $model = new PropertyInfoModel();
-        $data['propertylist'] = $model->get(null);
+        $data['propertylist'] = $model->get(null,null,null);
         return view('admin/property', $data);
     }
 
@@ -33,7 +33,7 @@ class Property extends BaseController
         }
         else {
             $session->setFlashdata('msg', $result);
-            $data['propertylist'] = $model->get(null);
+            $data['propertylist'] = $model->get(null,null,null);
             return view('admin/property', $data);
         }
    }
@@ -55,6 +55,7 @@ class Property extends BaseController
     {
 
         $session = session();
+        // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
         $model = new PropertyInfoModel();
         $data = $rules = [];
         $actiontype = $this->request->getVar('actiontype');

@@ -356,8 +356,9 @@ to{left: 1300px;}
 .pdtls1 p{
   box-sizing: border-box;
   /* border: 2px solid black; */
-  width: 95%;
+  width: 638px;
   margin-left: 25px;
+  overflow-wrap: break-word;
 }
 /* property-details ends */
 /* @keyframes move{

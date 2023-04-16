@@ -44,26 +44,25 @@
     </div>
     <span class="close-box-collapse right-boxed ion-ios-close"></span>
     <div class="box-collapse-wrap form">
-      <form class="form-a">
+      <form class="form-a" action="<?=base_url('public/homeAL/search')?>" method="post">
         <div class="row">
           <div class="col-md-12 mb-2">
             <div class="form-group">
-              <label for="Type">Keyword</label>
-              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+              <label for="area">Keyword</label>
+              <input type="text" name="area" id="area" class="form-control form-control-lg form-control-a" placeholder="Seach By Area">
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="Type">Type</label>
-              <select class="form-control form-control-lg form-control-a" id="Type">
-                <option>All Type</option>
-                <option>For Rent</option>
-                <option>For Buy</option>
+              <label for="purpose">Type</label>
+              <select name="purpose" id="purpose" class="form-control form-control-lg form-control-a">
+                <option value="rent">For Rent</option>
+                <option value="sell">For Buy</option>
               </select>
             </div>
           </div>
           <div class="col-md-12">
-            <button type="submit" class="btn btn-b">Search Property</button>
+            <button href="<?=base_url('public/homeAL/search')?>" class="btn btn-b">Search Property</button>
           </div>
         </div>
       </form>
@@ -91,10 +90,10 @@
             <a class="nav-link <?= $path == 'userdash' ? 'active' : '' ?>" href="<?=base_url('public/homeAL/userdash')?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?= $path == 'aboutus' ? 'active' : '' ?>" href="<?=base_url('public/homeAL/aboutus')?>">About</a>
+            <a class="nav-link <?= $path == 'aboutus' ? 'active' : '' ?>" href="<?=base_url('public/home/aboutus')?>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?= $path == 'contactus' ? 'active' : '' ?>" href="<?=base_url('public/homeAL/contactus')?>">Contact Us</a>
+            <a class="nav-link <?= $path == 'contactus' ? 'active' : '' ?>" href="<?=base_url('public/home/contactus')?>">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link <?= $path == 'addproperty' ? 'active' : '' ?>" href="<?=base_url('public/home/addproperty')?>">ADD Property</a>
@@ -105,13 +104,13 @@
               Service
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="<?=base_url('public/homeAL/homeloan')?>">home-loan</a>
-              <a class="dropdown-item" href="<?=base_url('public/homeAL/renovation')?>">Renovation</a>
-              <a class="dropdown-item" href="<?=base_url('public/homeAL/legalservices')?>">Documentation</a>
+              <a class="dropdown-item" href="<?=base_url('public/home/homeloan')?>">home-loan</a>
+              <a class="dropdown-item" href="<?=base_url('public/home/renovation')?>">Renovation</a>
+              <a class="dropdown-item" href="<?=base_url('public/home/legalservices')?>">Documentation</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/home')?>">LOGOUT</a>
+            <a class="nav-link" href="<?=base_url('public/homeAL/signout')?>">LOGOUT</a>
           </li>
 
         </ul>
@@ -255,6 +254,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="<?=base_url('public/js/main.js')?>"></script>
+  <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
