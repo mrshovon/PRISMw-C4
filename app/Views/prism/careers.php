@@ -1,5 +1,5 @@
 
-<?= $this->extend('layouts/masterAL') ?>
+<?= $this->extend('layouts/master') ?>
     <?= $this->section('content') ?>
     <!-- main -->
     <main style="height: 600px; margin-top:10%;">

@@ -17,7 +17,7 @@
                 $row = $query->getRow();
 
                 $sqlText = "INSERT INTO `tbl_look_up`(`maker_id`,`auth_id`,`action_type`,`action_date`,`look_up_id`,`look_up_name`,`short_name`,`sort_order`,`look_type_id`)
-                            VALUES('1730020@iub.edu.bd','NULL','INSERT',NOW(),".$row->maxid.",'".$data['look_up_name']."','".$data['short_name']."','".$data['sort_order']."','".$data['look_type_id']."')";
+                            VALUES('".$data['email']."','NULL','INSERT',NOW(),".$row->maxid.",'".$data['look_up_name']."','".$data['short_name']."','".$data['sort_order']."','".$data['look_type_id']."')";
 
                 $query =  $this->db->query($sqlText);
                 return  $this->db->affectedRows();
@@ -39,7 +39,7 @@
             public function edit($data) {
               $sqlText = " UPDATE `tbl_look_up`
                             SET
-                            `auth_id` = '1730020@iub.edu.bd',
+                            `auth_id` = '".$data['email']."',
                             `action_type` = 'update',
                             `action_date` = now(),
                             `look_up_name` = '".$data['look_up_name']."',

@@ -16,7 +16,7 @@
             $row = $query->getRow();
 
             $sqlText = "INSERT INTO `tbl_look_type`(`maker_id`, `auth_id`, `action_type`, `action_date`, `look_type_id`, `look_type_name`)
-                        VALUES ('1730020@iub.edu.bd',null,'insert',NOW(),".$row->maxid.",'".$data['look_type_name']."')";
+                        VALUES ('".$data['email']."',null,'insert',NOW(),".$row->maxid.",'".$data['look_type_name']."')";
             $query =  $this->db->query($sqlText);
 
             return  $this->db->affectedRows();
@@ -40,7 +40,7 @@
             $sqlText = "UPDATE `tbl_look_type`
                         SET
                        
-                        `auth_id` = '1',
+                        `auth_id` = '".$data['email']."',
                         `action_type` = 'update',
                         `action_date` = now(),
                         `look_type_name` = '".$data['look_type_name']."'

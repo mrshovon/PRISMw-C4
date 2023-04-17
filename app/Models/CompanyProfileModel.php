@@ -18,7 +18,7 @@ class CompanyProfileModel extends Model
         
         
         $sqlText = "INSERT INTO `tbl_company_profile`(`maker_id`,`auth_id`,`action_type`,`action_date`,`company_name`,`company_vision`,`company_address`,`company_email`,`privecy_policy`,`terms_and_condition`,`company_id`)
-                    VALUES('1730020@iub.edu.bd',null,'insert',now(),'".$data['company_name']."','".$this->db->escapeString($data['company_vision'])."','".$this->db->escapeString($data['company_address'])."','".$data['company_email']."','pp','term n condition',".$row->maxid.")";
+                    VALUES('".$data['company_email']."',null,'insert',now(),'".$data['company_name']."','".$this->db->escapeString($data['company_vision'])."','".$this->db->escapeString($data['company_address'])."','".$data['company_email']."','pp','term n condition',".$row->maxid.")";
         
         $query =  $this->db->query($sqlText);
         return  $this->db->affectedRows();
@@ -40,7 +40,7 @@ class CompanyProfileModel extends Model
     public function edit($data) {
         $sqlText = "UPDATE `tbl_company_profile`
         SET
-        `auth_id` = '',
+        `auth_id` = '".$data['company_email']."',
         `action_type` = 'update',
         `action_date` = now(),
         `company_name` = '".$data['company_name']."',

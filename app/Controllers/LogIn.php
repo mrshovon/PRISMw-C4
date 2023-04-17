@@ -37,7 +37,15 @@ class Login extends BaseController
                 ];
                 $session->set($ses_data);
                 // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
-                return redirect()->to('/public/homeAL/userdash');
+                if(strtolower($data['user_type']) == 'administrator'){
+                    return redirect()->to('/public/admin/dashboard');
+                }
+                else if(strtolower($data['user_type']) == 'customer'){
+                    return redirect()->to('/public/user/homeAL/userdash');
+                }
+                else {
+                    return redirect()->to('/public/home');
+                }
             }else{
                 $session->setFlashdata('msg', 'Wrong Password');
                 return redirect()->to('/public/login');

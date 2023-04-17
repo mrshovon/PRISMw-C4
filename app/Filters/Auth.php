@@ -8,7 +8,7 @@ class Auth implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        echo 'ok'; exit;
+        // echo '<pre>'; print_r(session()); echo '</pre>';
         if(!session()->get('logged_in')){
             // echo 'logged in';exit;
             // then redirct to login page

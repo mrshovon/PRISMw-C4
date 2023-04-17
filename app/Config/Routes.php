@@ -30,55 +30,47 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-// $routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 
 $routes->group("admin", ["namespace" => "App\Controllers\Admin"], function ($routes) {
-    // $routes->get('blocked', 'Dashboard::Blocked');
-    // $routes->get('/', 'Dashboard::index');
-    // $routes->get('dashboard', 'Dashboard::index');
-
-    $routes->group('career-grp',  function ($routes) {
-        $routes->get('view', 'careers::index', ['filter' => 'auth']);
+    $routes->group('careers',  function ($routes) {
+        $routes->get('/', 'careers::index', ['filter' => 'auth']);
         $routes->get('add', 'careers::add', ['filter' => 'auth']);
-        
     });
 
-    $routes->group('user-grp',  function ($routes) {
-        $routes->get('view', 'user::index', ['filter' => 'auth']);
+    $routes->group('user',  function ($routes) {
+        $routes->get('/', 'user::index', ['filter' => 'auth']);
         $routes->get('add', 'user::add', ['filter' => 'auth']);
-        
     });
 
-    $routes->group('lookup-grp',  function ($routes) {
-        $routes->get('view', 'lookup::index', ['filter' => 'auth']);
+    $routes->group('lookup',  function ($routes) {
+        $routes->get('/', 'lookup::index', ['filter' => 'auth']);
         $routes->get('add', 'lookup::add', ['filter' => 'auth']);
-        
     });
 
-    $routes->group('looktype-grp',  function ($routes) {
-        $routes->get('view', 'looktype::index', ['filter' => 'auth']);
+    $routes->group('looktype',  function ($routes) {
+        $routes->get('/', 'looktype::index', ['filter' => 'auth']);
         $routes->get('add', 'looktype::add', ['filter' => 'auth']);
-        
     });
 
-    $routes->group('property-grp',  function ($routes) {
-        $routes->get('view', 'property::index', ['filter' => 'auth']);
+    $routes->group('property',  function ($routes) {
+        $routes->get('/', 'property::index', ['filter' => 'auth']);
         $routes->get('add', 'property::add', ['filter' => 'auth']);
-        
     });
 
-    $routes->group('companyprofile-grp',  function ($routes) {
-        $routes->get('view', 'companyprofile::index', ['filter' => 'auth']);
+    $routes->group('companyprofile',  function ($routes) {
+        $routes->get('/', 'companyprofile::index', ['filter' => 'auth']);
         $routes->get('add', 'companyprofile::add', ['filter' => 'auth']);
-        
     });
-    // $routes->group('homeAL-grp',  function ($routes) {
-    //     $routes->get('signout', 'homeAL::signout', ['filter' => 'auth']);
-    //     $routes->get('propertydetails', 'homeAL::propertydetails', ['filter' => 'auth']);
-    //     $routes->get('userdash', 'homeAL::userdash', ['filter' => 'auth']);
-    //     $routes->get('search', 'homeAL::search', ['filter' => 'auth']);
-        
-    // });
+});
+
+$routes->group("user", ["namespace" => "App\Controllers\User"], function ($routes) {
+    $routes->group('homeAL',  function ($routes) {
+        $routes->get('/', 'homeAL::index',['filter' => 'auth']);
+        $routes->get('signout', 'homeAL::signout',['filter' => 'auth']);
+        $routes->get('propertydetails', 'homeAL::propertydetails',['filter' => 'auth']);
+        $routes->get('userdash', 'homeAL::userdash',['filter' => 'auth']);
+        $routes->get('search', 'homeAL::search',['filter' => 'auth']);
+    });
 });
 /*
  * --------------------------------------------------------------------

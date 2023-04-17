@@ -96,8 +96,9 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html" class="btn btn-secondary" style="margin-top:3px;">LOGOUT</a>  
+        <nav style="display: flex">
+            <a href="<?=base_url('public/home/signout')?>" class="btn btn-secondary" style="margin-top:3px;">LOGOUT</a>
+            <h5 style="margin-left: 120px;margin-top: 9px;"><?php echo strtoupper(session()->get('name')).' ('.strtoupper(session()->get('user_type')).')'?></h5>  
         </nav>
     </header>
     <main class="container row" >

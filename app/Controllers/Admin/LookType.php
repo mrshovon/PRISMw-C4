@@ -50,7 +50,8 @@ class Looktype extends BaseController
         if($this->validate($rules)) {
             $data = [
                 'look_type_name' => $this->request->getVar('looktypename'),
-                'look_type_id' => $this->request->getVar('looktypeid')
+                'look_type_id' => $this->request->getVar('looktypeid'),
+                'email' => session()->get('email')
             ];
             $actiontype = $this->request->getVar('actiontype');
             

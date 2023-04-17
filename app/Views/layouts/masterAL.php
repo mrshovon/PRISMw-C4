@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>User-Dashboard</title>
+  <title>Home</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -44,7 +44,7 @@
     </div>
     <span class="close-box-collapse right-boxed ion-ios-close"></span>
     <div class="box-collapse-wrap form">
-      <form class="form-a" action="<?=base_url('public/homeAL/search')?>" method="post">
+      <form class="form-a" action="<?=base_url('public/user/homeAL/search')?>" method="post">
         <div class="row">
           <div class="col-md-12 mb-2">
             <div class="form-group">
@@ -62,7 +62,7 @@
             </div>
           </div>
           <div class="col-md-12">
-            <button href="<?=base_url('public/homeAL/search')?>" class="btn btn-b">Search Property</button>
+            <button href="" class="btn btn-b">Search Property</button>
           </div>
         </div>
       </form>
@@ -87,16 +87,16 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link <?= $path == 'userdash' ? 'active' : '' ?>" href="<?=base_url('public/homeAL/userdash')?>">Home</a>
+            <a class="nav-link <?= $path == 'userdash' ? 'active' : '' ?>" href="<?=base_url('public/user/homeAL/userdash')?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?= $path == 'aboutus' ? 'active' : '' ?>" href="<?=base_url('public/home/aboutus')?>">About</a>
+            <a class="nav-link <?= $path == 'aboutus' ? 'active' : '' ?>" href="<?=base_url('public/user/homeAL/aboutus')?>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?= $path == 'contactus' ? 'active' : '' ?>" href="<?=base_url('public/home/contactus')?>">Contact Us</a>
+            <a class="nav-link <?= $path == 'contactus' ? 'active' : '' ?>" href="<?=base_url('public/user/homeAL/contactus')?>">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?= $path == 'addproperty' ? 'active' : '' ?>" href="<?=base_url('public/home/addproperty')?>">ADD Property</a>
+            <a class="nav-link <?= $path == 'addproperty' ? 'active' : '' ?>" href="<?=base_url('public/user/homeAL/add')?>">ADD Property</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle <?= $path == 'homeloan' || $path == 'renovation' || $path == 'legalservices' ? 'active' : '' ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -104,13 +104,13 @@
               Service
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="<?=base_url('public/home/homeloan')?>">home-loan</a>
-              <a class="dropdown-item" href="<?=base_url('public/home/renovation')?>">Renovation</a>
-              <a class="dropdown-item" href="<?=base_url('public/home/legalservices')?>">Documentation</a>
+              <a class="dropdown-item" href="<?=base_url('public/user/homeAL/homeloan')?>">home-loan</a>
+              <a class="dropdown-item" href="<?=base_url('public/user/homeAL/renovation')?>">Renovation</a>
+              <a class="dropdown-item" href="<?=base_url('public/user/homeAL/legalservices')?>">Documentation</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/homeAL/signout')?>">LOGOUT</a>
+            <a class="nav-link" href="<?=base_url('public/home/signout')?>">LOGOUT</a>
           </li>
 
         </ul>
@@ -119,6 +119,10 @@
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
       </button>
+      <?php 
+              $name = explode(" ",session()->get('name'));
+      ?>
+      <span style="font-size: 10px; font-weight:bold;"><i class="fa-solid fa-user fa-xl" style="color: #2a791b; margin-left: 30px;"></i> <?php echo strtoupper($name[0])?></span>
     </div>
   </nav>
   <!--/ Nav End /-->
@@ -158,7 +162,7 @@
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="<?=base_url('public/homeAL/careers')?>">Careers</a>
+                    <i class="fa fa-angle-right"></i> <a href="<?=base_url('public/user/homeAL/careers')?>">Careers</a>
                   </li>
                   <li class="item-list-a">
                     <i class="fa fa-angle-right"></i> <a href="#">Privacy Policy</a>

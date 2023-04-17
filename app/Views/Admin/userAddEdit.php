@@ -33,11 +33,11 @@
               </div>
               <div class="form-group">
                   <label for="password"><i class="zmdi zmdi-account material-icons-name"></i>Password: </label>
-                  <input type="text" name="password" id="password" placeholder="password" class="form-control" value="" />
+                  <input type="password" name="password" id="password" placeholder="password" class="form-control" value="" />
               </div>
               <div class="form-group">
                   <label for="confpassword"><i class="zmdi zmdi-account material-icons-name"></i>Confirm Password: </label>
-                  <input type="text" name="confpassword" id="confpassword" placeholder="confirm password" class="form-control" value="" />
+                  <input type="password" name="confpassword" id="confpassword" placeholder="confirm password" class="form-control" value="" />
               </div>
               <div class="form-group">
                 <label for="user_type">User Type:</label>

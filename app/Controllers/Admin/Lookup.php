@@ -56,7 +56,8 @@ class Lookup extends BaseController
                 'short_name'    => $this->request->getVar('shortname'),
                 'sort_order'    => $this->request->getVar('sortorder'),
                 'look_type_id' => $this->request->getVar('looktypeid'),
-                'look_up_id'    => $this->request->getVar('lookupid')
+                'look_up_id'    => $this->request->getVar('lookupid'),
+                'email'    => session()->get('email')
             ];
             $actiontype = $this->request->getVar('actiontype');
             

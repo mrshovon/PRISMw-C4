@@ -41,14 +41,14 @@
               <div class="card-overlay-a-content">
                 <div class="card-header-a">
                   <h2 class="card-title-a">
-                    <a href="#"><?php echo $row->property_address?></a>
+                    <a class="adrs" href="#"><?php echo $row->property_address?></a>
                   </h2>
                 </div>
                 <div class="card-body-a">
                   <div class="price-box d-flex">
                     <span class="price-a"> <span><?php echo $row->purpose_name?></span>| tk <span><?php echo $row->price?></span></span>
                   </div>
-                  <a href="<?= base_url('public/homeAL/propertydetails/'.$row->property_id)?>" class="link-a">Click here to view
+                  <a href="<?= base_url('public/user/homeAL/propertydetails/'.$row->property_id)?>" class="link-a">Click here to view
                     <span class="ion-ios-arrow-forward"></span>
                   </a>
                 </div>

@@ -148,4 +148,10 @@ class Home extends BaseController
     {
         return view('prism/addproperty');
     }
+    public function signout()
+    { 
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/public/home');
+    }
 }

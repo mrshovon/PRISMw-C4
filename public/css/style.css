@@ -19,7 +19,9 @@ a {
   transition: all .5s ease;
   text-decoration: none !important; /* added */
 }
-
+.adrs{
+  color: #9b9b9b !important;
+}
 a:hover {
   color: #2eca6a !important; /* added */
 }
@@ -72,7 +74,7 @@ a:hover {
 }
 
 .text-brand {
-  color: #000000;
+  color: #000000 !important;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -544,7 +546,7 @@ a:hover {
 .navbar-default.navbar-trans .nav-link,
 .navbar-default.navbar-reduce .nav-link {
   font-size: 1.1rem;
-  color: #000000;
+  color: #000000 !important;
   font-weight: 600;
   letter-spacing: 0.030em;
   transition: all 0.1s ease-in-out;
