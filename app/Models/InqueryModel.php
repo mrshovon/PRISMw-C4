@@ -12,16 +12,16 @@
                 $this->db = db_connect();
             }
             
-            public function add($name,$phone,$address,$query) {
+            public function add($data) {
  
                 $sqlText = "INSERT INTO `tbl_inquery`(`maker_id`,`auth_id`,`action_type`,`action_date`,`customer_name`,`phone`,`address`,`query`)
-                            VALUES(null,null,'insert',now(),'".$name."','".$phone."','".$address."','".$query."')"; 
+                            VALUES(null,null,'insert',now(),'".$data['customer_name']."','".$data['phone']."','".$data['address']."','".$data['address']."')"; 
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();
             }
             public function erase($inquery_id) {
-                $sqlText = "DELETE FROM `prism`.`tbl_inquery` WHERE `inquery_id`= ".$inquery_id."";
+                $sqlText = "DELETE FROM `tbl_inquery` WHERE `inquery_id`= ".$inquery_id."";
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();
@@ -41,9 +41,10 @@
                             
                 return  $this->db->affectedRows();
             }
-            public function search() {
-         
-
+            public function get() {
+                $sqlText = "SELECT * FROM tbl_inquery" ;
+                $query =  $this->db->query($sqlText);
+                return $query->getResult();
             }
             public function searchByCriteria() {
          

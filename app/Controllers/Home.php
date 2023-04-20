@@ -90,9 +90,6 @@ class Home extends BaseController
         return view('prism/home');
         // return view('admin/looktype');
     }
-
-   
-
     public function signup()
     {
         return view('prism/signup');
@@ -107,7 +104,26 @@ class Home extends BaseController
     {
         return view('prism/contactus');
     }
-
+    public function sendmessage()
+    {
+        $session = session();
+        $model = new InqueryModel();
+        $data = [
+            'customer_name' => $this->request->getVar('name'),
+            'phone' => $this->request->getVar('Phone'),
+            'address' => $this->request->getVar('Address'),
+            'query' => $this->request->getVar('message')
+        ];
+        // echo '<pre>';print_r($data);echo '</pre>'; exit;
+        $result = $model->add($data);
+        // echo $result; exit;
+        if($result <= 0) {
+            return view('prism/addproperty', $data);
+        }
+        else {
+            return redirect()->to('/public/home');
+        }  
+    }
     public function careers()
     {
         $model = new CareersModel();

@@ -39,6 +39,27 @@ class HomeAL extends BaseController
     {
         return view('prism/contactus copy');
     }
+    public function sendmessage()
+    {
+        $session = session();
+        $model = new InqueryModel();
+        $data = [
+            'customer_name' => $this->request->getVar('name'),
+            'phone' => $this->request->getVar('Phone'),
+            'address' => $this->request->getVar('Address'),
+            'query' => $this->request->getVar('message')
+        ];
+        // echo '<pre>';print_r($data);echo '</pre>'; exit;
+        $result = $model->add($data);
+        // echo $result; exit;
+        if($result <= 0) {
+            return view('prism/addproperty', $data);
+        }
+        else {
+            return redirect()->to('/public/user/homeAL/userdash');
+        }  
+    }
+   
     public function homeloan()
     {
         return view('prism/homeloan copy');

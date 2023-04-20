@@ -70,6 +70,8 @@ $routes->group("user", ["namespace" => "App\Controllers\User"], function ($route
         $routes->get('propertydetails', 'homeAL::propertydetails',['filter' => 'auth']);
         $routes->get('userdash', 'homeAL::userdash',['filter' => 'auth']);
         $routes->get('search', 'homeAL::search',['filter' => 'auth']);
+        $routes->get('contactus', 'homeAL::contactus',['filter' => 'auth']);
+        $routes->get('sendmessage', 'homeAL::sendmessage',['filter' => 'auth']);
     });
 });
 /*

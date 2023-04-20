@@ -1,0 +1,288 @@
+INFO - 2023-04-19 14:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-19 14:06:25 --> mysqli_sql_exception: Unknown column 'pi.property_size' in 'field list' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.prope...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.prope...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.prope...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT pi.prope...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\Property.php(10): App\Models\PropertyInfoModel->get(NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\Property->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 14:06:25 --> Unknown column 'pi.property_size' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\Admin\Property.php(10): App\Models\PropertyInfoModel->get(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-19 14:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-19 14:06:33 --> mysqli_sql_exception: Unknown column 'pi.property_size' in 'field list' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.prope...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.prope...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.prope...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT pi.prope...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\Property.php(10): App\Models\PropertyInfoModel->get(NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\Property->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 14:06:33 --> Unknown column 'pi.property_size' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\Admin\Property.php(10): App\Models\PropertyInfoModel->get(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-19 14:06:34 --> mysqli_sql_exception: Unknown column 'pi.property_size' in 'field list' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.prope...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.prope...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.prope...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT pi.prope...')
+#4 C:\xampp\htdocs\prism\app\Controllers\Admin\Property.php(10): App\Models\PropertyInfoModel->get(NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\Admin\Property->index()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 14:06:34 --> Unknown column 'pi.property_size' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(104): CodeIgniter\Database\BaseConnection->query('SELECT pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\Admin\Property.php(10): App\Models\PropertyInfoModel->get(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-19 14:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-19 14:08:16 --> mysqli_sql_exception: Unknown column 'pi.property_size' in 'field list' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.actio...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.actio...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.actio...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.actio...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(59): App\Models\PropertyInfoModel->get(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->userdash()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 14:08:16 --> Unknown column 'pi.property_size' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.action_date,pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\User\HomeAL.php(59): App\Models\PropertyInfoModel->get(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->userdash()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-19 14:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-19 14:15:47 --> mysqli_sql_exception: Unknown column 'pi.property_size' in 'field list' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.actio...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.actio...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.actio...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.actio...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(59): App\Models\PropertyInfoModel->get(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->userdash()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 14:15:47 --> Unknown column 'pi.property_size' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.action_date,pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\User\HomeAL.php(59): App\Models\PropertyInfoModel->get(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->userdash()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-19 14:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-19 14:17:01 --> mysqli_sql_exception: Unknown column 'pi.property_size' in 'field list' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.actio...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.actio...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.actio...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.actio...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(59): App\Models\PropertyInfoModel->get(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->userdash()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-19 14:17:01 --> Unknown column 'pi.property_size' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.action_date,pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\User\HomeAL.php(59): App\Models\PropertyInfoModel->get(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->userdash()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-19 14:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 14:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 15:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-19 17:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
