@@ -1,0 +1,129 @@
+INFO - 2023-04-24 17:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-24 17:02:56 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.actio...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.actio...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.actio...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.actio...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(86): App\Models\PropertyInfoModel->get('img', NULL, NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->propertydetails('img', 'slide-2.jpg')
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-24 17:02:56 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.action_date,pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id WHERE pi.property_id = img ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\User\HomeAL.php(86): App\Models\PropertyInfoModel->get('FCPATH\\img', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->propertydetails('FCPATH\\img', 'slide-2.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 17:02:56 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.actio...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.actio...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.actio...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.actio...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(86): App\Models\PropertyInfoModel->get('img', NULL, NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->propertydetails('img', 'slide-3.jpg')
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-04-24 17:02:56 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.actio...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.actio...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.actio...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.actio...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(86): App\Models\PropertyInfoModel->get('img', NULL, NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->propertydetails('img', 'slide-1.jpg')
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-24 17:02:56 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.action_date,pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id WHERE pi.property_id = img ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\User\HomeAL.php(86): App\Models\PropertyInfoModel->get('FCPATH\\img', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->propertydetails('FCPATH\\img', 'slide-3.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 17:02:56 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.action_date,pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id WHERE pi.property_id = img ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\User\HomeAL.php(86): App\Models\PropertyInfoModel->get('FCPATH\\img', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->propertydetails('FCPATH\\img', 'slide-1.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-24 17:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-24 17:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
