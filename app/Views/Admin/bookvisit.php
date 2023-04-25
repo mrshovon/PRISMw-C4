@@ -37,7 +37,7 @@
                       <td><?php echo $row->action_date;?></td>
 
                       <td>
-                        <a href="<?= base_url('public/admin/careers/delete/'.$row->property_id.$row->date)?>" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
+                        <a href="<?= base_url('public/admin/bookvisit/delete/'.$row->property_id.'/'.$row->date)?>" class="btn btn-danger"><i class="fa-solid fa-trash" title="Delete"></i></a>
                       </td>
                     </tr>
                     <?php } ?>

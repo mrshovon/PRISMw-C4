@@ -11,11 +11,11 @@ class BookVisit extends BaseController
         $data['visitlist'] = $model->get();
         return view('admin/bookvisit', $data);
     }
-    public function delete($inquery_id)
+    public function delete($property_id,$date)
     {
         $session = session();    
         $model = new BookVisitModel();
-        $result = $model->erase($inquery_id);
+        $result = $model->erase($property_id,$date);
         if($result == null) {
             return redirect()->to('public/admin/bookvisit');
         }
