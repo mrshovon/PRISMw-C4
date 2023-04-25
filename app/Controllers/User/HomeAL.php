@@ -67,12 +67,18 @@ class HomeAL extends BaseController
 
     public function renovation()
     {
-        return view('prism/renovation copy');
+        $model = new PropertyInfoModel();
+        $data['renovationlist'] = $model->getByCriteria(4);
+        //echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        return view('prism/renovation copy', $data);
     }
 
     public function legalservices()
     {
-        return view('prism/legalservices copy');
+        $model = new PropertyInfoModel();
+        $data['servicelist'] = $model->getByCriteria(5);
+        //echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        return view('prism/legalservices copy', $data);
     }
     public function userdash()
     {

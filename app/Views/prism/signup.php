@@ -1,6 +1,6 @@
 
     <!-- main -->
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,9 +17,16 @@
 </head>
 <body>
 
-    <div class="main">
-
-        <!-- Sign up form -->
+    <div class="main" style="padding-top: 20px;">
+        
+        <div>
+            <h3 class="sinse-title" style="text-align: center; color: #2eca6a">PRISM PROPERTIES
+              <br>
+              <p>Join us to experiance the best property buy,sell and rent service</p>
+            </h3>
+            
+        </div>    
+    <!-- Sign up form -->
         <section class="signup">
             <div class="container">
                 <div class="signup-content">

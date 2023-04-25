@@ -3,7 +3,7 @@
     <?= $this->extend('layouts/master') ?>
     <?= $this->section('content') ?>
     <<!--/ Intro Single star /-->
-  <section class="intro-single">
+  <section class="intro-single"  style="margin-top:92px">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-8">

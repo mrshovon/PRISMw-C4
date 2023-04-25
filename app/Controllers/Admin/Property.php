@@ -20,6 +20,7 @@ class Property extends BaseController
         $data['propertystslist'] = $model->getByCriteria(7);
         $data['descriptivelist'] = $model->getByCriteria(8);
         $data['purposelist'] = $model->getByCriteria(9);
+        $data['servicelist'] = $model->getByCriteria(5);
         //echo '<pre>'; print_r($data); echo '</pre>'; exit;
         return view('admin/propertyAdd', $data);
    }
@@ -46,7 +47,7 @@ class Property extends BaseController
        $data['propertystslist'] = $model->getByCriteria(7);
        $data['descriptivelist'] = $model->getByCriteria(8);
        $data['purposelist'] = $model->getByCriteria(9);
-       $data['item'] = $model->get($property_id)[0];
+       $data['item'] = $model->get($property_id,null,null)[0];
        //echo '<pre>'; print_r($data2); echo '</pre>'; exit; 
        return view('admin/propertyAdd',$data);
    }
@@ -141,11 +142,11 @@ class Property extends BaseController
                 $img->move(ROOTPATH . 'public/uploads',$newName);
             }
             if($result <= 0) {
-                $session->setFlashdata('msg', 'look up name saved failed. Please try again later!');
+                $session->setFlashdata('msg', 'Property saved failed. Please try again later!');
                 return view('public/admin/propertyAdd', $data);
             }
             else {
-                $session->setFlashdata('msg', 'Look type name save Successful. Thank you!');
+                $session->setFlashdata('msg', 'Property save Successful. Thank you!');
                 return redirect()->to('public/admin/property');
             }  
         } 

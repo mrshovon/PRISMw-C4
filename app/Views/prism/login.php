@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="<?=base_url('public/css/style-ls.css')?>">
 </head>
 <body>
-    <div class="main">
+    <div class="main" style="padding-top: 20px;">
        <!-- Sing in  Form -->
         <section class="sign-in">
             <div class="container">
@@ -38,10 +38,10 @@
                                 <label for="password"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="password" id="your_pass" placeholder="Password"/>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
                                 <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                            </div>
+                            </div> -->
                             <div class="form-group form-button">
 
                                 <button type="submit"id="signin" class="form-submit" style="border: none;">Log In</button>

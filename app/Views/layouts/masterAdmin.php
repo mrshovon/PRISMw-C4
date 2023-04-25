@@ -115,7 +115,7 @@
             <li href="renovation.html" class="btn btn-outline-light">Renovation</li>
             <li href="homeloan.html" class="btn btn-outline-light">Home Loan</li>
             <li href="inquery.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/inquery')?>">Inquery</a></li>
-            <li href="bookvisit.html" class="btn btn-outline-light">Book visit</li>
+            <li href="bookvisit.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/bookvisit')?>">Book Visit</a></li>
             <li href="slider.html" class="btn btn-outline-light">Slider</li>
             <li href="favourites.html" class="btn btn-outline-light">Favourites</li>
 

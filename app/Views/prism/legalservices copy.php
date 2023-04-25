@@ -23,14 +23,9 @@
                     <div class="form-group frm">
                       <label for="renovate">Documentation and Legal Services Offered:</label>
                       <select class="btn btn-warning" name="renovate" id="renovate">
-                        <option value="service 1">Service 1</option>
-                        <option value="service 2">Service 2</option>
-                        <option value="service 3">Service 3</option>
-                        <option value="service 4">Service 4</option>
-                        <option value="service 5">Service 5</option>
-                        <option value="service 6">Service 6</option>
-                        <option value="service 7">Service 7</option>
-                        <option value="service 8">Service 8</option>
+                      <?php foreach($servicelist as $item) { ?>
+                      <option value="<?php echo $item->look_up_id ?>"><?php echo $item->look_up_name ?></option>
+                     <?php } ?> 
                       </select>
                     </div>
                     <div class="form-group frm">

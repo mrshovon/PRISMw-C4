@@ -90,6 +90,9 @@
                         <li class="d-flex justify-content-between">
                           <strong>Level:</strong>
                           <span><?php echo $row->level?></span>
+                        </li>                        <li class="d-flex justify-content-between">
+                          <strong>Occupied:</strong>
+                          <span><?php echo ($row->is_occupied == true ? 'Yes' : 'No');?></span>
                         </li>
                       </ul>
                     </div>

@@ -78,7 +78,7 @@
                   <input type="text" name="email" id="email" placeholder="email" class="form-control" value="<?= isset($item) ? $item->email : '' ?>" />
               </div>
               <div class="form-group">
-                  <label for="purposecode"><i class="zmdi zmdi-account material-icons-name"></i>Purpose Code: </label>
+                  <label for="purposecode"><i class="zmdi zmdi-account material-icons-name"></i>Purpose: </label>
                   <SELECT name="purposecode" id="purposecode" class="form-control">
                     <?php foreach($purposelist as $item) { ?>
                       <option value="<?php echo $item->look_up_id ?>"><?php echo $item->look_up_name ?></option>
@@ -86,7 +86,7 @@
                   </SELECT>
               </div>
               <div class="form-group">
-                  <label for="propertytypecode"><i class="zmdi zmdi-account material-icons-name"></i>Property Type Code: </label>
+                  <label for="propertytypecode"><i class="zmdi zmdi-account material-icons-name"></i>Property Type: </label>
                   <SELECT name="propertytypecode" id="propertytypecode" class="form-control">
                     <?php foreach($propertytypelist as $item) { ?>
                       <option value="<?php echo $item->look_up_id ?>"><?php echo $item->look_up_name ?></option>
@@ -94,7 +94,7 @@
                   </SELECT>
               </div>
               <div class="form-group">
-                  <label for="descriptivestatuscode"><i class="zmdi zmdi-account material-icons-name"></i>Descriptive Status Code: </label>
+                  <label for="descriptivestatuscode"><i class="zmdi zmdi-account material-icons-name"></i>Descriptive Status: </label>
                   <SELECT name="descriptivestatuscode" id="descriptivestatuscode" class="form-control">
                     <?php foreach($descriptivelist as $item) { ?>
                       <option value="<?php echo $item->look_up_id ?>"><?php echo $item->look_up_name ?></option>

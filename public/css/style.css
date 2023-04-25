@@ -20,7 +20,7 @@ a {
   text-decoration: none !important; /* added */
 }
 .adrs{
-  color: #9b9b9b !important;
+  color: #e2e2e2 !important;
 }
 a:hover {
   color: #2eca6a !important; /* added */
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .link-a {
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none;
 }
 
