@@ -943,7 +943,7 @@ a:hover {
 /*------/ Intro Single /------*/
 
 .intro-single {
-  padding: 2rem 0 3rem;
+  padding: 8rem 0 3rem; /*changed from 2rem*/
 }
 
 .intro-single .title-single-box {

@@ -13,7 +13,7 @@
             
             public function add($data) {
  
-                $sqlText = "select ifnull( max(property_id), 0) +1 as maxid from tbl_property_info"; 
+                $sqlText = "SELECT ifnull(MAX( CAST(property_id AS UNSIGNED) ),0) +1 AS maxid FROM tbl_property_info"; 
                 $query =  $this->db->query($sqlText);
                 $row = $query->getRow();
                 
@@ -45,7 +45,7 @@
                             `action_type` = 'update',
                             `action_date` = now(),
                             `property_name` = '".$data['property_name']."',
-                            `description` = '".$data['description']."',
+                            `description` = '".$this->db->escapeString($data['description'])."',
                             `city` = '".$data['city']."',
                             `property_area` = '".$data['property_area']."',
                             `property_size` = '".$data['property_size']."',

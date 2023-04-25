@@ -35,14 +35,15 @@
         <div class="col-md-4">
           <div class="card-box-a card-shadow">
             <div class="img-box-a">
-              <img src="<?=base_url('public/img/property-1.jpg')?>" alt="" class="img-a img-fluid">
+              <?php $ext = '.jpg'; ?>
+              <img src="<?=base_url('public/img/p'.$index+1..$ext)?>" alt="" class="img-a img-fluid">
               
             </div>
             <div class="card-overlay">
               <div class="card-overlay-a-content">
                 <div class="card-header-a">
                   <h2 class="card-title-a">
-                    <a class="adrs" href="#"><?php echo $row->property_address?></a>
+                    <a class="adrs" href="#"><?php echo $row->property_name?></a>
                   </h2>
                 </div>
                 <div class="card-body-a">
@@ -58,7 +59,7 @@
                     <li>
                       <h4 class="card-info-title">Area</h4>
                       <span><?php echo $row->property_size?> 
-                        <sup></sup>
+                        <sup>Sqft</sup>
                       </span>
                     </li>
                     <li>

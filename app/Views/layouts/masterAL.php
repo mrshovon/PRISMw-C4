@@ -31,7 +31,8 @@
   <!-- Main Stylesheet File -->
   <link href="<?=base_url('public/css/style.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/css/style-sr.css')?>" rel="stylesheet">
-  
+
+
 </head>
 
 <body>

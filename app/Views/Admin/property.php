@@ -6,6 +6,10 @@
         <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
         <?php endif;?>
               <h1>Property</h1> <br>
+              <?php 
+                $noOfData2 = sizeof($propertylist); 
+              ?>
+              <h4>Number of Listed Properties: <?php echo $noOfData2?></h4>
              <a href="<?= base_url('public/admin/property/add')?>" class="btn btn-success">ADD</a>
              <div class="table-responsive">
              <table class="table table-sm table-striped table-hover table-bordered"  style="overflow=auto;">
