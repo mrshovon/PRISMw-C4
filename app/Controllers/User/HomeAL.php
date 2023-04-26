@@ -30,6 +30,7 @@ class HomeAL extends BaseController
         // echo '<pre>';print_r($data);echo '</pre>'; exit;
         return view('prism/careers copy', $data);
     }
+    
     public function aboutus()
     {
         return view('prism/aboutus copy');
@@ -80,6 +81,39 @@ class HomeAL extends BaseController
         //echo '<pre>'; print_r($data); echo '</pre>'; exit;
         return view('prism/legalservices copy', $data);
     }
+
+    public function requestLegalservices()
+    {
+        $session = session();
+        $model = new LegalServicesModel();
+        $data = [
+            // 'name' => $this->request->getVar('name'),
+            // 'phone' => $this->request->getVar('phone'),
+            // 'email' => $this->request->getVar('email'),
+            'service_code' => $this->request->getVar('service[]')
+        ];
+        // echo '<pre>';print_r(sizeof($data['service_code']));echo '</pre>'; exit;
+        foreach($data['service_code'] as $service){
+            $data = [
+                'name' => $this->request->getVar('name'),
+                'phone' => $this->request->getVar('phone'),
+                'email' => $this->request->getVar('email'),
+                'service_code' => $service
+            ];
+            $result = $model->add($data);
+            // echo '<pre>';print_r($data);echo '</pre>';
+        } //exit;
+        // $result = $model->add($data);
+        // echo $result; exit;
+        if($result <= 0) {
+            $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
+            return redirect()->to('/public/user/homeAL/legalservices');
+        }
+        else {
+            $session->setFlashdata('msg', 'Legal service request Successful. Thank you!');
+            return redirect()->to('/public/user/homeAL/legalservices');
+        }  
+    }
     public function userdash()
     {
         $model = new PropertyInfoModel();
@@ -93,6 +127,31 @@ class HomeAL extends BaseController
         // echo '<pre>';print_r($data);echo '</pre>'; exit;
         return view('prism/propertydetails', $data);
     }
+    public function bookvisit()
+   { 
+    $session = session();   
+    $model = new BookVisitModel();
+        $data = [
+            'start_time' => $this->request->getVar('start_time'),
+            'end_time' => $this->request->getVar('end_time'),
+            'email' => $this->request->getVar('email'),
+            'remarks' => $this->request->getVar('remarks'),
+            'property_id' => $this->request->getVar('property_id')
+        ];
+        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        $result = $model->add($data);
+        if($result <= 0) {
+            $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
+            return view('prism/propertydetails');
+        }
+        else {
+            $session->setFlashdata('msg', 'Legal service request Successful. Thank you!');
+            $model = new PropertyInfoModel();
+            $data['propertylist'] = $model->get($data['property_id'],null,null);
+            // echo '<pre>';print_r($data);echo '</pre>'; exit;
+            return view('prism/propertydetails', $data);
+        }  
+   }
     public function addproperty()
     {
         

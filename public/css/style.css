@@ -1600,6 +1600,7 @@ footer .credits {
   border-color: #2eca6a;
 }
 
+
 /*======================================
 //--//-->   BUTTON
 ======================================*/
@@ -1738,6 +1739,7 @@ footer .credits {
   .grid .card-box-c,
   .grid .card-box-d {
     margin-bottom: 2.5rem;
+    max-height: 400px;
   }
 
   .card-box-a:hover .img-a,

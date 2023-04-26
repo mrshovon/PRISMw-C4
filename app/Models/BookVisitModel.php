@@ -1,6 +1,4 @@
-<?php
-
-    namespace App\Models;
+<?php namespace App\Models;
 
     use CodeIgniter\Model;
 
@@ -12,11 +10,11 @@
                 $this->db = db_connect();
             }
             
-            public function add($date,$Stime,$Etime,$remarks)
+            public function add($data)
             {
 
                 $sqlText = "INSERT INTO `tbl_book_visit`(`auth_id`,`action_type`,`action_date`,`date`,`start_time`,`end_time`,`remarks`,`email`,`property_id`)
-                            VALUES('null','insert',now(),'".$date."','".$Stime."','".$Etime."','".$remarks."','shovon@gmail.com','1')"; 
+                            VALUES('".$this->db->escapeString($data['email'])."','insert',now(),now(),'".$this->db->escapeString($data['start_time'])."','".$this->db->escapeString($data['end_time'])."','".$this->db->escapeString($data['remarks'])."','".$this->db->escapeString($data['email'])."','".$data['property_id']."')"; 
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();

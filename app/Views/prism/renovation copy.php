@@ -4,7 +4,7 @@
     <?= $this->section('content') ?>
     <section style="height: 700px; display: flex; margin-top:5%;" class="main">
       <div class="">
-        <div>
+        <div class="zoom-box">
             <img style="margin-left: 100px; margin-top: 35px; width: 600px;" src="<?=base_url('public/images/hrs.jpg')?>" alt="">
         </div>
       </div>

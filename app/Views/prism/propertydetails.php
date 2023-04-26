@@ -22,7 +22,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
+              <div id="property-single-carousel" class=" zoom-box owl-carousel owl-arrow gallery-property">
                 <div class="carousel-item-b">
                   <img src="<?=base_url('public/img/slide-2.jpg')?>" alt="">
                 </div>
@@ -113,8 +113,8 @@
                       <li class="btn btn-info" style="margin-top: 2px;"><a href="" style="text-decoration: none; color:black;" data-toggle="modal" data-target="#exampleModalCenter" >Book a visit</a><i class="fa-regular fa-calendar-check" style="margin-left: 5px;"></i></li>
                       <li class="btn btn-info" style="margin-top: 2px;"><a href="" style="text-decoration: none; color:black;">favourite</a><i class="fa-solid fa-star" style="margin-left: 5px;"></i></li>
                       <li class="btn btn-info" style="margin-top: 2px;"><a href="" style="text-decoration: none; color:black;" data-toggle="modal" data-target="#exampleModalCenter2">Share</a><i class="fa-solid fa-share" style="margin-left: 5px;"></i></li>
-                      <li class="btn btn-info" style="margin-top: 2px;"><a href="" style="text-decoration: none; color:black;"><?php echo $row->phone_number?></a><i class="fa-solid fa-phone" style="margin-left: 5px;"></i></li>
-                      <li class="btn btn-info" style="margin-top: 2px;"><a href="" style="text-decoration: none; color:black;"><?php echo $row->email?></a><i class="fa-solid fa-envelope"  style="margin-left: 5px;"></i>
+                      <li class="btn btn-info" style="margin-top: 2px;"><a href="tel:<?php echo $row->phone_number?>" style="text-decoration: none; color:black;"><?php echo $row->phone_number?></a><i class="fa-solid fa-phone" style="margin-left: 5px;"></i></li>
+                      <li class="btn btn-info" style="margin-top: 2px;"><a href="mailto:<?php echo $row->email?>" style="text-decoration: none; color:black;"><?php echo $row->email?></a><i class="fa-solid fa-envelope"  style="margin-left: 5px;"></i>
                     </ul>
                   </div>
                   <!-- Modal -->
@@ -128,11 +128,11 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                            <form action="" method="post">
-                              <input type="hidden" name="property_id" value="<?php $row->property_id ?>"/>
+                            <form action="<?=base_url('public/user/HomeAL/bookvisit')?>" method="post">
+                              <input type="hidden" name="property_id" value="<?php echo $row->property_id ?>"/>
                               <div class="form-group">
                                     <label for="email"><i class="zmdi zmdi-account material-icons-name"></i>Email: </label>
-                                    <input type="text" name="email" id="email"  class="form-control" value="" />
+                                    <input type="text" name="email" id="email"  class="form-control" value="" placeholder="example@email.com"/>
                                 </div>
                                 <div class="form-group">
                                     <label for="start_time"><i class="zmdi zmdi-account material-icons-name"></i>Start Time: </label>
@@ -141,6 +141,11 @@
                                 <div class="form-group">
                                     <label for="end_time"><i class="zmdi zmdi-account material-icons-name"></i>End Time: </label>
                                     <input type="datetime-local" name="end_time" id="end_time"  class="form-control" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="remarks"><i class="zmdi zmdi-account material-icons-name"></i>Remarks: </label>
+                                    <textarea name="remarks" id="remarks" cols="30" rows="6" class="form-control"></textarea>
+                                    <!-- <input type="text" name="remarks" id="remarks"  class="form-control" value="" /> -->
                                 </div>
                                 <div class="modal-footer">
                                   <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
@@ -233,9 +238,8 @@
                 
               </ul>
               <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
-                  <iframe src="<?= base_url().$row->floor_plan?>" width="100%" height="460" frameborder="0"
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <div class="zoom-box tab-pane fade show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
+                  <img src="<?= base_url().$row->floor_plan?>"/>
                 </div>
                 
               </div>
@@ -246,7 +250,6 @@
     </section>
       <?php } ?>
     </main>
-      
+
     <!-- main -->
     <?= $this->endSection() ?>
-   

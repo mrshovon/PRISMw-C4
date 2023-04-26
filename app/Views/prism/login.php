@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="<?=base_url('public/fonts/material-icon/css/material-design-iconic-font.min.css')?>">
     <!-- Main css -->
     <link rel="stylesheet" href="<?=base_url('public/css/style-ls.css')?>">
+    <link href="<?=base_url('public/lib/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+
 </head>
 <body>
     <div class="main" style="padding-top: 20px;">

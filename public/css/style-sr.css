@@ -436,9 +436,6 @@ background-color: #5f8e62;
 .fa {
 font-size: 20px;
 }
-::placeholder{
-color: rgb(0, 0, 0) !important; 
-}
 .frmsb{
 position: absolute;
 right: 550px;

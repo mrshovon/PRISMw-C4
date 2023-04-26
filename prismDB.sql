@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2023 at 09:39 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Generation Time: Apr 26, 2023 at 08:53 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -37,7 +37,7 @@ CREATE TABLE `tbl_book_visit` (
   `remarks` varchar(150) NOT NULL,
   `email` varchar(100) NOT NULL,
   `property_id` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -55,7 +55,7 @@ CREATE TABLE `tbl_careers` (
   `job_description` varchar(500) NOT NULL,
   `phone` varchar(15) NOT NULL,
   `email` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_careers`
@@ -82,7 +82,7 @@ CREATE TABLE `tbl_company_profile` (
   `privecy_policy` varchar(500) NOT NULL,
   `terms_and_condition` varchar(500) NOT NULL,
   `company_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_company_profile`
@@ -105,7 +105,7 @@ CREATE TABLE `tbl_favourites` (
   `creation_date` datetime NOT NULL,
   `email` varchar(100) NOT NULL,
   `property_id` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -121,7 +121,7 @@ CREATE TABLE `tbl_homeloan` (
   `phone_number` varchar(14) NOT NULL,
   `email` varchar(100) NOT NULL,
   `property_id` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -139,7 +139,7 @@ CREATE TABLE `tbl_inquery` (
   `phone` varchar(15) NOT NULL,
   `address` varchar(100) NOT NULL,
   `query` varchar(300) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_inquery`
@@ -162,14 +162,20 @@ CREATE TABLE `tbl_legal_services` (
   `phone_number` varchar(14) NOT NULL,
   `email` varchar(100) NOT NULL,
   `service_code` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_legal_services`
 --
 
 INSERT INTO `tbl_legal_services` (`auth_id`, `action_type`, `action_date`, `name`, `phone_number`, `email`, `service_code`) VALUES
-('NULL', 'update', '2023-04-02 11:51:58', 'shovon rahman', '02345678999', 'shovon@gmail.com', 2);
+(NULL, 'insert', '2023-04-26 12:36:00', 'Shovon ', '01245678933', 'joy@gmail.com', 16),
+(NULL, 'insert', '2023-04-26 12:36:00', 'Shovon ', '01245678933', 'joy@gmail.com', 17),
+(NULL, 'insert', '2023-04-26 12:36:00', 'Shovon ', '01245678933', 'joy@gmail.com', 18),
+('NULL', 'update', '2023-04-02 11:51:58', 'shovon rahman', '02345678999', 'shovon@gmail.com', 2),
+(NULL, 'insert', '2023-04-26 12:44:17', 'joy', '01245678933', 'shovon@gmail.com', 16),
+(NULL, 'insert', '2023-04-26 12:44:17', 'joy', '01245678933', 'shovon@gmail.com', 17),
+(NULL, 'insert', '2023-04-26 12:44:17', 'joy', '01245678933', 'shovon@gmail.com', 18);
 
 -- --------------------------------------------------------
 
@@ -184,7 +190,7 @@ CREATE TABLE `tbl_look_type` (
   `action_date` datetime NOT NULL,
   `look_type_id` int(11) NOT NULL,
   `look_type_name` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_look_type`
@@ -217,7 +223,7 @@ CREATE TABLE `tbl_look_up` (
   `short_name` varchar(10) NOT NULL,
   `sort_order` int(11) NOT NULL,
   `look_type_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_look_up`
@@ -280,7 +286,7 @@ CREATE TABLE `tbl_property_info` (
   `descriptive_status_code` int(11) NOT NULL,
   `amenities_code` int(11) NOT NULL,
   `property_status_code` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_property_info`
@@ -322,7 +328,7 @@ CREATE TABLE `tbl_renovation` (
   `email` varchar(100) NOT NULL,
   `property_id` varchar(30) NOT NULL,
   `renovation_type_code` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -340,7 +346,7 @@ CREATE TABLE `tbl_slider` (
   `sub_title` varchar(10) NOT NULL,
   `priority` int(11) NOT NULL,
   `company_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_slider`
@@ -366,7 +372,7 @@ CREATE TABLE `tbl_user_info` (
   `email` varchar(100) NOT NULL,
   `user_type` enum('administrator','customer') NOT NULL,
   `title` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_user_info`
@@ -375,6 +381,7 @@ CREATE TABLE `tbl_user_info` (
 INSERT INTO `tbl_user_info` (`maker_id`, `auth_id`, `action_type`, `action_date`, `name`, `password`, `phone`, `email`, `user_type`, `title`) VALUES
 ('1', '1730020@iub.edu.bd', 'update', '2023-04-17 11:13:32', 'System Admin', '$2y$10$ALj32R5akJ8yM/Fp6ui3UOaQ19BnGoTdecU7Ox7c5bd1dgh5lUanG', '0183949291', '1730020@iub.edu.bd', 'administrator', 'Mr'),
 ('joy@gmail.com', NULL, 'insert', '2023-04-05 16:35:39', 'joy', '$2y$10$rkhUFhAcAeRK7BRcBu19v.DPm4.waHt/hn2hnbJFp/YQuiH3ts7f.', '01478965233', 'joy@gmail.com', 'customer', 'Mr.'),
+('moinctg@yahoo.com', NULL, 'insert', '2023-04-26 10:30:42', 'Moin', '$2y$10$fkx.45nCShm6RkKZiLLt/ep3ShJ32zjfMzROrwh38ijd86OXlXQNG', '01730341177', 'moinctg@yahoo.com', 'customer', 'MR.'),
 ('nidhi@gmail.com', 'nidhi@gmail.com', 'update', '2023-04-16 12:00:04', 'nidhi', '$2y$10$ZL3AhHiZjDFXdNRHIGpa1.KAHXyThGsgPuLV/T.NV2CDtw8Gw7wvW', '01245678933', 'nidhi@gmail.com', 'customer', 'Mrs'),
 ('shovon@gmail.com', 'shovon@gmail.com', 'update', '2023-04-17 11:58:06', 'Shovon Rahman', '$2y$10$w3a7IVXyjlEWGja2m6ynj.WN2Q5UrIyztbbbg76Sip4kLXgEAy2MW', '01312457896', 'shovon@gmail.com', 'customer', 'Mr');
 

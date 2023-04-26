@@ -28,6 +28,8 @@
   <link href="<?=base_url('public/lib/ionicons/css/ionicons.min.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/lib/owlcarousel/assets/owl.carousel.min.css')?>" rel="stylesheet">
 
+
+
   <!-- Main Stylesheet File -->
   <link href="<?=base_url('public/css/style.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/css/style-sr.css')?>" rel="stylesheet">
@@ -123,7 +125,7 @@
       <?php 
               $name = explode(" ",session()->get('name'));
       ?>
-      <span style="font-size: 10px; font-weight:bold;"><i class="fa-solid fa-user fa-xl" style="color: #2a791b; margin-left: 30px;"></i> <?php echo strtoupper($name[0])?></span>
+      <span style="font-weight:bold;"><i class="fa-solid fa-user fa-xl" style="color: #2a791b; margin-left: 30px;"></i> <?php echo strtoupper($name[0])?></span>
     </div>
   </nav>
   <!--/ Nav End /-->
@@ -260,6 +262,7 @@
   <!-- Template Main Javascript File -->
   <script src="<?=base_url('public/js/main.js')?>"></script>
   <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

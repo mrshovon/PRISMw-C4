@@ -57,7 +57,7 @@
                 <div class="card-footer-a">
                   <ul class="card-info d-flex justify-content-around">
                     <li>
-                      <h4 class="card-info-title">Area</h4>
+                      <h4 class="card-info-title">Size</h4>
                       <span><?php echo $row->property_size?> 
                         <sup>Sqft</sup>
                       </span>
