@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2023 at 08:53 AM
+-- Generation Time: Apr 26, 2023 at 12:53 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -32,12 +32,19 @@ CREATE TABLE `tbl_book_visit` (
   `action_type` enum('insert','update','delete') NOT NULL,
   `action_date` datetime NOT NULL,
   `date` datetime NOT NULL,
-  `start_time` datetime NOT NULL,
-  `end_time` datetime NOT NULL,
+  `start_time` varchar(100) NOT NULL,
+  `end_time` varchar(100) NOT NULL,
   `remarks` varchar(150) NOT NULL,
   `email` varchar(100) NOT NULL,
   `property_id` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `tbl_book_visit`
+--
+
+INSERT INTO `tbl_book_visit` (`auth_id`, `action_type`, `action_date`, `date`, `start_time`, `end_time`, `remarks`, `email`, `property_id`) VALUES
+('joy@gmail.com', 'insert', '2023-04-26 16:36:55', '2023-04-26 16:36:55', '2023-04-29T17:31', '2023-04-29T21:31', 'make me coffee', 'joy@gmail.com', '1');
 
 -- --------------------------------------------------------
 
@@ -172,10 +179,8 @@ INSERT INTO `tbl_legal_services` (`auth_id`, `action_type`, `action_date`, `name
 (NULL, 'insert', '2023-04-26 12:36:00', 'Shovon ', '01245678933', 'joy@gmail.com', 16),
 (NULL, 'insert', '2023-04-26 12:36:00', 'Shovon ', '01245678933', 'joy@gmail.com', 17),
 (NULL, 'insert', '2023-04-26 12:36:00', 'Shovon ', '01245678933', 'joy@gmail.com', 18),
-('NULL', 'update', '2023-04-02 11:51:58', 'shovon rahman', '02345678999', 'shovon@gmail.com', 2),
 (NULL, 'insert', '2023-04-26 12:44:17', 'joy', '01245678933', 'shovon@gmail.com', 16),
-(NULL, 'insert', '2023-04-26 12:44:17', 'joy', '01245678933', 'shovon@gmail.com', 17),
-(NULL, 'insert', '2023-04-26 12:44:17', 'joy', '01245678933', 'shovon@gmail.com', 18);
+(NULL, 'insert', '2023-04-26 12:44:17', 'joy', '01245678933', 'shovon@gmail.com', 17);
 
 -- --------------------------------------------------------
 
