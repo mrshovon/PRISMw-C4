@@ -86,8 +86,9 @@ class Home extends BaseController
 
 
 
-        
-        return view('prism/home');
+        $model = new PropertyInfoModel();
+        $data['propertylist'] = $model->get(null,null,null);
+        return view('prism/home', $data);
         // return view('admin/looktype');
     }
     public function signup()

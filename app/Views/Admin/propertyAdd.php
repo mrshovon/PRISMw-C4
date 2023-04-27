@@ -98,12 +98,10 @@
                   </SELECT>
               </div>
               <div class="form-group">
-                  <label for="amenitiescode"><i class="zmdi zmdi-account material-icons-name"></i>Amenities Code: </label>
-                  <SELECT name="amenitiescode" id="amenitiescode" class="form-control" multiple="multiple">
+                  <label for="amenities[]"><i class="zmdi zmdi-account material-icons-name"></i>Amenities: </label> <br>
                     <?php foreach($amenitylist as $item) { ?>
-                      <option value="<?php echo $item->look_up_id ?>"><?php echo $item->look_up_name ?></option>
-                     <?php } ?> 
-                  </SELECT>
+                      <input type="checkbox" name="amenities[]" value="<?php echo $item->look_up_name ?>" style="padding: 5px; font-size:10px;"> <?php echo $item->look_up_name ?> <br>
+                    <?php } ?>   
               </div>
               <div class="form-group">
                   <label for="propertystatuscode"><i class="zmdi zmdi-account material-icons-name"></i>Property Status Code: </label>

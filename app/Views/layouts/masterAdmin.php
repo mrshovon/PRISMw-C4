@@ -91,6 +91,12 @@
         a{
             text-decoration: none;
             color:black;
+            font-size: small;
+        }
+        th{
+            background-color: white !important;
+            position: sticky;
+            top: 0; 
         }
     </style>
 </head>
@@ -112,7 +118,7 @@
             <li class="btn btn-outline-light <?= $path == 'companyprofile' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/companyprofile')?>">Company Profile</a></li>
             <li class="btn btn-outline-light <?= $path == 'careers' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/careers')?>">Careers</a></li>
             <li href="legalservice.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/legalservice')?>">Legal Service</a></li>
-            <li href="renovation.html" class="btn btn-outline-light">Renovation</li>
+            <li href="renovation.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/renovation')?>">Renovation requests</a></li>
             <li href="homeloan.html" class="btn btn-outline-light">Home Loan</li>
             <li href="inquery.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/inquery')?>">Inquery</a></li>
             <li href="bookvisit.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/bookvisit')?>">Book Visit</a></li>

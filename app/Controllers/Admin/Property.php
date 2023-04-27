@@ -60,6 +60,7 @@ class Property extends BaseController
         $model = new PropertyInfoModel();
         $data = $rules = [];
         $actiontype = $this->request->getVar('actiontype');
+        $aminity = implode(",", $this->request->getVar('amenities[]'));
         if($actiontype == 'update' ){
             $rules = [
                 'name'        => 'required',
@@ -129,7 +130,7 @@ class Property extends BaseController
                 'purpose_code' => $this->request->getVar('purposecode'),
                 'property_type_code' => $this->request->getVar('propertytypecode'),
                 'descriptive_status_code' => $this->request->getVar('descriptivestatuscode'),
-                'amenities_code' => $this->request->getVar('amenitiescode'),
+                'amenities' => $aminity,
                 'property_status_code' => $this->request->getVar('propertystatuscode'),
                 'property_id' => $this->request->getVar('propertyid')
             ];

@@ -59,7 +59,7 @@ class Login extends BaseController
     public function signout()
     { 
         $session = session();
-        echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
+        // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
         $session->destroy();  
         return redirect()->to('/public/home');
     }

@@ -2,7 +2,10 @@
 <?= $this->section('content') ?>
 <div class="intro intro-carousel">
     <div id="carousel" class="owl-carousel owl-theme">
-      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-1.jpg)">
+      <?= $i=0 ?>
+      <?php foreach($propertylist as $index => $row) { if($i>=3) break; $i++ ?>
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-<?=$i?>.jpg)">
+        <span hidden><?= $row->property_id ?></span>
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
           <div class="table-cell">
@@ -10,13 +13,12 @@
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                    <p class="intro-title-top">Banshree, Dhaka
-                      <br> 1219</p>
+                    <p class="intro-title-top"><?= $row->property_area ?>, <?= $row->city ?></p>
                     <h1 class="intro-title mb-4">
-                      <span class="color-b">House 13 </span> Banashree
-                      <br> Block A, Road 3</h1>
+                      <span class="color-b"><?= $row->property_name ?> </span> <?= $row->city ?>
+                      <br> <?= $row->property_area ?></h1>
                     <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">sell | tk 10,000,000</span></a>
+                      <a href="<?=base_url('public/login')?>"><span class="price-a"><?= $row->purpose_name ?> | tk <?= $row->price ?></span></a>
                     </p>
                   </div>
                 </div>
@@ -25,53 +27,8 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-2.jpg)">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="intro-body">
-                    <p class="intro-title-top">Mirpur, Dhaka
-                      <br> 1216</p>
-                    <h1 class="intro-title mb-4">
-                      <span class="color-b">1296 </span> Mirpur
-                      <br> East Monipur</h1>
-                    <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">rent | tk 20,000</span></a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-3.jpg)">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="intro-body">
-                    <p class="intro-title-top">Bashundhara, Dhaka
-                      <br> 1213</p>
-                    <h1 class="intro-title mb-4">
-                      <span class="color-b">38 </span> Bashundhara Residential
-                      <br> Block k, Road 2</h1>
-                    <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">rent | tk 50,000</span></a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <?php } ?>
+     </div>
   </div>
   <!--/ Carousel end /-->
 

@@ -2,7 +2,8 @@
     <?= $this->section('content') ?>
     
     <div class="main-body col">
-             <a href="" class="btn btn-success">ADD</a>
+             <!-- <a href="" class="btn btn-success">ADD</a> -->
+             <h1>Legal Services Request List</h1>
             <table class="table">
                 <thead>
                   <tr>

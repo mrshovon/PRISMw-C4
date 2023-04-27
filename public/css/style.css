@@ -223,7 +223,7 @@ a:hover {
 /*------/ Space Padding /------*/
 
 .section-t8 {
-  padding-top: 8rem;
+  padding-top: 2rem;
 }
 
 .section-t4 {
@@ -1853,7 +1853,7 @@ footer .credits {
   }
 
   .list-a li {
-    width: 33.333%;
+    width: 51%; /*from 33.333%*/
   }
 
   .intro .intro-title-top {

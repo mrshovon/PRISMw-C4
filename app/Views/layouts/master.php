@@ -7,7 +7,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Home</title>
+
+  <title><?= strtoupper($path) ?></title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -46,7 +47,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html">PRISM<span class="color-b"> PROPERTIES</span></a>
+      <a class="navbar-brand text-brand" href="<?=base_url('public/home')?>">PRISM<span class="color-b"> PROPERTIES</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -143,19 +144,19 @@
           <nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">Home</a>
+                <a href="<?=base_url('public/home')?>">Home</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">About</a>
+                <a href="<?=base_url('public/home/aboutus')?>">About</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">contact us</a>
+                <a href="<?=base_url('public/home/contactus')?>">contact us</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Sign-up</a>
+                <a href="<?=base_url('public/home/signup')?>">Sign-up</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">log-in</a>
+                <a href="<?=base_url('public/login')?>">log-in</a>
               </li>
             </ul>
           </nav>

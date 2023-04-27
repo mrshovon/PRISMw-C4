@@ -11,7 +11,7 @@
               ?>
               <h4>Number of Listed Properties: <?php echo $noOfData2?></h4>
              <a href="<?= base_url('public/admin/property/add')?>" class="btn btn-success">ADD</a>
-             <div class="table-responsive">
+             <div class="table-responsive" style="height: 100vh;">
              <table class="table table-sm table-striped table-hover table-bordered"  style="overflow=auto;">
                 <thead>
                   <tr>
@@ -61,7 +61,7 @@
                     <td><?php echo $row->purpose_name?></td>
                     <td><?php echo $row->property_type_name?></td>
                     <td><?php echo $row->descriptive_status_name?></td>
-                    <td><?php echo $row->amenities_name?></td>
+                    <td><?php echo $row->amenities?></td>
                     <td><?php echo $row->property_status_name?></td>
                     <td>
                         <a href="<?= base_url('public/admin/property/edit/'.$row->property_id)?>" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>

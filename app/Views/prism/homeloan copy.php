@@ -5,21 +5,23 @@
     <section style="height: 1100px; display: flex; margin-top:6%;" class="main">
           <div class="">
             <div class="zoom-box">
-                <img style="margin-left: 100px; margin-top: auto;" src="<?=base_url('public/images/hlimg.png')?>" alt="">
+                <img style="margin-left: 100px; margin-top: 100px;" src="<?=base_url('public/images/hlimg.png')?>" alt="">
             </div>
           </div>
-          <form method="post" style="margin-top: 100px; width: 300px; margin-left: 100px; box-sizing: border-box;">
+          <form action="<?=base_url('public/user/HomeAL/reqhomeloan')?>" method="post" style="margin-top: 100px; width: 500px; margin-left: 100px; box-sizing: border-box;">
+              <?php if(session()->getFlashdata('msg')):?>
+                <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+              <?php endif;?>
               <h3>Request a Loan</h3> <br>
               <div class="">
                     <div class="">
                       <div class="form-group frm">
-                        <label for="renovate">Property ID:   </label>
-                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Property ID *" value="" />
-                        <!-- <select class="btn btn-warning" name="renovate" id="renovate">
-                          <option value="service 1">Type 1</option>
-                          <option value="service 2">Type 2</option>
-                          <option value="service 3">type 3</option>
-                        </select> -->
+                        <label for="phone">Phone Number:   </label>
+                        <input type="text" name="phone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div> <br>
+                      <div class="form-group frm">
+                        <label for="property_id">Property ID:   </label>
+                        <input type="text" name="property_id" class="form-control" placeholder="Your Property ID *" value="" />
                         </div> <br>
                         <div class="form-group frm">
                             <input  type="submit" name="btnSubmit" class="btn btn-success" value="Request" />

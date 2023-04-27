@@ -7,7 +7,7 @@
             <img style="margin-left: 70px; margin-top: 35px; width: 400px;" src="<?=base_url('public/images/dls.png')?>" alt="">
         </div>
       </div>
-        <form action="" method="post" style="margin-top: 80px; width:550px; margin-left: 70px; box-sizing: border-box;">
+        <form action="<?=base_url('public/login')?>" method="post" style="margin-top: 80px; width:550px; margin-left: 70px; box-sizing: border-box;">
            <h3>Take our expert's help for legal and documentation services.</h3> <br>
            <div class="">
                 <div class="">

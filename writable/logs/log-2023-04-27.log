@@ -1,0 +1,831 @@
+INFO - 2023-04-27 08:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 08:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 09:15:14 --> syntax error, unexpected token "if"
+in APPPATH\Views\prism\home.php on line 6.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prism/home', [], true)
+ 3 APPPATH\Controllers\Home.php(91): view('prism/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-27 09:15:59 --> Undefined property: stdClass::$property_city
+in APPPATH\Views\prism\home.php on line 15.
+ 1 APPPATH\Views\prism\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$property_city', 'APPPATH\\Views\\prism\\home.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prism\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prism/home', [], true)
+ 5 APPPATH\Controllers\Home.php(91): view('prism/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-27 09:26:12 --> Call to undefined function strupper()
+in APPPATH\Views\layouts\master.php on line 11.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/master', [], true)
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prism/home', [], true)
+ 5 APPPATH\Controllers\Home.php(91): view('prism/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 09:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 09:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 09:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 09:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 10:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 10:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 10:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 10:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 11:00:40 --> Cannot use object of type CodeIgniter\Session\Session as array
+in APPPATH\Controllers\User\HomeAL.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqrenovation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 11:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 11:01:24 --> Cannot use object of type CodeIgniter\Session\Session as array
+in APPPATH\Controllers\User\HomeAL.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqrenovation()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 11:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 11:22:50 --> Undefined property: stdClass::$service_name
+in APPPATH\Views\Admin\renovation.php on line 34.
+ 1 APPPATH\Views\Admin\renovation.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$service_name', 'APPPATH\\Views\\Admin\\renovation.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\renovation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/renovation', [], true)
+ 5 APPPATH\Controllers\Admin\Renovation.php(12): view('admin/renovation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Renovation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Renovation))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-27 11:27:41 --> Undefined property: stdClass::$service_name
+in APPPATH\Views\Admin\renovation.php on line 34.
+ 1 APPPATH\Views\Admin\renovation.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$service_name', 'APPPATH\\Views\\Admin\\renovation.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\renovation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/renovation', [], true)
+ 5 APPPATH\Controllers\Admin\Renovation.php(12): view('admin/renovation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Renovation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Renovation))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-27 11:27:44 --> Undefined property: stdClass::$service_name
+in APPPATH\Views\Admin\renovation.php on line 34.
+ 1 APPPATH\Views\Admin\renovation.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$service_name', 'APPPATH\\Views\\Admin\\renovation.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\renovation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/renovation', [], true)
+ 5 APPPATH\Controllers\Admin\Renovation.php(12): view('admin/renovation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Renovation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Renovation))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 11:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 11:28:02 --> Undefined property: stdClass::$service_name
+in APPPATH\Views\Admin\renovation.php on line 34.
+ 1 APPPATH\Views\Admin\renovation.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$service_name', 'APPPATH\\Views\\Admin\\renovation.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\renovation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/renovation', [], true)
+ 5 APPPATH\Controllers\Admin\Renovation.php(12): view('admin/renovation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Renovation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Renovation))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-27 11:28:47 --> Undefined property: stdClass::$service_name
+in APPPATH\Views\Admin\renovation.php on line 34.
+ 1 APPPATH\Views\Admin\renovation.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$service_name', 'APPPATH\\Views\\Admin\\renovation.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\renovation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/renovation', [], true)
+ 5 APPPATH\Controllers\Admin\Renovation.php(12): view('admin/renovation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Renovation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Renovation))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 11:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 11:29:02 --> Undefined property: stdClass::$service_name
+in APPPATH\Views\Admin\renovation.php on line 34.
+ 1 APPPATH\Views\Admin\renovation.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$service_name', 'APPPATH\\Views\\Admin\\renovation.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\renovation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/renovation', [], true)
+ 5 APPPATH\Controllers\Admin\Renovation.php(12): view('admin/renovation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Renovation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Renovation))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-27 11:29:50 --> Undefined property: stdClass::$request_id
+in APPPATH\Views\Admin\renovation.php on line 39.
+ 1 APPPATH\Views\Admin\renovation.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$request_id', 'APPPATH\\Views\\Admin\\renovation.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\renovation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/renovation', [], true)
+ 5 APPPATH\Controllers\Admin\Renovation.php(12): view('admin/renovation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Renovation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Renovation))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 11:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 11:32:51 --> Class "App\Controllers\Admin\LegalServicesModel" not found
+in APPPATH\Controllers\Admin\Renovation.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Renovation->delete('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Renovation))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 11:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 11:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 11:55:39 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(19): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 11:55:39 --> Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\HomeLoanModel.php(19): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_homeloan`(`auth_id`,`action_type`,`action_date`,`name`,`phone_number`,`email`,`property_id`)
+                            VALUES(\'joy@gmail.com\',\'insert\',now(),\'joy\',\'01245678933\',\'joy@gmail.com\',\'15\')')
+ 2 APPPATH\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 11:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:02:00 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:03:29 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:04:40 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:05:42 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 12:05:42 --> Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\HomeLoanModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_homeloan`(`auth_id`,`action_type`,`action_date`,`name`,`phone_number`,`email`,`property_id`)
+                            VALUES(\'joy@gmail.com\',\'insert\',now(),\'joy\',\'01245678933\',\'joy@gmail.com\',\'15\')')
+ 2 APPPATH\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 12:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:14:30 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:14:58 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:16:38 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:16:42 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:16:57 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 12:16:57 --> Undefined variable $resul
+in APPPATH\Controllers\User\HomeAL.php on line 82.
+ 1 APPPATH\Controllers\User\HomeAL.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resul', 'APPPATH\\Controllers\\User\\HomeAL.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 12:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:17:08 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:18:53 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 12:19:13 --> mysqli_sql_exception: Duplicate entry 'joy@gmail.com-15' for key 'PRIMARY' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\HomeLoanModel.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(81): App\Models\HomeLoanModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->reqhomeloan()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+INFO - 2023-04-27 12:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 12:51:19 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\User\HomeAL.php on line 292.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('user/homeAL/add')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('user/homeAL/add')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('user/homeAL/add')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 12:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 12:58:22 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(427): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+11 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+12 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+13 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+14 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+15 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+16 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+17 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+18 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+19 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+20 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+21 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+22 SYSTEMPATH\Debug\Toolbar.php(110): Kint\Kint::dump(Object(CodeIgniter\Validation\Validation))
+23 SYSTEMPATH\Debug\Toolbar.php(371): CodeIgniter\Debug\Toolbar->run(1682578702.543009, 0.2703, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+24 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+25 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+26 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('user/homeAL/create', 'after')
+27 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+28 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 12:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 12:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 12:59:43 --> sizeof(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\User\HomeAL.php on line 147.
+ 1 APPPATH\Controllers\User\HomeAL.php(147): sizeof('16,17,18')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->requestLegalservices()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 13:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 13:07:09 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(427): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+11 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+12 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+13 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+14 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+15 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+16 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+17 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+18 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+19 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+20 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+21 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+22 SYSTEMPATH\Debug\Toolbar.php(110): Kint\Kint::dump(Object(CodeIgniter\Validation\Validation))
+23 SYSTEMPATH\Debug\Toolbar.php(371): CodeIgniter\Debug\Toolbar->run(1682579229.038831, 0.1284, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+24 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+25 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+26 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('user/homeAL/create', 'after')
+27 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+28 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 13:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 13:09:56 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(427): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+11 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+12 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+13 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+14 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+15 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+16 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+17 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+18 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+19 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+20 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+21 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+22 SYSTEMPATH\Debug\Toolbar.php(110): Kint\Kint::dump(Object(CodeIgniter\Validation\Validation))
+23 SYSTEMPATH\Debug\Toolbar.php(371): CodeIgniter\Debug\Toolbar->run(1682579395.866328, 0.1568, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+24 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+25 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+26 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('user/homeAL/create', 'after')
+27 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+28 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 13:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 13:12:07 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(427): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+11 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+12 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+13 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+14 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+15 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+16 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+17 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+18 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+19 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+20 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+21 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+22 SYSTEMPATH\Debug\Toolbar.php(110): Kint\Kint::dump(Object(CodeIgniter\Validation\Validation))
+23 SYSTEMPATH\Debug\Toolbar.php(371): CodeIgniter\Debug\Toolbar->run(1682579527.401577, 0.2745, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+24 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+25 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+26 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('admin/property/create', 'after')
+27 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+28 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 13:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 13:13:00 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(427): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+11 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+12 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+13 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+14 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+15 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+16 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+17 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+18 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+19 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+20 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+21 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+22 SYSTEMPATH\Debug\Toolbar.php(110): Kint\Kint::dump(Object(CodeIgniter\Validation\Validation))
+23 SYSTEMPATH\Debug\Toolbar.php(371): CodeIgniter\Debug\Toolbar->run(1682579580.33236, 0.1277, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+24 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+25 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+26 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('user/homeAL/create', 'after')
+27 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+28 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 13:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 13:17:40 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(427): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+11 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+12 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+13 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+14 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+15 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+16 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+17 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+18 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+19 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+20 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+21 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+22 SYSTEMPATH\Debug\Toolbar.php(110): Kint\Kint::dump(Object(CodeIgniter\Validation\Validation))
+23 SYSTEMPATH\Debug\Toolbar.php(371): CodeIgniter\Debug\Toolbar->run(1682579860.306295, 0.1099, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+24 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+25 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+26 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('admin/property/create', 'after')
+27 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+28 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 13:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 13:48:04 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(320): App\Models\PropertyInfoModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->create()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 13:48:04 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_property_info`(`auth_id`,`auth_id`,`action_type`,`action_date`,`property_id`,`property_name`,`description`,`city`,`property_area`,`property_size`,`beds`,`baths`,`price`,`is_occupied`,`floor_plan`,`phone_number`,`property_address`,`level`,`email`,`purpose_code`,`property_type_code`,`descriptive_status_code`,`amenities_code`,`property_status_code`)
+                            VALUES(\'joy@gmail.com\',\'insert\',now(),\'21\',\'test\',\'demooo111111\',\'dhaka\',\'mirpur\',\'4104\',\'3\',\'2\',8000000,1,\'public/uploads/test_20230427_134804.png\',\'01245678933\',\'1296, west banani dhaka 1216\',\'1\',\'joy@gmail.com\',\'6\',\'3\',\'13\',\'Amenity 1,Amenity 2\',\'7\')')
+ 2 APPPATH\Controllers\User\HomeAL.php(320): App\Models\PropertyInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 13:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 13:52:30 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(321): App\Models\PropertyInfoModel->add(Array)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->create()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 13:52:30 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_property_info`(`auth_id`,`auth_id`,`action_type`,`action_date`,`property_id`,`property_name`,`description`,`city`,`property_area`,`property_size`,`beds`,`baths`,`price`,`is_occupied`,`floor_plan`,`phone_number`,`property_address`,`level`,`email`,`purpose_code`,`property_type_code`,`descriptive_status_code`,`amenities`,`property_status_code`)
+                            VALUES(\'joy@gmail.com\',\'insert\',now(),\'21\',\'test\',\'demooo111111\',\'dhaka\',\'mirpur\',\'4104\',\'3\',\'2\',8000000,1,\'public/uploads/test_20230427_135230.png\',\'01245678933\',\'1296, west banani dhaka 1216\',\'1\',\'joy@gmail.com\',\'6\',\'3\',\'13\',\'Amenity 1,Amenity 2\',\'7\')')
+ 2 APPPATH\Controllers\User\HomeAL.php(321): App\Models\PropertyInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 13:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 13:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 13:55:45 --> mysqli_sql_exception: Unknown column 'pi.amenities_code' in 'field list' in C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\prism\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT pi.actio...', 0)
+#1 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pi.actio...')
+#2 C:\xampp\htdocs\prism\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pi.actio...')
+#3 C:\xampp\htdocs\prism\app\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.actio...')
+#4 C:\xampp\htdocs\prism\app\Controllers\User\HomeAL.php(171): App\Models\PropertyInfoModel->get(NULL, NULL, NULL)
+#5 C:\xampp\htdocs\prism\system\CodeIgniter.php(934): App\Controllers\User\HomeAL->userdash()
+#6 C:\xampp\htdocs\prism\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+#7 C:\xampp\htdocs\prism\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\prism\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 13:55:45 --> Unknown column 'pi.amenities_code' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\PropertyInfoModel.php(103): CodeIgniter\Database\BaseConnection->query('SELECT pi.action_date,pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
+                pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
+                pi.property_address, pi.level, pi.email, pi.description,
+                pi.purpose_code, ppc.look_up_name AS purpose_name,
+                pi.property_type_code, ptc.look_up_name AS property_type_name,
+                pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
+                pi.amenities_code, amc.look_up_name AS amenities_name, 
+                pi.property_status_code, psc.look_up_name AS property_status_name
+                FROM tbl_property_info as pi
+                INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
+                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
+                INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
+                INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
+                INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id ORDER BY pi.property_id')
+ 2 APPPATH\Controllers\User\HomeAL.php(171): App\Models\PropertyInfoModel->get(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->userdash()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 14:01:34 --> Undefined property: stdClass::$amenities_name
+in APPPATH\Views\Admin\property.php on line 64.
+ 1 APPPATH\Views\Admin\property.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$amenities_name', 'APPPATH\\Views\\Admin\\property.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\property.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/property', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(11): view('admin/property', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 14:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 14:02:05 --> Undefined property: stdClass::$amenities
+in APPPATH\Views\Admin\property.php on line 64.
+ 1 APPPATH\Views\Admin\property.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$amenities', 'APPPATH\\Views\\Admin\\property.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Admin\\property.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/property', [], true)
+ 5 APPPATH\Controllers\Admin\Property.php(11): view('admin/property', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 14:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 14:11:58 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Admin\Property.php(139): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\uploads', 'Sumptuous Full Furnished 4100 _20230427_141158.')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Property->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Property))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 14:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 14:25:15 --> Unclosed '{' on line 5
+in APPPATH\Views\prism\propertydetails.php on line 259.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prism/propertydetails', [], true)
+ 3 APPPATH\Controllers\User\HomeAL.php(179): view('prism/propertydetails', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\HomeAL->propertydetails('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\HomeAL))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 14:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 14:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

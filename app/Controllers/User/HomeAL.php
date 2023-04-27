@@ -65,13 +65,63 @@ class HomeAL extends BaseController
     {
         return view('prism/homeloan copy');
     }
-
+    public function reqhomeloan()
+    {
+        $session = session();
+        $model = new HomeLoanModel();
+        // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
+        $data = [
+            'name' => session()->get('name'),
+            'phone' => $this->request->getVar('phone'),
+            'email' => session()->get('email'),
+            'property_id' => $this->request->getVar('property_id')
+        ];
+        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        // return view('prism/renovation copy', $data);
+        $result = $model->add($data);
+        // echo $result; exit;
+        if($result <= 0) {
+            $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
+            return redirect()->to('/public/user/homeAL/homeloan');
+        }
+        else {
+            $session->setFlashdata('msg', 'Home loan Request Taken. Thank you!');
+            return redirect()->to('/public/user/homeAL/homeloan');
+        }  
+    }
     public function renovation()
     {
         $model = new PropertyInfoModel();
         $data['renovationlist'] = $model->getByCriteria(4);
         //echo '<pre>'; print_r($data); echo '</pre>'; exit;
         return view('prism/renovation copy', $data);
+    }
+    public function reqrenovation()
+    {
+        $session = session();
+        $model = new RenovationModel();
+        // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
+        $data = [
+            'name' => session()->get('name'),
+            'phone' => $this->request->getVar('phone'),
+            'email' => session()->get('email'),
+            'property_size' => $this->request->getVar('size'),
+            'property_address' => $this->request->getVar('address'),
+            'property_city' => $this->request->getVar('city'),
+            'property_area' => $this->request->getVar('area'),
+            'service_code' => $this->request->getVar('renovate')
+        ];
+        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        // return view('prism/renovation copy', $data);
+        $result = $model->add($data);
+        if($result <= 0) {
+            $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
+            return redirect()->to('/public/user/homeAL/renovation');
+        }
+        else {
+            $session->setFlashdata('msg', 'Renovation service request accepted. Thank you!');
+            return redirect()->to('/public/user/homeAL/renovation');
+        }  
     }
 
     public function legalservices()
@@ -80,6 +130,7 @@ class HomeAL extends BaseController
         $data['servicelist'] = $model->getByCriteria(5);
         //echo '<pre>'; print_r($data); echo '</pre>'; exit;
         return view('prism/legalservices copy', $data);
+        
     }
 
     public function requestLegalservices()
@@ -186,6 +237,8 @@ class HomeAL extends BaseController
        $model = new PropertyInfoModel();
        $data = $rules = [];
        $actiontype = $this->request->getVar('actiontype');
+       $aminity = implode(",", $this->request->getVar('amenities[]'));
+    //    echo '<pre>'; echo $aminity; echo '</pre>'; exit;
        if($actiontype == 'update' ){
            $rules = [
                'name'        => 'required',
@@ -255,10 +308,11 @@ class HomeAL extends BaseController
                'purpose_code' => $this->request->getVar('purposecode'),
                'property_type_code' => $this->request->getVar('propertytypecode'),
                'descriptive_status_code' => $this->request->getVar('descriptivestatuscode'),
-               'amenities_code' => $this->request->getVar('amenitiescode'),
+               'amenities' => $aminity,
                'property_status_code' => '7',
                'property_id' => $this->request->getVar('propertyid')
            ];
+            //   echo '<pre>'; print_r($data); echo '</pre>'; exit;
            if($actiontype == 'update' ){
                $result = $model->edit($data);
                $img->move(ROOTPATH . 'public/uploads',$newName);

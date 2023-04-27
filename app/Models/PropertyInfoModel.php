@@ -17,8 +17,8 @@
                 $query =  $this->db->query($sqlText);
                 $row = $query->getRow();
                 
-                $sqlText = "INSERT INTO `tbl_property_info`(`auth_id`,`action_type`,`action_date`,`property_id`,`property_name`,`description`,`city`,`property_area`,`property_size`,`beds`,`baths`,`price`,`is_occupied`,`floor_plan`,`phone_number`,`property_address`,`level`,`email`,`purpose_code`,`property_type_code`,`descriptive_status_code`,`amenities_code`,`property_status_code`)
-                            VALUES('".$data['email']."','insert',now(),'".$row->maxid."','".$data['property_name']."','".$this->db->escapeString($data['description'])."','".$data['city']."','".$data['property_area']."','".$data['property_size']."','".$data['beds']."','".$data['baths']."',".$data['price'].",".$data['is_occupied'].",'".$data['floor_plan']."','".$data['phone']."','".$data['property_address']."','".$data['level']."','".$data['email']."','".$data['purpose_code']."','".$data['property_type_code']."','".$data['descriptive_status_code']."','".$data['amenities_code']."','".$data['property_status_code']."')"; 
+                $sqlText = "INSERT INTO `tbl_property_info`(`auth_id`,`action_type`,`action_date`,`property_id`,`property_name`,`description`,`city`,`property_area`,`property_size`,`beds`,`baths`,`price`,`is_occupied`,`floor_plan`,`phone_number`,`property_address`,`level`,`email`,`purpose_code`,`property_type_code`,`descriptive_status_code`,`amenities`,`property_status_code`)
+                            VALUES('".$data['email']."','insert',now(),'".$row->maxid."','".$data['property_name']."','".$this->db->escapeString($data['description'])."','".$data['city']."','".$data['property_area']."','".$data['property_size']."','".$data['beds']."','".$data['baths']."',".$data['price'].",".$data['is_occupied'].",'".$data['floor_plan']."','".$data['phone']."','".$data['property_address']."','".$data['level']."','".$data['email']."','".$data['purpose_code']."','".$data['property_type_code']."','".$data['descriptive_status_code']."','".$data['amenities']."','".$data['property_status_code']."')"; 
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();
@@ -58,10 +58,10 @@
                             `property_address` = '".$data['property_address']."',
                             `level` = ".$data['level'].",
                             `email` = '".$data['email']."',
+                            `amenities` = '".$data['amenities']."',
                             `purpose_code` = '".$data['purpose_code']."',
                             `property_type_code` = '".$data['property_type_code']."',
                             `descriptive_status_code` = '".$data['descriptive_status_code']."',
-                            `amenities_code` = '".$data['amenities_code']."',
                             `property_status_code` = '".$data['property_status_code']."'
                             WHERE `property_id` = ".$data['property_id']."";
                 $query =  $this->db->query($sqlText);
@@ -73,15 +73,13 @@
                 
                 $sqlText = "SELECT pi.action_date,pi.property_id, pi.property_name, pi.city, pi.property_area, pi.property_size, pi.beds, pi.baths, 
                 pi.price, pi.is_occupied, pi.floor_plan, pi.phone_number, 
-                pi.property_address, pi.level, pi.email, pi.description,
+                pi.property_address, pi.level, pi.email, pi.description, pi.amenities,
                 pi.purpose_code, ppc.look_up_name AS purpose_name,
                 pi.property_type_code, ptc.look_up_name AS property_type_name,
                 pi.descriptive_status_code, dsc.look_up_name AS descriptive_status_name,
-                pi.amenities_code, amc.look_up_name AS amenities_name, 
                 pi.property_status_code, psc.look_up_name AS property_status_name
                 FROM tbl_property_info as pi
                 INNER JOIN tbl_look_up AS psc ON pi.property_status_code = psc.look_up_id
-                INNER JOIN tbl_look_up AS amc ON pi.amenities_code = amc.look_up_id
                 INNER JOIN tbl_look_up AS ppc ON pi.purpose_code = ppc.look_up_id
                 INNER JOIN tbl_look_up AS dsc ON pi.descriptive_status_code = dsc.look_up_id
                 INNER JOIN tbl_look_up AS ptc ON pi.property_type_code = ptc.look_up_id" ;

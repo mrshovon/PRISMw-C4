@@ -9,7 +9,8 @@
           <div class="row">
             <div class="col-md-12 col-lg-8">
               <div class="title-single-box">
-                <h1 class="title-single"><?php echo $row->property_address?></h1>
+                <h1 class="title-single"><?php echo $row->property_name?></h1>
+                <h6 class="title-single"><?php echo $row->property_address?></h6>
               </div>
             </div>
           </div>
@@ -213,17 +214,12 @@
                       </div>
                     </div>
                   </div>
+                  <?php $amenities = explode(",",$row->amenities) ?>
                   <div class="amenities-list color-text-a">
                     <ul class="list-a no-margin">
-                      <li>Balcony</li>
-                      <li>Outdoor Kitchen</li>
-                      <li>Cable Tv</li>
-                      <li>Deck</li>
-                      <li>Tennis Courts</li>
-                      <li>Internet</li>
-                      <li>Parking</li>
-                      <li>Sun Room</li>
-                      <li>Concrete Flooring</li>
+                    <?php foreach($amenities as $index => $amenity) { ?>
+                      <li><?= $amenity ?></li>
+                      <?php } ?>
                     </ul>
                   </div>
                 </div>

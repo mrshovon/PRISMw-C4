@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Home</title>
+  <title><?= strtoupper($path) ?></title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -82,7 +82,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="user-dash.html">PRISM<span class="color-b"> PROPERTIES</span></a>
+      <a class="navbar-brand text-brand" href="<?=base_url('public/user/homeAL/userdash')?>">PRISM<span class="color-b"> PROPERTIES</span></a>
       <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
@@ -188,19 +188,19 @@
           <nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">Home</a>
+                <a href="<?=base_url('public/user/homeAL/userdash')?>">Home</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">About</a>
+                <a href="<?=base_url('public/user/homeAL/aboutus')?>">About</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">ADD Property</a>
+                <a href="<?=base_url('public/user/homeAL/add')?>">ADD Property</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Contact</a>
+                <a href="<?=base_url('public/user/homeAL/contactus')?>">Contact</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">LOGOUT</a>
+                <a href="<?=base_url('public/home/signout')?>">LOGOUT</a>
               </li>
             </ul>
           </nav>

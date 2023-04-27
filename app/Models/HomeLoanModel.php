@@ -12,17 +12,27 @@
                 $this->db = db_connect();
             }
             
-            public function add($property_id)
+            public function add($data)
             {
-
                 $sqlText = "INSERT INTO `tbl_homeloan`(`auth_id`,`action_type`,`action_date`,`name`,`phone_number`,`email`,`property_id`)
-                            VALUES('null','insert',now(),'shovon','01723568944','shovon@gmail.com','".$property_id."')"; 
+                            VALUES('".$data['email']."','insert',now(),'".$data['name']."','".$data['phone']."','".$data['email']."','".$data['property_id']."')"; 
+                try {
+                    $query =  $this->db->query($sqlText);
+                    return  $this->db->affectedRows();
+                    // return  null;
+                } 
+                catch (\Throwable  $e) {
+                    // exit($e->getMessage());
+                    // $e->getMessage(); exit;
+                    // return  $e->getMessage(); 
+                    return  0; 
+                }
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();
             }
-            public function erase($property_id, $email) {
-                $sqlText = "DELETE FROM `prism`.`tbl_homeloan` WHERE `property_id` = ".$property_id." AND `email` = '".$email."'"; 
+            public function erase($request_id) {
+                $sqlText = "DELETE FROM `tbl_homeloan` WHERE `request_id` = ".$request_id.""; 
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();

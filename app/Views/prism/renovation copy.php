@@ -5,15 +5,30 @@
     <section style="height: 700px; display: flex; margin-top:5%;" class="main">
       <div class="">
         <div class="zoom-box">
-            <img style="margin-left: 100px; margin-top: 35px; width: 600px;" src="<?=base_url('public/images/hrs.jpg')?>" alt="">
+            <img style="margin-left: 100px; margin-top: 100px; width: 600px;" src="<?=base_url('public/images/hrs.jpg')?>" alt="">
         </div>
       </div>
-        <form method="post" style="margin-top: 100px; width: 300px; margin-left: 100px; box-sizing: border-box;">
+        <form action="<?=base_url('public/user/HomeAL/reqrenovation')?>" method="post" style="margin-top: 100px; width: 500px; margin-left: 100px; box-sizing: border-box;">
+           <?php if(session()->getFlashdata('msg')):?>
+            <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+           <?php endif;?>
            <h3>Request for renovation</h3>
            <div class="">
                 <div class="">
+                <div class="form-group frm">
+                        <input type="text" name="size" class="form-control" placeholder="Your Property size *" value="" />
+                    </div>
                     <div class="form-group frm">
-                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Property ID *" value="" />
+                        <input type="text" name="address" class="form-control" placeholder="Your Property address *" value="" />
+                    </div>
+                    <div class="form-group frm">
+                        <input type="text" name="city" class="form-control" placeholder="Your Property city *" value="" />
+                    </div>
+                    <div class="form-group frm">
+                        <input type="text" name="area" class="form-control" placeholder="Your Property area *" value="" />
+                    </div>
+                    <div class="form-group frm">
+                        <input type="text" name="phone" class="form-control" placeholder="Your Phone Number *" value="" />
                     </div>
                     <div class="form-group frm">
                       <label for="renovate">Renovation services:</label>
