@@ -72,10 +72,20 @@
             </div>
           </li>
           <li class="nav-item">
+          <?php if(!session()->get('logged_in')) {?>
             <a class="nav-link a5" href="<?=base_url('public/home/signup')?>">Sign up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link a6" href="<?=base_url('public/login')?>">Log in</a>
+              <a class="nav-link a6" href="<?=base_url('public/login')?>">Log in</a>
+              <?php } else {?>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="<?=base_url('public/home/signout')?>">LOGOUT</a>
+           </li>
+          <li class="nav-item">
+              <?php $name = explode(" ",session()->get('name')); ?>
+              <span style="font-weight:bold;"><i class="fa-solid fa-user fa-xl" style="color: #2a791b; margin-left: 30px;"></i> <?php echo strtoupper($name[0])?></span>
+              <?php } ?>
           </li>
         </ul>
       </div>
@@ -218,7 +228,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="<?=base_url('public/js/main.js')?>"></script>
-
+  <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
 </body>
 </html>
     <!-- main -->

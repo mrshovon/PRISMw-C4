@@ -119,7 +119,7 @@
             <li class="btn btn-outline-light <?= $path == 'careers' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/careers')?>">Careers</a></li>
             <li href="legalservice.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/legalservice')?>">Legal Service</a></li>
             <li href="renovation.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/renovation')?>">Renovation requests</a></li>
-            <li href="homeloan.html" class="btn btn-outline-light">Home Loan</li>
+            <li href="homeloan.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/homeloan')?>">Home Loan</a></li>
             <li href="inquery.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/inquery')?>">Inquery</a></li>
             <li href="bookvisit.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/bookvisit')?>">Book Visit</a></li>
             <li href="slider.html" class="btn btn-outline-light">Slider</li>

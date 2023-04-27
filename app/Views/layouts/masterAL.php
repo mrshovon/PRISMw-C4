@@ -113,7 +113,11 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('public/home/signout')?>">LOGOUT</a>
+            <?php if(!session()->get('logged_in')) {?>
+            <a class="nav-link a6" href="<?=base_url('public/login')?>">Log in</a>
+            <?php } else {?>
+              <a class="nav-link" href="<?=base_url('public/home/signout')?>">LOGOUT</a>
+              <?php } ?>
           </li>
 
         </ul>
@@ -122,9 +126,7 @@
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
       </button>
-      <?php 
-              $name = explode(" ",session()->get('name'));
-      ?>
+      <?php $name = explode(" ",session()->get('name')); ?>
       <span style="font-weight:bold;"><i class="fa-solid fa-user fa-xl" style="color: #2a791b; margin-left: 30px;"></i> <?php echo strtoupper($name[0])?></span>
     </div>
   </nav>

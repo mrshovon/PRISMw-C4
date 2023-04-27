@@ -31,8 +31,8 @@
                
                 return  $this->db->affectedRows();
             }
-            public function erase($request_id) {
-                $sqlText = "DELETE FROM `tbl_homeloan` WHERE `request_id` = ".$request_id.""; 
+            public function erase($email,$action_date) {
+                $sqlText = "DELETE FROM `tbl_homeloan` WHERE `email` = '".$email."' AND `action_date` = '".$action_date."'"; 
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();
