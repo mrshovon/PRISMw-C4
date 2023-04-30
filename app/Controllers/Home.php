@@ -110,11 +110,31 @@ class Home extends BaseController
 
     public function aboutus()
     {
+        if(session()->get('logged_in')){
+            
+            if(session()->get('user_type') == 'customer'){
+                return view('prism/aboutus copy');
+            }
+            else {
+                $data['key'] = 'Welcome to Prism Dashboard';
+                return view('admin/dashboard', $data);
+            }
+        }                       
         return view('prism/aboutus');
     }
 
     public function contactus()
     {
+        if(session()->get('logged_in')){
+            
+            if(session()->get('user_type') == 'customer'){
+                return view('prism/contactus copy');
+            }
+            else {
+                $data['key'] = 'Welcome to Prism Dashboard';
+                return view('admin/dashboard', $data);
+            }
+        }  
         return view('prism/contactus');
     }
     public function sendmessage()
@@ -166,11 +186,34 @@ class Home extends BaseController
 
     public function homeloan()
     {
+        if(session()->get('logged_in')){
+            
+            if(session()->get('user_type') == 'customer'){
+                return view('prism/homeloan copy');
+            }
+            else {
+                $data['key'] = 'Welcome to Prism Dashboard';
+                return view('admin/dashboard', $data);
+            }
+        }               
         return view('prism/homeloan');
     }
 
     public function renovation()
     {
+        if(session()->get('logged_in')){
+            
+            if(session()->get('user_type') == 'customer'){
+                $model = new PropertyInfoModel();
+                $data['renovationlist'] = $model->getByCriteria(4);
+                //echo '<pre>'; print_r($data); echo '</pre>'; exit;
+                return view('prism/renovation copy', $data);
+            }
+            else {
+                $data['key'] = 'Welcome to Prism Dashboard';
+                return view('admin/dashboard', $data);
+            }
+        }               
         $model = new PropertyInfoModel();
         $data['renovationlist'] = $model->getByCriteria(4);
         //echo '<pre>'; print_r($data); echo '</pre>'; exit;
@@ -179,6 +222,19 @@ class Home extends BaseController
 
     public function legalservices()
     {
+        if(session()->get('logged_in')){
+            
+            if(session()->get('user_type') == 'customer'){
+                $model = new PropertyInfoModel();
+                $data['servicelist'] = $model->getByCriteria(5);
+                //echo '<pre>'; print_r($data); echo '</pre>'; exit;
+                return view('prism/legalservices copy', $data);
+            }
+            else {
+                $data['key'] = 'Welcome to Prism Dashboard';
+                return view('admin/dashboard', $data);
+            }
+        }               
         $model = new PropertyInfoModel();
         $data['servicelist'] = $model->getByCriteria(5);
         //echo '<pre>'; print_r($data); echo '</pre>'; exit;

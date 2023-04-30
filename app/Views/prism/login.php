@@ -16,6 +16,13 @@
 </head>
 <body>
     <div class="main" style="padding-top: 20px;">
+        <div>
+            <h3 class="sinse-title" style="text-align: center; color: #2eca6a">PRISM PROPERTIES
+              <br>
+              <p>Join us to experiance the best property buy,sell and rent service</p>
+            </h3>
+            
+        </div>    
        <!-- Sing in  Form -->
         <section class="sign-in">
             <div class="container">
