@@ -20,7 +20,7 @@
             box-sizing: border-box;
         }
         body{
-            height: 100vh;
+            height: 110vh;
         }
         nav{
             width: 100%;
@@ -34,7 +34,7 @@
         }
         nav a{
             box-sizing: border-box;
-            margin-left: 10px;
+            margin-left: -50px;
             text-decoration: none;
             color: blue;
         }
@@ -52,6 +52,7 @@
             list-style: none;
             background-color:  rgb(214, 214, 214);
             margin-bottom: 0;
+            padding-left: 0px;
         }
         .menu h6{
             box-sizing: border-box;
@@ -60,12 +61,13 @@
         }
         .menu.col-2{
             padding-left: 0;
-            height: 100;
+            height: 100vh;
             background-color:  rgb(214, 214, 214);
+            padding-right: 0px;
         }
         .main-body.col{
             padding-left: 0;
-            height: fit-content;
+            height: 100vh;
             width: 80%;
             box-sizing: border-box;
             margin-left: 1%;
@@ -79,6 +81,8 @@
         }
         .menu li{
             margin: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
 
         }
         .btn-outline-light {
@@ -92,11 +96,15 @@
             text-decoration: none;
             color:black;
             font-size: small;
+            padding-left: 60px;
         }
         th{
             background-color: white !important;
             position: sticky;
             top: 0; 
+        }
+        li.selected{
+            background-color: white;
         }
     </style>
 </head>
@@ -113,25 +121,26 @@
        <div class="menu col-2">
         <h6>Menu</h6>
         <ul>
-            <li class="btn btn-outline-light <?= $path == 'looktype' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/looktype')?>">Look Type</a></li>
-            <li class="btn btn-outline-light <?= $path == 'lookup' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/lookup')?>">Look Up</a></li>
-            <li class="btn btn-outline-light <?= $path == 'property' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/property')?>">Property</a></li>
-            <li class="btn btn-outline-light <?= $path == 'user' ? 'active' : '' ?>"> <a href="<?= base_url('public/admin/user')?>">User</a></li>
-            <li class="btn btn-outline-light <?= $path == 'companyprofile' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/companyprofile')?>">Company Profile</a></li>
-            <li class="btn btn-outline-light <?= $path == 'careers' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/careers')?>">Careers</a></li>
-            <li class="btn btn-outline-light <?= $path == 'legalservice' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/legalservice')?>">Legal Service</a></li>
-            <li class="btn btn-outline-light <?= $path == 'renovation' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/renovation')?>">Renovation</a></li>
-            <li class="btn btn-outline-light <?= $path == 'inquery' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/inquery')?>">Inquery</a></li>
-            <li class="btn btn-outline-light <?= $path == 'bookvisit' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/bookvisit')?>">Book Visit</a></li>
-            <li class="btn btn-outline-light <?= $path == 'homeloan' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/homeloan')?>">Home Loan</a></li>
-            <li class="btn btn-outline-light <?= $path == 'favourites' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/favourites')?>">Favourites</a></li>
-            <li class="btn btn-outline-light <?= $path == 'slider' ? 'active' : '' ?>"><a href="">Slider</a></li>
+            <li class=" <?= $path == 'looktype' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/looktype')?>">Look Type</a></li>
+            <li class=" <?= $path == 'lookup' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/lookup')?>">Look Up</a></li>
+            <li class=" <?= $path == 'property' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/property')?>">Property</a></li>
+            <li class=" <?= $path == 'user' ? 'selected' : '' ?>"> <a href="<?= base_url('public/admin/user')?>">User</a></li>
+            <li class=" <?= $path == 'companyprofile' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/companyprofile')?>">Company Profile</a></li>
+            <li class=" <?= $path == 'careers' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/careers')?>">Careers</a></li>
+            <li class=" <?= $path == 'legalservice' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/legalservice')?>">Legal Service</a></li>
+            <li class=" <?= $path == 'renovation' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/renovation')?>">Renovation</a></li>
+            <li class=" <?= $path == 'inquery' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/inquery')?>">Inquery</a></li>
+            <li class=" <?= $path == 'bookvisit' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/bookvisit')?>">Book Visit</a></li>
+            <li class=" <?= $path == 'homeloan' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/homeloan')?>">Home Loan</a></li>
+            <li class=" <?= $path == 'favourites' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/favourites')?>">Favourites</a></li>
+            <li class=" <?= $path == 'slider' ? 'selected' : '' ?>"><a href="">Slider</a></li>
             
 
         </ul>
        </div>
         <?= $this->renderSection('content') ?>
         </main> 
+        <h6 style="text-align:center; background-color: rgb(214, 214, 214); padding-bottom:10px; padding-top:10px;">All rights reserved @PRISM 2023</h6>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
 
