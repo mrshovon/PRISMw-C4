@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2023 at 08:41 AM
+-- Generation Time: Apr 30, 2023 at 11:59 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -54,16 +54,23 @@ INSERT INTO `tbl_book_visit` (`auth_id`, `action_type`, `action_date`, `date`, `
 --
 
 CREATE TABLE `tbl_careers` (
-  `maker_id` int(11) NOT NULL,
+  `maker_id` varchar(100) DEFAULT NULL,
   `auth_id` varchar(100) DEFAULT NULL,
   `action_type` enum('insert','update','delete') NOT NULL,
   `action_date` datetime NOT NULL,
   `career_id` int(11) NOT NULL,
   `job_title` varchar(100) NOT NULL,
-  `job_description` varchar(500) NOT NULL,
+  `job_description` varchar(2500) NOT NULL,
   `phone` varchar(15) NOT NULL,
   `email` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `tbl_careers`
+--
+
+INSERT INTO `tbl_careers` (`maker_id`, `auth_id`, `action_type`, `action_date`, `career_id`, `job_title`, `job_description`, `phone`, `email`) VALUES
+('1730020@iub.edu.bd', 'prism-hr@prism.com', 'update', '2023-04-30 14:07:37', 1, 'LOOKING FOR INTERN', 'We are excited to announce that our IT department is looking for a talented intern to join our team! As an intern, you\'ll have the opportunity to gain valuable experience in a fast-paced and dynamic environment, working alongside seasoned professionals in the field.\r\n\r\nResponsibilities:\r\n\r\nAssisting in the development, testing, and maintenance of software applications.\r\nTroubleshooting technical issues and providing support to end-users.\r\nCollaborating with team members to design and implement new IT solutions.\r\nConducting research and keeping up-to-date with the latest trends and technologies.\r\nRequirements:\r\n\r\nPursuing a degree in Computer Science, Information Technology, or a related field.\r\nStrong analytical and problem-solving skills.\r\nFamiliarity with programming languages such as Java, Python, or C++.\r\nExcellent communication and teamwork skills.\r\nAbility to work independently and manage multiple tasks simultaneously.\r\nIf you are a motivated and enthusiastic individual who is passionate about technology and eager to learn, we encourage you to apply for this exciting opportunity. ', '01245678933', 'prism-hr@prism.com');
 
 -- --------------------------------------------------------
 
@@ -115,7 +122,9 @@ CREATE TABLE `tbl_favourites` (
 INSERT INTO `tbl_favourites` (`auth_id`, `action_type`, `action_date`, `creation_date`, `email`, `property_id`) VALUES
 ('joy@gmail.com', 'insert', '2023-04-30 11:44:44', '2023-04-30 11:44:44', 'joy@gmail.com', '1'),
 ('joy@gmail.com', 'insert', '2023-04-30 10:40:07', '2023-04-30 10:40:07', 'joy@gmail.com', '10'),
-('joy@gmail.com', 'insert', '2023-04-30 12:13:12', '2023-04-30 12:13:12', 'joy@gmail.com', '11');
+('joy@gmail.com', 'insert', '2023-04-30 12:13:12', '2023-04-30 12:13:12', 'joy@gmail.com', '11'),
+('shovon@gmail.com', 'insert', '2023-04-30 13:18:23', '2023-04-30 13:18:23', 'shovon@gmail.com', '1'),
+('shovon@gmail.com', 'insert', '2023-04-30 13:12:39', '2023-04-30 13:12:39', 'shovon@gmail.com', '19');
 
 -- --------------------------------------------------------
 
@@ -424,8 +433,7 @@ ALTER TABLE `tbl_book_visit`
 -- Indexes for table `tbl_careers`
 --
 ALTER TABLE `tbl_careers`
-  ADD PRIMARY KEY (`career_id`),
-  ADD KEY `tbl_careers_companyprofile_fk` (`maker_id`);
+  ADD PRIMARY KEY (`career_id`);
 
 --
 -- Indexes for table `tbl_company_profile`
@@ -517,7 +525,7 @@ ALTER TABLE `tbl_user_info`
 -- AUTO_INCREMENT for table `tbl_careers`
 --
 ALTER TABLE `tbl_careers`
-  MODIFY `career_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `career_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbl_inquery`
@@ -547,12 +555,6 @@ ALTER TABLE `tbl_slider`
 ALTER TABLE `tbl_book_visit`
   ADD CONSTRAINT `tbl_bookvisit_propertyinfo_fk` FOREIGN KEY (`property_id`) REFERENCES `tbl_property_info` (`property_id`),
   ADD CONSTRAINT `tbl_bookvisit_userinfo_fk` FOREIGN KEY (`email`) REFERENCES `tbl_user_info` (`email`);
-
---
--- Constraints for table `tbl_careers`
---
-ALTER TABLE `tbl_careers`
-  ADD CONSTRAINT `tbl_careers_companyprofile_fk` FOREIGN KEY (`maker_id`) REFERENCES `tbl_company_profile` (`company_id`);
 
 --
 -- Constraints for table `tbl_company_profile`
