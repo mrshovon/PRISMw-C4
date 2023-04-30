@@ -1391,7 +1391,7 @@ a:hover {
   letter-spacing: 0;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  top: 50px;
+  top: 100px;
   text-align: left;
   font-size: 1.8rem;
   width: 300px;
