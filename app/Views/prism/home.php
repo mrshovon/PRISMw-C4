@@ -4,7 +4,7 @@
     <div id="carousel" class="owl-carousel owl-theme">
       <?= $i=0 ?>
       <?php foreach($propertylist as $index => $row) { if($i>=3) break; $i++ ?>
-      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-<?=$i?>.jpg)">
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(<?=base_url('public/img/slide-'.$i.'.jpg')?>)">
         <span hidden><?= $row->property_id ?></span>
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">

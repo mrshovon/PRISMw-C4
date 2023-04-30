@@ -30,7 +30,31 @@ class HomeAL extends BaseController
         // echo '<pre>';print_r($data);echo '</pre>'; exit;
         return view('prism/careers copy', $data);
     }
-    
+    public function favourite()
+    { 
+    $session = session();   
+    $model = new FavouritesModel();
+        $data = [
+            'email' => session()->get('email'),
+            'property_id' => $this->request->getVar('property_id')
+        ];
+        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        $result = $model->add($data);
+        if($result <= 0) {
+            $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
+            return view('prism/propertydetails');
+        }
+        else {
+            $session->setFlashdata('msg', 'Added to favourite Successful. Thank you!');
+            $email = session()->get('email');
+            $model = new PropertyInfoModel();
+            $data['propertylist'] = $model->get($data['property_id'],null,null);
+            $model2 = new FavouritesModel();
+            $data['list'] = $model2->getByCriteria($email,$data['property_id']);
+            // echo '<pre>';print_r($data);echo '</pre>'; exit;
+            return view('prism/propertydetails', $data);
+        }  
+   }
     public function aboutus()
     {
         return view('prism/aboutus copy');
@@ -173,13 +197,17 @@ class HomeAL extends BaseController
     }
     public function propertydetails($property_id)
     {
+        $session = session();
+        $email = session()->get('email');
         $model = new PropertyInfoModel();
+        $model2 = new FavouritesModel();
         $data['propertylist'] = $model->get($property_id,null,null);
+        $data['list'] = $model2->getByCriteria($email,$property_id);
         // echo '<pre>';print_r($data);echo '</pre>'; exit;
         return view('prism/propertydetails', $data);
     }
     public function bookvisit()
-   { 
+    { 
     $session = session();   
     $model = new BookVisitModel();
         $data = [

@@ -10,16 +10,16 @@
                 $this->db = db_connect();
             }
             
-            public function add()
+            public function add($data)
             {
 
                 $sqlText = "INSERT INTO `tbl_favourites`(`auth_id`,`action_type`,`action_date`,`creation_date`,`email`,`property_id`)
-                            VALUES('null','insert',now(),now(),'shovon@gmail.com','1')"; 
+                            VALUES('".$data['email']."','insert',now(),now(),'".$data['email']."','".$data['property_id']."')"; 
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();
             }
-            public function erase($email,$property_id) {
+            public function erase($property_id,$email) {
                 $sqlText = "DELETE FROM `tbl_favourites` WHERE `email` = '".$email."' AND `property_id` = ".$property_id.""; 
                 $query =  $this->db->query($sqlText);
    
@@ -40,13 +40,16 @@
 
             }
             public function get() {
-                $sqlText = "SELECT * FROM tbl_favourites" ;
+                $sqlText = "SELECT * FROM tbl_favourites";
                 $query =  $this->db->query($sqlText);
                 return $query->getResult();
 
             }
-            public function searchByCriteria() {
-         
+            public function getByCriteria($email,$property_id) {
+                $sqlText = "SELECT * FROM tbl_favourites where `email` = '".$email."' and `property_id` = '".$property_id."'" ;
+                $query =  $this->db->query($sqlText);
+                return $query->getResult();
+
 
             }
 

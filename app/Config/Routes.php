@@ -32,6 +32,11 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 $routes->group("admin", ["namespace" => "App\Controllers\Admin"], function ($routes) {
+
+    $routes->group('',  function ($routes) {
+        $routes->get('/', 'dashboard::index', ['filter' => 'auth']);
+    });
+    
     $routes->group('careers',  function ($routes) {
         $routes->get('/', 'careers::index', ['filter' => 'auth']);
         $routes->get('add', 'careers::add', ['filter' => 'auth']);

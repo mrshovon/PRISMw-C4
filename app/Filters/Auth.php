@@ -9,7 +9,7 @@ class Auth implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        // echo '<pre>'; print_r($request->uri->getSegment(1)); echo '</pre>';
+        // echo '<pre>'; print_r($request->uri->getSegment(1)); echo '</pre>'; exit;
         // echo '<pre>'; print_r(session()->get()); echo '</pre>';
         if(!session()->get('logged_in')){
             // echo 'logged in';exit;
@@ -23,8 +23,9 @@ class Auth implements FilterInterface
             else if(session()->get('user_type') == 'administrator' && $request->uri->getSegment(1) != 'admin') {
                 return redirect()->to('/public/login'); 
             }
+         }
         }
-    }
+    
     //--------------------------------------------------------------------
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {

@@ -112,7 +112,7 @@
                     <p class="description color-text-a"><?php echo $row->description?></p>
                     <ul class="" style="list-style: none; float:right; margin-right:25px;">
                       <li class="btn btn-info" style="margin-top: 2px;"><a href="" style="text-decoration: none; color:black;" data-toggle="modal" data-target="#exampleModalCenter" >Book a visit</a><i class="fa-regular fa-calendar-check" style="margin-left: 5px;"></i></li>
-                      <li class="btn btn-info" style="margin-top: 2px;"><a href="" style="text-decoration: none; color:black;">favourite</a><i class="fa-solid fa-star" style="margin-left: 5px;"></i></li>
+                      <li class="btn btn-info" style="margin-top: 2px;"><a href="" style="text-decoration: none; color:black;" data-toggle="modal" data-target="#exampleModalCenter3" >favourite </a><i class="fa-<?= empty($list) ? 'regular' : 'solid' ?> fa-star" style="<?= empty($list) ? '' : 'color: #05111f;' ?>"></i></li>
                       <li class="btn btn-info" style="margin-top: 2px;"><a href="" style="text-decoration: none; color:black;" data-toggle="modal" data-target="#exampleModalCenter2">Share</a><i class="fa-solid fa-share" style="margin-left: 5px;"></i></li>
                       <li class="btn btn-info" style="margin-top: 2px;"><a href="tel:<?php echo $row->phone_number?>" style="text-decoration: none; color:black;"><?php echo $row->phone_number?></a><i class="fa-solid fa-phone" style="margin-left: 5px;"></i></li>
                       <li class="btn btn-info" style="margin-top: 2px;"><a href="mailto:<?php echo $row->email?>" style="text-decoration: none; color:black;"><?php echo $row->email?></a><i class="fa-solid fa-envelope"  style="margin-left: 5px;"></i>
@@ -207,6 +207,32 @@
                     </div>
                   </div>
                   <!-- Modal 2 End -->
+                  <!-- Modal 3 -->
+                  <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Favourites</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="<?=base_url('public/user/HomeAL/favourite')?>" method="post">
+                                <input type="hidden" name="property_id" value="<?php echo $row->property_id ?>"/>
+                                <div class="form-group">
+                                    <h6>Add These property to your favourites</h6>
+                                </div>
+                                <div class="modal-footer">
+                                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                  <button type="submit" class="btn btn-primary">Confirm</button>
+                                </div>
+                            </form>      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal 3 End -->
                   <div class="row section-t3">
                     <div class="col-sm-12">
                       <div class="title-box-d">

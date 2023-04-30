@@ -85,6 +85,18 @@ class Home extends BaseController
         // echo 'affected rows: '.$model->edit('shovon@gmail.com',1);
 
 
+        if(session()->get('logged_in')){
+            
+            if(session()->get('user_type') == 'customer'){
+                $model = new PropertyInfoModel();
+                $data['propertylist'] = $model->get(null,null,null);
+                return view('prism/userdash', $data);
+            }
+            else {
+                $data['key'] = 'Welcome to Prism Dashboard';
+                return view('admin/dashboard', $data);
+            }
+        }
 
         $model = new PropertyInfoModel();
         $data['propertylist'] = $model->get(null,null,null);
