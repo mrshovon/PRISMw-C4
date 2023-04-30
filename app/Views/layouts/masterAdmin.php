@@ -103,8 +103,10 @@
 <body>
     <header>
         <nav style="display: flex">
-            <a href="<?=base_url('public/home/signout')?>" class="btn btn-secondary" style="margin-top:3px;">LOGOUT</a>
-            <h5 style="margin-left: 120px;margin-top: 9px;"><?php echo strtoupper(session()->get('name')).' ('.strtoupper(session()->get('user_type')).')'?></h5>  
+            <a href="<?=base_url('public/home/signout')?>"><i class="fa-solid fa-right-from-bracket fa-flip-both fa-2xl" style="margin-top:3px; line-height: 1.50em; margin-left: 40px;"></i></a>
+            <!-- <a href="" class="btn btn-secondary" style="margin-top:3px;">LOGOUT</a> -->
+            <a href="<?= base_url('public/admin/dashboard')?>"><i class="fa-solid fa-house fa-2xl" style="color: #388a3a; margin-top:3px; line-height: 1.50em;"></i></a>
+            <h5 style="margin-left: 80px;margin-top: 9px;"><i class="fa-solid fa-user-tie fa-xl" style="color: #45b593;"></i>  <?php echo strtoupper(session()->get('name')).' ('.strtoupper(session()->get('user_type')).')'?></h5>  
         </nav>
     </header>
     <main class="container row" >
@@ -117,13 +119,14 @@
             <li class="btn btn-outline-light <?= $path == 'user' ? 'active' : '' ?>"> <a href="<?= base_url('public/admin/user')?>">User</a></li>
             <li class="btn btn-outline-light <?= $path == 'companyprofile' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/companyprofile')?>">Company Profile</a></li>
             <li class="btn btn-outline-light <?= $path == 'careers' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/careers')?>">Careers</a></li>
-            <li href="legalservice.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/legalservice')?>">Legal Service</a></li>
-            <li href="renovation.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/renovation')?>">Renovation requests</a></li>
-            <li href="homeloan.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/homeloan')?>">Home Loan</a></li>
-            <li href="inquery.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/inquery')?>">Inquery</a></li>
-            <li href="bookvisit.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/bookvisit')?>">Book Visit</a></li>
-            <li href="slider.html" class="btn btn-outline-light">Slider</li>
-            <li href="favourites.html" class="btn btn-outline-light"><a href="<?= base_url('public/admin/favourites')?>">Favourites</a></li>
+            <li class="btn btn-outline-light <?= $path == 'legalservice' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/legalservice')?>">Legal Service</a></li>
+            <li class="btn btn-outline-light <?= $path == 'renovation' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/renovation')?>">Renovation</a></li>
+            <li class="btn btn-outline-light <?= $path == 'inquery' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/inquery')?>">Inquery</a></li>
+            <li class="btn btn-outline-light <?= $path == 'bookvisit' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/bookvisit')?>">Book Visit</a></li>
+            <li class="btn btn-outline-light <?= $path == 'homeloan' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/homeloan')?>">Home Loan</a></li>
+            <li class="btn btn-outline-light <?= $path == 'favourites' ? 'active' : '' ?>"><a href="<?= base_url('public/admin/favourites')?>">Favourites</a></li>
+            <li class="btn btn-outline-light <?= $path == 'slider' ? 'active' : '' ?>"><a href="">Slider</a></li>
+            
 
         </ul>
        </div>
