@@ -105,21 +105,22 @@
         }
         li.selected{
             background-color: white;
+            font-weight:bold;
         }
     </style>
 </head>
 <body>
     <header>
         <nav style="display: flex">
-            <a href="<?=base_url('public/home/signout')?>"><i class="fa-solid fa-right-from-bracket fa-flip-both fa-2xl" style="margin-top:3px; line-height: 1.50em; margin-left: 40px;"></i></a>
+            <a href="<?=base_url('public/home/signout')?>"><i class="fa-solid fa-right-from-bracket fa-flip-both fa-2xl" title="LOGOUT" style="margin-top:3px; line-height: 1.50em; margin-left: 40px;"></i></a>
             <!-- <a href="" class="btn btn-secondary" style="margin-top:3px;">LOGOUT</a> -->
-            <a href="<?= base_url('public/admin/dashboard')?>"><i class="fa-solid fa-house fa-2xl" style="color: #388a3a; margin-top:3px; line-height: 1.50em;"></i></a>
-            <h5 style="margin-left: 80px;margin-top: 9px;"><i class="fa-solid fa-user-tie fa-xl" style="color: #45b593;"></i>  <?php echo strtoupper(session()->get('name')).' ('.strtoupper(session()->get('user_type')).')'?></h5>  
+            <a href="<?= base_url('public/admin/dashboard')?>"><i class="fa-solid fa-house fa-2xl" title="HOME" style="color: #388a3a; margin-top:3px; line-height: 1.50em;"></i></a>
+            <h5 style="margin-left: 80px;margin-top: 9px;"><i class="fa-solid fa-user-tie fa-xl" title="<?= strtoupper(session()->get('user_type')) ?>" style="color: #45b593;"></i>  <?php echo strtoupper(session()->get('name')).' ('.strtoupper(session()->get('user_type')).')'?></h5>  
         </nav>
     </header>
     <main class="container row" >
        <div class="menu col-2">
-        <h6>Menu</h6>
+        <h6 style="background-color:#45b593; font-weight:bold;">Menu</h6>
         <ul>
             <li class=" <?= $path == 'looktype' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/looktype')?>">Look Type</a></li>
             <li class=" <?= $path == 'lookup' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/lookup')?>">Look Up</a></li>
