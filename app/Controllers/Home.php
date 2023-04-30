@@ -139,6 +139,19 @@ class Home extends BaseController
     }
     public function careers()
     {
+        if(session()->get('logged_in')){
+            
+            if(session()->get('user_type') == 'customer'){
+                $model = new CareersModel();
+                $data['joblist'] = $model->get();
+                // echo '<pre>';print_r($data);echo '</pre>'; exit;
+                return view('prism/careers copy', $data);
+            }
+            else {
+                $data['key'] = 'Welcome to Prism Dashboard';
+                return view('admin/dashboard', $data);
+            }
+        }
         $model = new CareersModel();
         $data['joblist'] = $model->get();
         // echo '<pre>';print_r($data);echo '</pre>'; exit;

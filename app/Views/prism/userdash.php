@@ -43,7 +43,7 @@
               <div class="card-overlay-a-content">
                 <div class="card-header-a">
                   <h2 class="card-title-a">
-                    <a class="adrs" href="#"><?php echo $row->property_name?></a>
+                    <a class="adrs" href="<?= base_url('public/user/homeAL/propertydetails/'.$row->property_id)?>"><?php echo $row->property_name?></a>
                   </h2>
                 </div>
                 <div class="card-body-a">

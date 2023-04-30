@@ -513,8 +513,8 @@ a:hover {
 .navbar-default {
   transition: all .5s ease-in-out;
   background-color: #ffffff;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 10px; /*from 28px*/
+  padding-bottom: 10px; /*from 28px*/
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
@@ -1053,7 +1053,7 @@ a:hover {
 .price-a {
   color: #ffffff;
   padding: .6rem .8rem;
-  border: 2px solid #2eca6a;
+  border-top: 2px solid #2eca6a;
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 0.030em;

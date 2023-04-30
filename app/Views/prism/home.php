@@ -18,7 +18,7 @@
                       <span class="color-b"><?= $row->property_name ?> </span> <?= $row->city ?>
                       <br> <?= $row->property_area ?></h1>
                     <p class="intro-subtitle intro-price">
-                      <a href="<?=base_url('public/login')?>"><span class="price-a"><?= $row->purpose_name ?> | tk <?= $row->price ?></span></a>
+                      <a href="<?=base_url('public/login')?>"><span class="price-a"><?=$row->purpose_name ?> | tk <?= $row->price ?></span></a>
                     </p>
                   </div>
                 </div>

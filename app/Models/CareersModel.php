@@ -13,7 +13,7 @@
             public function add($data) {
  
                 $sqlText = "INSERT INTO `tbl_careers`(`maker_id`,`auth_id`,`action_type`,`action_date`,`job_title`,`job_description`,`phone`,`email`)
-                VALUES('".$data['email']."',null,'insert',now(),'".$this->db->escapeString($data['job_title'])."','".$this->db->escapeString($data['job_description'])."','".$data['phone']."','".$data['email']."')"; 
+                VALUES('1730020@iub.edu.bd','".$data['email']."','insert',now(),'".$this->db->escapeString($data['job_title'])."','".$this->db->escapeString($data['job_description'])."','".$data['phone']."','".$data['email']."')"; 
                 $query =  $this->db->query($sqlText);
                
                 return  $this->db->affectedRows();
@@ -38,7 +38,7 @@
                             `action_type` = 'Update',
                             `action_date` = now(),
                             `job_title` = '".$data['job_title']."',
-                            `job_description` = '".$data['job_description']."',
+                            `job_description` = '".$this->db->escapeString($data['job_description'])."',
                             `phone` = '".$data['phone']."',
                             `email` = '".$data['email']."'
                             WHERE `career_id` = ".$data['career_id']."";
