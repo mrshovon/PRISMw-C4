@@ -60,11 +60,11 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et voluptatum minima officia totam earum aperiam unde esse iste, tempora natus soluta nulla tempore dolores! Quis tempore animi vel itaque expedita!
               </p>
             </div>
-            <div class="card-footer-c">
+            <!-- <div class="card-footer-c">
               <a href="#" class="link-c link-icon">Read more
                 <span class="ion-ios-arrow-forward"></span>
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col-md-4">
@@ -82,11 +82,11 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et voluptatum minima officia totam earum aperiam unde esse iste, tempora natus soluta nulla tempore dolores! Quis tempore animi vel itaque expedita!
               </p>
             </div>
-            <div class="card-footer-c">
+            <!-- <div class="card-footer-c">
               <a href="#" class="link-c link-icon">Read more
                 <span class="ion-ios-arrow-forward"></span>
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col-md-4">
@@ -104,11 +104,11 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et voluptatum minima officia totam earum aperiam unde esse iste, tempora natus soluta nulla tempore dolores! Quis tempore animi vel itaque expedita!
               </p>
             </div>
-            <div class="card-footer-c">
+            <!-- <div class="card-footer-c">
               <a href="#" class="link-c link-icon">Read more
                 <span class="ion-ios-arrow-forward"></span>
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
