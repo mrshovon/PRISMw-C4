@@ -19,8 +19,8 @@
                
                 return  $this->db->affectedRows();
             }
-            public function erase($property_id,$email) {
-                $sqlText = "DELETE FROM `tbl_favourites` WHERE `email` = '".$email."' AND `property_id` = ".$property_id.""; 
+            public function erase($data) {
+                $sqlText = "DELETE FROM `tbl_favourites` WHERE `email` = '".$data['email']."' AND `property_id` = ".$data['property_id'].""; 
                 $query =  $this->db->query($sqlText);
    
                 return  $this->db->affectedRows();

@@ -77,6 +77,11 @@ $routes->group("user", ["namespace" => "App\Controllers\User"], function ($route
         $routes->get('search', 'homeAL::search',['filter' => 'auth']);
         $routes->get('contactus', 'homeAL::contactus',['filter' => 'auth']);
         $routes->get('sendmessage', 'homeAL::sendmessage',['filter' => 'auth']);
+        $routes->get('homeloan', 'homeAL::homeloan',['filter' => 'auth']);
+        $routes->get('reqhomeloan', 'homeAL::reqhomeloan',['filter' => 'auth']);
+        $routes->get('renovation', 'homeAL::renovation',['filter' => 'auth']);
+        $routes->get('legalservices', 'homeAL::legalservices',['filter' => 'auth']);
+        $routes->get('requestLegalservices', 'homeAL::requestLegalservices',['filter' => 'auth']);
     });
 });
 /*

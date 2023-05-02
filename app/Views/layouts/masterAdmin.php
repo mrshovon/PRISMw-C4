@@ -7,12 +7,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title><?= strtoupper($path) ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css" rel="stylesheet">
     
-    <title>Admin</title>
+    <link rel="icon" href="<?=base_url('public/images/favicon.ico')?>">
     <style>
         *{
             padding: 0px;
@@ -107,15 +108,24 @@
             background-color: white;
             font-weight:bold;
         }
+        li:hover{
+            background-color: white;
+            font-weight:bold;
+        }
+        @media (min-width: 1200px){
+        .container, .container-lg, .container-md, .container-sm, .container-xl {
+            max-width: 100vw;
+            }
+         }
     </style>
 </head>
 <body>
     <header>
         <nav style="display: flex">
-            <a href="<?=base_url('public/home/signout')?>"><i class="fa-solid fa-right-from-bracket fa-flip-both fa-2xl" title="LOGOUT" style="margin-top:3px; line-height: 1.50em; margin-left: 40px;"></i></a>
+            <a href="<?=base_url('public/home/signout')?>"><i class="fa-solid fa-right-from-bracket fa-flip-both fa-2xl" title="LOGOUT" style="margin-top:3px; line-height: 1.50em; margin-left: 60px;"></i></a>
             <!-- <a href="" class="btn btn-secondary" style="margin-top:3px;">LOGOUT</a> -->
             <a href="<?= base_url('public/admin/dashboard')?>"><i class="fa-solid fa-house fa-2xl" title="HOME" style="color: #388a3a; margin-top:3px; line-height: 1.50em;"></i></a>
-            <h5 style="margin-left: 80px;margin-top: 9px;"><i class="fa-solid fa-user-tie fa-xl" title="<?= strtoupper(session()->get('user_type')) ?>" style="color: #45b593;"></i>  <?php echo strtoupper(session()->get('name')).' ('.strtoupper(session()->get('user_type')).')'?></h5>  
+            <h5 style="margin-left: 90px;margin-top: 9px;"><i class="fa-solid fa-user-tie fa-xl" title="<?= strtoupper(session()->get('user_type')) ?>" style="color: #45b593;"></i>  <?php echo strtoupper(session()->get('name')).' ('.strtoupper(session()->get('user_type')).')'?></h5>  
         </nav>
     </header>
     <main class="container row" >

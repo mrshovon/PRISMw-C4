@@ -1,7 +1,13 @@
 <?php 
    $path = $_SERVER['REQUEST_URI'];
    $path = explode('/',$path);
-   $path = end($path);  
+   $path = end($path); 
+   if($path == 'legalservices'){
+    $path = 'documentation';
+   }
+   else if($path == 'aboutus'){
+    $path = 'about';
+   }   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +18,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+  <link rel="icon" href="<?=base_url('public/images/favicon.ico')?>">
+  
 
   <!-- Favicons -->
   <link href="<?=base_url('public/img/favicon.png')?>" rel="icon">

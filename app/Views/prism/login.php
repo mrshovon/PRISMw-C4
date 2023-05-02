@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Log In</title>
-
+    <link rel="icon" href="<?=base_url('public/images/favicon.ico')?>">
     <!-- Font Icon -->
     <link rel="stylesheet" href="<?=base_url('public/fonts/material-icon/css/material-design-iconic-font.min.css')?>">
     <!-- Main css -->
@@ -19,7 +19,7 @@
         <div>
             <h3 class="sinse-title" style="text-align: center; color: #2eca6a">PRISM PROPERTIES
               <br>
-              <p>Join us to experiance the best property buy,sell and rent service</p>
+              <p>Log in to experiance the best property buy,sell and rent service</p>
             </h3>
             
         </div>    

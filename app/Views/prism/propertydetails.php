@@ -220,12 +220,13 @@
                         <div class="modal-body">
                             <form action="<?=base_url('public/user/HomeAL/favourite')?>" method="post">
                                 <input type="hidden" name="property_id" value="<?php echo $row->property_id ?>"/>
+                                <input type="hidden" name="actiontype" value="<?= empty($list) ? 'add' : 'delete' ?>"/>
                                 <div class="form-group">
-                                    <h6>Add These property to your favourites</h6>
+                                    <h6><?= empty($list) ? 'Add this proeprty to your favourites' : 'Already in your Favourites' ?></h6>
                                 </div>
                                 <div class="modal-footer">
                                   <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                                  <button type="submit" class="btn btn-primary">Confirm</button>
+                                  <button type="submit" class="" style="background-color:<?= empty($list) ? '#4CAF50' : 'red' ?>"><?= empty($list) ? 'Confirm' : 'Remove' ?></button>
                                 </div>
                             </form>      
                         </div>
