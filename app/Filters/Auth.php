@@ -20,9 +20,9 @@ class Auth implements FilterInterface
             if(session()->get('user_type') == 'customer' && $request->uri->getSegment(1) != 'user') {
                 return redirect()->to('/public/login'); 
             }
-            else if(session()->get('user_type') == 'administrator' && $request->uri->getSegment(1) != 'admin') {
-                return redirect()->to('/public/login'); 
-            }
+            // else if(session()->get('user_type') == 'administrator' && $request->uri->getSegment(1) != 'admin') {
+            //     return redirect()->to('/public/login'); 
+            // }
          }
         }
     
