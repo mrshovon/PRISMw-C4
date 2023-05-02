@@ -3,7 +3,6 @@
     <?= $this->section('content') ?>
     <!-- main -->
     <main style="height: 600px; margin-top:10%;">
-    
         <div class="career">
           <h3>Careers</h3>
           <p>Join the team</p>

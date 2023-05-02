@@ -1,4 +1,3 @@
-
 <?= $this->extend('layouts/master') ?>
 <?= $this->section('content') ?>
 <section style="height: 600px; display: flex; margin-top:5%;" class="main">

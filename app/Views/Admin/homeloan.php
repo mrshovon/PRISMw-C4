@@ -27,7 +27,6 @@
                       <td><?php echo $row->property_id;?></td>
                       <td><?php echo $row->auth_id;?></td>
                       <td><?php echo $row->action_date;?></td>
-
                       <td>
                           <!-- <a href="<?= base_url('public/admin/careers/edit/'.$row->email)?>" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a> -->
                           <a href="<?= base_url('public/admin/homeloan/delete/'.$row->email.'/'.$row->action_date)?>" class="btn btn-danger"><i class="fa-solid fa-trash" title="Resolve"></i></a>

@@ -10,7 +10,7 @@
         <?php endif;?>
         <?php if(isset($validation)):?>
         <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
-      <?php endif;?>
+        <?php endif;?>
         <form action="<?=base_url('public/user/homeAL/create')?>" method="post" enctype="multipart/form-data">
             <h3>List Your Property</h3>
             <input type="hidden" name="actiontype" value="<?= isset($item) ? 'update' : 'insert' ?>"/>
@@ -54,8 +54,6 @@
                       <option value="1">Yes</option>
                       <option value="0">No</option>
                   </SELECT>
-                  
-                  
               </div>
               <div class="form-group">
                   <label for="floorplan"><i class="zmdi zmdi-account material-icons-name"></i>Floor Plan: </label>
@@ -103,12 +101,9 @@
               </div>
               <div class="form-group">
                   <label for="amenities[]"><i class="zmdi zmdi-account material-icons-name"></i>Amenities: </label> <br>
-
                     <?php foreach($amenitylist as $item) { ?>
                       <input type="checkbox" name="amenities[]" value="<?php echo $item->look_up_name ?>" style="padding: 5px; font-size:10px;"> <?php echo $item->look_up_name ?> <br>
-                      
                      <?php } ?> 
-                  
               </div>
               <div class="form-group form-button">
                   <button type="submit" id="signup" class="btn btn-success" style="margin-bottom:2%; margin-top:2%;">Save</button> 

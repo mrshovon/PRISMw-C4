@@ -1,4 +1,3 @@
-
     <!-- main -->
     <?= $this->extend('layouts/masterAL') ?>
     <?= $this->section('content') ?>
@@ -56,5 +55,5 @@
         </form>
       </section>   
     <?= $this->endSection() ?>
-    <!-- main -->
+  
     

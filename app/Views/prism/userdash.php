@@ -1,5 +1,5 @@
-    <?= $this->extend('layouts/masterAL') ?>
-    <?= $this->section('content') ?>
+<?= $this->extend('layouts/masterAL') ?>
+<?= $this->section('content') ?>
     <section class="intro-single">
     <div class="container">
       <div class="row">
@@ -14,7 +14,6 @@
     </div>
   </section>
   <!--/ Intro Single End /-->
-
   <!--/ Property Grid Star /-->
   <section class="property-grid grid">
     <div class="container">
@@ -37,7 +36,6 @@
             <div class="img-box-a">
               <?php $ext = '.jpg'; ?>
               <img src="<?=base_url('public/img/p'.$index+1..$ext)?>" alt="" class="img-a img-fluid">
-              
             </div>
             <div class="card-overlay">
               <div class="card-overlay-a-content">
@@ -70,7 +68,6 @@
                       <h4 class="card-info-title">Baths</h4>
                       <span><?php echo $row->baths?></span>
                     </li>
-                    
                   </ul>
                 </div>
               </div>
@@ -78,7 +75,6 @@
           </div>
         </div>
         <?php } ?>
- 
       </div>
       <!-- <div class="row">
         <div class="col-sm-12">
@@ -110,4 +106,4 @@
     </div>
   </section>
   <!--/ Property Grid End /-->
-     <?= $this->endSection() ?>
+  <?= $this->endSection() ?>

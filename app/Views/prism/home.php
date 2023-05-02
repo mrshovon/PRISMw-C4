@@ -31,7 +31,6 @@
      </div>
   </div>
   <!--/ Carousel end /-->
-
   <!--/ Services Star /-->
   <section class="section-services section-t8">
     <div class="container">

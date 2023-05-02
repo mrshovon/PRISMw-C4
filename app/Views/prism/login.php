@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,6 @@
     <!-- Main css -->
     <link rel="stylesheet" href="<?=base_url('public/css/style-ls.css')?>">
     <link href="<?=base_url('public/lib/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
-
 </head>
 <body>
     <div class="main" style="padding-top: 20px;">
@@ -21,7 +19,6 @@
               <br>
               <p>Log in to experiance the best property buy,sell and rent service</p>
             </h3>
-            
         </div>    
        <!-- Sing in  Form -->
         <section class="sign-in">
@@ -31,7 +28,6 @@
                         <figure><img src="<?=base_url('public/img/signin-image.jpg')?>" alt="sing up image"></figure>
                         <a href="<?=base_url('public/home/signup')?>" class="signup-image-link">Create an account</a>
                     </div>
-
                     <div class="signin-form">
                         <a href="<?=base_url('public/home')?>" class="btn btn-info">Back</a><br><br>
                         <h2 class="form-title">Log In</h2>
@@ -56,18 +52,12 @@
                                 <button type="submit"id="signin" class="form-submit" style="border: none;">Log In</button>
                             </div>
                         </form>
-                        
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
     <!-- JS -->
     <script src="<?=base_url('public/js/main-ls.js')?>"></script>
-
 </body>
 </html>
-      
-    <!-- main -->
-    

@@ -49,9 +49,7 @@
                   <SELECT name="occupied" id="occupied" class="form-control">
                       <option value="1">Yes</option>
                       <option value="0">No</option>
-                  </SELECT>
-                  
-                  
+                  </SELECT> 
               </div>
               <div class="form-group">
                   <label for="floorplan"><i class="zmdi zmdi-account material-icons-name"></i>Floor Plan: </label>

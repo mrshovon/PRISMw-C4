@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css" rel="stylesheet">
-    
     <link rel="icon" href="<?=base_url('public/images/favicon.ico')?>">
     <style>
         *{
@@ -145,8 +144,6 @@
             <li class=" <?= $path == 'homeloan' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/homeloan')?>">Home Loan</a></li>
             <li class=" <?= $path == 'favourites' ? 'selected' : '' ?>"><a href="<?= base_url('public/admin/favourites')?>">Favourites</a></li>
             <li class=" <?= $path == 'slider' ? 'selected' : '' ?>"><a href="">Slider</a></li>
-            
-
         </ul>
        </div>
         <?= $this->renderSection('content') ?>
@@ -154,7 +151,5 @@
         <h6 style="text-align:center; background-color: rgb(214, 214, 214); padding-bottom:10px; padding-top:10px;">All rights reserved @PRISM 2023</h6>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
-
-
 </body>
 </html>

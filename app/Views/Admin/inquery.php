@@ -33,7 +33,6 @@
                       <td><?php echo $row->query;?></td>
                       <td><?php echo $row->maker_id;?></td>
                       <td><?php echo $row->action_date;?></td>
-
                       <td>
                           <!-- <a href="<?= base_url('public/admin/careers/edit/'.$row->inquery_id)?>" class="btn btn-secondary"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a> -->
                           <a href="<?= base_url('public/admin/inquery/delete/'.$row->inquery_id)?>" class="btn btn-danger"><i class="fa-solid fa-trash" title="Resolve"></i></a>

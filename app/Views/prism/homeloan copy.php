@@ -1,4 +1,3 @@
-
     <!-- main -->
     <?= $this->extend('layouts/masterAL') ?>
     <?= $this->section('content') ?>

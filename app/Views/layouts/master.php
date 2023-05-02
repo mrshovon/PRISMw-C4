@@ -13,35 +13,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title><?= strtoupper($path) ?></title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
   <link rel="icon" href="<?=base_url('public/images/favicon.ico')?>">
-  
-
   <!-- Favicons -->
   <link href="<?=base_url('public/img/favicon.png')?>" rel="icon">
   <link href="<?=base_url('public/img/apple-touch-icon.png')?>" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
   <!-- Bootstrap CSS File -->
   <link href="<?=base_url('public/lib/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
-
   <!-- Libraries CSS Files -->
   <link href="<?=base_url('public/lib/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/lib/animate/animate.min.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/lib/ionicons/css/ionicons.min.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/lib/owlcarousel/assets/owl.carousel.min.css')?>" rel="stylesheet">
-
   <!-- Main Stylesheet File -->
   <link href="<?=base_url('public/css/style.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/css/style-sr.css')?>" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -56,7 +47,6 @@
         <span></span>
       </button>
       <a class="navbar-brand text-brand" href="<?=base_url('public/home')?>">PRISM<span class="color-b"> PROPERTIES</span></a>
-
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -97,14 +87,11 @@
           </li>
         </ul>
       </div>
-      
     </div>
   </nav>
   <!--/ Nav End /-->
     <!-- main -->
-    
   <?= $this->renderSection('content') ?>
-    
   <!--/ footer Star /-->
   <section class="section-footer">
     <div class="container">
@@ -151,7 +138,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -219,10 +205,8 @@
     </div>
   </footer>
   <!--/ Footer End /-->
-
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
-
   <!-- JavaScript Libraries -->
   <script src="<?=base_url('public/lib/jquery/jquery.min.js')?>"></script>
   <script src="<?=base_url('public/lib/jquery/jquery-migrate.min.js')?>"></script>
@@ -233,7 +217,6 @@
   <script src="<?=base_url('public/lib/scrollreveal/scrollreveal.min.js')?>"></script>
   <!-- Contact Form JavaScript File -->
   <script src="<?=base_url('public/contactform/contactform.js')?>"></script>
-
   <!-- Template Main Javascript File -->
   <script src="<?=base_url('public/js/main.js')?>"></script>
   <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>

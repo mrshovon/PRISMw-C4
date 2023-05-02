@@ -1,4 +1,3 @@
-
     <?= $this->extend('layouts/masterAL') ?>
     <?= $this->section('content') ?>
     <main style="height: fit-content; margin-left: 10px; margin-top:10%">
@@ -17,7 +16,6 @@
         </div>
       </section>
       <!--/ Intro Single End /-->
-
       <!--/ Property Single Star /-->
       <section class="property-single nav-arrow-b">
         <div class="container">
@@ -258,13 +256,11 @@
                   <a class="nav-link active" id="pills-video-tab" data-toggle="pill" href="#pills-video" role="tab"
                     aria-controls="pills-video" aria-selected="true">Floor Plan</a>
                 </li>
-                
               </ul>
               <div class="tab-content" id="pills-tabContent">
                 <div class="zoom-box tab-pane fade show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
                   <img src="<?= base_url().$row->floor_plan?>"/>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -273,6 +269,5 @@
     </section>
       <?php } ?>
     </main>
-
     <!-- main -->
     <?= $this->endSection() ?>

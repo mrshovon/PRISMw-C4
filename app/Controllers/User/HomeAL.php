@@ -32,9 +32,9 @@ class HomeAL extends BaseController
     }
     public function favourite()
     { 
-    $session = session();   
-    $model = new FavouritesModel();
-    $action = $this->request->getVar('actiontype');
+        $session = session();   
+        $model = new FavouritesModel();
+        $action = $this->request->getVar('actiontype');
         $data = [
             'email' => session()->get('email'),
             'property_id' => $this->request->getVar('property_id')
@@ -63,8 +63,8 @@ class HomeAL extends BaseController
    }
    public function delfavourite()
     { 
-    $session = session();   
-    $model = new FavouritesModel();
+        $session = session();   
+        $model = new FavouritesModel();
         $data = [
             'email' => session()->get('email'),
             'property_id' => $this->request->getVar('property_id')

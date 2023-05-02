@@ -24,34 +24,24 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
   <link rel="icon" href="<?=base_url('public/images/favicon.ico')?>">
-
   <!-- Favicons -->
   <link href="<?=base_url('public/img/favicon.png')?>" rel="icon">
   <link href="<?=base_url('public/img/apple-touch-icon.png')?>" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
   <!-- Bootstrap CSS File -->
   <link href="<?=base_url('public/lib/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
-
   <!-- Libraries CSS Files -->
   <link href="<?=base_url('public/lib/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/lib/animate/animate.min.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/lib/ionicons/css/ionicons.min.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/lib/owlcarousel/assets/owl.carousel.min.css')?>" rel="stylesheet">
-
-
-
   <!-- Main Stylesheet File -->
   <link href="<?=base_url('public/css/style.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/css/style-sr.css')?>" rel="stylesheet">
-
-
 </head>
 
 <body>
-
   <div class="click-closed"></div>
   <!--/ Form Search Star /-->
   <div class="box-collapse">
@@ -85,7 +75,6 @@
     </div>
   </div>
   <!--/ Form Search End /-->
-
   <!--/ Nav Star /-->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
@@ -132,7 +121,6 @@
               <a class="nav-link" href="<?=base_url('public/home/signout')?>">LOGOUT</a>
               <?php } ?>
           </li>
-
         </ul>
       </div>
       <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse"
@@ -259,10 +247,8 @@
     </div>
   </footer>
   <!--/ Footer End /-->
-
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
-
   <!-- JavaScript Libraries -->
   <script src="<?=base_url('public/lib/jquery/jquery.min.js')?>"></script>
   <script src="<?=base_url('public/lib/jquery/jquery-migrate.min.js')?>"></script>
@@ -273,11 +259,8 @@
   <script src="<?=base_url('public/lib/scrollreveal/scrollreveal.min.js')?>"></script>
   <!-- Contact Form JavaScript File -->
   <script src="<?=base_url('public/contactform/contactform.js')?>"></script>
-
   <!-- Template Main Javascript File -->
   <script src="<?=base_url('public/js/main.js')?>"></script>
   <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
-
-
 </body>
 </html>

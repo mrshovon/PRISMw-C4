@@ -1,4 +1,3 @@
-
     <!-- main -->
     <?= $this->extend('layouts/masterAL') ?>
     <?= $this->section('content') ?>
@@ -12,17 +11,14 @@
             <span class="color-text-a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic neque nulla dolore quam, obcaecati, ea maxime sed blanditiis ratione dicta ipsam veniam quidem! Odio adipisci, aut asperiores sapiente suscipit consequuntur!.</span>
           </div>
         </div>
-        
       </div>
     </div>
   </section>
   <!--/ Intro Single End /-->
-
   <!--/ Contact Star /-->
   <section class="contact">
     <div class="container">
       <div class="row">
-        
         <div class="col-sm-12 section-t8">
           <div class="row">
             <div class="col-md-7">
