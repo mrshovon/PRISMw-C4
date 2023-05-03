@@ -9,6 +9,7 @@ class Renovation extends BaseController
     {
         $model = new RenovationModel();
         $data['renovationreqlist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/renovation', $data);
     }
     public function delete($request_id)
@@ -22,6 +23,7 @@ class Renovation extends BaseController
         else {
             // $session->setFlashdata('msg', $result);
             $data['renovationreqlist'] = $model->get();
+            $data = array_merge($this->global, $data);
             return view('admin/renovation', $data);
         }
     }

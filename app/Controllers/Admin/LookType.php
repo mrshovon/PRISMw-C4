@@ -8,7 +8,8 @@ class Looktype extends BaseController
     public function index()
     {
         $model = new LookTypeModel();
-        $data['looktypelist'] = $model->get();        
+        $data['looktypelist'] = $model->get();  
+        $data = array_merge($this->global, $data);      
         return view('admin/looktype', $data);
     }
 
@@ -27,6 +28,7 @@ class Looktype extends BaseController
         else {
             $session->setFlashdata('msg', $result);
             $data['looktypelist'] = $model->get(null);
+            $data = array_merge($this->global, $data);
             return view('admin/looktype', $data);
         }
    }
@@ -34,7 +36,7 @@ class Looktype extends BaseController
    { 
        $model = new LookTypeModel();
        $data['item'] = $model->getByCriteria($look_type_id);
-        // echo '<pre>'; print_r($data); echo '</pre>'; exit; 
+       $data = array_merge($this->global, $data); 
        return view('admin/looktypeAdd',$data);
    }
 
@@ -63,6 +65,7 @@ class Looktype extends BaseController
             }
             if($result <= 0) {
                 $session->setFlashdata('msg', 'look type name saved failed. Please try again later!');
+                $data = array_merge($this->global, $data);
                 return view('public/admin/looktypeAdd', $data);
             }
             else {
@@ -73,6 +76,7 @@ class Looktype extends BaseController
         else {
             $data['validation'] = $this->validator;
             $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            $data = array_merge($this->global, $data);
             return view('admin/looktypeAdd', $data); 
         }
     }

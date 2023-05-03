@@ -9,12 +9,13 @@ class Lookup extends BaseController
     {
         $model = new LookUpModel();
         $data['lookuplist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/lookup',$data);
     }
 
    public function add()
    { 
-        return view('admin/lookupAdd');
+        return view('admin/lookupAdd', $this->global);
    }
    public function delete($look_up_id)
    { 
@@ -27,6 +28,7 @@ class Lookup extends BaseController
         else {
             $session->setFlashdata('msg', $result);
             $data['lookuplist'] = $model->get(null);
+            $data = array_merge($this->global, $data);
             return view('admin/lookup', $data);
         }
    }
@@ -35,7 +37,7 @@ class Lookup extends BaseController
    { 
        $model = new LookUpModel();
        $data['item'] = $model->getByCriteria($look_up_id);
-    //    echo '<pre>'; print_r($data); echo '</pre>'; exit; 
+       $data = array_merge($this->global, $data);
        return view('admin/lookupAdd',$data);
    }
    public function create()
@@ -69,6 +71,7 @@ class Lookup extends BaseController
             }
             if($result <= 0) {
                 $session->setFlashdata('msg', 'look up name saved failed. Please try again later!');
+                $data = array_merge($this->global, $data);
                 return view('public/admin/lookupAdd', $data);
             }
             else {
@@ -79,6 +82,7 @@ class Lookup extends BaseController
         else {
             $data['validation'] = $this->validator;
             $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            $data = array_merge($this->global, $data);
             return view('admin/lookupAdd', $data); 
         }
     }

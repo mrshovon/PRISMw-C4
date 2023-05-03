@@ -8,6 +8,7 @@ class Property extends BaseController
     {
         $model = new PropertyInfoModel();
         $data['propertylist'] = $model->get(null,null,null);
+        $data = array_merge($this->global, $data);
         return view('admin/property', $data);
     }
 
@@ -21,7 +22,7 @@ class Property extends BaseController
         $data['descriptivelist'] = $model->getByCriteria(8);
         $data['purposelist'] = $model->getByCriteria(9);
         $data['servicelist'] = $model->getByCriteria(5);
-        //echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        $data = array_merge($this->global, $data);
         return view('admin/propertyAdd', $data);
    }
    public function delete($property_id)
@@ -48,7 +49,7 @@ class Property extends BaseController
        $data['descriptivelist'] = $model->getByCriteria(8);
        $data['purposelist'] = $model->getByCriteria(9);
        $data['item'] = $model->get($property_id,null,null)[0];
-       //echo '<pre>'; print_r($data2); echo '</pre>'; exit; 
+       $data = array_merge($this->global, $data);
        return view('admin/propertyAdd',$data);
    }
 
@@ -56,7 +57,6 @@ class Property extends BaseController
     {
 
         $session = session();
-        // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
         $model = new PropertyInfoModel();
         $data = $rules = [];
         $actiontype = $this->request->getVar('actiontype');
@@ -108,7 +108,6 @@ class Property extends BaseController
                 ]
             ];
         }
-        
         if($this->validate($rules)) {
             $img = $this->request->getFile('floorplan');
             $newName = $this->request->getVar('name').'_'.date('Ymd_His').'.'.$img->guessExtension();
@@ -144,6 +143,7 @@ class Property extends BaseController
             }
             if($result <= 0) {
                 $session->setFlashdata('msg', 'Property saved failed. Please try again later!');
+                $data = array_merge($this->global, $data);
                 return view('public/admin/propertyAdd', $data);
             }
             else {
@@ -159,6 +159,7 @@ class Property extends BaseController
             $data['descriptivelist'] = $model->getByCriteria(8);
             $data['purposelist'] = $model->getByCriteria(9);
             $data['validation'] = $this->validator;
+            $data = array_merge($this->global, $data);
             echo view('admin/propertyAdd', $data); 
         }
     }

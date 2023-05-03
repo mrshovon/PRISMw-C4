@@ -1,8 +1,9 @@
 <?= $this->extend('layouts/masterAdmin') ?>
     <?= $this->section('content') ?>
     <div class="main-body col">
-    <?php if(session()->getFlashdata('msg')):?>
-        <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+        <?php if(session()->getFlashdata('msg')):?>
+          <br>
+          <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
         <?php endif;?>
             <h1>Company Profile</h1> <br>
              <a href="<?= base_url('public/admin/companyprofile/add')?>" class="btn btn-success">ADD</a>

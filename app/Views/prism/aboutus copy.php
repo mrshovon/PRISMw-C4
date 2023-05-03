@@ -10,7 +10,7 @@
             <img src="<?= base_url('public/img/slide-about-1.jpg')?>" alt="" class="img-fluid">
           </div>
           <div class="sinse-box">
-            <h3 class="sinse-title">PRISM PROPERTIES
+            <h3 class="sinse-title"><?= strtoupper($company->company_name) ?>
               <span></span>
               <br></h3>
             <p>Since 2023</p>
@@ -23,7 +23,7 @@
             </div>
             <div class="col-lg-2  d-none d-lg-block">
               <div class="title-vertical d-flex justify-content-start">
-                <span>PRISM PROPERTIES</span>
+                <span><?= strtoupper($company->company_name) ?></span>
               </div>
             </div>
             <div class="col-md-6 col-lg-5 section-md-t3">
@@ -33,11 +33,11 @@
                   <br> </h3>
               </div>
               <p class="color-text-a">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit error voluptatum voluptas dolorum corrupti tenetur, illum distinctio aperiam quaerat aliquam aut fuga, perspiciatis saepe. Id eum doloribus obcaecati fuga.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit error voluptatum voluptas dolorum corrupti tenetur, illum distinctio aperiam quaerat aliquam aut fuga, perspiciatis saepe. Id eum doloribus obcaecati fuga.
+              <?= strtoupper($company->company_vision) ?>
               </p>
-              <p class="color-text-a">
+              <!-- <p class="color-text-a">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est non impedit eaque accusamus dolorem, asperiores harum officiis in, beatae, quaerat assumenda voluptatum omnis officia similique facilis recusandae fugiat? Saepe, porro.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit error voluptatum voluptas dolorum corrupti tenetur, illum distinctio aperiam quaerat aliquam aut fuga, perspiciatis saepe. Id eum doloribus obcaecati fuga.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>

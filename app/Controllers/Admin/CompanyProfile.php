@@ -9,12 +9,13 @@ class CompanyProfile extends BaseController
     {
         $model = new CompanyProfileModel();
         $data['companylist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/companyprofile', $data);
     }
 
    public function add()
    { 
-        return view('admin/companyprofileAdd');
+        return view('admin/companyprofileAdd',$this->global);
    }
    public function delete($company_id)
    { 
@@ -27,6 +28,7 @@ class CompanyProfile extends BaseController
         else {
             $session->setFlashdata('msg', $result);
             $data['userlist'] = $model->get(null);
+            $data = array_merge($this->global, $data);
             return view('admin/companyprofile', $data);
         }
    }
@@ -34,7 +36,7 @@ class CompanyProfile extends BaseController
    { 
        $model = new CompanyProfileModel();
        $data['item'] = $model->getByCriteria($company_id);
-    //    echo '<pre>'; print_r($data); echo '</pre>'; exit; 
+       $data = array_merge($this->global, $data);
        return view('admin/companyprofileAdd',$data);
    }
    public function create()
@@ -47,8 +49,7 @@ class CompanyProfile extends BaseController
             'company_vision' => 'required|min_length[6]|max_length[500]',
             'company_address' => 'required',
             'company_email'  => 'required'  
-        ];
-       
+        ];       
         if($this->validate($rules)) {
             $data = [
                 'company_name' => $this->request->getVar('company_name'),
@@ -67,6 +68,7 @@ class CompanyProfile extends BaseController
             }
             if($result <= 0) {
                 $session->setFlashdata('msg', 'saved failed. Please try again later!');
+                $data = array_merge($this->global, $data);
                 return view('public/admin/companyprofileAdd', $data);
             }
             else {
@@ -77,6 +79,7 @@ class CompanyProfile extends BaseController
         else {
             $data['validation'] = $this->validator;
             $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            $data = array_merge($this->global, $data);
             return view('admin/companyprofileAdd', $data); 
         }
     }

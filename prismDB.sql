@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2023 at 11:59 AM
+-- Generation Time: May 02, 2023 at 10:13 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -121,8 +121,9 @@ CREATE TABLE `tbl_favourites` (
 
 INSERT INTO `tbl_favourites` (`auth_id`, `action_type`, `action_date`, `creation_date`, `email`, `property_id`) VALUES
 ('joy@gmail.com', 'insert', '2023-04-30 11:44:44', '2023-04-30 11:44:44', 'joy@gmail.com', '1'),
-('joy@gmail.com', 'insert', '2023-04-30 10:40:07', '2023-04-30 10:40:07', 'joy@gmail.com', '10'),
+('joy@gmail.com', 'insert', '2023-05-02 14:05:33', '2023-05-02 14:05:33', 'joy@gmail.com', '10'),
 ('joy@gmail.com', 'insert', '2023-04-30 12:13:12', '2023-04-30 12:13:12', 'joy@gmail.com', '11'),
+('joy@gmail.com', 'insert', '2023-05-02 13:46:41', '2023-05-02 13:46:41', 'joy@gmail.com', '16'),
 ('shovon@gmail.com', 'insert', '2023-04-30 13:18:23', '2023-04-30 13:18:23', 'shovon@gmail.com', '1'),
 ('shovon@gmail.com', 'insert', '2023-04-30 13:12:39', '2023-04-30 13:12:39', 'shovon@gmail.com', '19');
 

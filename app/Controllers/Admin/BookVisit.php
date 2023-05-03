@@ -9,6 +9,7 @@ class BookVisit extends BaseController
     {
         $model = new BookVisitModel();
         $data['visitlist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/bookvisit', $data);
     }
     public function delete($property_id,$date)
@@ -22,6 +23,7 @@ class BookVisit extends BaseController
         else {
             // $session->setFlashdata('msg', $result);
             $data['visitlist'] = $model->get();
+            $data = array_merge($this->global, $data);
             return view('admin/bookvisit', $data);
         }
     }

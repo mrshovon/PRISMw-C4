@@ -99,19 +99,19 @@
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">PRISM PROPERTIES</h3>
+              <h3 class="w-title-a text-brand"><?= $footer->company_name ?></h3>
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et voluptatum minima officia totam earum aperiam unde esse iste!.
+              <?= $footer->company_vision ?>
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com</li>
+                  <span class="color-text-a">Address .</span> <?= $footer->company_address ?></li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234</li>
+                  <span class="color-text-a">Email .</span> <?= $footer->company_email ?></li>
               </ul>
             </div>
           </div>
@@ -119,7 +119,7 @@
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">The Company</h3>
+              <h3 class="w-title-a text-brand"><?= $footer->company_name ?></h3>
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
@@ -196,7 +196,7 @@
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy; Copyright
-              <span class="color-a">PRISM</span> All Rights Reserved.
+              <span class="color-a"><b><?= $footer->company_name ?></b></span> All Rights Reserved.
             </p>
           </div>
           

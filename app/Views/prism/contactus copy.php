@@ -61,7 +61,7 @@
                   </div>
                   <div class="icon-box-content">
                     <p class="mb-1">Email.
-                      <span class="color-a">contact@example.com</span>
+                      <span class="color-a"><?= $footer->company_email ?></span>
                     </p>
                     <p class="mb-1">Phone.
                       <span class="color-a">+54 356 945234</span>
@@ -78,10 +78,7 @@
                     <h4 class="icon-title">Find us in</h4>
                   </div>
                   <div class="icon-box-content">
-                    <p class="mb-1">
-                      Motijheel, Dhaka 1216,
-                      <br> Bangladesh
-                    </p>
+                    <p class="mb-1"><?= $footer->company_address ?></p>
                   </div>
                 </div>
               </div>

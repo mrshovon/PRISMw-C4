@@ -9,6 +9,7 @@ class HomeLoan extends BaseController
     {
         $model = new HomeLoanModel();
         $data['loanreqlist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/homeloan', $data);
     }
     public function delete($email,$action_date)
@@ -22,6 +23,7 @@ class HomeLoan extends BaseController
         else {
             // $session->setFlashdata('msg', $result);
             $data['loanreqlist'] = $model->get();
+            $data = array_merge($this->global, $data);
             return view('admin/homeloan', $data);
         }
     }

@@ -122,9 +122,10 @@
     <header>
         <nav style="display: flex">
             <a href="<?=base_url('public/home/signout')?>"><i class="fa-solid fa-right-from-bracket fa-flip-both fa-2xl" title="LOGOUT" style="margin-top:3px; line-height: 1.50em; margin-left: 60px;"></i></a>
-            <!-- <a href="" class="btn btn-secondary" style="margin-top:3px;">LOGOUT</a> -->
             <a href="<?= base_url('public/admin/dashboard')?>"><i class="fa-solid fa-house fa-2xl" title="HOME" style="color: #388a3a; margin-top:3px; line-height: 1.50em;"></i></a>
+            <!-- <a href="<?= base_url('public/user/homeAL/userdash')?>"><i class="fa-solid fa-eye fa-2xl" title="VIEW SITE" style="color: #388a3a; margin-top:3px; line-height: 1.50em;"></i></a> -->
             <h5 style="margin-left: 90px;margin-top: 9px;"><i class="fa-solid fa-user-tie fa-xl" title="<?= strtoupper(session()->get('user_type')) ?>" style="color: #45b593;"></i>  <?php echo strtoupper(session()->get('name')).' ('.strtoupper(session()->get('user_type')).')'?></h5>  
+            <a href="<?= base_url('public/user/homeAL/userdash')?>"><i class="fa-solid fa-eye fa-2xl" title="VIEW SITE" style="color: #0d738c; margin-top:3px; line-height: 1.50em;"></i></a>
         </nav>
     </header>
     <main class="container row" >
@@ -148,7 +149,7 @@
        </div>
         <?= $this->renderSection('content') ?>
         </main> 
-        <h6 style="text-align:center; background-color: rgb(214, 214, 214); padding-bottom:10px; padding-top:10px;">All rights reserved @PRISM 2023</h6>
+        <h6 style="text-align:center; background-color: rgb(214, 214, 214); padding-bottom:10px; padding-top:10px;">All rights reserved @<b><?= $footer->company_name ?></b> 2023</h6>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
 </body>

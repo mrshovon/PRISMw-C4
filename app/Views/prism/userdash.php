@@ -6,10 +6,8 @@
         <div class="col-md-12 col-lg-8">
           <div class="title-single-box">
             <h1 class="title-single">Our Amazing Properties</h1>
-          
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -56,7 +54,7 @@
                   <ul class="card-info d-flex justify-content-around">
                     <li>
                       <h4 class="card-info-title">Size</h4>
-                      <span><?php echo $row->property_size?> 
+                      <span><?php echo $row->property_size ?> 
                         <sup>Sqft</sup>
                       </span>
                     </li>

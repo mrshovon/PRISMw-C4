@@ -8,6 +8,7 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use App\Models\CompanyProfileModel;
 
 /**
  * Class BaseController
@@ -44,6 +45,11 @@ abstract class BaseController extends Controller
     // protected $session;
 
     /**
+     * Global array for prism project
+     */
+    protected $global = [];
+
+    /**
      * Constructor.
      */
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
@@ -54,14 +60,8 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
-        
-        // if(empty(get_cookie('active_css'))) {
-        //     set_cookie('active_css','');
+        $model = new CompanyProfileModel();
+        $this->global['footer'] = $model->getByCriteria(1);
 
-        // }
-        // $nurl = current_url();
-        // $surl = explode("/",$nurl);
-        // $visitedpage =  $surl[count($surl)-1]; 
-        //  set_cookie('active_menu', trim($visitedpage)); 
     }
 }

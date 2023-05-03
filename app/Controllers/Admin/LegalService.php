@@ -9,6 +9,7 @@ class LegalService extends BaseController
     {
         $model = new LegalServicesModel();
         $data['legalservicereqlist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/legalservice', $data);
     }
     public function delete($email,$service_code)
@@ -22,6 +23,7 @@ class LegalService extends BaseController
         else {
             // $session->setFlashdata('msg', $result);
             $data['legalservicereqlist'] = $model->get();
+            $data = array_merge($this->global, $data);
             return view('admin/legalservice', $data);
         }
     }

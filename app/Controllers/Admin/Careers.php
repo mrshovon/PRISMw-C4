@@ -9,12 +9,13 @@ class Careers extends BaseController
     {
         $model = new CareersModel();
         $data['joblist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/careers', $data);
     }
 
    public function add()
    { 
-        return view('admin/careersAdd');
+        return view('admin/careersAdd',$this->global);
    }
    public function delete($career_id)
    { 
@@ -27,6 +28,7 @@ class Careers extends BaseController
         else {
             $session->setFlashdata('msg', $result);
             $data['joblist'] = $model->get(null);
+            $data = array_merge($this->global, $data);
             return view('admin/careers', $data);
         }
    }
@@ -34,7 +36,7 @@ class Careers extends BaseController
    { 
        $model = new CareersModel();
        $data['item'] = $model->getByCriteria($career_id);
-    //    echo '<pre>'; print_r($data); echo '</pre>'; exit; 
+       $data = array_merge($this->global, $data);
        return view('admin/careersAdd',$data);
    }
 
@@ -49,7 +51,6 @@ class Careers extends BaseController
             'phone'      => 'required',
             'job_description'  => 'required'
         ];
-
         if($this->validate($rules)) {
             $data = [
                 'job_title'     => $this->request->getVar('job_title'),
@@ -68,6 +69,7 @@ class Careers extends BaseController
             }
             if($result <= 0) {
                 $session->setFlashdata('msg', 'Job saved failed. Please try again later!');
+                $data = array_merge($this->global, $data);
                 return view('public/admin/careersAdd', $data);
             }
             else {
@@ -78,6 +80,7 @@ class Careers extends BaseController
         else {
             $data['validation'] = $this->validator;
             $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            $data = array_merge($this->global, $data);
             return view('admin/careersAdd', $data); 
         }
     }

@@ -9,6 +9,7 @@ class Inquery extends BaseController
     {
         $model = new InqueryModel();
         $data['inquerylist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/inquery', $data);
     }
     public function delete($inquery_id)
@@ -22,6 +23,7 @@ class Inquery extends BaseController
         else {
             // $session->setFlashdata('msg', $result);
             $data['inquerylist'] = $model->get();
+            $data = array_merge($this->global, $data);
             return view('admin/inquery', $data);
         }
     }

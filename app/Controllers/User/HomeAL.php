@@ -20,14 +20,14 @@ class HomeAL extends BaseController
 {
     public function index()
     {
-         return view('prism/userdash');
-        // return view('admin/looktype');
+        $data = array_merge($this->global, $data); 
+        return view('prism/userdash',$data);
     }
     public function careers()
     {
         $model = new CareersModel();
         $data['joblist'] = $model->get();
-        // echo '<pre>';print_r($data);echo '</pre>'; exit;
+        $data = array_merge($this->global, $data);
         return view('prism/careers copy', $data);
     }
     public function favourite()
@@ -39,7 +39,6 @@ class HomeAL extends BaseController
             'email' => session()->get('email'),
             'property_id' => $this->request->getVar('property_id')
         ];
-        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
         if($action == 'add'){
             $result = $model->add($data);
         }
@@ -57,7 +56,7 @@ class HomeAL extends BaseController
             $data['propertylist'] = $model->get($data['property_id'],null,null);
             $model2 = new FavouritesModel();
             $data['list'] = $model2->getByCriteria($email,$data['property_id']);
-            // echo '<pre>';print_r($data);echo '</pre>'; exit;
+            $data = array_merge($this->global, $data);
             return view('prism/propertydetails', $data);
         }  
    }
@@ -69,7 +68,6 @@ class HomeAL extends BaseController
             'email' => session()->get('email'),
             'property_id' => $this->request->getVar('property_id')
         ];
-        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
         $result = $model->erase($data);
         if($result <= 0) {
             $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
@@ -82,18 +80,21 @@ class HomeAL extends BaseController
             $data['propertylist'] = $model->get($data['property_id'],null,null);
             $model2 = new FavouritesModel();
             $data['list'] = $model2->getByCriteria($email,$data['property_id']);
-            // echo '<pre>';print_r($data);echo '</pre>'; exit;
+            $data = array_merge($this->global, $data);
             return view('prism/propertydetails', $data);
         }  
    }
     public function aboutus()
     {
-        return view('prism/aboutus copy');
+        $model = new CompanyProfileModel();
+        $data['company'] = $model->getByCriteria(1);
+        $data = array_merge($this->global, $data);
+        return view('prism/aboutus copy', $data);
     }
 
     public function contactus()
     {
-        return view('prism/contactus copy');
+        return view('prism/contactus copy', $this->global);
     }
     public function sendmessage()
     {
@@ -105,10 +106,9 @@ class HomeAL extends BaseController
             'address' => $this->request->getVar('Address'),
             'query' => $this->request->getVar('message')
         ];
-        // echo '<pre>';print_r($data);echo '</pre>'; exit;
         $result = $model->add($data);
-        // echo $result; exit;
         if($result <= 0) {
+            $data = array_merge($this->global, $data);
             return view('prism/addproperty', $data);
         }
         else {
@@ -118,23 +118,19 @@ class HomeAL extends BaseController
    
     public function homeloan()
     {
-        return view('prism/homeloan copy');
+        return view('prism/homeloan copy',$this->global);
     }
     public function reqhomeloan()
     {
         $session = session();
         $model = new HomeLoanModel();
-        // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
         $data = [
             'name' => session()->get('name'),
             'phone' => $this->request->getVar('phone'),
             'email' => session()->get('email'),
             'property_id' => $this->request->getVar('property_id')
         ];
-        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
-        // return view('prism/renovation copy', $data);
         $result = $model->add($data);
-        // echo $result; exit;
         if($result <= 0) {
             $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
             return redirect()->to('/public/user/homeAL/homeloan');
@@ -148,14 +144,13 @@ class HomeAL extends BaseController
     {
         $model = new PropertyInfoModel();
         $data['renovationlist'] = $model->getByCriteria(4);
-        //echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        $data = array_merge($this->global, $data);
         return view('prism/renovation copy', $data);
     }
     public function reqrenovation()
     {
         $session = session();
         $model = new RenovationModel();
-        // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
         $data = [
             'name' => session()->get('name'),
             'phone' => $this->request->getVar('phone'),
@@ -166,8 +161,6 @@ class HomeAL extends BaseController
             'property_area' => $this->request->getVar('area'),
             'service_code' => $this->request->getVar('renovate')
         ];
-        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
-        // return view('prism/renovation copy', $data);
         $result = $model->add($data);
         if($result <= 0) {
             $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
@@ -183,7 +176,7 @@ class HomeAL extends BaseController
     {
         $model = new PropertyInfoModel();
         $data['servicelist'] = $model->getByCriteria(5);
-        //echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        $data = array_merge($this->global, $data);
         return view('prism/legalservices copy', $data);
         
     }
@@ -193,12 +186,8 @@ class HomeAL extends BaseController
         $session = session();
         $model = new LegalServicesModel();
         $data = [
-            // 'name' => $this->request->getVar('name'),
-            // 'phone' => $this->request->getVar('phone'),
-            // 'email' => $this->request->getVar('email'),
             'service_code' => $this->request->getVar('service[]')
         ];
-        // echo '<pre>';print_r(sizeof($data['service_code']));echo '</pre>'; exit;
         foreach($data['service_code'] as $service){
             $data = [
                 'name' => $this->request->getVar('name'),
@@ -207,10 +196,7 @@ class HomeAL extends BaseController
                 'service_code' => $service
             ];
             $result = $model->add($data);
-            // echo '<pre>';print_r($data);echo '</pre>';
-        } //exit;
-        // $result = $model->add($data);
-        // echo $result; exit;
+        } 
         if($result <= 0) {
             $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
             return redirect()->to('/public/user/homeAL/legalservices');
@@ -224,6 +210,7 @@ class HomeAL extends BaseController
     {
         $model = new PropertyInfoModel();
         $data['propertylist'] = $model->get(null,null,null);
+        $data = array_merge($this->global, $data);
         return view('prism/userdash', $data);
     }
     public function propertydetails($property_id)
@@ -234,13 +221,13 @@ class HomeAL extends BaseController
         $model2 = new FavouritesModel();
         $data['propertylist'] = $model->get($property_id,null,null);
         $data['list'] = $model2->getByCriteria($email,$property_id);
-        // echo '<pre>';print_r($data);echo '</pre>'; exit;
+        $data = array_merge($this->global, $data);
         return view('prism/propertydetails', $data);
     }
     public function bookvisit()
     { 
-    $session = session();   
-    $model = new BookVisitModel();
+        $session = session();   
+        $model = new BookVisitModel();
         $data = [
             'start_time' => $this->request->getVar('start_time'),
             'end_time' => $this->request->getVar('end_time'),
@@ -248,7 +235,6 @@ class HomeAL extends BaseController
             'remarks' => $this->request->getVar('remarks'),
             'property_id' => $this->request->getVar('property_id')
         ];
-        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
         $result = $model->add($data);
         if($result <= 0) {
             $session->setFlashdata('msg', 'You already requested for these service. Thank you!');
@@ -256,16 +242,18 @@ class HomeAL extends BaseController
         }
         else {
             $session->setFlashdata('msg', 'Legal service request Successful. Thank you!');
+            $email = session()->get('email');
             $model = new PropertyInfoModel();
+            $model2 = new FavouritesModel();
             $data['propertylist'] = $model->get($data['property_id'],null,null);
-            // echo '<pre>';print_r($data);echo '</pre>'; exit;
+            $data['list'] = $model2->getByCriteria($email,$data['property_id']);
+            $data = array_merge($this->global, $data);
             return view('prism/propertydetails', $data);
         }  
-   }
+    }
     public function addproperty()
     {
-        
-        return view('prism/userdash');
+        return view('prism/userdash',$this->global);
     }
     public function search()
     {
@@ -273,6 +261,7 @@ class HomeAL extends BaseController
         $property_area = $this->request->getVar('area');
         $purpose = $this->request->getVar('purpose');
         $data['propertylist'] = $model->get(null,$property_area,$purpose);
+        $data = array_merge($this->global, $data);
         return view('prism/userdash', $data);
     }
     
@@ -285,19 +274,16 @@ class HomeAL extends BaseController
         $data['propertystslist'] = $model->getByCriteria(7);
         $data['descriptivelist'] = $model->getByCriteria(8);
         $data['purposelist'] = $model->getByCriteria(9);
-        //echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        $data = array_merge($this->global, $data);
         return view('prism/addproperty', $data);
    }
    public function create()
    {
-
        $session = session();
-       // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
        $model = new PropertyInfoModel();
        $data = $rules = [];
        $actiontype = $this->request->getVar('actiontype');
        $aminity = implode(",", $this->request->getVar('amenities[]'));
-    //    echo '<pre>'; echo $aminity; echo '</pre>'; exit;
        if($actiontype == 'update' ){
            $rules = [
                'name'        => 'required',
@@ -316,7 +302,6 @@ class HomeAL extends BaseController
                'purposecode'  => 'required',
                'propertytypecode'  => 'required',
                'descriptivestatuscode'  => 'required'
-            //    'propertystatuscode'  => 'required'
            ];
        }
        else {
@@ -337,7 +322,6 @@ class HomeAL extends BaseController
                'purposecode'  => 'required',
                'propertytypecode'  => 'required',
                'descriptivestatuscode'  => 'required',
-            //    'propertystatuscode'  => 'required',
                'floorplan' => [
                    'uploaded[floorplan]',
                    'mime_in[floorplan,image/jpg,image/jpeg,image/png]',
@@ -345,7 +329,6 @@ class HomeAL extends BaseController
                ]
            ];
        }
-       
        if($this->validate($rules)) {
            $img = $this->request->getFile('floorplan');
            $newName = $this->request->getVar('name').'_'.date('Ymd_His').'.'.$img->guessExtension();
@@ -371,7 +354,6 @@ class HomeAL extends BaseController
                'property_status_code' => '7',
                'property_id' => $this->request->getVar('propertyid')
            ];
-            //   echo '<pre>'; print_r($data); echo '</pre>'; exit;
            if($actiontype == 'update' ){
                $result = $model->edit($data);
                $img->move(ROOTPATH . 'public/uploads',$newName);
@@ -382,6 +364,7 @@ class HomeAL extends BaseController
            }
            if($result <= 0) {
                $session->setFlashdata('msg', 'Listing property failed. Please try again later!');
+               $data = array_merge($this->global, $data);
                return view('prism/addproperty', $data);
            }
            else {
@@ -397,6 +380,7 @@ class HomeAL extends BaseController
            $data['descriptivelist'] = $model->getByCriteria(8);
            $data['purposelist'] = $model->getByCriteria(9);
            $data['validation'] = $this->validator;
+           $data = array_merge($this->global, $data);
            echo view('prism/addproperty', $data); 
        }
    }

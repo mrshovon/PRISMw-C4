@@ -9,12 +9,13 @@ class User extends BaseController
     {
         $model = new UserInfoModel();
         $data['userlist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/user', $data);
     }
 
     public function add()
     { 
-        return view('admin/userAddEdit');
+        return view('admin/userAddEdit',$this->global);
     }
 
     public function delete($email)
@@ -28,6 +29,7 @@ class User extends BaseController
         else {
             $session->setFlashdata('msg', $result);
             $data['userlist'] = $model->get(null);
+            $data = array_merge($this->global, $data);
             return view('admin/user', $data);
         }
    }
@@ -36,7 +38,7 @@ class User extends BaseController
     { 
         $model = new UserInfoModel();
         $data['item'] = $model->getByCriteria($email);
-        // echo '<pre>'; print_r($data); echo '</pre>'; exit; 
+        $data = array_merge($this->global, $data); 
         return view('admin/userAddEdit', $data);
     }
 
@@ -51,7 +53,6 @@ class User extends BaseController
             'password'      => 'required|min_length[6]|max_length[200]',
             'confpassword'  => 'matches[password]'
         ];
-
         if($this->validate($rules)) {
             $data = [
                 'name'     => $this->request->getVar('name'),
@@ -62,7 +63,6 @@ class User extends BaseController
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
             $actiontype = $this->request->getVar('actiontype');
-            // echo '<pre>'; print_r($data); echo '</pre>'; exit;
             if($actiontype == 'update' ){
                 $result = $model->edit($data);
             }
@@ -71,6 +71,7 @@ class User extends BaseController
             }
             if($result <= 0) {
                 $session->setFlashdata('msg', 'User saved failed. Please try again later!');
+                $data = array_merge($this->global, $data);
                 return view('public/admin/userAddEdit', $data);
             }
             else {
@@ -81,6 +82,7 @@ class User extends BaseController
         else {
             $data['validation'] = $this->validator;
             $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            $data = array_merge($this->global, $data);
             return view('admin/userAddEdit', $data); 
         }
     }

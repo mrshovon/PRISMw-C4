@@ -9,6 +9,7 @@ class Favourites extends BaseController
     {
         $model = new FavouritesModel();
         $data['favouritelist'] = $model->get();
+        $data = array_merge($this->global, $data);
         return view('admin/favourites', $data);
     }
     public function delete($property_id,$email)
@@ -22,6 +23,7 @@ class Favourites extends BaseController
         else {
             // $session->setFlashdata('msg', $result);
             $data['favouritelist'] = $model->get();
+            $data = array_merge($this->global, $data);
             return view('admin/favourites', $data);
         }
     }
