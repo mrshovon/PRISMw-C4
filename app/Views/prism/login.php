@@ -11,6 +11,24 @@
     <!-- Main css -->
     <link rel="stylesheet" href="<?=base_url('public/css/style-ls.css')?>">
     <link href="<?=base_url('public/lib/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+   <style>
+     button:focus {
+        outline: 1px dotted;
+        outline: none -webkit-focus-ring-color;
+        }
+    .hover{
+        background: #ffffff !important;
+        color: #2eca6a !important;
+        border: 1px solid #2eca6a !important;
+        border-radius: 20px;
+        font-family: revert;
+    }
+    .hover:hover{
+        background: #2eca6a !important;
+        color: #ffffff !important;
+        border-radius: 20px;
+    }
+   </style>
 </head>
 <body>
     <div class="main" style="padding-top: 20px;">
@@ -21,7 +39,7 @@
             </h3>
         </div>    
        <!-- Sing in  Form -->
-        <section class="sign-in">
+       <section class="sign-in">
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
@@ -34,7 +52,7 @@
                         <?php if(session()->getFlashdata('msg')):?>
                         <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
                         <?php endif;?>
-                        <form method="post" action="<?=base_url('public/login/signin')?>" class="register-form" id="login-form">
+                        <form method="post" action="<?=base_url('public/login/signin')?>" class="register-form-withemail" id="login-form" style="display:block;">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="email" id="your_name" placeholder="Your Email"/>
@@ -43,15 +61,20 @@
                                 <label for="password"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="password" id="your_pass" placeholder="Password"/>
                             </div>
-                            <!-- <div class="form-group">
-                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                            </div> -->
                             <div class="form-group form-button">
-
-                                <button type="submit"id="signin" class="form-submit" style="border: none;">Log In</button>
+                                <button type="submit" id="signin" class="form-submit" style="border: none;">Log In</button>
                             </div>
                         </form>
+                        <form method="post" action="<?=base_url('public/login/phonesignin')?>" class="register-form-withphone" id="" style="display:none;">
+                            <div class="form-group">
+                                <label for="phone"><i class="zmdi zmdi-phone"></i></label>
+                                <input type="text" name="phone" id="phone" placeholder="Your phone"/>
+                            </div>
+                            <div class="form-group form-button">
+                                <button type="submit" class="form-submit" style="border: none;">Log In</button>
+                            </div>
+                        </form>
+                        <button type="button" id="switch" class="form-submit hover" style="border: none;" onclick="switchlogin()"><i class="zmdi zmdi-phone" id="iconswitch"></i> LOGIN with Phone</button>
                     </div>
                 </div>
             </div>
@@ -59,5 +82,6 @@
     </div>
     <!-- JS -->
     <script src="<?=base_url('public/js/main-ls.js')?>"></script>
+    <script src="<?=base_url('public/js/custom.js')?>"></script>
 </body>
 </html>

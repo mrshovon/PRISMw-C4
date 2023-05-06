@@ -13,14 +13,48 @@ class Login extends BaseController
         return view('prism/login');
     }
 
+    public function phonesignin()
+    {
+        $session = session();
+        $model = new UserInfoModel();
+        $phone = $this->request->getVar('phone');
+        $data = $model->IsExist(null,$phone);
+        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        if($data){
+            $ses_data = [
+                // 'id'       => $data['id'],
+                'name'     => $data['name'],
+                'email'    => $data['email'],
+                'title'    => $data['title'],
+                'user_type'    => $data['user_type'],
+                'logged_in'     => TRUE
+            ];
+            $session->set($ses_data);
+            // echo '<pre>'; print_r($session->get()); echo '</pre>'; exit;
+            if(strtolower($data['user_type']) == 'administrator'){
+                return redirect()->to('/public/admin/dashboard');
+            }
+            else if(strtolower($data['user_type']) == 'customer'){
+                return redirect()->to('/public/user/homeAL/userdash');
+            }
+            else {
+                return redirect()->to('/public/home');
+            }
+        }
+        else{
+            $session->setFlashdata('msg', 'Phone not Found');
+            return redirect()->to('/public/login');
+        }
+    }
+
     public function signin()
     {
         $session = session();
         $model = new UserInfoModel();
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
-        $data = $model->IsExist($email);
-
+        $data = $model->IsExist($email,null);
+        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
         if($data){
              $password;
              $pass = $data['password'];

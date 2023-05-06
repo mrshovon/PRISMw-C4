@@ -55,15 +55,28 @@
 
             }
 
-            public function IsExist($email){
-                $sqlText = "SELECT * FROM tbl_user_info where `email` = '".$email."'";
-                $query =  $this->db->query($sqlText);
-                $row = $query->getRowArray(); 
-                // if (isset($row) && $row->emailcount >= 1) {
-                //     return true; 
-                // }
-                // return  false;
-                return $row;
+            public function IsExist($email,$phone){
+                
+                if(isset($email)){
+                    $sqlText = "SELECT * FROM tbl_user_info where `email` = '".$email."'";
+                    $query =  $this->db->query($sqlText);
+                    $row = $query->getRowArray(); 
+                    // if (isset($row) && $row->emailcount >= 1) {
+                    //     return true; 
+                    // }
+                    // return  false;
+                    return $row;
+                }
+                else if(isset($phone)){
+                    $sqlText = "SELECT * FROM tbl_user_info where `phone` = '".$phone."'";
+                    $query =  $this->db->query($sqlText);
+                    $row = $query->getRowArray(); 
+                    // if (isset($row) && $row->emailcount >= 1) {
+                    //     return true; 
+                    // }
+                    // return  false;
+                    return $row;
+                }
             }
 
             public function get() {
