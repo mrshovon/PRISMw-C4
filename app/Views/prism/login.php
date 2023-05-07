@@ -52,7 +52,7 @@
                         <?php if(session()->getFlashdata('msg')):?>
                         <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
                         <?php endif;?>
-                        <form method="post" action="<?=base_url('public/login/signin')?>" class="register-form-withemail" id="login-form" style="display:block;">
+                        <form method="post" action="<?=base_url('public/login/signin')?>" class="register-form-withemail" id="login-form" style="display:none;">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="email" id="your_name" placeholder="Your Email"/>
@@ -65,16 +65,17 @@
                                 <button type="submit" id="signin" class="form-submit" style="border: none;">Log In</button>
                             </div>
                         </form>
-                        <form method="post" action="<?=base_url('public/login/phonesignin')?>" class="register-form-withphone" id="" style="display:none;">
+                        <form method="post" action="<?=base_url('public/login/phonesignin')?>" class="register-form-withphone" id="" style="display:block;">
                             <div class="form-group">
-                                <label for="phone"><i class="zmdi zmdi-phone"></i></label>
-                                <input type="text" name="phone" id="phone" placeholder="Your phone"/>
+                                <label for="phone"><i class="zmdi zmdi-phone"></i><span> (+880) </span></label>
+                                <input style="padding-left: 65px;" type="text" name="phone" id="phone" placeholder="1XXXXXXXXX"/>
                             </div>
                             <div class="form-group form-button">
                                 <button type="submit" class="form-submit" style="border: none;">Log In</button>
                             </div>
                         </form>
-                        <button type="button" id="switch" class="form-submit hover" style="border: none;" onclick="switchlogin()"><i class="zmdi zmdi-phone" id="iconswitch"></i> LOGIN with Phone</button>
+                        <button type="button" id="switch" class="form-submit hover" style="border: none;" onclick="switchlogin()"><i class="zmdi zmdi-email" id="iconswitch"></i> LOGIN with Email</button>
+                        <button type="button" id="switch" class="form-submit hover" style="border: none;"><i class="fa-brands fa-google" id="iconswitch"></i> LOGIN with Gmail</button>
                     </div>
                 </div>
             </div>
@@ -83,5 +84,6 @@
     <!-- JS -->
     <script src="<?=base_url('public/js/main-ls.js')?>"></script>
     <script src="<?=base_url('public/js/custom.js')?>"></script>
+    <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
 </body>
 </html>

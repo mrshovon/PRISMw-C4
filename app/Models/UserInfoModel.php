@@ -16,11 +16,27 @@
                 `title`)
                 VALUES('".$data['email']."',null,'insert',NOW(),'".$data['name']."','".$data['password']."','".$data['phone']."','".$data['email']."','".$data['user_type']."','".$data['title']."')";
 
-                $query =  $this->db->query($sqlText);
+                // echo '<pre>'; print_r($data); echo '</pre>'; exit;
+                try {
+                    // echo 'ok'; 
+                    $query =  $this->db->query($sqlText);
+                    // echo '<pre>'; print_r($query); echo '</pre>'; exit;
+                    // echo 'ok2';
+                    return  $this->db->affectedRows();
+                    // return null ;
+                } 
+                catch (\Throwable  $e) {
+                    // exit($e->getMessage());
+                    // $e->getMessage(); exit;
+                    return  0; 
+                }
                 // $query1 = $this->db->getLastQuery();
                 // echo (string) $query1;
 
-                return  $this->db->affectedRows();
+                // return  $this->db->affectedRows();
+                // $query =  $this->db->query($sqlText);
+               
+                // return  $this->db->affectedRows();
             }
             public function erase($email) {
                 $sqlText = "DELETE FROM `tbl_user_info` WHERE `email` = '".$email."'";

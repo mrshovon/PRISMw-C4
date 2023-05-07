@@ -17,13 +17,20 @@ class Login extends BaseController
     {
         $session = session();
         $model = new UserInfoModel();
-        $phone = $this->request->getVar('phone');
+        $phone = '0'.$this->request->getVar('phone');
         $data = $model->IsExist(null,$phone);
-        // echo '<pre>'; print_r($data); echo '</pre>'; exit;
+        // echo '<pre>'; print_r($data); echo '</pre>';
+        // echo '<pre>'; print_r($name); echo '</pre>'; exit;
         if($data){
+            if(empty($data['email'])){
+                $name = $data['phone'];
+            }
+            else{
+                $name = $data['name'];
+            }
             $ses_data = [
                 // 'id'       => $data['id'],
-                'name'     => $data['name'],
+                'name'     => $name,
                 'email'    => $data['email'],
                 'title'    => $data['title'],
                 'user_type'    => $data['user_type'],
@@ -42,7 +49,7 @@ class Login extends BaseController
             }
         }
         else{
-            $session->setFlashdata('msg', 'Phone not Found');
+            $session->setFlashdata('msg', 'Phone not Found please check if the number is correct or write number without the country code "+880"');
             return redirect()->to('/public/login');
         }
     }

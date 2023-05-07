@@ -12,6 +12,24 @@
     <!-- Main css -->
     <link rel="stylesheet" href="<?=base_url('public/css/style-ls.css')?>">
     <link href="<?=base_url('public/lib/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+    <style>
+         button:focus {
+            outline: 1px dotted;
+            outline: none -webkit-focus-ring-color;
+        }
+        .hover{
+        background: #ffffff !important;
+        color: #2eca6a !important;
+        border: 1px solid #2eca6a !important;
+        border-radius: 20px;
+        font-family: revert;
+        }
+        .hover:hover{
+            background: #2eca6a !important;
+            color: #ffffff !important;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="main" style="padding-top: 20px;">
@@ -34,7 +52,8 @@
                         <?php if(isset($validation)):?>
                         <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
                         <?php endif;?>
-                        <form action="<?=base_url('public/signup/create')?>" method="post" class="register-form" id="register-form">
+                        <form action="<?=base_url('public/signup/create')?>" method="post" class="register-form-withemail" id="register-form" style="display:none;">
+                        <input type="hidden" name="signup_type" value="email"/>
                             <div class="form-group">
                                 <SELECT name="title" id="title" class="form-control">
                                     <option value="MR.">Mr.</option>
@@ -70,6 +89,22 @@
                                 <button type="submit" id="signup" class="form-submit" style="border: none;">Sign Up</button> 
                             </div>
                         </form>
+                        <form action="<?=base_url('public/signup/create')?>" method="post" class="register-form-withphone" id="register-form" style="display:block;">
+                        <input type="hidden" name="signup_type" value="phone"/>    
+                            <div class="form-group">
+                                <label for="Phone"><i class="zmdi zmdi-phone"></i><span> (+880) </span></label>
+                                <input style="padding-left: 65px;" type="text" name="phone" id="email" placeholder="1XXXXXXXXX"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term-phone" id="agree-term-phone" class="agree-term" />
+                                <label for="agree-term-phone" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <button type="submit" id="signup" class="form-submit" style="border: none;">Sign Up</button> 
+                            </div>
+                        </form>
+                        <button type="button" id="switch" class="form-submit hover" style="border: none;" onclick="switchsignup()"><i class="zmdi zmdi-email" id="iconswitch"></i> SIGN IN with Email</button>
+                        <button type="button" id="switch" class="form-submit hover" style="border: none;" onclick="switchsignup()"><i class="fa-brands fa-google" id="iconswitch"></i> SIGN IN with Email</button>
                     </div>
                     <div class="signup-image">
                         <figure><img src="<?=base_url('public/img/signup-image.jpg')?>" alt="sing up image"></figure>
@@ -81,6 +116,8 @@
     </div>
     <!-- JS -->
     <script src="<?=base_url('public/js/main-ls.js')?>"></script>
+    <script src="<?=base_url('public/js/custom.js')?>"></script>
+    <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
 </body>
 </html>    
 <!-- main -->

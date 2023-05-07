@@ -35,6 +35,14 @@
               <p class="color-text-a">
               <?= strtoupper($company->company_vision) ?>
               </p>
+              <div class="title-box-d">
+                <h3 class="title-d">COMPANY
+                  <span class="color-d">MISSION</span> 
+                  <br> </h3>
+              </div>
+              <p class="color-text-a">
+              <?= strtoupper($company->company_vision) ?>
+              </p>
               <!-- <p class="color-text-a">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est non impedit eaque accusamus dolorem, asperiores harum officiis in, beatae, quaerat assumenda voluptatum omnis officia similique facilis recusandae fugiat? Saepe, porro.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit error voluptatum voluptas dolorum corrupti tenetur, illum distinctio aperiam quaerat aliquam aut fuga, perspiciatis saepe. Id eum doloribus obcaecati fuga.
               </p> -->
