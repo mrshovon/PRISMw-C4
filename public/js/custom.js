@@ -28,3 +28,4 @@ function switchsignup() {
     document.getElementById('switch').innerHTML = '<i class="zmdi zmdi-phone" id="iconswitch"></i> SIGN IN with Phone';
   }
 }
+

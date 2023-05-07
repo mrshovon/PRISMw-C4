@@ -31,85 +31,95 @@
      </div>
   </div>
   <!--/ Carousel end /-->
+  <style>
+    section img{
+      height: 230px;
+    }
+    section h5{
+      color:#2eca6a;
+    }
+    .zoom {
+      
+      transition: transform .3s; /* Animation */
+      margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(0.5);
+}
+  </style>
   <!--/ Services Star /-->
+  <br>
   <section class="section-services section-t8">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="title-wrap d-flex justify-content-between">
-            <div class="title-box">
-              <h2 class="title-a">Our Services</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box-d">
+                <h2 class="title-d">Our Services</h2>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card-box-c foo">
-            <div class="card-header-c d-flex">
-              <div class="card-box-ico">
-                <span class="fa fa-home"></span>
-              </div>
-              <div class="card-title-c align-self-center">
-                <h2 class="title-c">Buy/Sell<br>and Rent  </h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 animate__animated animate__fadeInDown animate__delay-1s">
+          <div class="col" >
+            <div class="card h-100" >
+              <img src="<?=base_url('public/img/buildyourhome.jpg')?>" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Build Your Home</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ad atque quam vitae id doloribus repudiandae asperiores. Temporibus iure reiciendis atque, vero enim minima optio delectus eveniet quia! Deleniti, repudiandae..</p>
               </div>
             </div>
-            <div class="card-body-c">
-              <p class="content-c">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et voluptatum minima officia totam earum aperiam unde esse iste, tempora natus soluta nulla tempore dolores! Quis tempore animi vel itaque expedita!
-              </p>
-            </div>
-            <!-- <div class="card-footer-c">
-              <a href="#" class="link-c link-icon">Read more
-                <span class="ion-ios-arrow-forward"></span>
-              </a>
-            </div> -->
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-c foo">
-            <div class="card-header-c d-flex">
-              <div class="card-box-ico">
-                <span class="fa fa-usd"></span>
-              </div>
-              <div class="card-title-c align-self-center">
-                <h2 class="title-c">Loans</h2>
+          <div class="col">
+            <div class="card h-100">
+              <img src="<?=base_url('public/img/advisoryservice.jpg')?>" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Advisory Services</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae praesentium natus provident saepe deserunt laudantium laborum officia officiis aliquam est. Voluptas, sint similique cum reprehenderit eveniet recusandae autem hic modi?</p>
               </div>
             </div>
-            <div class="card-body-c">
-              <p class="content-c">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et voluptatum minima officia totam earum aperiam unde esse iste, tempora natus soluta nulla tempore dolores! Quis tempore animi vel itaque expedita!
-              </p>
-            </div>
-            <!-- <div class="card-footer-c">
-              <a href="#" class="link-c link-icon">Read more
-                <span class="ion-ios-arrow-forward"></span>
-              </a>
-            </div> -->
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-c foo">
-            <div class="card-header-c d-flex">
-              <div class="card-box-ico">
-                <span class="fa fa-file"></span>
-              </div>
-              <div class="card-title-c align-self-center">
-                <h2 class="title-c">Documentation and Renovation</h2>
+          <div class="col">
+            <div class="card h-100">
+              <img src="<?=base_url('public/img/homerenovationservice.jpg')?>" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Renovation Services</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, et veritatis architecto commodi inventore quibusdam voluptate repudiandae consequatur repellat! Asperiores odio nulla molestiae dolores dolorum animi odit, magnam veritatis pariatur!</p>
               </div>
             </div>
-            <div class="card-body-c">
-              <p class="content-c">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et voluptatum minima officia totam earum aperiam unde esse iste, tempora natus soluta nulla tempore dolores! Quis tempore animi vel itaque expedita!
-              </p>
-            </div>
-            <!-- <div class="card-footer-c">
-              <a href="#" class="link-c link-icon">Read more
-                <span class="ion-ios-arrow-forward"></span>
-              </a>
-            </div> -->
           </div>
-        </div>
+        </div>   
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4 animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="col">
+            <div class="card h-100">
+              <img src="<?=base_url('public/img/buysell.png')?>" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Property Buy/Sell Services</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae praesentium natus provident saepe deserunt laudantium laborum officia officiis aliquam est. Voluptas, sint similique cum reprehenderit eveniet recusandae autem hic modi?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="<?=base_url('public/img/rentalservice.png')?>" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Renting Services</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, et veritatis architecto commodi inventore quibusdam voluptate repudiandae consequatur repellat! Asperiores odio nulla molestiae dolores dolorum animi odit, magnam veritatis pariatur!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="display: block">
+            <div class="card h-100">
+              <img src="<?=base_url('public/img/homeloan.jpg')?>" class="card-img-top zoom" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Home Loan Services</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima totam vel expedita id, maiores ut obcaecati minus iusto odio quas laborum at? Qui mollitia autem voluptatibus esse quaerat, nulla quasi!</p>
+              </div>
+            </div>
+          </div>
+        </div>   
       </div>
     </div>
   </section>

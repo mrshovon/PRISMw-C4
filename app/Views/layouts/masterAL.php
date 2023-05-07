@@ -39,6 +39,9 @@
   <!-- Main Stylesheet File -->
   <link href="<?=base_url('public/css/style.css')?>" rel="stylesheet">
   <link href="<?=base_url('public/css/style-sr.css')?>" rel="stylesheet">
+  <style>
+   
+  </style>
 </head>
 
 <body>
@@ -127,8 +130,16 @@
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
       </button>
-      <?php $name = explode(" ",session()->get('name')); ?>
-      <span style="font-weight:bold;"><i class="fa-solid fa-user fa-xl" style="color: #2a791b; margin-left: 30px;"></i> <?php echo strtoupper($name[0])?></span>
+      <?php $name = explode(" ",session()->get('name')); $email = session()->get('email');?>
+      <!-- <span style="font-weight:bold;"><i class="fa-solid fa-user fa-xl" style="color: #2a791b; margin-left: 30px;"></i> <?php echo strtoupper($name[0])?></span> -->
+      <ul class="nav navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user fa-xl" style="color: #2a791b; margin-right: 10px;"></i><?php echo strtoupper($name[0])?></a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="<?= base_url('public/user/HomeAL/userprofile/'.$email)?>" class="dropdown-item">Profile settings</a>
+                    </div>
+                </li>
+            </ul>
     </div>
   </nav>
   <!--/ Nav End /-->
@@ -261,6 +272,7 @@
   <script src="<?=base_url('public/contactform/contactform.js')?>"></script>
   <!-- Template Main Javascript File -->
   <script src="<?=base_url('public/js/main.js')?>"></script>
+  <script src="<?=base_url('public/js/custom.js')?>"></script>
   <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
 </body>
 </html>

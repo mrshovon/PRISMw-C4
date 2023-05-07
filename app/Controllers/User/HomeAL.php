@@ -213,6 +213,54 @@ class HomeAL extends BaseController
         $data = array_merge($this->global, $data);
         return view('prism/userdash', $data);
     }
+    public function userprofile($email)
+    {
+        $model = new UserInfoModel();
+        $data['item'] = $model->getByCriteria($email);
+        $data = array_merge($this->global, $data); 
+        return view('prism/userprofile', $data);
+    }
+    public function userprofileupdate(){
+        $session = session();
+        $model = new UserInfoModel();
+        $data = [];
+        $rules = [
+            'name'          => 'required|min_length[3]|max_length[20]',
+            'email'         => 'required|min_length[6]|max_length[50]|valid_email',
+            'password'      => 'required|min_length[6]|max_length[200]',
+            'confpassword'  => 'matches[password]'
+        ];
+        if($this->validate($rules)) {
+            $data = [
+                'name'     => $this->request->getVar('name'),
+                'email'    => $this->request->getVar('email'),
+                'phone'    => $this->request->getVar('phone'),
+                'user_type'    => 'customer',
+                'title'    => $this->request->getVar('title'),
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
+            ];
+
+            $result = $model->edit($data);
+            $session->set('name', $data['name']);
+            if($result <= 0) {
+                $session->setFlashdata('msg', 'User saved failed. Please try again later!');
+                $data = array_merge($this->global, $data);
+                return view('prism/userprofile', $data);
+            }
+            else {
+                $session->setFlashdata('msg', 'User save Successful. Thank you!');
+                $data['item'] = $model->getByCriteria($data['email']);
+                $data = array_merge($this->global, $data); 
+                return view('prism/userprofile', $data);
+            }  
+        }
+        else {
+            $data['validation'] = $this->validator;
+            $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            $data = array_merge($this->global, $data);
+            return view('prism/userprofile', $data); 
+        }
+    }
     public function propertydetails($property_id)
     {
         $session = session();
