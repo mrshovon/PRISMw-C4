@@ -39,14 +39,12 @@
       color:#2eca6a;
     }
     .zoom {
-      
       transition: transform .3s; /* Animation */
       margin: 0 auto;
-}
-
-.zoom:hover {
-  transform: scale(0.5);
-}
+    }
+    .zoom:hover {
+      transform: scale(0.5);
+    }
   </style>
   <!--/ Services Star /-->
   <br>
@@ -61,9 +59,9 @@
             </div>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4 animate__animated animate__fadeInDown animate__delay-1s">
+        <div class="row row-cols-1 row-cols-md-3 g-4 animate__animated animate__fadeInDown animate__delay-1s ">
           <div class="col" >
-            <div class="card h-100" >
+            <div class="card h-100 border-success" >
               <img src="<?=base_url('public/img/buildyourhome.jpg')?>" class="card-img-top zoom" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Build Your Home</h5>
@@ -72,7 +70,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 border-success">
               <img src="<?=base_url('public/img/advisoryservice.jpg')?>" class="card-img-top zoom" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Advisory Services</h5>
@@ -81,7 +79,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 border-success">
               <img src="<?=base_url('public/img/homerenovationservice.jpg')?>" class="card-img-top zoom" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Renovation Services</h5>
@@ -93,8 +91,8 @@
         <br>
         <div class="row row-cols-1 row-cols-md-3 g-4 animate__animated animate__fadeInUp animate__delay-2s">
           <div class="col">
-            <div class="card h-100">
-              <img src="<?=base_url('public/img/buysell.png')?>" class="card-img-top zoom" alt="...">
+            <div class="card h-100 border-success">
+              <img src="<?=base_url('public/img/buysell.png')?>" class="card-img-top zoom " alt="...">
               <div class="card-body">
                 <h5 class="card-title">Property Buy/Sell Services</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae praesentium natus provident saepe deserunt laudantium laborum officia officiis aliquam est. Voluptas, sint similique cum reprehenderit eveniet recusandae autem hic modi?</p>
@@ -102,7 +100,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 border-success">
               <img src="<?=base_url('public/img/rentalservice.png')?>" class="card-img-top zoom" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Renting Services</h5>
@@ -111,7 +109,7 @@
             </div>
           </div>
           <div class="col" style="display: block">
-            <div class="card h-100">
+            <div class="card h-100 border-success">
               <img src="<?=base_url('public/img/homeloan.jpg')?>" class="card-img-top zoom" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Home Loan Services</h5>

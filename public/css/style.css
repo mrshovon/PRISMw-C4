@@ -1684,7 +1684,12 @@ footer .credits {
 	font-size: 0.95rem;
   }
 }
-
+/* @media screen and (min-width: 1900px) and (min-height: 1080px){
+  .intro .owl-theme .owl-dots {
+  right: 200px;
+  top:700px
+  }
+} */
 @media (min-width: 768px) {
   .link-a {
     font-size: .9rem;

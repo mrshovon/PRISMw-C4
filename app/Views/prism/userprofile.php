@@ -1,13 +1,21 @@
     <?= $this->extend('layouts/masterAL') ?>
     <?= $this->section('content') ?>
-    <main style="height: fit-content; margin-left: 10px; margin-top:10%">
-    <div class="main-body col">
-        <?php if(session()->getFlashdata('msg')):?>
-        <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
-        <?php endif;?>
-        <?php if(isset($validation)):?>
-        <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
-        <?php endif;?>
+    <style>
+        .form-control{
+            width: 25%;
+        }
+        .col {
+            width:30%;
+        }
+    </style>
+    <main style="height: fit-content; margin-left: 10px; margin-top:5%">
+        <div class="main-body col" style="left: 20%;">
+            <?php if(session()->getFlashdata('msg')):?>
+            <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+            <?php endif;?>
+            <?php if(isset($validation)):?>
+            <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+            <?php endif;?>
             <form action="<?=base_url('public/user/HomeAL/userprofileupdate')?>" method="post">
             <input type="hidden" name="actiontype" value="<?= isset($item) ? 'update' : 'insert' ?>"/>
             <fieldset>

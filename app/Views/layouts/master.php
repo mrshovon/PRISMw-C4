@@ -35,6 +35,9 @@
   <link href="<?=base_url('public/css/style-sr.css')?>" rel="stylesheet">
   <!-- Animate css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+
+  </style>
 </head>
 
 <body>
