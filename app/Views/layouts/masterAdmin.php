@@ -152,5 +152,7 @@
         <h6 style="text-align:center; background-color: rgb(214, 214, 214); padding-bottom:10px; padding-top:10px;">All rights reserved @<b><?= $footer->company_name ?></b> 2023</h6>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/34df789c41.js" crossorigin="anonymous"></script>
+    <script src="<?=base_url('public/lib/jquery/jquery.min.js')?>"></script>
+    <script src="<?=base_url('public/js/custom.js')?>"></script>
 </body>
 </html>

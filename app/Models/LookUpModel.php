@@ -16,9 +16,10 @@
                 $query =  $this->db->query($sqlText);
                 $row = $query->getRow();
 
-                $sqlText = "INSERT INTO `tbl_look_up`(`maker_id`,`auth_id`,`action_type`,`action_date`,`look_up_id`,`look_up_name`,`short_name`,`sort_order`,`look_type_id`)
-                            VALUES('".$data['email']."','NULL','INSERT',NOW(),".$row->maxid.",'".$data['look_up_name']."','".$data['short_name']."','".$data['sort_order']."','".$data['look_type_id']."')";
-
+                $format = "INSERT INTO `tbl_look_up`(`maker_id`,`auth_id`,`action_type`,`action_date`,`look_up_id`,`look_up_name`,`short_name`,`sort_order`,`look_type_id`,`ref_lookup_id`)
+                VALUES('%s',NULL,'INSERT',NOW(),%d,'%s','%s',%d,%d,%s)";
+                $sqlText = sprintf($format, $data['email'], $row->maxid, $data['look_up_name'], $data['short_name'], $data['sort_order'], $data['look_type_id'],$data['ref_lookup_id']);
+            
                 $query =  $this->db->query($sqlText);
                 return  $this->db->affectedRows();
 
@@ -37,16 +38,19 @@
                 }
             }
             public function edit($data) {
-              $sqlText = " UPDATE `tbl_look_up`
+              $format = " UPDATE `tbl_look_up`
                             SET
-                            `auth_id` = '".$data['email']."',
+                            `auth_id` =' %s',
                             `action_type` = 'update',
                             `action_date` = now(),
-                            `look_up_name` = '".$data['look_up_name']."',
-                            `short_name` = '".$data['short_name']."',
-                            `sort_order` = '".$data['sort_order']."',
-                            `look_type_id` = '".$data['look_type_id']."'
-                            WHERE `look_up_id` = ".$data['look_up_id']."";
+                            `look_up_name` = '%s',
+                            `short_name` = '%s',
+                            `sort_order` = %d,
+                            `look_type_id` = %d,
+                            `ref_lookup_id` = %s
+                            WHERE `look_up_id` = %d";
+                
+                $sqlText = sprintf($format, $data['email'], $data['look_up_name'], $data['short_name'], $data['sort_order'], $data['look_type_id'],$data['ref_lookup_id'],$data['look_up_id']);
                 
                 $query =  $this->db->query($sqlText);
 
@@ -57,13 +61,31 @@
                 $sqlText = "SELECT * FROM tbl_look_up" ;
                 $query =  $this->db->query($sqlText);
                 return $query->getResult();
-
             }
-            public function getByCriteria($look_up_id) {
+            public function getById($look_up_id) {
                 $sqlText = "SELECT * FROM tbl_look_up WHERE `look_up_id` = '".$look_up_id."'";
                 $query =  $this->db->query($sqlText);
                 return $query->getRow();
             }
+            public function getByCriteria($look_type_id, $is_array) {
+                $sqlText = "SELECT * FROM tbl_look_up ";
 
+                $condition = "";
+                if(isset($look_type_id)) {
+                    $condition = $condition." AND look_type_id = ".$look_type_id;
+                }
+                if(!empty($condition)) {
+                     $condition = ' WHERE '.substr($condition, 5, strlen($condition)-5);
+                }
+                $condition = $condition.' ORDER BY sort_order';
+                $sqlText = $sqlText.$condition;
+                $query =  $this->db->query($sqlText);
+                if($is_array){
+                    return $query->getResultArray();
+                }
+                else{
+                    return $query->getResult();
+                }
+            }
         }
  ?>

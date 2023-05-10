@@ -21,8 +21,20 @@
               </div>
               <div class="form-group">
                   <label for="looktypeid"><i class="zmdi zmdi-account material-icons-name"></i>Look Type ID: </label>
-                  <input type="text" name="looktypeid" id="looktypeid" placeholder="look type id" class="form-control" value="<?= isset($item) ? $item->look_type_id : '' ?>" />
+                  <SELECT name="looktypeid" id="looktypeid" class="form-control" onchange="getReflookup(this,'<?php echo base_url(); ?>')">
+                  <option value="">Select...</option>
+                    <?php foreach($looktypelist as $item) { ?>
+                      <option value="<?php echo $item->look_type_id ?>"><?php echo $item->look_type_name ?></option>
+                     <?php } ?> 
+                  </SELECT>
               </div>
+              <div class="form-group">
+                  <label for="reflookupid"><i class="zmdi zmdi-account material-icons-name"></i>Ref Lookup ID: </label>
+                  <SELECT name="reflookupid" id="reflookupid" class="form-control">
+                    <option value="">Select...</option>
+                    
+                  </SELECT>
+                </div>
               <div class="form-group form-button">
                   <button type="submit" id="signup" class="btn btn-success" style="margin-top:2%;">Save</button> 
               </div>

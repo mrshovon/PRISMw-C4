@@ -15,7 +15,7 @@ class Looktype extends BaseController
 
    public function add()
    { 
-        return view('admin/looktypeAdd');
+        return view('admin/looktypeAdd',$this->global);
    }
    public function delete($look_type_id)
    { 

@@ -2,6 +2,7 @@
 
 use App\Controllers\BaseController;
 use App\Models\LookUpModel;
+use App\Models\LookTypeModel;
 
 class Lookup extends BaseController
 {
@@ -13,10 +14,24 @@ class Lookup extends BaseController
         return view('admin/lookup',$data);
     }
 
+    public function getjson()
+    {
+        $look_type_id = $this->request->getVar('look_type_id');
+        $model = new LookUpModel();
+        $lookuplist = $model->getByCriteria($look_type_id,true);
+        return json_encode($lookuplist);
+    }
+
    public function add()
    { 
-        return view('admin/lookupAdd', $this->global);
+        $model = new LookUpModel();
+        $data['reflookuplist'] = $model->get();
+        $looktypemodel = new LookTypeModel();
+        $data['looktypelist'] = $looktypemodel->get();  
+        $data = array_merge($this->global, $data);  
+        return view('admin/lookupAdd', $data);
    }
+
    public function delete($look_up_id)
    { 
         $session = session();    
@@ -36,10 +51,14 @@ class Lookup extends BaseController
    public function edit($look_up_id)
    { 
        $model = new LookUpModel();
-       $data['item'] = $model->getByCriteria($look_up_id);
+       $data['item'] = $model->getById($look_up_id);
+       $data['reflookuplist'] = $model->get();
+       $looktypemodel = new LookTypeModel();
+       $data['looktypelist'] = $looktypemodel->get();  
        $data = array_merge($this->global, $data);
        return view('admin/lookupAdd',$data);
    }
+
    public function create()
     {
         $session = session();
@@ -59,10 +78,11 @@ class Lookup extends BaseController
                 'sort_order'    => $this->request->getVar('sortorder'),
                 'look_type_id' => $this->request->getVar('looktypeid'),
                 'look_up_id'    => $this->request->getVar('lookupid'),
+                'ref_lookup_id'    => $this->request->getVar('reflookupid'),
                 'email'    => session()->get('email')
             ];
             $actiontype = $this->request->getVar('actiontype');
-            
+            $data['ref_lookup_id'] = empty($data['ref_lookup_id']) == 1 ? 'null' : $data['ref_lookup_id'];
             if($actiontype == 'update' ){
                 $result = $model->edit($data);
             }
@@ -81,7 +101,7 @@ class Lookup extends BaseController
         }
         else {
             $data['validation'] = $this->validator;
-            $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            $data['item'] = $model->getById($this->request->getVar('email'));
             $data = array_merge($this->global, $data);
             return view('admin/lookupAdd', $data); 
         }

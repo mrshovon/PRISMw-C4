@@ -17,6 +17,7 @@
                     <th scope="col">Short Name</th>
                     <th scope="col">Sort Order</th>
                     <th scope="col">Look Type ID</th>
+                    <th scope="col">Ref Lookup ID</th>
                     <th scope="col">Make By</th>
                     <th scope="col">Create Date</th>
                   </tr>
@@ -30,6 +31,7 @@
                     <td><?php echo $row->short_name?></td>
                     <td><?php echo $row->sort_order?></td>
                     <td><?php echo $row->look_type_id?></td>
+                    <td><?php echo $row->ref_lookup_id?></td>
                     <td><?php echo $row->maker_id?></td>
                     <td><?php echo $row->action_date?></td>
                   <td>

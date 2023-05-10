@@ -46,9 +46,42 @@
                     <option value="Administrator">Administrator</option>
                 </SELECT>
               </div>
-              <div class="form-group form-button">
-                  <button type="submit" id="signup" class="btn btn-success" style="margin-top:2%;">Save</button> 
+              <div class="form-group">
+                  <label for="nid"><i class="zmdi zmdi-account material-icons-name"></i>NID: </label>
+                  <input type="text" name="nid" id="nid" placeholder="NID" class="form-control" value="<?= isset($item) ? $item->nid : '' ?>" />
               </div>
+              <div class="form-group">
+                  <label for="address"><i class="zmdi zmdi-account material-icons-name"></i>ADDRESS: </label>
+                  <input type="text" name="address" id="address" placeholder="Address" class="form-control" value="<?= isset($item) ? $item->address : '' ?>" />
+              </div>
+              <div class="form-group">
+                  <label for="dob"><i class="zmdi zmdi-account material-icons-name"></i>Date Of Birth: </label>
+                  <input type="date" name="dob" id="dob" placeholder="Date of Birth" class="form-control" value="<?= isset($item) ? $item->dob : '' ?>" />
+              </div>
+              <div class="form-group">
+                  <label for="occupation"><i class="zmdi zmdi-account material-icons-name"></i>Occupation: </label>
+                  <input type="text" name="occupation" id="occupation" placeholder="Occupation" class="form-control" value="<?= isset($item) ? $item->occupation : '' ?>" />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender:</label>
+                <SELECT name="gender" id="gender" class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <!-- <option value="other">other</option> -->
+                </SELECT>
+              </div>
+              <div class="form-group">
+                <label for="divison">Division:</label>
+                <SELECT name="division" id="division" class="form-control">
+                    <?php foreach($divisionlist as $item) { ?>
+                      <option value="<?php echo $item->look_up_id ?>"><?php echo $item->look_up_name ?></option>
+                     <?php } ?>
+                </SELECT>
+              </div>
+              <div class="form-group form-button">
+                  <button type="submit" id="signup" class="btn btn-success" style="margin-top:2%; margin-bottom:2%;">Save</button> 
+              </div>
+              
              </fieldset>
           </form>      
        </div>

@@ -13,9 +13,10 @@
             public function add($data) {
                 
                 $sqlText = "INSERT INTO `tbl_user_info`(`maker_id`,`auth_id`,`action_type`,`action_date`,`name`,`password`,`phone`,`email`,`user_type`,
-                `title`)
-                VALUES('".$data['email']."',null,'insert',NOW(),'".$data['name']."','".$data['password']."','".$data['phone']."','".$data['email']."','".$data['user_type']."','".$data['title']."')";
-
+                `title`,`nid`,`address`,`dob`,`gender`,`occupation`,`division`,`district`)
+                VALUES('".$data['email']."',null,'insert',NOW(),'".$data['name']."','".$data['password']."','".$data['phone']."','".$data['email']."','".$data['user_type']."','".$data['title']."','".$data['nid']."','".$data['address']."','".$data['dob']."','".$data['gender']."','".$data['occupation']."','".$data['division']."',null)";
+                // echo 'ok';
+                // echo $sqlText;
                 // echo '<pre>'; print_r($data); echo '</pre>'; exit;
                 try {
                     // echo 'ok'; 
@@ -63,6 +64,12 @@
                             `password` = '".$data['password']."',
                             `user_type` = '".$data['user_type']."',
                             `title` = '".$data['title']."',
+                            `nid` = '".$data['nid']."',
+                            `address` = '".$data['address']."',
+                            `dob` = '".$data['dob']."',
+                            `gender` = '".$data['gender']."',
+                            `occupation` = '".$data['occupation']."',
+                            `division` = '".$data['division']."',
                             `phone` = '".$data['phone']."'                            
                             WHERE `email` = '".$data['email']."'";
                 $query =  $this->db->query($sqlText);
@@ -96,7 +103,10 @@
             }
 
             public function get() {
-                $sqlText = "SELECT * FROM tbl_user_info" ;
+                $sqlText = "SELECT pi.name,pi.title,pi.email, pi.phone, pi.nid, pi.address, pi.dob, pi.gender, pi.occupation,pi.division,pi.user_type,pi.maker_id,pi.action_date, pi.district,
+                            pi.division , lsc.look_up_name AS division_name
+                            FROM tbl_user_info as pi
+                            INNER JOIN tbl_look_up AS lsc ON pi.division = lsc.look_up_id";
                 $query =  $this->db->query($sqlText);
                 return $query->getResult();
             }

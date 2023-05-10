@@ -216,19 +216,22 @@ class HomeAL extends BaseController
     public function userprofile($email)
     {
         $model = new UserInfoModel();
+        $model2 = new PropertyInfoModel();
         $data['item'] = $model->getByCriteria($email);
+        $data['divisionlist'] = $model2->getByCriteria(10);
         $data = array_merge($this->global, $data); 
         return view('prism/userprofile', $data);
     }
     public function userprofileupdate(){
         $session = session();
         $model = new UserInfoModel();
+        $model2 = new PropertyInfoModel();
         $data = [];
         $rules = [
             'name'          => 'required|min_length[3]|max_length[20]',
             'email'         => 'required|min_length[6]|max_length[50]|valid_email',
-            'password'      => 'required|min_length[6]|max_length[200]',
-            'confpassword'  => 'matches[password]'
+            // 'password'      => 'required|min_length[6]|max_length[200]',
+            // 'confpassword'  => 'matches[password]'
         ];
         if($this->validate($rules)) {
             $data = [
@@ -237,6 +240,12 @@ class HomeAL extends BaseController
                 'phone'    => $this->request->getVar('phone'),
                 'user_type'    => 'customer',
                 'title'    => $this->request->getVar('title'),
+                'nid'    => $this->request->getVar('nid'),
+                'address'    => $this->request->getVar('address'),
+                'dob'    => $this->request->getVar('dob'),
+                'gender'    => $this->request->getVar('gender'),
+                'occupation'    => $this->request->getVar('occupation'),
+                'division'    => $this->request->getVar('division'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
 
@@ -244,12 +253,15 @@ class HomeAL extends BaseController
             $session->set('name', $data['name']);
             if($result <= 0) {
                 $session->setFlashdata('msg', 'User saved failed. Please try again later!');
+                $data['item'] = $model->getByCriteria($data['email']);
+                $data['divisionlist'] = $model2->getByCriteria(10);
                 $data = array_merge($this->global, $data);
                 return view('prism/userprofile', $data);
             }
             else {
                 $session->setFlashdata('msg', 'User save Successful. Thank you!');
                 $data['item'] = $model->getByCriteria($data['email']);
+                $data['divisionlist'] = $model2->getByCriteria(10);
                 $data = array_merge($this->global, $data); 
                 return view('prism/userprofile', $data);
             }  
@@ -257,6 +269,7 @@ class HomeAL extends BaseController
         else {
             $data['validation'] = $this->validator;
             $data['item'] = $model->getByCriteria($this->request->getVar('email'));
+            $data['divisionlist'] = $model2->getByCriteria(10);
             $data = array_merge($this->global, $data);
             return view('prism/userprofile', $data); 
         }
