@@ -20,7 +20,7 @@
                       <th scope="col">Gender</th>
                       <th scope="col">Occupation</th>
                       <th scope="col">Division</th>
-                      <!-- <th scope="col">District</th> -->
+                      <th scope="col">District</th>
                       <th scope="col">Maker By</th>
                       <th scope="col">Create Date</th>
                       <th scope="col">Action</th>
@@ -39,7 +39,7 @@
                       <td><?php echo $row->gender; ?></td>
                       <td><?php echo $row->occupation; ?></td>
                       <td><?php echo $row->division_name; ?></td>
-                      <!-- <td><?php echo $row->district; ?></td> -->
+                      <td><?php echo $row->district_name; ?></td>
                       <td><?php echo ($row->user_type == 'customer' ? 'customer':'administrator'); ?></td>
                       <td><?php echo $row->maker_id; ?></td>
                       <td><?php echo $row->action_date; ?></td>
