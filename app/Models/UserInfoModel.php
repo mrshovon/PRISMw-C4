@@ -103,7 +103,8 @@
             }
 
             public function get() {
-                $sqlText = "SELECT pi.name,pi.title,pi.email, pi.phone, pi.nid, pi.address, pi.dob, pi.gender, pi.occupation,pi.division,pi.user_type,pi.maker_id,pi.action_date, pi.district,
+                $sqlText = "SELECT pi.name,pi.title,pi.email, pi.phone, pi.nid, pi.address, pi.dob, pi.gender, pi.occupation,pi.division,pi.user_type,pi.maker_id,pi.action_date, 
+                            pi.district,    
                             pi.division , lsc.look_up_name AS division_name
                             FROM tbl_user_info as pi
                             INNER JOIN tbl_look_up AS lsc ON pi.division = lsc.look_up_id";

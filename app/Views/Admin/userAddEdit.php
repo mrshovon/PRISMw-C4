@@ -41,7 +41,7 @@
               </div>
               <div class="form-group">
                 <label for="user_type">User Type:</label>
-                <SELECT name="user_type" id="title" class="form-control">
+                <SELECT name="user_type" id="user_type" class="form-control">
                     <option value="Customer">Customer</option>
                     <option value="Administrator">Administrator</option>
                 </SELECT>
@@ -72,12 +72,23 @@
               </div>
               <div class="form-group">
                 <label for="divison">Division:</label>
-                <SELECT name="division" id="division" class="form-control">
-                    <?php foreach($divisionlist as $item) { ?>
-                      <option value="<?php echo $item->look_up_id ?>"><?php echo $item->look_up_name ?></option>
-                     <?php } ?>
+                <SELECT name="division" id="division" class="form-control" onchange="getDistrict(this,'<?php echo base_url(); ?>')">
+                <option value="">Select...</option>   
+                <?php foreach($divisionlist as $item) { ?>
+                    <option value="<?php echo $item->look_up_id ?>" ltval="<?php echo $item->look_type_id ?>"><?php echo $item->look_up_name ?></option>
+                <?php } ?>
                 </SELECT>
               </div>
+              <div class="form-group" id="divcontainer">
+                
+              </div>
+              <div class="form-group">
+                  <label for="district"><i class="zmdi zmdi-account material-icons-name"></i>District: </label>
+                  <SELECT name="district" id="district" class="form-control">
+                    <option value="">Select...</option>
+                    
+                  </SELECT>
+                </div>
               <div class="form-group form-button">
                   <button type="submit" id="signup" class="btn btn-success" style="margin-top:2%; margin-bottom:2%;">Save</button> 
               </div>

@@ -16,9 +16,9 @@ class Lookup extends BaseController
 
     public function getjson()
     {
-        $look_type_id = $this->request->getVar('look_type_id');
+        $look_type_id = $this->request->getPost('look_type_id'); 
         $model = new LookUpModel();
-        $lookuplist = $model->getByCriteria($look_type_id,true);
+        $lookuplist = $model->getByCriteria($look_type_id, null,true);
         return json_encode($lookuplist);
     }
 

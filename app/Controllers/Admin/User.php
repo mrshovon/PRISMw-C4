@@ -3,6 +3,7 @@
 use App\Controllers\BaseController;
 use App\Models\UserInfoModel;
 use App\Models\PropertyInfoModel;
+use App\Models\LookUpModel;
 
 class User extends BaseController
 {
@@ -18,8 +19,18 @@ class User extends BaseController
     { 
         $model = new PropertyInfoModel();
         $data['divisionlist'] = $model->getByCriteria(10);
+        // echo "<pre>"; print_r($data); echo "</pre>"; exit;
         $data = array_merge($this->global, $data);
         return view('admin/userAddEdit',$data);
+    }
+
+    public function getjson()
+    {
+        $look_type_id = $this->request->getPost('look_type_id');
+        $ref_lookup_id = $this->request->getPost('ref_lookup_id'); 
+        $model = new LookUpModel();
+        $districtlist = $model->getByCriteria($look_type_id,$ref_lookup_id,true);
+        return json_encode($districtlist);
     }
 
     public function delete($email)

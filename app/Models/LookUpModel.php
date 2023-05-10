@@ -67,13 +67,18 @@
                 $query =  $this->db->query($sqlText);
                 return $query->getRow();
             }
-            public function getByCriteria($look_type_id, $is_array) {
+            public function getByCriteria($look_type_id,$ref_lookup_id, $is_array) {
                 $sqlText = "SELECT * FROM tbl_look_up ";
 
                 $condition = "";
                 if(isset($look_type_id)) {
                     $condition = $condition." AND look_type_id = ".$look_type_id;
                 }
+                if(isset($ref_lookup_id)) {
+                    $condition = $condition." AND ref_lookup_id = ".$ref_lookup_id;
+                }
+
+
                 if(!empty($condition)) {
                      $condition = ' WHERE '.substr($condition, 5, strlen($condition)-5);
                 }

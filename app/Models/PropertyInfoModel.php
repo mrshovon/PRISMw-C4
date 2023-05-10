@@ -102,7 +102,7 @@
                 return $query->getResult();
             }
             public function getByCriteria($look_type_id) {
-                $sqlText = "SELECT look_up_id, look_up_name, short_name FROM tbl_look_up WHERE `look_type_id`=".$look_type_id;
+                $sqlText = "SELECT look_up_id, look_up_name, short_name, look_type_id FROM tbl_look_up WHERE `look_type_id`='".$look_type_id."' AND `ref_lookup_id` is null";
                 $query =  $this->db->query($sqlText);
                 return $query->getResult();
             }
