@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2023 at 10:13 AM
+-- Generation Time: May 11, 2023 at 07:28 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -45,7 +45,11 @@ CREATE TABLE `tbl_book_visit` (
 
 INSERT INTO `tbl_book_visit` (`auth_id`, `action_type`, `action_date`, `date`, `start_time`, `end_time`, `remarks`, `email`, `property_id`) VALUES
 ('joy@gmail.com', 'insert', '2023-04-26 16:36:55', '2023-04-26 16:36:55', '2023-04-29T17:31', '2023-04-29T21:31', 'make me coffee', 'joy@gmail.com', '1'),
-('joy@gmail.com', 'insert', '2023-04-30 10:47:15', '2023-04-30 10:47:15', '2023-05-01T10:46', '2023-05-01T00:46', 'keep a cup of coffee ready.', 'joy@gmail.com', '13');
+('joy@gmail.com', 'insert', '2023-04-30 10:47:15', '2023-04-30 10:47:15', '2023-05-01T10:46', '2023-05-01T00:46', 'keep a cup of coffee ready.', 'joy@gmail.com', '13'),
+('joy@gmail.com', 'insert', '2023-05-03 13:33:26', '2023-05-03 13:33:26', '2023-05-03T14:34', '2023-05-03T16:33', 'nothing', 'joy@gmail.com', '1'),
+('joy@gmail.com', 'insert', '2023-05-03 13:33:56', '2023-05-03 13:33:56', '2023-05-03T14:34', '2023-05-03T16:33', 'nothing', 'joy@gmail.com', '1'),
+('joy@gmail.com', 'insert', '2023-05-03 13:34:21', '2023-05-03 13:34:21', '2023-05-03T14:34', '2023-05-03T16:33', 'nothing', 'joy@gmail.com', '1'),
+('joy@gmail.com', 'insert', '2023-05-03 13:35:13', '2023-05-03 13:35:13', '2023-05-03T14:34', '2023-05-03T16:33', 'nothing', 'joy@gmail.com', '1');
 
 -- --------------------------------------------------------
 
@@ -97,8 +101,7 @@ CREATE TABLE `tbl_company_profile` (
 --
 
 INSERT INTO `tbl_company_profile` (`maker_id`, `auth_id`, `action_type`, `action_date`, `company_name`, `company_vision`, `company_address`, `company_email`, `privecy_policy`, `terms_and_condition`, `company_id`) VALUES
-('1730020@iub.edu.bd', '', 'update', '2023-04-02 10:28:13', 'PRISM', 'vision....text', 'address....text', 'email@company.com', 'privacy policy....file link', 'terms and condition....file', 1),
-('1730020@iub.edu.bd', NULL, 'insert', '2023-04-11 14:07:35', 'PRISM', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ', '815 East Mall Drive ,South Dakota 57701 United States', 'inquery@prism.com', 'pp', 'term n condition', 2);
+('1730020@iub.edu.bd', 'email@prismproperties.com', 'update', '2023-05-03 10:51:08', 'PRISM PROPERTIES', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est non impedit eaque accusamus dolorem, asperiores harum officiis in, beatae, quaerat assumenda voluptatum omnis officia similique facilis recusandae fugiat? Saepe, porro.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit e', 'address..............................text', 'email@prismproperties.com', 'privacy policy....file link', 'terms and condition....file', 1);
 
 -- --------------------------------------------------------
 
@@ -120,7 +123,8 @@ CREATE TABLE `tbl_favourites` (
 --
 
 INSERT INTO `tbl_favourites` (`auth_id`, `action_type`, `action_date`, `creation_date`, `email`, `property_id`) VALUES
-('joy@gmail.com', 'insert', '2023-04-30 11:44:44', '2023-04-30 11:44:44', 'joy@gmail.com', '1'),
+('1730020@iub.edu.bd', 'insert', '2023-05-03 11:02:08', '2023-05-03 11:02:08', '1730020@iub.edu.bd', '13'),
+('joy@gmail.com', 'insert', '2023-05-03 13:32:58', '2023-05-03 13:32:58', 'joy@gmail.com', '1'),
 ('joy@gmail.com', 'insert', '2023-05-02 14:05:33', '2023-05-02 14:05:33', 'joy@gmail.com', '10'),
 ('joy@gmail.com', 'insert', '2023-04-30 12:13:12', '2023-04-30 12:13:12', 'joy@gmail.com', '11'),
 ('joy@gmail.com', 'insert', '2023-05-02 13:46:41', '2023-05-02 13:46:41', 'joy@gmail.com', '16'),
@@ -142,6 +146,13 @@ CREATE TABLE `tbl_homeloan` (
   `email` varchar(100) NOT NULL,
   `property_id` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `tbl_homeloan`
+--
+
+INSERT INTO `tbl_homeloan` (`auth_id`, `action_type`, `action_date`, `name`, `phone_number`, `email`, `property_id`) VALUES
+('1730020@iub.edu.bd', 'insert', '2023-05-03 11:03:19', 'System Admin', '01245678933', '1730020@iub.edu.bd', '15');
 
 -- --------------------------------------------------------
 
@@ -166,7 +177,8 @@ CREATE TABLE `tbl_inquery` (
 --
 
 INSERT INTO `tbl_inquery` (`maker_id`, `auth_id`, `action_type`, `action_date`, `inquery_id`, `customer_name`, `phone`, `address`, `query`) VALUES
-('shovon@gmail.com', 'NULL', 'update', '2023-04-02 11:07:00', 1, 'Shamiul', '01723568944', 'address......text', 'query.....text');
+('shovon@gmail.com', 'NULL', 'update', '2023-04-02 11:07:00', 1, 'Shamiul', '01723568944', 'address......text', 'query.....text'),
+(NULL, NULL, 'insert', '2023-05-03 11:04:22', 2, 'Shovon ', '', 'bogura fulbari', 'bogura fulbari');
 
 -- --------------------------------------------------------
 
@@ -189,6 +201,10 @@ CREATE TABLE `tbl_legal_services` (
 --
 
 INSERT INTO `tbl_legal_services` (`auth_id`, `action_type`, `action_date`, `name`, `phone_number`, `email`, `service_code`) VALUES
+('1730020@iub.edu.bd', 'insert', '2023-05-03 11:03:43', 'Shovon ', '01245678933', '1730020@iub.edu.bd', 16),
+('1730020@iub.edu.bd', 'insert', '2023-05-03 11:03:44', 'Shovon ', '01245678933', '1730020@iub.edu.bd', 17),
+('1730020@iub.edu.bd', 'insert', '2023-05-03 11:03:44', 'Shovon ', '01245678933', '1730020@iub.edu.bd', 19),
+('1730020@iub.edu.bd', 'insert', '2023-05-03 11:03:44', 'Shovon ', '01245678933', '1730020@iub.edu.bd', 21),
 (NULL, 'insert', '2023-04-26 12:36:00', 'Shovon ', '01245678933', 'joy@gmail.com', 16),
 (NULL, 'insert', '2023-04-26 12:36:00', 'Shovon ', '01245678933', 'joy@gmail.com', 17),
 (NULL, 'insert', '2023-04-26 12:36:00', 'Shovon ', '01245678933', 'joy@gmail.com', 18),
@@ -223,7 +239,9 @@ INSERT INTO `tbl_look_type` (`maker_id`, `auth_id`, `action_type`, `action_date`
 ('1730020@iub.edu.bd', NULL, 'insert', '2023-03-21 00:00:00', 6, 'FollowUs'),
 ('1730020@iub.edu.bd', NULL, 'insert', '2023-03-21 00:00:00', 7, 'PropertyStatus'),
 ('1730020@iub.edu.bd', NULL, 'insert', '2023-03-21 00:00:00', 8, 'DescriptiveStatus'),
-('1730020@iub.edu.bd', NULL, 'insert', '2023-04-11 13:00:21', 9, 'Purpose');
+('1730020@iub.edu.bd', NULL, 'insert', '2023-04-11 13:00:21', 9, 'Purpose'),
+('1730020@iub.edu.bd', NULL, 'insert', '2023-05-09 09:51:20', 10, 'Division'),
+('1730020@iub.edu.bd', NULL, 'insert', '2023-05-10 14:17:34', 11, 'District');
 
 -- --------------------------------------------------------
 
@@ -240,42 +258,54 @@ CREATE TABLE `tbl_look_up` (
   `look_up_name` varchar(50) NOT NULL,
   `short_name` varchar(10) NOT NULL,
   `sort_order` int(11) NOT NULL,
-  `look_type_id` int(11) NOT NULL
+  `look_type_id` int(11) NOT NULL,
+  `ref_lookup_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_look_up`
 --
 
-INSERT INTO `tbl_look_up` (`maker_id`, `auth_id`, `action_type`, `action_date`, `look_up_id`, `look_up_name`, `short_name`, `sort_order`, `look_type_id`) VALUES
-('1730020@iub.edu.bd', '1730020@iub.edu.bd', 'update', '2023-04-12 12:01:46', 1, 'Comercial', 'com', 1, 1),
-('1730020@iub.edu.bd', '1730020@iub.edu.bd', 'update', '2023-04-30 12:28:43', 2, 'CCTV', 'cctv', 1, 3),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 12:37:25', 3, 'Residential', 'res', 2, 1),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 12:44:02', 4, 'Industrial', 'ind', 3, 1),
-('1730020@iub.edu.bd', '1730020@iub.edu.bd', 'update', '2023-04-30 12:28:20', 5, 'Lift', 'lift', 2, 3),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:00:41', 6, 'Rent', 'rnt', 1, 9),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:01:07', 7, 'Sell', 'sll', 2, 9),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:06:12', 8, 'Newly Published', 'nwp', 1, 7),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:06:33', 9, 'Popular', 'plr', 2, 7),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:06:49', 10, 'Sold', 'sld', 3, 7),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:07:18', 11, 'Inactive', 'inctv', 4, 7),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:07:51', 12, 'Deleted', 'dltd', 5, 7),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:08:40', 13, 'Fully Furnished', 'flfrnsd', 1, 8),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:09:36', 14, 'Under Construction', 'ndrcns', 2, 8),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:09:51', 15, 'Ready', 'rdy', 3, 8),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:30:16', 16, ' AC Land Mutation', 'mutation', 1, 5),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:31:01', 17, 'Deed Withdrawal', 'deed', 2, 5),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:31:41', 18, 'Hiba-Bil-Iwaz Deed', 'hiba deed', 3, 5),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:32:12', 19, 'Title Deed', 'ttl dd', 4, 5),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:33:31', 20, 'Power of Attorney', 'pwr of att', 5, 5),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:34:04', 21, 'Deed of agreement', 'agrmnt dd', 6, 5),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 14:54:05', 22, 'Interior Painting', 'int pnt', 1, 4),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 14:54:27', 23, 'Exterior Painting', 'ex pnt', 2, 4),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 14:55:25', 24, 'Plaster Work', 'pltr wrk', 3, 4),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 14:55:52', 25, 'Kitchen Remodel ', 'ktchn rmdl', 4, 4),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-30 12:29:08', 26, 'Generator', 'gnrtr', 3, 3),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-30 12:29:34', 27, 'Garage', 'grg', 4, 3),
-('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-30 12:30:15', 28, 'Intercom', 'intrcm', 5, 3);
+INSERT INTO `tbl_look_up` (`maker_id`, `auth_id`, `action_type`, `action_date`, `look_up_id`, `look_up_name`, `short_name`, `sort_order`, `look_type_id`, `ref_lookup_id`) VALUES
+('1730020@iub.edu.bd', '1730020@iub.edu.bd', 'update', '2023-04-12 12:01:46', 1, 'Comercial', 'com', 1, 1, NULL),
+('1730020@iub.edu.bd', '1730020@iub.edu.bd', 'update', '2023-04-30 12:28:43', 2, 'CCTV', 'cctv', 1, 3, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 12:37:25', 3, 'Residential', 'res', 2, 1, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 12:44:02', 4, 'Industrial', 'ind', 3, 1, NULL),
+('1730020@iub.edu.bd', '1730020@iub.edu.bd', 'update', '2023-04-30 12:28:20', 5, 'Lift', 'lift', 2, 3, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:00:41', 6, 'Rent', 'rnt', 1, 9, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:01:07', 7, 'Sell', 'sll', 2, 9, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:06:12', 8, 'Newly Published', 'nwp', 1, 7, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:06:33', 9, 'Popular', 'plr', 2, 7, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:06:49', 10, 'Sold', 'sld', 3, 7, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:07:18', 11, 'Inactive', 'inctv', 4, 7, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:07:51', 12, 'Deleted', 'dltd', 5, 7, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:08:40', 13, 'Fully Furnished', 'flfrnsd', 1, 8, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:09:36', 14, 'Under Construction', 'ndrcns', 2, 8, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-11 13:09:51', 15, 'Ready', 'rdy', 3, 8, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:30:16', 16, ' AC Land Mutation', 'mutation', 1, 5, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:31:01', 17, 'Deed Withdrawal', 'deed', 2, 5, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:31:41', 18, 'Hiba-Bil-Iwaz Deed', 'hiba deed', 3, 5, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:32:12', 19, 'Title Deed', 'ttl dd', 4, 5, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:33:31', 20, 'Power of Attorney', 'pwr of att', 5, 5, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 09:34:04', 21, 'Deed of agreement', 'agrmnt dd', 6, 5, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 14:54:05', 22, 'Interior Painting', 'int pnt', 1, 4, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 14:54:27', 23, 'Exterior Painting', 'ex pnt', 2, 4, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 14:55:25', 24, 'Plaster Work', 'pltr wrk', 3, 4, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-25 14:55:52', 25, 'Kitchen Remodel ', 'ktchn rmdl', 4, 4, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-30 12:29:08', 26, 'Generator', 'gnrtr', 3, 3, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-30 12:29:34', 27, 'Garage', 'grg', 4, 3, NULL),
+('1730020@iub.edu.bd', 'NULL', 'insert', '2023-04-30 12:30:15', 28, 'Intercom', 'intrcm', 5, 3, NULL),
+('1730020@iub.edu.bd', ' 1730020@iub.edu.bd', 'update', '2023-05-10 08:44:50', 29, 'Dhaka', 'dhk', 1, 10, NULL),
+('1730020@iub.edu.bd', ' 1730020@iub.edu.bd', 'update', '2023-05-10 08:44:42', 30, 'Chittagong', 'cht', 2, 10, NULL),
+('1730020@iub.edu.bd', ' 1730020@iub.edu.bd', 'update', '2023-05-10 08:44:33', 31, 'Rajshahi', 'raj', 3, 10, NULL),
+('1730020@iub.edu.bd', ' 1730020@iub.edu.bd', 'update', '2023-05-10 08:44:22', 32, 'Khulna', 'khl', 4, 10, NULL),
+('1730020@iub.edu.bd', NULL, 'insert', '2023-05-10 10:52:33', 33, 'Rangpur', 'rng', 5, 10, NULL),
+('1730020@iub.edu.bd', NULL, 'insert', '2023-05-10 10:52:53', 34, 'Sylhet', 'syl', 6, 10, NULL),
+('1730020@iub.edu.bd', NULL, 'insert', '2023-05-10 10:53:20', 35, 'Barisal', 'bar', 7, 10, NULL),
+('1730020@iub.edu.bd', NULL, 'insert', '2023-05-10 10:53:50', 36, 'Mymensingh', 'myn', 8, 10, NULL),
+('1730020@iub.edu.bd', NULL, 'insert', '2023-05-10 16:38:32', 37, 'Tangail', 'tan', 1, 11, 29),
+('1730020@iub.edu.bd', NULL, 'insert', '2023-05-10 16:39:07', 38, 'Gazipur', 'gaz', 2, 11, 29),
+('1730020@iub.edu.bd', NULL, 'insert', '2023-05-10 16:58:48', 39, 'Chandpur', 'chd', 3, 11, 30);
 
 -- --------------------------------------------------------
 
@@ -319,7 +349,6 @@ INSERT INTO `tbl_property_info` (`auth_id`, `action_type`, `action_date`, `prope
 ('shovon@gmail.com', 'insert', '2023-04-25 23:04:51', '11', 'Residential Apartment Availabl', 'This residential apartment located in the heart of Dhanmondi is an excellent rental opportunity for anyone looking for a luxurious living experience. With 2585 square feet of space spread over the first floor, this apartment boasts of four bedrooms, four bathrooms, a spacious living room, a modern kitchen, and two balconys. It also comes with a dedicated parking space and access to a wide range of amenities, such as a children\'s play space and dual entry. The apartment is only a short distance away from the city\'s major shopping and entertainment hubs, and is conveniently connected to public transport. With its modern design, top-of-the-line fixtures, and its prime location, this apartment is an ideal choice for anyone who wants to enjoy the best of modern living.', 'Dhaka', 'Dhanmondi', '2585', 4, 4, '72000.00', 1, 'public/uploads/Residential Apartment Available For Rent_20230425_230451.png', '01478965233', 'Dhanmondi', 1, 'shovon@gmail.com', 6, 3, 15, '5', 8),
 ('shovon@gmail.com', 'insert', '2023-04-25 23:27:38', '12', 'Beautiful 3300 sqft. Apartment', 'Are you searching for a beautiful home to buy at one of the most upscale locations in the city?\r\n\r\nThis is exactly what you are looking for. With a 3300 square ft. area, it will definitely make home ownership a joyful experience for you. This excellent 4 bedrooms, 4 Bathrooms and 3 balcony apartment is located in Dhanmondi. All the rooms have ample space and will allow you to decorate your home according to your preference. Top-notch quality fittings and fixtures have been used for the three modernly designed bathrooms of this apartment. The apartment also allows the residents to have all the contemporary civic facilities such as cafes, restaurants etc. in the vicinity.\r\n\r\nSo, if you want to know more about this apartment or want to visit it firsthand, we are just one phone call away.', 'Dhaka', 'Dhanmondi', '3300', 4, 4, '55000000.00', 1, 'public/uploads/Beautiful 3300 sqft. Apartment_20230425_232738.png', '01478965233', 'Dhanmondi', 1, 'shovon@gmail.com', 7, 3, 13, '5', 8),
 ('shovon@gmail.com', 'insert', '2023-04-25 23:30:54', '13', 'A worthwhile 16800 SQ FT resid', 'This lucrative land with G+8 Building has a lot to offer. The plot has a content plan of making sure you get a life with every possible facility. So If you want to live in an environment which is absolutely secure and peaceful then it is the right time and the right place to invest your money. Grab this great opportunity to execute your dreams into reality.', 'Dhaka', 'Bashundhara', '16800', 4, 4, '99999999.99', 0, 'public/uploads/A worthwhile 16800 SQ FT residential_20230425_233054.png', '01245678933', 'Bashundhara', 7, 'shovon@gmail.com', 7, 3, 14, '5', 8),
-('shovon@gmail.com', 'insert', '2023-04-25 23:32:12', '14', '5163 sft Ready Flat Is Now For', 'This wonderful residence is nestled on a large level in the desirable location of Bashundhara R-A. The house comes complete with bed, a welcoming kitchen/dining area and bath. Moreover, the home retains the value of peaceful living while being conveniently close to shops, school and transport. Standing on a strong structure, the flat is spanning over in total. The asking price of this flat for sale surely comes within your affordability.\r\n\r\nProperty Features:\r\nNorth-East Corner\r\nProperty size: 5163 Sq. Ft\r\nNumber of bed & bath: 6,5\r\nElectricity Backup\r\nParking\r\nTerrace\r\nDedicated Security Guard\r\nTiled Floor\r\nBalconies\r\n\r\nContact us at your earliest to know more about this apartment.', 'Dhaka', 'Bashundhara', '5163', 6, 5, '99999999.99', 1, 'public/uploads/5163 sft Ready Flat Is Now For Sale_20230425_233212.png', '01245678933', 'Bashundhara', 4, 'shovon@gmail.com', 7, 3, 13, '5', 8),
 ('shovon@gmail.com', 'insert', '2023-04-25 23:33:21', '15', '2200 Square Feet Apartment Is ', 'This is a great place to reside in, having an area with a good number of shopping places and schools. The apartment is cozy and all utility supplies are readily accessible. Serene and fortified living has become a must when it comes to securing a permanent address in a busy city like Dhaka. So we suggest you see this flat by yourself. We hope it will make sure you are gratified with the home that has always been pictured in your mind.\r\n\r\nService charge BDT 10000.\r\nSouth-West Facing with terrace Corner Plot\r\n\r\n\r\n2 months in advance.\r\n\r\nLet us help you to make up your mind and bring you here to experience what you have been imagining all these years for your future home.', 'Dhaka', 'Bashundhara', '2200', 4, 4, '75000.00', 0, 'public/uploads/2200 Square Feet Apartment Is Up For Rent_20230425_233321.png', '01245678933', 'Bashundhara', 6, 'shovon@gmail.com', 6, 3, 13, '2', 8),
 ('shovon@gmail.com', 'insert', '2023-04-25 23:34:32', '16', '2200 Square Feet Apartment Is ', 'This is a great place to reside in, having an area with a good number of shopping places and schools. The apartment is cozy and all utility supplies are readily accessible. Serene and fortified living has become a must when it comes to securing a permanent address in a busy city like Dhaka. So we suggest you see this flat by yourself. We hope it will make sure you are gratified with the home that has always been pictured in your mind.\r\n\r\nService charge BDT 10000.\r\nSouth-West Facing Corner Plot\r\n\r\n2 months in advance.\r\n\r\nLet us help you to make up your mind and bring you here to experience what you have been imagining all these years for your future home.', 'Dhaka', 'Bashundhara', '2000', 4, 2, '65000.00', 1, 'public/uploads/2200 Square Feet Apartment Is Up For Rent_20230425_233432.png', '01478965233', 'Bashundhara', 1, 'shovon@gmail.com', 6, 3, 13, '5', 8),
 ('shovon@gmail.com', 'insert', '2023-04-25 23:38:27', '17', 'Beautiful 1200 sqft Apartment', '3 bedroom, 2 bathroom home in the Mirpur Area. This property offers a size of 1200 square feet. Your family and loved ones will enjoy the spacious windows & balconies, perfect for family gatherings! Come and take a look at this beauty…Don\'t miss out', 'Dhaka', 'Mirpur', '1200', 3, 2, '17000.00', 1, 'public/uploads/Beautiful 1200 sqft Apartment_20230425_233827.png', '01245678933', 'Mirpur', 1, 'shovon@gmail.com', 6, 3, 15, '5', 8),
@@ -361,7 +390,8 @@ CREATE TABLE `tbl_renovation` (
 --
 
 INSERT INTO `tbl_renovation` (`auth_id`, `action_type`, `action_date`, `property_size`, `property_area`, `property_city`, `property_address`, `name`, `email`, `phone`, `request_id`, `renovation_type_code`) VALUES
-('joy@gmail.com', 'insert', '2023-04-27 11:07:42', '1200', 'banani', 'Dhaka', '1296, west banani dhaka 1216', 'joy', 'joy@gmail.com', '01245678933', 1, 22);
+('joy@gmail.com', 'insert', '2023-04-27 11:07:42', '1200', 'banani', 'Dhaka', '1296, west banani dhaka 1216', 'joy', 'joy@gmail.com', '01245678933', 1, 22),
+('1730020@iub.edu.bd', 'insert', '2023-05-03 11:03:07', '1200', 'Dhanmondi', 'dhaka', '1296, west banani dhaka 1216', 'System Admin', '1730020@iub.edu.bd', '01245678933', 3, 24);
 
 -- --------------------------------------------------------
 
@@ -395,28 +425,40 @@ INSERT INTO `tbl_slider` (`auth_id`, `action_type`, `action_date`, `slider_id`, 
 --
 
 CREATE TABLE `tbl_user_info` (
-  `maker_id` varchar(100) NOT NULL,
+  `maker_id` varchar(100) DEFAULT NULL,
   `auth_id` varchar(100) DEFAULT NULL,
   `action_type` enum('insert','update','delete') NOT NULL,
   `action_date` datetime NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `password` varchar(120) NOT NULL,
-  `phone` varchar(15) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `password` varchar(120) DEFAULT NULL,
+  `phone` varchar(15) DEFAULT NULL,
   `email` varchar(100) NOT NULL,
   `user_type` enum('administrator','customer') NOT NULL,
-  `title` varchar(20) DEFAULT NULL
+  `title` varchar(20) DEFAULT NULL,
+  `nid` int(11) DEFAULT NULL,
+  `address` varchar(300) DEFAULT NULL,
+  `dob` varchar(300) DEFAULT NULL,
+  `gender` varchar(20) DEFAULT NULL,
+  `occupation` varchar(300) DEFAULT NULL,
+  `division` varchar(100) DEFAULT NULL,
+  `district` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_user_info`
 --
 
-INSERT INTO `tbl_user_info` (`maker_id`, `auth_id`, `action_type`, `action_date`, `name`, `password`, `phone`, `email`, `user_type`, `title`) VALUES
-('1', '1730020@iub.edu.bd', 'update', '2023-04-17 11:13:32', 'System Admin', '$2y$10$ALj32R5akJ8yM/Fp6ui3UOaQ19BnGoTdecU7Ox7c5bd1dgh5lUanG', '0183949291', '1730020@iub.edu.bd', 'administrator', 'Mr'),
-('joy@gmail.com', NULL, 'insert', '2023-04-05 16:35:39', 'joy', '$2y$10$rkhUFhAcAeRK7BRcBu19v.DPm4.waHt/hn2hnbJFp/YQuiH3ts7f.', '01478965233', 'joy@gmail.com', 'customer', 'Mr.'),
-('moinctg@yahoo.com', NULL, 'insert', '2023-04-26 10:30:42', 'Moin', '$2y$10$fkx.45nCShm6RkKZiLLt/ep3ShJ32zjfMzROrwh38ijd86OXlXQNG', '01730341177', 'moinctg@yahoo.com', 'customer', 'MR.'),
-('nidhi@gmail.com', 'nidhi@gmail.com', 'update', '2023-04-16 12:00:04', 'nidhi', '$2y$10$ZL3AhHiZjDFXdNRHIGpa1.KAHXyThGsgPuLV/T.NV2CDtw8Gw7wvW', '01245678933', 'nidhi@gmail.com', 'customer', 'Mrs'),
-('shovon@gmail.com', 'shovon@gmail.com', 'update', '2023-04-17 11:58:06', 'Shovon Rahman', '$2y$10$w3a7IVXyjlEWGja2m6ynj.WN2Q5UrIyztbbbg76Sip4kLXgEAy2MW', '01312457896', 'shovon@gmail.com', 'customer', 'Mr');
+INSERT INTO `tbl_user_info` (`maker_id`, `auth_id`, `action_type`, `action_date`, `name`, `password`, `phone`, `email`, `user_type`, `title`, `nid`, `address`, `dob`, `gender`, `occupation`, `division`, `district`) VALUES
+('01522222222', NULL, 'insert', '2023-05-07 13:18:23', '01522222222', '', '01522222222', '01522222222', 'customer', '', NULL, NULL, NULL, NULL, NULL, '29', '37'),
+('01732071808', NULL, 'insert', '2023-05-07 12:32:08', '01732071808', '', '01732071808', '01732071808', 'customer', '', 123456789, 'wfafwegweggwg', '1995-12-31', 'male', 'worker', '29', '37'),
+('', NULL, 'insert', '2023-05-07 12:19:44', '01732071809', '', '01732071809', '01732071809', 'customer', '', NULL, NULL, NULL, NULL, NULL, '29', '37'),
+('1', '1730020@iub.edu.bd', 'update', '2023-05-03 15:44:45', 'System Admin', '$2y$10$E7cZuDtHMbfIU56zCTzOWuKdjQV.mwJpavLGQ2egpJ1fVzaQqwega', '01839492911', '1730020@iub.edu.bd', 'administrator', 'Mr', NULL, NULL, NULL, NULL, NULL, '29', '37'),
+('bijoy@gmail.com', NULL, 'insert', '2023-05-07 11:39:52', 'bijoy', '$2y$10$bOEbovshUnuckhekVUzaH.3mfcP/B7DSxRxqEOR6IArWZvgq2q0Gy', '01478523699', 'bijoy@gmail.com', 'customer', 'MR.', NULL, NULL, NULL, NULL, NULL, '29', '38'),
+('joy@gmail.com', 'joy@gmail.com', 'update', '2023-05-10 10:26:28', 'joy', '$2y$10$XH27KAj1sjvQ1dsEYLJwDOyWAO9n7OU.0ms4YQZ/jB67MZWFFfVo6', '01478965233', 'joy@gmail.com', 'customer', 'Mr', 0, 'Gulshan', '', 'male', '', '29', '38'),
+('moinctg@yahoo.com', 'moinctg@yahoo.com', 'update', '2023-05-03 12:37:06', 'Moin', '$2y$10$EJnWQnkbe8wgOJO2Zlrf1eHEgUxobBGtnoa5Cs/If5JR1p5/QnxBu', '01730341177', 'moinctg@yahoo.com', 'administrator', 'Mr', NULL, NULL, NULL, NULL, NULL, '29', '38'),
+('nidhi@gmail.com', 'nidhi@gmail.com', 'update', '2023-05-10 10:18:05', 'nidhi', '$2y$10$3.qVrCfAdfgTGHZIGn0f9.2qRDb0FIcnzU4M7.UW0Sq7Wzj6wRjkW', '01245678933', 'nidhi@gmail.com', 'customer', 'Mr', 0, '', '', 'female', '', '29', '38'),
+('shovon@gmail.com', 'shovon@gmail.com', 'update', '2023-04-17 11:58:06', 'Shovon Rahman', '$2y$10$w3a7IVXyjlEWGja2m6ynj.WN2Q5UrIyztbbbg76Sip4kLXgEAy2MW', '01312457896', 'shovon@gmail.com', 'customer', 'Mr', NULL, NULL, NULL, NULL, NULL, '29', '39'),
+('toky@gmail.com', 'toky@gmail.com', 'update', '2023-05-07 17:24:51', 'Jamil', '$2y$10$DTBOl23n73fmZKBNMbMWJexzBLHKfppwF.TMkaBye6LmnDLf7gwau', '01942424242', 'toky@gmail.com', 'customer', 'Mr', NULL, NULL, NULL, NULL, NULL, '29', '39');
 
 --
 -- Indexes for dumped tables
@@ -516,7 +558,8 @@ ALTER TABLE `tbl_slider`
 -- Indexes for table `tbl_user_info`
 --
 ALTER TABLE `tbl_user_info`
-  ADD PRIMARY KEY (`email`);
+  ADD PRIMARY KEY (`email`),
+  ADD UNIQUE KEY `phone` (`phone`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -532,13 +575,13 @@ ALTER TABLE `tbl_careers`
 -- AUTO_INCREMENT for table `tbl_inquery`
 --
 ALTER TABLE `tbl_inquery`
-  MODIFY `inquery_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `inquery_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_renovation`
 --
 ALTER TABLE `tbl_renovation`
-  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tbl_slider`
