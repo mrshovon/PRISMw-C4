@@ -1,0 +1,83 @@
+INFO - 2023-05-17 14:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 14:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 14:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 14:57:46 --> Undefined array key "nid"
+in APPPATH\Models\UserInfoModel.php on line 17.
+ 1 APPPATH\Models\UserInfoModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nid"', 'APPPATH\\Models\\UserInfoModel.php', 17)
+ 2 APPPATH\Controllers\SignUp.php(70): App\Models\UserInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SignUp->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignUp))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 15:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 15:00:41 --> Undefined array key "nid"
+in APPPATH\Models\UserInfoModel.php on line 17.
+ 1 APPPATH\Models\UserInfoModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nid"', 'APPPATH\\Models\\UserInfoModel.php', 17)
+ 2 APPPATH\Controllers\SignUp.php(71): App\Models\UserInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SignUp->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignUp))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 15:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 15:01:28 --> Undefined array key "nid"
+in APPPATH\Models\UserInfoModel.php on line 17.
+ 1 APPPATH\Models\UserInfoModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nid"', 'APPPATH\\Models\\UserInfoModel.php', 17)
+ 2 APPPATH\Controllers\SignUp.php(72): App\Models\UserInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SignUp->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignUp))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 15:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 15:02:04 --> Undefined array key "nid"
+in APPPATH\Models\UserInfoModel.php on line 17.
+ 1 APPPATH\Models\UserInfoModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nid"', 'APPPATH\\Models\\UserInfoModel.php', 17)
+ 2 APPPATH\Controllers\SignUp.php(72): App\Models\UserInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SignUp->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignUp))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 15:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 15:02:26 --> Undefined array key "nid"
+in APPPATH\Models\UserInfoModel.php on line 17.
+ 1 APPPATH\Models\UserInfoModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nid"', 'APPPATH\\Models\\UserInfoModel.php', 17)
+ 2 APPPATH\Controllers\SignUp.php(72): App\Models\UserInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SignUp->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignUp))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 15:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 15:03:07 --> Undefined array key "address"
+in APPPATH\Models\UserInfoModel.php on line 17.
+ 1 APPPATH\Models\UserInfoModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "address"', 'APPPATH\\Models\\UserInfoModel.php', 17)
+ 2 APPPATH\Controllers\SignUp.php(72): App\Models\UserInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SignUp->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignUp))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 15:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 15:03:40 --> Undefined array key "dob"
+in APPPATH\Models\UserInfoModel.php on line 17.
+ 1 APPPATH\Models\UserInfoModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dob"', 'APPPATH\\Models\\UserInfoModel.php', 17)
+ 2 APPPATH\Controllers\SignUp.php(74): App\Models\UserInfoModel->add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SignUp->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignUp))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 15:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-17 15:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

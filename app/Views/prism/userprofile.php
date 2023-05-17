@@ -74,6 +74,7 @@
               <div class="form-group">
                 <label for="divison">Division:</label>
                 <SELECT name="division" id="division" class="form-control" onchange="getDistrict(this,'<?php echo base_url(); ?>')">
+                    <option value="">Select...</option>
                     <?php foreach($divisionlist as $item) { ?>
                       <option value="<?php echo $item->look_up_id ?>" ltval="<?php echo $item->look_type_id ?>"><?php echo $item->look_up_name ?></option>
                      <?php } ?>

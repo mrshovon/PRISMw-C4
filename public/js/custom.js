@@ -21,11 +21,11 @@ function switchsignup() {
   if (x.style.display === "block") {
     x.style.display = "none";
     y.style.display = "block";
-    document.getElementById('switch').innerHTML = '<i class="zmdi zmdi-email" id="iconswitch"></i> SIGN IN with Email';
+    document.getElementById('switch').innerHTML = '<i class="zmdi zmdi-email" id="iconswitch"></i> SIGN UP with Email';
   } else {
     x.style.display = "block";
     y.style.display = "none";
-    document.getElementById('switch').innerHTML = '<i class="zmdi zmdi-phone" id="iconswitch"></i> SIGN IN with Phone';
+    document.getElementById('switch').innerHTML = '<i class="zmdi zmdi-phone" id="iconswitch"></i> SIGN UP with Phone';
   }
 }
   function getReflookup(obj,baseurl){

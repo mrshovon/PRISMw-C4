@@ -103,8 +103,8 @@
                                 <button type="submit" id="signup" class="form-submit" style="border: none;">Sign Up</button> 
                             </div>
                         </form>
-                        <button type="button" id="switch" class="form-submit hover" style="border: none;" onclick="switchsignup()"><i class="zmdi zmdi-email" id="iconswitch"></i> SIGN IN with Email</button>
-                        <button type="button" id="switch" class="form-submit hover" style="border: none;" onclick="switchsignup()"><i class="fa-brands fa-google" id="iconswitch"></i> SIGN IN with Email</button>
+                        <button type="button" id="switch" class="form-submit hover" style="border: none;" onclick="switchsignup()"><i class="zmdi zmdi-email" id="iconswitch"></i> SIGN UP with Email</button>
+                        <button type="button" id="switch" class="form-submit hover" style="border: none;" onclick="switchsignup()"><i class="fa-brands fa-google" id="iconswitch"></i> SIGN UP with G-mail</button>
                     </div>
                     <div class="signup-image">
                         <figure><img src="<?=base_url('public/img/signup-image.jpg')?>" alt="sing up image"></figure>

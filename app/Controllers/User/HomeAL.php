@@ -229,7 +229,7 @@ class HomeAL extends BaseController
         $data = [];
         $rules = [
             'name'          => 'required|min_length[3]|max_length[20]',
-            'email'         => 'required|min_length[6]|max_length[50]|valid_email',
+            // 'email'         => '|min_length[6]|max_length[50]|valid_email',
             // 'password'      => 'required|min_length[6]|max_length[200]',
             // 'confpassword'  => 'matches[password]'
         ];
