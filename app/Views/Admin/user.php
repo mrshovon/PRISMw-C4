@@ -11,6 +11,7 @@
                   <thead>
                     <tr>
                       <th scope="col">SL #</th>
+                      <th scope="col">User Type</th>
                       <th scope="col">Name</th>
                       <th scope="col">Email</th>
                       <th scope="col">Phone</th>
@@ -30,6 +31,7 @@
               <?php foreach($userlist as $index => $row) { ?>     
                   <tr>
                       <td><?php echo $index+1; ?></td>
+                      <td><?php echo ($row->user_type == 'customer' ? 'customer':'administrator'); ?></td>
                       <td><?php echo $row->title.' '.$row->name; ?></td>
                       <td><?php echo $row->email; ?></td>
                       <td><?php echo $row->phone; ?></td>
@@ -40,7 +42,6 @@
                       <td><?php echo $row->occupation; ?></td>
                       <td><?php echo $row->division_name; ?></td>
                       <td><?php echo $row->district_name; ?></td>
-                      <td><?php echo ($row->user_type == 'customer' ? 'customer':'administrator'); ?></td>
                       <td><?php echo $row->maker_id; ?></td>
                       <td><?php echo $row->action_date; ?></td>
                       <td>

@@ -2,6 +2,7 @@
    $path = $_SERVER['REQUEST_URI'];
    $path = explode('/',$path);
    $path = end($path);
+   $utype = session()->get('user_type');
    if($path == 'userdash'){
     $path = 'prism properties';
    }
@@ -137,7 +138,8 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user fa-xl" style="color: #2a791b; margin-right: 10px;"></i><?php echo strtoupper($name[0])?></a>
                     <div class="dropdown-menu dropdown-menu-end">
                         <a href="<?= base_url('public/user/HomeAL/userprofile/'.$email)?>" class="dropdown-item">Profile settings</a>
-                    </div>
+                        <a <?= $utype == 'administrator'? '' : 'hidden' ; ?> href="<?= base_url('public/admin/dashboard')?>"><i class="fa-solid fa-house fa-sm" title="View Ad panel" style="color: #388a3a; margin-top:3px; margin-left:15px; margin-right:5px; line-height: 1.50em;"></i> Admin Panel</a>
+                      </div>
                 </li>
             </ul>
     </div>
